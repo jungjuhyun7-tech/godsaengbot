@@ -474,12 +474,12 @@ if(location.hash&&!document.getElementById(location.hash.slice(1))&&/^#a-/.test(
 <div class="w catl"><b>분야별 페이지로 보기</b> <a href="/templates/report.html">보고, 조사 (53)</a><a href="/templates/mail.html">메일 (21)</a><a href="/templates/schedule.html">일정, 비서 (17)</a><a href="/templates/money.html">지출, 돈 관리 (21)</a><a href="/templates/jobs.html">취업, 이직 (15)</a><a href="/templates/sns.html">SNS, 홍보 (53)</a><a href="/templates/sales.html">영업, 고객 (34)</a><a href="/templates/life.html">생활 (56)</a><a href="/templates/grokbot.html">Grok Bot 배우기 (27)</a><a href="/templates/">전체 분야</a></div><div class="w main" id="main"><nav class="tabs" id="tabs"></nav><section><div class="lh"><h2 id="lt"></h2><span id="lc"></span></div><div class="tkw"><h4>하는 일로 찾기</h4><div class="tks" id="tks"></div></div><div class="hsw" id="hsw"></div><div class="list" id="list"></div><div class="pg" id="pg"></div></section></div>
 <div class="w"><section class="sec duo" id="s-news"><div class="box"><h2 data-i="nwh">새 소식</h2><p data-i="nws">x.ai 공식 변경 기록에서 가져온 최근 Grok Bot 업데이트예요.</p><ul class="nl" id="nwl"></ul></div><div class="box" id="s-learn"><h2 data-i="lnh">배우기</h2><p data-i="lns">Grok Bot 워크숍 영상과 Lauren Tan(@poteto), matt palmer(@mattyp)의 X 글을 단계별로 골라 보세요.</p><div class="ltab" id="ltab" role="tablist"></div><div id="lpn"></div><p class="lcr" id="lcr"></p></div></section></div>
 <section class="w fbk" id="feedback"><details class="fbd" id="fbd"><summary class="fbsum">💬 요청이나 개선 의견 보내기</summary><div class="sh"><h2 data-i="fbh">요청과 개선 의견</h2><small data-i="fbs">찾는 봇, 고쳤으면 하는 점, 오류를 알려 주세요. 하나하나 읽어요.</small></div>
-<form name="feedback" method="POST" action="/?fb=ok#feedback" data-netlify="true" netlify-honeypot="bot-field" id="fbf">
-<input type="hidden" name="form-name" value="feedback"><p class="fbhp"><label>비워 두세요 <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+<form name="feedback" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSduAY03SKflK_rYjCMrRhxpLCGlKC7d_jImKHawahrUxG_xDQ/formResponse" target="_blank" id="fbf">
+<p class="fbhp"><label>비워 두세요 <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
 <fieldset class="fbt"><legend data-i="fbtl">어떤 의견인가요</legend>
-<label><input type="radio" name="type" value="봇 요청" checked><span data-i="fbt1">봇 요청</span></label><label><input type="radio" name="type" value="개선 의견"><span data-i="fbt2">개선 의견</span></label><label><input type="radio" name="type" value="오류 신고"><span data-i="fbt3">오류 신고</span></label></fieldset>
-<label class="fbl"><span data-i="fbml">내용</span><textarea name="message" id="fbm" required maxlength="2000" rows="5"></textarea></label>
-<label class="fbl"><span data-i="fbel">이메일 (선택)</span><input type="email" name="email" id="fbe" autocomplete="email"></label>
+<label><input type="radio" name="entry.548636116" value="봇 요청" checked><span data-i="fbt1">봇 요청</span></label><label><input type="radio" name="entry.548636116" value="개선 의견"><span data-i="fbt2">개선 의견</span></label><label><input type="radio" name="entry.548636116" value="오류 신고"><span data-i="fbt3">오류 신고</span></label></fieldset>
+<label class="fbl"><span data-i="fbml">내용</span><textarea name="entry.1637725750" id="fbm" required maxlength="2000" rows="5"></textarea></label>
+<label class="fbl"><span data-i="fbel">이메일 (선택)</span><input type="email" name="entry.967078310" id="fbe" autocomplete="email"></label>
 <p class="fbp" data-i="fbpv">이메일은 적지 않아도 돼요. 적어 주시면 답장할 때만 쓰고 다른 곳에 쓰거나 공유하지 않아요.</p>
 <button class="r fbb" type="submit" data-i="fbsb">보내기</button><p class="fbmsg" id="fbmsg" role="status" aria-live="polite"></p></form>
 <div class="fbok" id="fbok" hidden><b data-i="fbth">고마워요! 잘 받았어요.</b><p data-i="fbth2">보내 주신 의견은 갓생봇을 고치는 데 바로 쓸게요.</p><button class="o" type="button" onclick="fbAgain()" data-i="fbag">하나 더 보내기</button></div></details></section><script>(function(){var d=document.getElementById('fbd');function o(){if(location.hash==='#feedback'||/[?&]fb=ok/.test(location.search))d.open=true}o();addEventListener('hashchange',o);document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href$="#feedback"]');if(a)d.open=true})})();</script>
@@ -733,12 +733,13 @@ const _g2=gacha;gacha=function(){if(document.getElementById('gbtn').disabled)ret
 if(TD)showT(TD);
 </script><script>
 (function(){const f=document.getElementById('fbf');if(!f)return;const ok=document.getElementById('fbok'),msg=document.getElementById('fbmsg');
-function done(){f.hidden=true;ok.hidden=false;if(window.gtag)gtag('event','feedback_submit',{type:(new FormData(f)).get('type')})}
+function done(){f.hidden=true;ok.hidden=false;if(window.gtag)gtag('event','feedback_submit',{type:(new FormData(f)).get('entry.548636116')})}
 window.fbAgain=function(){f.reset();ok.hidden=true;f.hidden=false};
 if(/[?&]fb=ok/.test(location.search)){f.hidden=true;ok.hidden=false}
 f.addEventListener('submit',function(e){if(!window.fetch)return;e.preventDefault();msg.textContent='';const b=f.querySelector('.fbb');b.disabled=true;
-fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(f)).toString()})
-.then(r=>{if(!r.ok)throw 0;done()}).catch(()=>{msg.textContent=L==='en'?'Could not send. Please try again in a moment.':'보내지 못했어요. 잠시 뒤 다시 시도해 주세요.'}).finally(()=>{b.disabled=false})});
+const fd=new FormData(f);if(fd.get('bot-field')){b.disabled=false;done();return}fd.delete('bot-field');
+fetch('https://docs.google.com/forms/d/e/1FAIpQLSduAY03SKflK_rYjCMrRhxpLCGlKC7d_jImKHawahrUxG_xDQ/formResponse',{method:'POST',mode:'no-cors',body:new URLSearchParams(fd)})
+.then(()=>{done()}).catch(()=>{msg.textContent=L==='en'?'Could not send. Please try again in a moment.':'보내지 못했어요. 잠시 뒤 다시 시도해 주세요.'}).finally(()=>{b.disabled=false})});
 document.querySelectorAll('a[href="#req"]').forEach(a=>a.setAttribute('href','#feedback'));
 })();
 </script><script>(function(){var d=document.documentElement,b=document.createElement('button');b.type='button';b.className='thm';function s(){var k=d.getAttribute('data-theme')==='dark';b.textContent=k?'\u2600\uFE0F':'\uD83C\uDF19';b.setAttribute('aria-label',k?'밝게 보기':'어둡게 보기');b.title=b.getAttribute('aria-label')}b.onclick=function(){var n=d.getAttribute('data-theme')==='dark'?'light':'dark';d.setAttribute('data-theme',n);try{localStorage.setItem('gsb-theme',n)}catch(e){}s()};s();var h=document.querySelector('header .w')||document.querySelector('header');if(h){h.appendChild(b)}else{b.classList.add('thm-fix');document.body.appendChild(b)}try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(e){if(!localStorage.getItem('gsb-theme')){d.setAttribute('data-theme',e.matches?'dark':'light');s()}})}catch(e){}})();</script></body></html>
