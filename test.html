@@ -551,7 +551,15 @@ function howto(){const n=B.length;const st=W(['봇 찾기: 위 검색창에 할 
 document.getElementById('md').innerHTML=`<button class="x" onclick="cl()">×</button><h3>${W('갓생봇 사용법','How to use Godsaeng Bot')}</h3><p class="hwa">${T('abt')}</p><ol class="hws">${st.map(x=>{const k=x.indexOf(':');return `<li><b>${x.slice(0,k)}</b>${x.slice(k+1)}</li>`}).join('')}</ol><button class="go" onclick="cl()">${W('확인','Got it')}</button>`;document.getElementById('dim').classList.add('on')}
 function cl(){document.getElementById('dim').classList.remove('on');if(/^#bot-/.test(location.hash))history.replaceState(null,'',location.pathname+location.search)}
 function sid(b){return b.link.split('/').pop()}
-function REC(b,m){const n=b.n.lastIndexOf(' 봇'),x=n>0?b.n.slice(0,n):b.n;const t=W(x+', 이 일을 봇에게 맡기고 싶은 분','Anyone who wants a bot for this: '+(b.en||b.s));return m?`<em>${T('rec')}</em> ${t}`:`<p class="rec"><em>${T('rec')}</em> ${t}</p>`}
+function RECK(b){let s=(b.s||'').trim();let f=s.split(/(?<=요)\.\s*/)[0].replace(/[.\s]+$/,'');
+if(!f)return '';const S={'도와요':'돕는','만들어요':'만드는','모아요':'모으는','써요':'쓰는','들어요':'드는','알아요':'아는','걸어요':'거는','몰라요':'모르는','불러요':'부르는','골라요':'고르는','길러요':'기르는','달라요':'다른','빨라요':'빠른','올라요':'오르는','팔아요':'파는','잘라요':'자르는','눠요':'누는'};
+const m=f.match(/^(.*?)(\S+)$/),pre=m[1],w=m[2];
+let mm=w.match(/^(.*?)(이에요|예요)$/);if(mm){const nn=mm[1];const c=nn.charCodeAt(nn.length-1);const bat=c>=0xAC00&&c<=0xD7A3&&(c-0xAC00)%28;return pre+nn+(bat?'이':'가')+' 필요한 분'}
+let a=null;for(const k in S){if(w.endsWith(k)){a=w.slice(0,-k.length)+S[k];break}}
+if(!a){const R=[['해요','하는'],['줘요','주는'],['와요','오는'],['봐요','보는'],['워요','우는'],['려요','리는'],['켜요','키는'],['겨요','기는'],['쳐요','치는'],['꿔요','꾸는'],['둬요','두는'],['돼요','되는'],['혀요','히는'],['져요','지는'],['내요','내는'],['짜요','짜는'],['사요','사는'],['가요','가는'],['서요','서는'],['봐요','보는'],['녀요','니는'],['여요','이는'],['어요','는'],['아요','는']];
+for(const [x,y] of R){if(w.endsWith(x)){a=w.slice(0,-x.length)+y;break}}}
+return a?pre+a+' 봇이 필요한 분':''}
+function REC(b,m){const n=b.n.lastIndexOf(' 봇'),x=n>0?b.n.slice(0,n):b.n;const t=W(RECK(b)||(x+', 이 일을 봇에게 맡기고 싶은 분'),'Anyone who wants a bot for this: '+(b.en||b.s));return m?`<em>${T('rec')}</em> ${t}`:`<p class="rec"><em>${T('rec')}</em> ${t}</p>`}
 function toast(t){let e=document.getElementById('toast');if(!e){e=document.createElement('div');e.id='toast';e.className='toast';document.body.appendChild(e)}e.textContent=t;e.classList.add('on');clearTimeout(e._t);e._t=setTimeout(()=>e.classList.remove('on'),1800)}
 function shareB(i){const u=location.href.split('#')[0]+'#bot-'+sid(B[i]);const ok=()=>toast(T('shc'));if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(u).then(ok,ok);else ok();history.replaceState(null,'','#bot-'+sid(B[i]))}
 function hashOpen(){const m=location.hash.match(/^#bot-(.+)$/);if(!m)return;const i=B.findIndex(b=>sid(b)===decodeURIComponent(m[1]));if(i>=0)op(i)}
