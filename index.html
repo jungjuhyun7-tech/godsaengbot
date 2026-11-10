@@ -697,7 +697,23 @@ html[data-theme=dark] .cp-btn:hover{background:#2a64d8}
   .md .cp-ph{width:80px;height:80px;min-height:80px}
   .md .cp-btn{min-height:44px;padding:10px 14px;font-size:13px}
 }
-</style></head><body class="gs-home">
+</style>
+<style id="gs-pager-css">
+.pg{flex-wrap:nowrap!important;justify-content:center!important;overflow-x:auto;align-items:center;gap:4px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.pg::-webkit-scrollbar{display:none}
+.pg .pg-gap{display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:34px;padding:0 2px;color:var(--mu);font-size:14px;line-height:1;user-select:none;flex:none}
+.pg button:focus-visible{outline:2px solid var(--a);outline-offset:2px}
+@media(max-width:600px){
+  .pg{gap:2px!important;padding:10px 8px!important;overflow-x:visible;box-sizing:border-box}
+  .pg button{min-width:36px!important;width:36px;min-height:36px!important;height:36px;box-sizing:border-box;font-size:13px}
+  .pg .pg-gap{min-width:14px;height:36px;padding:0;font-size:13px}
+}
+@media(max-width:370px){
+  .pg{gap:1px!important;padding:10px 8px!important}
+  .pg .pg-gap{min-width:12px}
+}
+</style>
+</head><body class="gs-home">
 <header><div class="w top"><a class="logo" href="#"><img class="gb" id="gb" src="/icon-192.png" alt="Grok Bot" width="28" height="28"><b class="gx">×</b><i>갓</i><span>갓생봇</span></a><a class="earth" href="https://www.spacex.com/mission/" target="_blank" rel="noopener" title="SpaceX Mission">Made on Earth by Grok Bot</a><nav><a class="hu" href="#howto" onclick="howto();return false" data-i="nhow">사용법</a><a href="#" class="subn" onclick="sbOpen();return false">템플릿 등록</a><a class="hm" href="#req" data-i="nreq">봇 요청</a><a class="hm" href="/guide/" target="_blank" data-i="nguide">Grok 가이드</a><button class="lang" onclick="setL(L==='ko'?'en':'ko')" id="lb">EN</button></nav></div></header><nav data-nav2="1" data-home="1" class="gnav" id="gs-gnav" aria-label="갓생봇 메뉴"><div class="gnav-in"><a class="gnav-logo" href="/" aria-label="갓생봇 홈"><img class="gnav-ico" src="/icon-192.png" alt="" width="20" height="20"><i>갓</i><span>갓생봇</span></a><a class="on" href="/#s-all">전체 보기</a><a href="/#s-news">새 소식</a><a href="/#s-learn">배우기</a><a href="/articles/">아티클</a><a href="/templates/">템플릿</a><a href="/prompts/">프롬프트</a><a href="/weekly/">이번 주</a><a href="/test.html">테스트</a><a href="/pick.html">뽑기</a><a href="/saju.html">사주</a><a href="/glossary.html">용어</a><a href="/guide/">Grok 가이드</a></div></nav>
 <section class="w hero" id="s-hero"><div class="gwrap" id="gicon"><div class="gicon g-mascot" role="img" aria-label="Grok Bot"><span class="gch" data-name="purple" style="--l:49.2308%;--t:0.0000%;--w:21.1538%;--h:43.9024%;--z:0;--d:0s;--dur:2.7s;--hop:-5px;--r0:-10deg;--r1:-6deg"><span class="gch-in"><img src="/mascot/purple.png" alt=""></span></span><span class="gch" data-name="black" style="--l:11.5385%;--t:20.7317%;--w:20.9615%;--h:44.3089%;--z:1;--d:.22s;--dur:2.4s;--hop:-6px;--r0:0deg;--r1:3deg"><span class="gch-in"><img src="/mascot/black.png" alt=""></span></span><span class="gch" data-name="teal" style="--l:33.4615%;--t:22.7642%;--w:19.8077%;--h:43.9024%;--z:2;--d:.4s;--dur:2.2s;--hop:-4px;--r0:2deg;--r1:-2deg"><span class="gch-in"><img src="/mascot/teal.png" alt=""></span></span><span class="gch" data-name="blue" style="--l:63.2692%;--t:28.8618%;--w:21.3462%;--h:45.5285%;--z:3;--d:.55s;--dur:2.8s;--hop:-5px;--r0:8deg;--r1:12deg"><span class="gch-in"><img src="/mascot/blue.png" alt=""></span></span><span class="gch" data-name="gray" style="--l:68.4615%;--t:71.9512%;--w:10.7692%;--h:26.0163%;--z:4;--d:.1s;--dur:2.1s;--hop:-7px;--r0:8deg;--r1:14deg"><span class="gch-in"><img src="/mascot/gray.png" alt=""></span></span><span class="gch" data-name="pink" style="--l:45.1923%;--t:49.1870%;--w:23.6538%;--h:49.5935%;--z:5;--d:.7s;--dur:2.5s;--hop:-6px;--r0:0deg;--r1:-3deg"><span class="gch-in"><img src="/mascot/pink.png" alt=""></span></span><span class="gch" data-name="brown" style="--l:79.4231%;--t:54.8780%;--w:20.5769%;--h:43.9024%;--z:6;--d:.85s;--dur:2.6s;--hop:-4px;--r0:6deg;--r1:2deg"><span class="gch-in"><img src="/mascot/brown.png" alt=""></span></span><span class="gch" data-name="gold" style="--l:21.5385%;--t:57.7236%;--w:23.2692%;--h:41.0569%;--z:7;--d:1s;--dur:2.3s;--hop:-5px;--r0:-2deg;--r1:2deg"><span class="gch-in"><img src="/mascot/gold.png" alt=""></span></span><span class="gch" data-name="orange" style="--l:0.1923%;--t:57.7236%;--w:21.5385%;--h:41.8699%;--z:8;--d:1.15s;--dur:2.9s;--hop:-6px;--r0:-8deg;--r1:-3deg"><span class="gch-in"><img src="/mascot/orange.png" alt=""></span></span></div></div><small data-i="kick">Grok Bot 한국어 템플릿 모음이에요</small><h1 data-i="h1">갓생사는 갓생봇의 플레이그라운드</h1><p data-i="sub">해야 할 일을 고르면 맡길 봇이 나와요.
 빈칸만 채워서 바로 써 보세요.</p>
@@ -1015,8 +1031,57 @@ if(s)R.forEach(b=>b._q=qsc(b,s));R.sort(s?(a,b)=>b._q-a._q||(srt?b.d.localeCompa
 const np=Math.max(1,Math.ceil(R.length/PER));pg=Math.min(pg,np);
 document.getElementById('lt').textContent=s?`"${q.value.trim()}"`:(C.find(c=>c[0]===cur)?cn(cur):cur.startsWith('t:')?cur.slice(2):(cur.startsWith('g:')?(L==='en'?AR.find(a=>'g:'+a[0]===cur)[1]:cur.slice(2)):tabs.find(t=>t[0]===cur)[1]));;drawAreas();typeof drawTK==='function'&&drawTK();drawHS(s);drawUP();document.getElementById('lc').innerHTML=R.length>PER?T('pp')(R.length):T('cnt')(R.length);
 document.getElementById('list').innerHTML=R.slice((pg-1)*PER,pg*PER).map(b=>`<div class="row" onclick="op(${B.indexOf(b)})">${BM(b)}<h3>${BL(b)}<i class="brk"></i>${b.n}${(document.getElementById('q').value.trim()&&b._q===1)?`<span class="qrl">${L==='en'?'related':'연관'}</span>`:''}${b.h?`<span class="ed">${T('ed')}</span>`:''}${b.new?`<span class="nw">${T('nw')}</span>`:''}</h3><p>${b.s}</p><div class="m"></div><div class="m d">${AU(b)}</div><a class="add" href="${b.link}" target="_blank" onclick="event.stopPropagation()">${T('add')}</a></div>`).join('')||`<div class="empty">${T('empty')}</div>`;
-document.getElementById('pg').innerHTML=np<2?'':`<button ${pg<2?'disabled':''} onclick="go(${pg-1})">‹</button>`+Array.from({length:np},(_,i)=>`<button class="${pg===i+1?'on':''}" onclick="go(${i+1})">${i+1}</button>`).join('')+`<button ${pg>=np?'disabled':''} onclick="go(${pg+1})">›</button>`}
-function go(p){pg=p;render();document.getElementById('main').scrollIntoView({behavior:'smooth'})}
+document.getElementById('pg').innerHTML=np<2?'':pgList(np);var _pg=document.getElementById('pg');if(_pg)_pg.dataset.np=np;}
+
+function pgList(np){
+  var spread=window.matchMedia('(max-width:760px)').matches?1:2;
+  var start=Math.max(1,pg-spread), end=Math.min(np,pg+spread), width=spread*2+1;
+  if(end-start+1<width){
+    if(start===1) end=Math.min(np,start+width-1);
+    if(end===np) start=Math.max(1,end-width+1);
+  }
+  var seen={}; var nums=[];
+  function add(n){if(n>=1&&n<=np&&!seen[n]){seen[n]=1;nums.push(n)}}
+  add(1);
+  for(var i=start;i<=end;i++) add(i);
+  add(np);
+  nums.sort(function(a,b){return a-b});
+  var prevA=L==='en'?'Previous page':'이전 페이지';
+  var nextA=L==='en'?'Next page':'다음 페이지';
+  var html='<button type="button" '+(pg<2?'disabled ':'')+'onclick="go('+(pg-1)+')" aria-label="'+prevA+'">‹</button>';
+  for(var j=0;j<nums.length;j++){
+    if(j&&nums[j]-nums[j-1]>1) html+='<span class="pg-gap" aria-hidden="true">…</span>';
+    var n=nums[j];
+    var lab=L==='en'?('Page '+n):(n+'페이지');
+    html+='<button type="button" class="'+(pg===n?'on':'')+'" onclick="go('+n+')" aria-label="'+lab+'"'+(pg===n?' aria-current="page"':'')+'>'+n+'</button>';
+  }
+  html+='<button type="button" '+(pg>=np?'disabled ':'')+'onclick="go('+(pg+1)+')" aria-label="'+nextA+'">›</button>';
+  return html;
+}
+function pgBind(){
+  var box=document.getElementById('pg');
+  if(!box||box.dataset.gsPager==='1') return;
+  box.dataset.gsPager='1';
+  box.setAttribute('role','navigation');
+  box.setAttribute('aria-label', L==='en'?'Pagination':'페이지');
+  document.addEventListener('keydown',function(e){
+    var t=e.target;
+    if(t&&(/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName)||t.isContentEditable)) return;
+    if(!box.innerHTML||!box.contains(document.activeElement)) return;
+    var last=+box.dataset.np||1;
+    if(e.key==='ArrowLeft'||e.key==='PageUp'){if(pg>1){e.preventDefault();go(pg-1)}}
+    else if(e.key==='ArrowRight'||e.key==='PageDown'){if(pg<last){e.preventDefault();go(pg+1)}}
+    else if(e.key==='Home'){e.preventDefault();go(1)}
+    else if(e.key==='End'){e.preventDefault();go(last)}
+  });
+  if(window.matchMedia){
+    var mq=window.matchMedia('(max-width:760px)');
+    var on=function(){if(typeof render==='function') render()};
+    if(mq.addEventListener) mq.addEventListener('change',on);
+    else if(mq.addListener) mq.addListener(on);
+  }
+}
+function go(p){pg=p;render();document.getElementById('main').scrollIntoView({behavior:'smooth'});var on=document.querySelector('#pg button.on');if(on)on.focus()}
 function op(i){const b=B[i];document.getElementById('md').innerHTML=`<button class="x" onclick="cl()">×</button><div class="bmw">${BM(b)}${pill(b.c)}</div><h3>${b.n}</h3><p style="color:var(--mu);margin:0">${b.s}</p>${b.en&&L!=='en'?`<p style="color:var(--mu);font-size:13px">${b.en}</p>`:''}${b.off?`<p>${OB(b)}</p>`:''}<p class="rec" style="margin-top:10px">${REC(b,1)}</p>
 <h4>${T('how')}</h4><ol><li>${T('h1s')}</li><li>${T('h2s')}</li><li>${T('h3s')}</li></ol><h4>${T('fill')}</h4><div class="pr">${esc(b.p).replace(/\[(.+?)\]/g,'<mark>[$1]</mark>')}</div>
 <div class="btns"><button type="button" onclick="copyPrompt(this,${i})"><lucian-copy tone="line" size="18" state="idle" animate="hover"></lucian-copy><span>${T('copy')}</span></button><button onclick="shareB(${i})">${T('share')}</button><a class="p" href="${b.link}" target="_blank" rel="noopener"><lucian-plus tone="line" size="18" animate="hover"></lucian-plus><span>${T('addb')}</span></a></div>
