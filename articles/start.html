@@ -29,8 +29,8 @@ html[data-theme=dark] .tl li,html[data-theme=dark] .cg a{background:var(--card);
 .cp-h{margin:0 0 14px;font-size:17px;font-weight:800;letter-spacing:-.02em;color:var(--ink,#0a0a0a)}
 .cp-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .cp-card{border:1px solid var(--ln,#ededed);border-radius:12px;background:var(--soft,#f7f8fa);overflow:hidden;display:flex;flex-direction:column;min-width:0}
-.cp-ph{height:128px;background:var(--al,#f2f1ef);overflow:hidden;display:block}
-.cp-ph img{width:100%;height:100%;object-fit:cover;display:block}
+.cp-ph{height:200px;padding:12px;box-sizing:border-box;background:#f3f4f6;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.cp-ph img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block}
 .cp-info{padding:12px 14px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
 .cp-n{font-size:14px;font-weight:700;color:var(--ink,#0a0a0a);line-height:1.4}
 .cp-note{margin:0;font-size:13px;color:var(--mu,#526176);line-height:1.5}
@@ -39,7 +39,7 @@ html[data-theme=dark] .tl li,html[data-theme=dark] .cg a{background:var(--card);
 .cp-disc{margin:0 0 24px;font-size:12px;color:var(--mu,#526176);line-height:1.55}
 html[data-theme=dark] .cp-box{background:var(--card);border-color:var(--ln2)}
 html[data-theme=dark] .cp-card{background:var(--soft);border-color:var(--ln2)}
-html[data-theme=dark] .cp-ph{background:var(--soft)}
+html[data-theme=dark] .cp-ph{background:#2a2f36}
 html[data-theme=dark] .cp-h,html[data-theme=dark] .cp-n{color:var(--ink)}
 html[data-theme=dark] .cp-btn:hover{background:#2a64d8}
 .dim{z-index:2000}
@@ -47,7 +47,7 @@ html[data-theme=dark] .cp-btn:hover{background:#2a64d8}
 .md .cp-h{font-size:15px;margin-bottom:10px}
 .md .cp-grid{grid-template-columns:1fr;gap:8px}
 .md .cp-card{flex-direction:row;align-items:center}
-.md .cp-ph{width:88px;height:88px;min-height:88px;flex:none;margin:8px 0 8px 8px;border-radius:10px}
+.md .cp-ph{width:88px;height:88px;min-height:88px;flex:none;margin:8px 0 8px 8px;border-radius:10px;padding:6px;box-sizing:border-box;display:flex;align-items:center;justify-content:center}
 .md .cp-info{padding:10px 12px;justify-content:center}
 .md .cp-n{font-size:13px}
 .md .cp-note{font-size:12px}
@@ -57,7 +57,7 @@ html[data-theme=dark] .cp-btn:hover{background:#2a64d8}
   .cp-grid{grid-template-columns:1fr;gap:10px}
   .cp-box{margin:16px 0 8px;padding:12px}
   .cp-h{margin-bottom:10px}
-  .cp-ph{height:80px}
+  .cp-ph{height:200px}
   .cp-info{padding:10px 12px 12px}
   .cp-btn{min-height:44px;padding:10px 14px}
   .md .cp-card{flex-direction:row;align-items:center}
