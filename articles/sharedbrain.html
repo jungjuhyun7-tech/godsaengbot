@@ -1,0 +1,186 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><style id="theme-css">
+:root{--card:#fff;--soft:#f7f8fa;--ink2:#111;--mu2:#4b5563;--ln2:#e5e7eb;--tint:#eff6ff;color-scheme:light}
+html[data-theme=dark]{color-scheme:dark;--bg:#121417;--card:#1c2026;--soft:#252a31;--al:#252a31;--ink:#eceef2;--ink2:#eceef2;--mu:#b8c0cc;--mu2:#b8c0cc;--ln:#3a414b;--ln2:#454d58;--a:#2a64d8;--tint:#1d2a40;--dk1e3a8a:#a9c4ff;--dk1e40af:#a9c4ff;--dk1d4ed8:#9cbcff;--dk2563eb:#8ab4ff;--dk555:#c2c8d0;--dk666:#b8c0cc;--dk8a6d3b:#e3c48f;--dk5a4a3a:#e6d3bd;--dk8a8580:#bdb7b0;--dknav:rgba(18,20,23,.92);--dksj:#8a5a12;--at:#8ab4ff;}
+html[data-theme=dark] body{background:var(--bg);color:var(--ink)}
+html[data-theme=dark] input,html[data-theme=dark] textarea,html[data-theme=dark] select{background:var(--soft)!important;color:var(--ink)!important;border-color:var(--ln2)!important}
+html[data-theme=dark] input::placeholder,html[data-theme=dark] textarea::placeholder{color:#9aa3af}
+html[data-theme=dark] img{filter:brightness(.92)}
+html[data-theme=dark] [style*="background:#fff"]{background:var(--card)!important}
+.thm{border:1px solid var(--ln2);background:var(--card);color:var(--ink);border-radius:999px;width:44px;height:44px;font-size:20px;margin-left:6px;box-shadow:0 1px 3px rgba(0,0,0,.25);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;padding:0;flex:none}
+.thm-fix{position:fixed;top:10px;right:10px;z-index:9999}
+html[data-theme=dark] footer,html[data-theme=dark] footer *{color:var(--mu)}html[data-theme=dark] footer a{color:var(--ink)}html[data-theme=dark] .thm{border-color:#5a6370}
+</style>
+<script>(function(){try{var t=localStorage.getItem('gsb-theme');if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="viewport" content="width=device-width,initial-scale=1"><title>봇끼리 같은 일을 반복하지 않게, 공유 두뇌 만들기 | 갓생봇 아티클</title><meta name="description" content="팀의 기억을 대화가 아닌 파일에 두는 방법이에요. 폴더 하나와 규칙 몇 줄이면 돼요."><link rel="canonical" href="https://xn--739an53af0c.com/articles/sharedbrain.html"><meta property="og:type" content="article"><meta property="og:site_name" content="갓생봇"><meta property="og:title" content="봇끼리 같은 일을 반복하지 않게, 공유 두뇌 만들기 | 갓생봇 아티클"><meta property="og:description" content="팀의 기억을 대화가 아닌 파일에 두는 방법이에요. 폴더 하나와 규칙 몇 줄이면 돼요."><meta property="og:url" content="https://xn--739an53af0c.com/articles/sharedbrain.html"><meta property="og:locale" content="ko_KR">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BQ28993CH3"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BQ28993CH3');</script>
+<style>:root{--a:#2563eb;--al:#f2f1ef;--ink:#0a0a0a;--mu:#526176;--ln:#ededed}*{box-sizing:border-box}body{margin:0;font-family:"Pretendard Variable",Pretendard,-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;color:var(--ink);word-break:keep-all;overflow-wrap:anywhere;line-height:1.75}a{color:var(--at,var(--a))}.w{max-width:760px;margin:0 auto;padding:0 16px}header{border-bottom:1px solid var(--ln)}header .w{height:56px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:800;font-size:19px;color:var(--ink);text-decoration:none}h1{font-size:26px;margin:32px 0 4px}.eff{color:var(--mu);font-size:14px;margin:0 0 24px}h2{font-size:17px;margin:28px 0 6px}p,li{font-size:15px}.box{background:var(--al);border-radius:12px;padding:14px 16px}footer{border-top:1px solid var(--ln);margin-top:40px;padding:20px 0 40px;font-size:12px;color:var(--mu)}footer a{color:var(--ink);margin-right:14px}</style><style>.logo{white-space:nowrap}.faq details{border:1px solid var(--ln);border-radius:12px;padding:10px 14px;margin:8px 0;background:var(--card,#fff)}.faq summary{font-weight:700;cursor:pointer}.faq p{margin:8px 0 0}.rtpl{margin-top:22px;border:2px solid var(--a);border-radius:14px;padding:12px 16px}.rtpl h2{margin:0 0 6px;font-size:17px}.cmp{border-collapse:collapse;width:100%;font-size:14px;margin:12px 0}.cmp th,.cmp td{border:1px solid var(--ln);padding:8px;text-align:left;vertical-align:top}.gl dt{font-weight:800;margin-top:14px}.gl dd{margin:4px 0 0}html[data-theme=dark] .faq details{background:var(--card);border-color:var(--ln2)}html[data-theme=dark] .cmp th,html[data-theme=dark] .cmp td{border-color:var(--ln2)}</style><style>.w{max-width:880px}header .w{gap:12px}.snav{display:flex;gap:12px;font-size:14px;align-items:center;flex-wrap:wrap;margin-left:auto}.snav a{color:var(--mu);text-decoration:none}.crumb{font-size:13px;color:var(--mu);margin:20px 0 0}.crumb a{color:var(--mu)}
+.tl{list-style:none;padding:0;margin:16px 0;display:grid;gap:10px}.tl li{border:1px solid var(--ln);border-radius:14px;padding:14px 16px;background:var(--card,#fff)}.tl h3{margin:0 0 4px;font-size:16px}.tl p{margin:4px 0;font-size:14px}.tl .pr{background:var(--al);border-radius:10px;padding:8px 10px;font-size:13px}.tl .mt{font-size:12px;color:var(--mu);display:flex;gap:10px;flex-wrap:wrap;align-items:center}.tl .mt a{color:var(--mu)}.tk{display:inline-block;background:var(--a);color:#fff!important;border-radius:10px;padding:6px 12px;font-weight:700;font-size:13px;text-decoration:none;margin-left:auto}
+.cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;padding:0;list-style:none}.cg a{display:block;border:1px solid var(--ln);border-radius:14px;padding:14px;text-decoration:none;color:var(--ink)}.cg small{display:block;color:var(--mu)}
+.art-tag{display:inline-block;background:var(--al);color:var(--mu);border-radius:999px;padding:2px 10px;font-size:12px;font-weight:700}.art-src{margin-top:22px;background:var(--al);border-radius:14px;padding:12px 16px;font-size:14px}.art-src h4{margin:0 0 4px}.ab h4{font-size:17px;margin:20px 0 6px}.nw{background:#e11d48;color:#fff;border-radius:6px;padding:1px 6px;font-size:11px;margin-left:6px}
+html[data-theme=dark] .tl li,html[data-theme=dark] .cg a{background:var(--card);border-color:var(--ln2)}html[data-theme=dark] .tl .pr,html[data-theme=dark] .art-src,html[data-theme=dark] .art-tag,html[data-theme=dark] .box{background:var(--soft);color:var(--ink)}html[data-theme=dark] .snav a,html[data-theme=dark] .crumb,html[data-theme=dark] .crumb a{color:var(--mu)}html[data-theme=dark] .logo{color:var(--ink)}html[data-theme=dark] a{--a:#8ab4ff}html[data-theme=dark] .tk{background:#2a64d8}</style><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7524554302252985" crossorigin="anonymous"></script><style id="gs-tags">html{scroll-padding-top:110px}[id]{scroll-margin-top:110px}.gnav{position:sticky;top:0;z-index:1000;height:44px;background:rgba(22,22,23,.82);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(255,255,255,.08)}.gnav-in{max-width:1024px;margin:0 auto;height:44px;padding:0 22px;display:flex;align-items:center;justify-content:space-between;gap:18px;overflow-x:auto;white-space:nowrap;scrollbar-width:none;font-size:12.5px;letter-spacing:-.01em}.gnav-in::-webkit-scrollbar{display:none}.gnav a{color:rgba(255,255,255,.82);text-decoration:none;flex:0 0 auto;transition:color .2s}.gnav a:hover{color:#fff}.gnav-logo{display:flex;align-items:center;gap:6px;font-weight:700;color:#fff!important}.gnav-logo i{font-style:normal;display:inline-grid;place-items:center;width:20px;height:20px;border-radius:6px;background:#2563eb;color:#fff;font-size:12px}header{position:relative!important;top:auto!important;z-index:5!important}body:not(.gs-home) header{display:none!important}.jbar{top:44px!important}.jump .jseg{order:-1!important;margin-left:0!important;margin-right:6px!important}.gtags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.gtag{display:inline-block;padding:3px 10px;border-radius:999px;background:#eef2ff;color:#2563eb;font-size:13px;text-decoration:none;border:1px solid #dbe4ff;cursor:pointer}.gtag.on{background:#2563eb;color:#fff}.gfilter{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 18px}.jx.gart{font-weight:600}@media(max-width:640px){header{height:auto!important}header .top{height:auto!important;min-height:53px;flex-wrap:wrap!important;row-gap:6px;padding-top:8px;padding-bottom:8px}header .earth{display:inline-block!important;position:static!important;order:10;margin:0!important;transform:none!important}header{margin-bottom:0!important}header .top{padding-bottom:4px!important}.jbar{top:44px!important;margin-top:0!important}.gnav-in{justify-content:flex-start;padding:0 14px;gap:16px;font-size:13px}}</style><meta property="og:image" content="https://xn--739an53af0c.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://xn--739an53af0c.com/og.png">
+<meta name="twitter:title" content="봇끼리 같은 일을 반복하지 않게, 공유 두뇌 만들기 | 갓생봇 아티클">
+<meta name="twitter:description" content="팀의 기억을 대화가 아닌 파일에 두는 방법이에요. 폴더 하나와 규칙 몇 줄이면 돼요.">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><style>.gnav-ico{width:20px;height:20px;margin-right:6px;vertical-align:middle;border-radius:50%;box-shadow:0 0 0 1.5px #fff}</style><style id="nav2">.gnav{background:rgba(248,250,255,.92)!important;border-bottom:1px solid rgba(0,0,0,.08)!important;height:48px!important}.gnav[data-home] .gnav-logo{display:none!important}.gnav a.gnav-logo::after{display:none}.gnav-in{max-width:1180px!important;height:48px!important;justify-content:space-between!important;gap:0!important;padding:0 60px!important;font-size:14px!important}.gnav a{color:#1d1d1f!important;font-weight:600;position:relative;padding:14px 2px}.gnav a::after{content:"";position:absolute;left:0;right:0;bottom:6px;height:2px;border-radius:2px;background:#2563eb;transform:scaleX(0);transition:transform .2s}.gnav a:hover{color:#2563eb!important}.gnav a:hover::after,.gnav a.on::after{transform:scaleX(1)}.gnav a.on{color:#2563eb!important}html[data-theme=dark] .gnav{background:rgba(22,22,23,.9)!important;border-bottom-color:rgba(255,255,255,.08)!important}html[data-theme=dark] .gnav a{color:rgba(255,255,255,.86)!important}html[data-theme=dark] .gnav a:hover,html[data-theme=dark] .gnav a.on{color:#7aa2ff!important}@media(max-width:760px){.gnav-in{justify-content:flex-start!important;gap:22px!important;padding:0 18px!important}}@media(max-width:640px){.gbn{margin:8px auto 12px!important}.gbn-in{padding:12px 14px!important;gap:10px!important;border-radius:14px!important}.gbn-t small{font-size:10px!important;padding:1px 8px!important}.gbn-t b{font-size:15px!important;line-height:1.3!important;margin:4px 0 2px!important}.gbn-t p{display:none!important}.gbn-b{padding:8px 12px!important;font-size:13px!important;min-height:36px!important;border-radius:10px!important}}</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"봇끼리 같은 일을 반복하지 않게, 공유 두뇌 만들기","description":"팀의 기억을 대화가 아닌 파일에 두는 방법이에요. 폴더 하나와 규칙 몇 줄이면 돼요.","inLanguage":"ko","mainEntityOfPage":"https://xn--739an53af0c.com/articles/sharedbrain.html","url":"https://xn--739an53af0c.com/articles/sharedbrain.html","image":"https://xn--739an53af0c.com/og.png","author":{"@type":"Organization","name":"갓생봇","url":"https://xn--739an53af0c.com/"},"publisher":{"@type":"Organization","name":"갓생봇","logo":{"@type":"ImageObject","url":"https://xn--739an53af0c.com/icon-512.png"}},"datePublished":"2026-11-12"}</script><meta name="naver-site-verification" content="692fc2c4b7d30269f666acc077b118d81edc214e" /><style id="gs-supporttab-css">
+#gs-gnav a[href="/support/"]{flex:0 0 auto}
+</style>
+<style id="gs-menupad-css">
+@media(max-width:760px){
+  #gs-gnav{display:flex;align-items:center}
+  #gs-gnav .gnav-in{flex:1 1 auto;min-width:0;overflow-x:auto!important;overflow-y:hidden!important;-webkit-overflow-scrolling:touch;padding:0 28px 0 18px!important;-webkit-mask-image:linear-gradient(to right,#000 0,#000 calc(100% - 16px),transparent 100%);mask-image:linear-gradient(to right,#000 0,#000 calc(100% - 16px),transparent 100%)}
+  #gs-gnav>.thm{position:static!important;flex:none;width:44px;height:44px;min-width:44px;margin:0 8px!important;box-shadow:none!important;z-index:2}
+}
+</style>
+<style id="gs-menuicons-css">
+/* Lucian Icons v2.0.13 | MIT (c) 2026 Lucian | https://lucianlabs.dev/icons/ */
+@media(max-width:760px){
+  #gs-gnav .gnav-in>a:not(.gnav-logo){display:inline-flex;align-items:center;gap:5px}
+  #gs-gnav .gs-navico{display:inline-flex;align-items:center;justify-content:center;flex:none;width:15px;height:15px;pointer-events:none;color:inherit}
+  #gs-gnav .gs-navico lucian-grid,
+  #gs-gnav .gs-navico lucian-newspaper,
+  #gs-gnav .gs-navico lucian-graduation,
+  #gs-gnav .gs-navico lucian-document,
+  #gs-gnav .gs-navico lucian-layers,
+  #gs-gnav .gs-navico lucian-chat,
+  #gs-gnav .gs-navico lucian-calendar,
+  #gs-gnav .gs-navico lucian-clipboard,
+  #gs-gnav .gs-navico lucian-dice,
+  #gs-gnav .gs-navico lucian-star,
+  #gs-gnav .gs-navico lucian-book,
+  #gs-gnav .gs-navico lucian-compass,
+  #gs-gnav .gs-navico lucian-heart{width:15px;height:15px;display:block;pointer-events:none;color:inherit}
+  #gs-gnav .gs-navlbl{flex:none}
+}
+@media(min-width:761px){
+  #gs-gnav .gs-navico{display:none!important}
+}
+</style>
+</head><body>
+<header><div class="w"><a class="logo" href="/">갓생봇</a><nav class="snav"><a href="/templates/">템플릿</a><a href="/articles/">아티클</a><a href="/glossary.html">용어</a><a href="/test.html">테스트</a><a href="/pick.html">뽑기</a><a href="/saju.html">사주</a></nav></div></header><nav data-nav2="1" class="gnav" id="gs-gnav" aria-label="갓생봇 메뉴"><div class="gnav-in"><a class="gnav-logo" href="/" aria-label="갓생봇 홈"><img class="gnav-ico" src="/icon-192.png" alt="" width="20" height="20"><i>갓</i><span>갓생봇</span></a><a href="/#s-all">전체 보기</a><a href="/#s-news">새 소식</a><a href="/#s-learn">배우기</a><a href="/articles/">아티클</a><a href="/templates/">템플릿</a><a href="/prompts/">프롬프트</a><a href="/weekly/">이번 주</a><a href="/test.html">테스트</a><a href="/pick.html">뽑기</a><a href="/saju.html">사주</a><a href="/glossary.html">용어</a><a href="/guide/">Grok 가이드</a><a href="/support/">응원하기</a></div></nav><main class="w"><p class="crumb"><a href="/">홈</a> &gt; <a href="/articles/">아티클</a></p><article class="ab"><span class="art-tag">메모리</span><h1>봇끼리 같은 일을 반복하지 않게, 공유 두뇌 만들기</h1><div class="gtags"><a class="gtag" data-tag="memory" href="/articles/tag/memory.html">#기억</a><a class="gtag" data-tag="team" href="/articles/tag/team.html">#팀</a></div><small class="art-d">2026. 11. 12</small><p>봇이 여러 개가 되면 이런 일이 생겨요. 다른 봇이 이미 한 일을 또 하고, 다른 봇이 정한 결정을 모르고, 대화가 끝나면 배운 게 쌓이지 않아요. @Yarilo7brigada는 이 문제를 "공유 두뇌(Shared Brain)"라는 폴더로 풀었어요.</p>
+<h4>왜 생길까</h4>
+<p>글쓴이 설명대로 Grok Bot은 봇마다 기억과 대화가 따로예요. 대신 같은 계정의 봇들은 컴퓨터 하나를 같이 써요. 그래서 다른 봇도 알아야 하는 것은 대화가 아니라 파일에 적어야 해요. 그룹 채팅으로 해결하려 하면 사용량이 많이 들고 봇이 늘수록 버거워진다고 해요.</p>
+<h4>만드는 법</h4>
+<ul><li>공용 작업 폴더 안에 brain 폴더를 만들고, 팀의 핵심 문서 brain.md를 둬요.</li>
+<li>규칙은 "읽고, 일하고, 다시 적는다". 일을 시작하기 전에 brain.md를 읽고, 끝나면 관련 파일과 작업 기록(log.md)에 적어요.</li>
+<li>이미 기록된 일은 다시 하지 않고, 헷갈리면 파일부터 보고 그다음에 물어봐요.</li>
+<li>규칙은 봇 설명(항상 읽는 곳)과 rules.md(필요할 때 읽는 곳) 두 군데에 둬요.</li></ul>
+<h4>정말 읽었는지 확인하기</h4>
+<p>가장 흔한 실패는 봇이 공유 두뇌를 무시하는 거예요. 글쓴이는 답장 첫머리에 이번 일과 관련된 brain.md 내용을 2~3개 말하게 하고, 일을 마치면 "무엇을 두뇌에 더했고 왜 중요한지" 말하게 하라고 해요. log.md가 갱신됐는지 조용히 확인하는 루틴도 추천했어요. 루틴은 "바뀐 게 없으면 조용히" 규칙이 있는 것만 두라고 했어요.</p>
+<p>창구는 비서실장(Chief of Staff) 봇 하나로 두고, 나는 그 봇과만 이야기하는 구조예요. 오늘 폴더를 만들고, 내일 비서실장이 답하기 전에 brain.md를 읽는지 확인해 보세요. 그러면 이미 작동하는 거예요.</p><div class="art-src"><h4>출처</h4><ul><li><a href="https://x.com/Yarilo7brigada/status/2113938858874470436" target="_blank" rel="noopener">@Yarilo7brigada, Shared Brain (X 아티클)</a></li></ul><p>원문을 요약하고 우리 말로 다시 쓴 글이에요. 원문 저작권은 각 글쓴이에게 있어요.</p></div></article><p><a href="/articles/">다른 아티클 보기</a> | <a href="/templates/">템플릿 모음 보기</a></p></main><footer class="w"><p><a href="/">홈</a><a href="/about.html">소개</a><a href="/templates/">템플릿 모음</a><a href="/articles/">아티클</a><a href="/glossary.html">용어 사전</a><a href="/prompts/">프롬프트 모음</a><a href="/weekly/">이번 주 새 봇</a><a href="/support/">응원하기</a><a href="/#feedback">의견 보내기</a><a href="/privacy.html">개인정보처리방침</a><a href="/terms.html">이용약관</a></p><p>갓생봇 | 대표자 : Jason Jung | 개인 운영 (사업자등록번호 없음) | 문의 : <a href="mailto:aventus@mail.grokbot.com">aventus@mail.grokbot.com</a> | 호스팅 제공자 : GitHub, Inc. (GitHub Pages)</p><p>© 2026 갓생봇</p></footer><script>(function(){var d=document.documentElement,b=document.createElement('button');b.type='button';b.className='thm';function s(){var k=d.getAttribute('data-theme')==='dark';b.textContent=k?'\u2600\uFE0F':'\uD83C\uDF19';b.setAttribute('aria-label',k?'밝게 보기':'어둡게 보기');b.title=b.getAttribute('aria-label')}b.onclick=function(){var n=d.getAttribute('data-theme')==='dark'?'light':'dark';d.setAttribute('data-theme',n);try{localStorage.setItem('gsb-theme',n)}catch(e){}s()};s();var h=document.querySelector('header .w')||document.querySelector('header');if(h){h.appendChild(b)}else{b.classList.add('thm-fix');document.body.appendChild(b)}try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(e){if(!localStorage.getItem('gsb-theme')){d.setAttribute('data-theme',e.matches?'dark':'light');s()}})}catch(e){}})();</script><style id="thm-mv-css">.gnav-in .thm{margin-left:0;flex:none;width:34px;height:34px;font-size:16px;box-shadow:none}@media(max-width:760px){.gnav-in .thm{position:sticky;right:0;width:44px;height:44px;min-width:44px;font-size:18px;margin-left:auto;box-shadow:-10px 0 10px -4px rgba(248,250,255,.95)}html[data-theme=dark] .gnav-in .thm{box-shadow:-10px 0 10px -4px rgba(22,22,23,.95)}}</style><script id="thm-mv">(function(){function mv(){var b=document.querySelector('.thm'),g=document.querySelector('#gs-gnav .gnav-in');if(b&&g&&b.offsetWidth===0)g.appendChild(b)}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mv);else mv()})();</script><script id="gs-supporttab-js">(function(){
+  var KO='응원하기', EN='Support';
+  function isEn(){
+    var q=/[?&]lang=(en|ko)/.exec(location.search),s=null;
+    try{s=localStorage.getItem('gsb-lang')}catch(e){}
+    if(q)s=q[1];
+    if(s==='en'||document.documentElement.lang==='en')return true;
+    if(typeof L!=='undefined'&&L==='en')return true;
+    return false;
+  }
+  function apply(){
+    var a=document.querySelector('#gs-gnav a[href="/support/"]');
+    if(!a)return;
+    var want=isEn()?EN:KO;
+    var lab=a.querySelector('.gs-navlbl');
+    if(lab){if(lab.textContent!==want)lab.textContent=want;return}
+    if(a.textContent!==want)a.textContent=want;
+  }
+  function hook(){
+    if(typeof setL==='function'&&!setL._gsSupportTab){
+      var o=setL;
+      var w=function(){var r=o.apply(this,arguments);apply();return r};
+      w._gsSupportTab=1;
+      setL=window.setL=w;
+    }
+    apply();
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',function(){hook();setTimeout(apply,0);setTimeout(apply,60)});
+  else{hook();setTimeout(apply,0);setTimeout(apply,60)}
+})();</script>
+<script id="gs-menupad-js">(function(){
+  function place(){
+    var b=document.querySelector('.thm');
+    var nav=document.querySelector('#gs-gnav');
+    var inn=nav&&nav.querySelector('.gnav-in');
+    if(!b||!nav||!inn)return;
+    if(!nav.contains(b))return;
+    var mobile=window.matchMedia('(max-width:760px)').matches;
+    if(mobile){
+      if(b.parentNode!==nav)nav.appendChild(b);
+    }else if(b.parentNode!==inn)inn.appendChild(b);
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',place);
+  place();
+  setTimeout(place,0);
+  setTimeout(place,60);
+  window.addEventListener('resize',place);
+})();</script>
+<script type="module" id="gs-menuicons-js">
+/* Lucian Icons v2.0.13 | MIT (c) 2026 Lucian | https://lucianlabs.dev/icons/ */
+import '/vendor/lucian-icons/grid.js';
+import '/vendor/lucian-icons/newspaper.js';
+import '/vendor/lucian-icons/graduation.js';
+import '/vendor/lucian-icons/document.js';
+import '/vendor/lucian-icons/layers.js';
+import '/vendor/lucian-icons/chat.js';
+import '/vendor/lucian-icons/calendar.js';
+import '/vendor/lucian-icons/clipboard.js';
+import '/vendor/lucian-icons/dice.js';
+import '/vendor/lucian-icons/star.js';
+import '/vendor/lucian-icons/book.js';
+import '/vendor/lucian-icons/compass.js';
+import '/vendor/lucian-icons/heart.js';
+(function(){
+  var MAP={
+    '/#s-all':'grid',
+    '/#s-news':'newspaper',
+    '/#s-learn':'graduation',
+    '/articles/':'document',
+    '/templates/':'layers',
+    '/prompts/':'chat',
+    '/weekly/':'calendar',
+    '/test.html':'clipboard',
+    '/pick.html':'dice',
+    '/saju.html':'star',
+    '/glossary.html':'book',
+    '/guide/':'compass',
+    '/support/':'heart'
+  };
+  function decorate(){
+    var inn=document.querySelector('#gs-gnav .gnav-in');
+    if(!inn)return;
+    inn.querySelectorAll(':scope > a[href]').forEach(function(a){
+      if(a.classList.contains('gnav-logo'))return;
+      var id=MAP[a.getAttribute('href')||''];
+      if(!id)return;
+      var ico=a.querySelector(':scope > .gs-navico');
+      var lbl=a.querySelector(':scope > .gs-navlbl');
+      if(!lbl){
+        lbl=document.createElement('span');
+        lbl.className='gs-navlbl';
+        Array.from(a.childNodes).forEach(function(n){
+          if(n.nodeType===1&&n.classList.contains('gs-navico'))return;
+          lbl.appendChild(n);
+        });
+        a.appendChild(lbl);
+      }
+      if(!ico){
+        ico=document.createElement('span');
+        ico.className='gs-navico';
+        ico.setAttribute('aria-hidden','true');
+        var el=document.createElement('lucian-'+id);
+        el.setAttribute('tone','line');
+        el.setAttribute('size','15');
+        el.setAttribute('animate','hover');
+        ico.appendChild(el);
+        a.insertBefore(ico,a.firstChild);
+      }
+    });
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',decorate);
+  else decorate();
+})();
+</script>
+</body></html>
