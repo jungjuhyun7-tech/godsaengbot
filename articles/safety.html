@@ -58,7 +58,47 @@ html[data-theme=dark] .tl li,html[data-theme=dark] .cg a{background:var(--card);
   #gs-gnav .gs-navico{display:none!important}
 }
 </style>
-</head><body>
+<style id="cp-box">
+.cp-box{margin:28px 0 8px;padding:16px 18px 18px;border:1px solid var(--ln,#ededed);border-radius:14px;background:var(--card,#fff)}
+.cp-h{margin:0 0 14px;font-size:17px;font-weight:800;letter-spacing:-.02em;color:var(--ink,#0a0a0a)}
+.cp-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cp-card{border:1px solid var(--ln,#ededed);border-radius:12px;background:var(--soft,#f7f8fa);overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.cp-ph{height:200px;padding:12px;box-sizing:border-box;background:#f3f4f6;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.cp-ph img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block}
+.cp-info{padding:12px 14px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.cp-n{font-size:14px;font-weight:700;color:var(--ink,#0a0a0a);line-height:1.4}
+.cp-note{margin:0;font-size:13px;color:var(--mu,#526176);line-height:1.5}
+.cp-btn{display:inline-flex;align-items:center;justify-content:center;margin-top:auto;background:var(--a,#2563eb);color:#fff!important;text-decoration:none;border-radius:10px;padding:8px 12px;font-size:13px;font-weight:700;align-self:flex-start}
+.cp-btn:hover{background:#1d4ed8}
+.cp-disc{margin:0 0 24px;font-size:12px;color:var(--mu,#526176);line-height:1.55}
+html[data-theme=dark] .cp-box{background:var(--card);border-color:var(--ln2)}
+html[data-theme=dark] .cp-card{background:var(--soft);border-color:var(--ln2)}
+html[data-theme=dark] .cp-ph{background:#2a2f36}
+html[data-theme=dark] .cp-h,html[data-theme=dark] .cp-n{color:var(--ink)}
+html[data-theme=dark] .cp-btn:hover{background:#2a64d8}
+.dim{z-index:2000}
+.md .cp-box{margin:16px 0 6px;padding:12px}
+.md .cp-h{font-size:15px;margin-bottom:10px}
+.md .cp-grid{grid-template-columns:1fr;gap:8px}
+.md .cp-card{flex-direction:row;align-items:center}
+.md .cp-ph{width:88px;height:88px;min-height:88px;flex:none;margin:8px 0 8px 8px;border-radius:10px;padding:6px;box-sizing:border-box;display:flex;align-items:center;justify-content:center}
+.md .cp-info{padding:10px 12px;justify-content:center}
+.md .cp-n{font-size:13px}
+.md .cp-note{font-size:12px}
+.md .cp-btn{padding:6px 10px;font-size:12px;margin-top:4px}
+.md .cp-disc{margin:0 0 2px}
+@media(max-width:560px){
+  .cp-grid{grid-template-columns:1fr;gap:10px}
+  .cp-box{margin:16px 0 8px;padding:12px}
+  .cp-h{margin-bottom:10px}
+  .cp-ph{height:200px}
+  .cp-info{padding:10px 12px 12px}
+  .cp-btn{min-height:44px;padding:10px 14px}
+  .md .cp-card{flex-direction:row;align-items:center}
+  .md .cp-ph{width:80px;height:80px;min-height:80px}
+  .md .cp-btn{min-height:44px;padding:10px 14px;font-size:13px}
+}
+</style></head><body>
 <header><div class="w"><a class="logo" href="/">갓생봇</a><nav class="snav"><a href="/templates/">템플릿</a><a href="/articles/">아티클</a><a href="/glossary.html">용어</a><a href="/test.html">테스트</a><a href="/pick.html">뽑기</a><a href="/saju.html">사주</a></nav></div></header><nav data-nav2="1" class="gnav" id="gs-gnav" aria-label="갓생봇 메뉴"><div class="gnav-in"><a class="gnav-logo" href="/" aria-label="갓생봇 홈"><img class="gnav-ico" src="/icon-192.png" alt="" width="20" height="20"><i>갓</i><span>갓생봇</span></a><a href="/#s-all">전체 보기</a><a href="/#s-news">새 소식</a><a href="/#s-learn">배우기</a><a href="/articles/">아티클</a><a href="/templates/">템플릿</a><a href="/prompts/">프롬프트</a><a href="/weekly/">이번 주</a><a href="/test.html">테스트</a><a href="/pick.html">뽑기</a><a href="/saju.html">사주</a><a href="/glossary.html">용어</a><a href="/guide/">Grok 가이드</a><a href="/support/">응원하기</a></div></nav><main class="w"><p class="crumb"><a href="/">홈</a> &gt; <a href="/articles/">아티클</a></p><article class="ab"><span class="art-tag">안전</span><h1>승인 카드로 안전하게 쓰는 법</h1><small class="art-d">2026. 11. 06</small><p>Grok Bot은 되돌릴 수 없는 일, 예를 들어 보내기, 게시하기, 구매, 삭제 전에 내가 직접 허락했는지 먼저 확인해요. 애매하면 화면에 <b>승인 카드</b>를 띄우고, 내가 누를 때까지 기다려요.</p>
 <h4>알아 두면 좋은 동작</h4>
 <ul><li><b>거절하면 멈춰요.</b> 승인 카드를 거절하면 봇은 그 행동을 멈추고, 내가 새 메시지를 보내기 전까지 다시 시도하지 않아요.</li>
@@ -66,7 +106,7 @@ html[data-theme=dark] .tl li,html[data-theme=dark] .cg a{background:var(--card);
 <li><b>규칙으로 정할 수 있어요.</b> 설정의 권한(Permissions) 메뉴에서 "항상 묻기"와 "묻지 않고 허용" 규칙을 직접 추가할 수 있고, 봇이 카드로 규칙 변경을 제안하기도 해요.</li>
 <li><b>루틴에서 보내는 메일은 초안으로.</b> 내가 직접 말로 시킨 발송은 검토를 통과하면 나가지만, 루틴처럼 자동으로 도는 차례의 발송은 초안으로 남아 내 확인을 기다려요.</li>
 <li><b>결제는 항상 내 허락.</b> Vault의 결제 탭에서 기본 결제 수단을 정해 둬도, 구매는 매번 내가 승인해요.</li></ul>
-<p>팁: 비밀번호나 인증 코드는 채팅에 쓰지 말고, 봇이 띄우는 보안 입력 창(Secure Form)이나 Vault를 쓰세요.</p><div class="art-src"><h4>출처</h4><ul><li><a href="https://x.ai/changelog/bot" target="_blank" rel="noopener">x.ai Grok Bot 변경 기록 v0.70.2, v0.75.5, v0.75.8, v0.77.0 (공식)</a></li></ul><p>원문을 요약하고 우리 말로 다시 쓴 글이에요. 원문 저작권은 각 글쓴이에게 있어요.</p></div></article><p><a href="/articles/">다른 아티클 보기</a> | <a href="/templates/">템플릿 모음 보기</a></p></main><footer class="w"><p><a href="/">홈</a><a href="/about.html">소개</a><a href="/templates/">템플릿 모음</a><a href="/articles/">아티클</a><a href="/glossary.html">용어 사전</a><a href="/prompts/">프롬프트 모음</a><a href="/weekly/">이번 주 새 봇</a><a href="/support/">응원하기</a><a href="/#feedback">의견 보내기</a><a href="/privacy.html">개인정보처리방침</a><a href="/terms.html">이용약관</a></p><p>갓생봇 | 대표자 : Jason Jung | 개인 운영 (사업자등록번호 없음) | 문의 : <a href="mailto:aventus@mail.grokbot.com">aventus@mail.grokbot.com</a> | 호스팅 제공자 : GitHub, Inc. (GitHub Pages)</p><p>© 2026 갓생봇</p></footer><script>(function(){var d=document.documentElement,b=document.createElement('button');b.type='button';b.className='thm';function s(){var k=d.getAttribute('data-theme')==='dark';b.textContent=k?'\u2600\uFE0F':'\uD83C\uDF19';b.setAttribute('aria-label',k?'밝게 보기':'어둡게 보기');b.title=b.getAttribute('aria-label')}b.onclick=function(){var n=d.getAttribute('data-theme')==='dark'?'light':'dark';d.setAttribute('data-theme',n);try{localStorage.setItem('gsb-theme',n)}catch(e){}s()};s();var h=document.querySelector('header .w')||document.querySelector('header');if(h){h.appendChild(b)}else{b.classList.add('thm-fix');document.body.appendChild(b)}try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(e){if(!localStorage.getItem('gsb-theme')){d.setAttribute('data-theme',e.matches?'dark':'light');s()}})}catch(e){}})();</script><style id="thm-mv-css">.gnav-in .thm{margin-left:0;flex:none;width:34px;height:34px;font-size:16px;box-shadow:none}@media(max-width:760px){.gnav-in .thm{position:sticky;right:0;width:44px;height:44px;min-width:44px;font-size:18px;margin-left:auto;box-shadow:-10px 0 10px -4px rgba(248,250,255,.95)}html[data-theme=dark] .gnav-in .thm{box-shadow:-10px 0 10px -4px rgba(22,22,23,.95)}}</style><script id="thm-mv">(function(){function mv(){var b=document.querySelector('.thm'),g=document.querySelector('#gs-gnav .gnav-in');if(b&&g&&b.offsetWidth===0)g.appendChild(b)}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mv);else mv()})();</script><script id="gs-supporttab-js">(function(){
+<p>팁: 비밀번호나 인증 코드는 채팅에 쓰지 말고, 봇이 띄우는 보안 입력 창(Secure Form)이나 Vault를 쓰세요.</p><div class="art-src"><h4>출처</h4><ul><li><a href="https://x.ai/changelog/bot" target="_blank" rel="noopener">x.ai Grok Bot 변경 기록 v0.70.2, v0.75.5, v0.75.8, v0.77.0 (공식)</a></li></ul><p>원문을 요약하고 우리 말로 다시 쓴 글이에요. 원문 저작권은 각 글쓴이에게 있어요.</p></div></article><!--artcp--><aside class="cp-box" aria-label="이 글과 함께 쓰면 좋은 물건"><h2 class="cp-h">이 글과 함께 쓰면 좋은 물건</h2><div class="cp-grid"><div class="cp-card"><a class="cp-ph" href="https://link.coupang.com/a/iyw9JtLuKq" target="_blank" rel="sponsored noopener"><img src="https://thumbnail3.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/2024/3124ec32b164c8e2100fb7f273a7c9f37e68e1f162ead7b26659df9a04dd.jpg" alt="2027 온어데이 위클리 다이어리" width="212" height="212" loading="lazy" decoding="async"></a><div class="cp-info"><strong class="cp-n">2027 온어데이 위클리 다이어리</strong><p class="cp-note">한 주 계획을 한눈에 적어 두기 좋아요.</p><a class="cp-btn" href="https://link.coupang.com/a/iyw9JtLuKq" target="_blank" rel="sponsored noopener">쿠팡에서 보기</a></div></div><div class="cp-card"><a class="cp-ph" href="https://link.coupang.com/a/iyxaLo0g9c" target="_blank" rel="sponsored noopener"><img src="https://thumbnail9.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/6850755517283728-85c67df6-2eb0-46d3-8c72-742392d7b449.png" alt="홈플래닛 접이식 노트북 거치대" width="212" height="212" loading="lazy" decoding="async"></a><div class="cp-info"><strong class="cp-n">홈플래닛 접이식 노트북 거치대</strong><p class="cp-note">화면을 눈높이에 맞춰 쓰기 좋아요.</p><a class="cp-btn" href="https://link.coupang.com/a/iyxaLo0g9c" target="_blank" rel="sponsored noopener">쿠팡에서 보기</a></div></div></div></aside><p class="cp-disc">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p><!--/artcp--><p><a href="/articles/">다른 아티클 보기</a> | <a href="/templates/">템플릿 모음 보기</a></p></main><footer class="w"><p><a href="/">홈</a><a href="/about.html">소개</a><a href="/templates/">템플릿 모음</a><a href="/articles/">아티클</a><a href="/glossary.html">용어 사전</a><a href="/prompts/">프롬프트 모음</a><a href="/weekly/">이번 주 새 봇</a><a href="/support/">응원하기</a><a href="/#feedback">의견 보내기</a><a href="/privacy.html">개인정보처리방침</a><a href="/terms.html">이용약관</a></p><p>갓생봇 | 대표자 : Jason Jung | 개인 운영 (사업자등록번호 없음) | 문의 : <a href="mailto:aventus@mail.grokbot.com">aventus@mail.grokbot.com</a> | 호스팅 제공자 : GitHub, Inc. (GitHub Pages)</p><p>© 2026 갓생봇</p></footer><script>(function(){var d=document.documentElement,b=document.createElement('button');b.type='button';b.className='thm';function s(){var k=d.getAttribute('data-theme')==='dark';b.textContent=k?'\u2600\uFE0F':'\uD83C\uDF19';b.setAttribute('aria-label',k?'밝게 보기':'어둡게 보기');b.title=b.getAttribute('aria-label')}b.onclick=function(){var n=d.getAttribute('data-theme')==='dark'?'light':'dark';d.setAttribute('data-theme',n);try{localStorage.setItem('gsb-theme',n)}catch(e){}s()};s();var h=document.querySelector('header .w')||document.querySelector('header');if(h){h.appendChild(b)}else{b.classList.add('thm-fix');document.body.appendChild(b)}try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(e){if(!localStorage.getItem('gsb-theme')){d.setAttribute('data-theme',e.matches?'dark':'light');s()}})}catch(e){}})();</script><style id="thm-mv-css">.gnav-in .thm{margin-left:0;flex:none;width:34px;height:34px;font-size:16px;box-shadow:none}@media(max-width:760px){.gnav-in .thm{position:sticky;right:0;width:44px;height:44px;min-width:44px;font-size:18px;margin-left:auto;box-shadow:-10px 0 10px -4px rgba(248,250,255,.95)}html[data-theme=dark] .gnav-in .thm{box-shadow:-10px 0 10px -4px rgba(22,22,23,.95)}}</style><script id="thm-mv">(function(){function mv(){var b=document.querySelector('.thm'),g=document.querySelector('#gs-gnav .gnav-in');if(b&&g&&b.offsetWidth===0)g.appendChild(b)}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mv);else mv()})();</script><script id="gs-supporttab-js">(function(){
   var KO='응원하기', EN='Support';
   function isEn(){
     var q=/[?&]lang=(en|ko)/.exec(location.search),s=null;
