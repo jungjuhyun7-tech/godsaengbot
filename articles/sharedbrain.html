@@ -99,7 +99,7 @@ html[data-theme=dark] .cp-btn:hover{background:#2a64d8}
   .md .cp-btn{min-height:44px;padding:10px 14px;font-size:13px}
 }
 </style></head><body>
-<header><div class="w"><a class="logo" href="/">갓생봇</a><nav class="snav"><a href="/templates/">템플릿</a><a href="/articles/">아티클</a><a href="/glossary.html">용어</a><a href="/test.html">테스트</a><a href="/pick.html">뽑기</a><a href="/saju.html">사주</a></nav></div></header><nav data-nav2="1" class="gnav" id="gs-gnav" aria-label="갓생봇 메뉴"><div class="gnav-in"><a class="gnav-logo" href="/" aria-label="갓생봇 홈"><img class="gnav-ico" src="/icon-192.png" alt="" width="20" height="20"><i>갓</i><span>갓생봇</span></a><a href="/#s-all">전체 보기</a><a href="/#s-news">새 소식</a><a href="/#s-learn">배우기</a><a href="/articles/">아티클</a><a href="/templates/">템플릿</a><a href="/prompts/">프롬프트</a><a href="/weekly/">이번 주</a><a href="/test.html">테스트</a><a href="/pick.html">뽑기</a><a href="/saju.html">사주</a><a href="/glossary.html">용어</a><a href="/guide/">Grok 가이드</a><a href="/support/">응원하기</a></div></nav><main class="w"><p class="crumb"><a href="/">홈</a> &gt; <a href="/articles/">아티클</a></p><article class="ab"><span class="art-tag">메모리</span><h1>봇끼리 같은 일을 반복하지 않게, 공유 두뇌 만들기</h1><div class="gtags"><a class="gtag" data-tag="memory" href="/articles/tag/memory.html">#기억</a><a class="gtag" data-tag="team" href="/articles/tag/team.html">#팀</a></div><small class="art-d">2026. 11. 12</small><p>봇이 여러 개가 되면 이런 일이 생겨요. 다른 봇이 이미 한 일을 또 하고, 다른 봇이 정한 결정을 모르고, 대화가 끝나면 배운 게 쌓이지 않아요. @Yarilo7brigada는 이 문제를 "공유 두뇌(Shared Brain)"라는 폴더로 풀었어요.</p>
+<header><div class="w"><a class="logo" href="/">갓생봇</a><nav class="snav"><a href="/templates/">템플릿</a><a href="/articles/">아티클</a><a href="/glossary.html">용어</a><a href="/test.html">테스트</a><a href="/pick.html">뽑기</a><a href="/saju.html">사주</a></nav></div></header><nav data-nav2="1" class="gnav" id="gs-gnav" aria-label="갓생봇 메뉴"><div class="gnav-in"><a class="gnav-logo" href="/" aria-label="갓생봇 홈"><img class="gnav-ico" src="/icon-192.png" alt="" width="20" height="20"><i>갓</i><span>갓생봇</span></a><a href="/#s-all">전체 보기</a><a href="/#s-news">새 소식</a><a href="/#s-learn">배우기</a><a href="/articles/">아티클</a><a href="/templates/">템플릿</a><a href="/prompts/grok-bot-direct.html">프롬프트</a><a href="/weekly/">이번 주</a><a href="/test.html">테스트</a><a href="/pick.html">뽑기</a><a href="/saju.html">사주</a><a href="/glossary.html">용어</a><a href="/guide/">Grok 가이드</a><a href="/support/">응원하기</a></div></nav><main class="w"><p class="crumb"><a href="/">홈</a> &gt; <a href="/articles/">아티클</a></p><article class="ab"><span class="art-tag">메모리</span><h1>봇끼리 같은 일을 반복하지 않게, 공유 두뇌 만들기</h1><div class="gtags"><a class="gtag" data-tag="memory" href="/articles/tag/memory.html">#기억</a><a class="gtag" data-tag="team" href="/articles/tag/team.html">#팀</a></div><small class="art-d">2026. 11. 12</small><p>봇이 여러 개가 되면 이런 일이 생겨요. 다른 봇이 이미 한 일을 또 하고, 다른 봇이 정한 결정을 모르고, 대화가 끝나면 배운 게 쌓이지 않아요. @Yarilo7brigada는 이 문제를 "공유 두뇌(Shared Brain)"라는 폴더로 풀었어요.</p>
 <h4>왜 생길까</h4>
 <p>글쓴이 설명대로 Grok Bot은 봇마다 기억과 대화가 따로예요. 대신 같은 계정의 봇들은 컴퓨터 하나를 같이 써요. 그래서 다른 봇도 알아야 하는 것은 대화가 아니라 파일에 적어야 해요. 그룹 채팅으로 해결하려 하면 사용량이 많이 들고 봇이 늘수록 버거워진다고 해요.</p>
 <h4>만드는 법</h4>
@@ -179,7 +179,7 @@ import '/vendor/lucian-icons/heart.js';
     '/#s-learn':'graduation',
     '/articles/':'document',
     '/templates/':'layers',
-    '/prompts/':'chat',
+    '/prompts/':'chat','/prompts/grok-bot-direct.html':'chat',
     '/weekly/':'calendar',
     '/test.html':'clipboard',
     '/pick.html':'dice',
