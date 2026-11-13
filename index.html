@@ -951,6 +951,151 @@ html[data-theme=dark] #s-upd.gs-slot-aplus .v7-tile{
   border-color:var(--ln2,#3a3f46);
 }
 </style>
+<style id="gs-slot1row-css">
+#s-upd.gs-slot-1row .gs-slot-panel{
+  display:flex;
+  flex-direction:column;
+  box-sizing:border-box;
+  min-height:0;
+}
+#s-upd.gs-slot-1row .gx-head{
+  flex:none;
+  margin:0 0 6px;
+  gap:8px;
+}
+#s-upd.gs-slot-1row .gx-h{
+  font-size:16px;
+  line-height:1.2;
+  min-width:0;
+}
+#s-upd.gs-slot-1row .gx-all{
+  flex:none;
+  min-height:28px;
+  padding:0 10px;
+  font-size:12px;
+}
+#s-upd.gs-slot-1row .v7c-grid{
+  display:grid;
+  grid-template-columns:repeat(10, minmax(0,1fr));
+  gap:6px;
+  flex:1 1 auto;
+  min-height:0;
+  align-items:stretch;
+}
+#s-upd.gs-slot-1row .v7-tile{
+  padding:6px 4px;
+  gap:3px;
+  min-height:0;
+  min-width:0;
+  height:auto;
+  border-radius:12px;
+}
+#s-upd.gs-slot-1row .v7-tile i{
+  width:22px;
+  height:22px;
+  flex:none;
+}
+#s-upd.gs-slot-1row .v7-tile i svg{
+  width:14px;
+  height:14px;
+}
+#s-upd.gs-slot-1row .v7-tile span{
+  font-size:11px;
+  line-height:1.2;
+  -webkit-line-clamp:2;
+}
+#s-upd.gs-slot-1row.gs-slot-aplus .v7-tile:hover{
+  transform:translateY(-1px);
+}
+@media(max-width:640px){
+  #s-upd.gs-slot-1row .gs-slot-panel{
+    padding:10px 14px;
+  }
+  #s-upd.gs-slot-1row .gx-head{
+    margin:0 0 6px;
+    align-items:center;
+  }
+  #s-upd.gs-slot-1row .gx-h{
+    font-size:15px;
+    align-items:center;
+  }
+  #s-upd.gs-slot-1row .gs-slot-hico{
+    margin-top:0;
+  }
+  #s-upd.gs-slot-1row .v7c-grid{
+    display:flex;
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    overflow-y:hidden;
+    gap:6px;
+    align-items:stretch;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:thin;
+    padding-bottom:2px;
+    overscroll-behavior-x:contain;
+  }
+  #s-upd.gs-slot-1row .v7c-grid::-webkit-scrollbar{height:4px}
+  #s-upd.gs-slot-1row .v7c-grid::-webkit-scrollbar-thumb{
+    background:rgba(37,99,235,.35);
+    border-radius:999px;
+  }
+  #s-upd.gs-slot-1row .v7-tile{
+    flex:0 0 60px;
+    width:60px;
+    max-width:60px;
+  }
+  #s-upd.gs-slot-1row .v7-tile i{width:20px;height:20px}
+  #s-upd.gs-slot-1row .v7-tile i svg{width:13px;height:13px}
+  #s-upd.gs-slot-1row .v7-tile span{font-size:10px}
+}
+@media(prefers-reduced-motion:reduce){
+  #s-upd.gs-slot-1row.gs-slot-aplus .v7-tile:hover,
+  #s-upd.gs-slot-1row.gs-slot-aplus .v7-tile:active{transform:none}
+}
+</style>
+<style id="gs-guidesoft-b1-css">
+/* B1: soft tint in the same blue-violet family as the current banner
+   and the A+ slot, but much lighter and less saturated. Dark text. */
+#s-guide.gs-gbn-b1 .gbn-in{
+  color:#172554;
+  background:linear-gradient(120deg,#dbeafe 0%,#e0e7ff 55%,#ede9fe 100%);
+  box-shadow:0 8px 24px rgba(37,99,235,.08), inset 0 0 0 1px rgba(37,99,235,.16);
+}
+#s-guide.gs-gbn-b1 .gbn-t small{
+  background:#fff;
+  color:#1e40af;
+}
+#s-guide.gs-gbn-b1 .gbn-t b{
+  color:#172554;
+}
+#s-guide.gs-gbn-b1 .gbn-t p{
+  color:#1e3a8a;
+  opacity:1;
+}
+#s-guide.gs-gbn-b1 .gbn-b{
+  background:#2563eb;
+  color:#fff;
+}
+#s-guide.gs-gbn-b1 .gbn-in:hover .gbn-b,
+#s-guide.gs-gbn-b1 .gbn-in:focus-visible .gbn-b{
+  background:#1d4ed8;
+}
+html[data-theme=dark] #s-guide.gs-gbn-b1 .gbn-in{
+  color:#e8eefc;
+  background:linear-gradient(120deg,#1a2744 0%,#24315a 55%,#2a2450 100%);
+  box-shadow:inset 0 0 0 1px rgba(147,197,253,.28);
+}
+html[data-theme=dark] #s-guide.gs-gbn-b1 .gbn-t small{
+  background:rgba(255,255,255,.10);
+  color:#bfdbfe;
+}
+html[data-theme=dark] #s-guide.gs-gbn-b1 .gbn-t b{color:#e8eefc}
+html[data-theme=dark] #s-guide.gs-gbn-b1 .gbn-t p{color:#c7d2fe;opacity:1}
+html[data-theme=dark] #s-guide.gs-gbn-b1 .gbn-b{
+  background:#2563eb;
+  color:#fff;
+}
+</style>
 <style id="cp-box">
 .cp-box{margin:28px 0 8px;padding:16px 18px 18px;border:1px solid var(--ln,#ededed);border-radius:14px;background:var(--card,#fff)}
 .cp-h{margin:0 0 14px;font-size:17px;font-weight:800;letter-spacing:-.02em;color:var(--ink,#0a0a0a)}
@@ -995,8 +1140,8 @@ html[data-theme=dark] .cp-btn:hover{background:#2a64d8}
 <header><div class="w top"><a class="logo" href="/"><img class="gb" id="gb" src="/icon-192.png" alt="Grok Bot" width="28" height="28"><b class="gx">×</b><i>갓</i><span>갓생봇</span></a><a class="earth" href="https://www.spacex.com/mission/" target="_blank" rel="noopener" title="SpaceX Mission">Made on Earth by Grok Bot</a><nav><a class="hu" href="#howto" onclick="howto();return false" data-i="nhow">사용법</a><a href="#" class="subn" onclick="sbOpen();return false">템플릿 등록</a><a class="hm" href="#req" data-i="nreq">봇 요청</a><a class="hm" href="/guide/" target="_blank" data-i="nguide">Grok 가이드</a><button class="lang" onclick="setL(L==='ko'?'en':'ko')" id="lb">EN</button></nav></div></header><nav data-nav2="1" data-home="1" class="gnav" id="gs-gnav" aria-label="갓생봇 메뉴"><div class="gnav-in"><a class="gnav-logo" href="/" aria-label="갓생봇 홈"><img class="gnav-ico" src="/icon-192.png" alt="" width="20" height="20"><i>갓</i><span>갓생봇</span></a><a class="on" href="/#s-all" data-gs-ko="전체소식" data-gs-en="All updates">전체소식</a><a href="/templates/" data-gs-ko="템플릿" data-gs-en="Templates">템플릿</a><a href="/prompts/grok-bot-direct.html" data-gs-ko="에이전트 프롬프트" data-gs-en="Agent prompts">에이전트 프롬프트</a><a href="/articles/" data-gs-ko="아티클" data-gs-en="Articles">아티클</a><a href="/weekly/" data-gs-ko="이번주" data-gs-en="This week">이번주</a><a href="/test.html" data-gs-ko="갓생테스트" data-gs-en="Godsaeng test">갓생테스트</a><a href="/pick.html" data-gs-ko="가챠뽑기" data-gs-en="Gacha pick">가챠뽑기</a><a href="/saju.html" data-gs-ko="사주" data-gs-en="Saju">사주</a><a href="/glossary.html" data-gs-ko="용어" data-gs-en="Glossary">용어</a><a href="/guide/" data-gs-ko="그록가이드" data-gs-en="Grok guide">그록가이드</a><a href="/support/" data-gs-ko="응원하기" data-gs-en="Support us">응원하기</a></div></nav>
 <section class="w hero" id="s-hero"><div class="gwrap" id="gicon"><div class="gicon g-mascot" role="img" aria-label="Grok Bot"><span class="gch" data-name="purple" style="--l:49.2308%;--t:0.0000%;--w:21.1538%;--h:43.9024%;--z:0;--d:0s;--dur:2.7s;--hop:-5px;--r0:-10deg;--r1:-6deg"><span class="gch-in"><img src="/mascot/purple.png" alt=""></span></span><span class="gch" data-name="black" style="--l:11.5385%;--t:20.7317%;--w:20.9615%;--h:44.3089%;--z:1;--d:.22s;--dur:2.4s;--hop:-6px;--r0:0deg;--r1:3deg"><span class="gch-in"><img src="/mascot/black.png" alt=""></span></span><span class="gch" data-name="teal" style="--l:33.4615%;--t:22.7642%;--w:19.8077%;--h:43.9024%;--z:2;--d:.4s;--dur:2.2s;--hop:-4px;--r0:2deg;--r1:-2deg"><span class="gch-in"><img src="/mascot/teal.png" alt=""></span></span><span class="gch" data-name="blue" style="--l:63.2692%;--t:28.8618%;--w:21.3462%;--h:45.5285%;--z:3;--d:.55s;--dur:2.8s;--hop:-5px;--r0:8deg;--r1:12deg"><span class="gch-in"><img src="/mascot/blue.png" alt=""></span></span><span class="gch" data-name="gray" style="--l:68.4615%;--t:71.9512%;--w:10.7692%;--h:26.0163%;--z:4;--d:.1s;--dur:2.1s;--hop:-7px;--r0:8deg;--r1:14deg"><span class="gch-in"><img src="/mascot/gray.png" alt=""></span></span><span class="gch" data-name="pink" style="--l:45.1923%;--t:49.1870%;--w:23.6538%;--h:49.5935%;--z:5;--d:.7s;--dur:2.5s;--hop:-6px;--r0:0deg;--r1:-3deg"><span class="gch-in"><img src="/mascot/pink.png" alt=""></span></span><span class="gch" data-name="brown" style="--l:79.4231%;--t:54.8780%;--w:20.5769%;--h:43.9024%;--z:6;--d:.85s;--dur:2.6s;--hop:-4px;--r0:6deg;--r1:2deg"><span class="gch-in"><img src="/mascot/brown.png" alt=""></span></span><span class="gch" data-name="gold" style="--l:21.5385%;--t:57.7236%;--w:23.2692%;--h:41.0569%;--z:7;--d:1s;--dur:2.3s;--hop:-5px;--r0:-2deg;--r1:2deg"><span class="gch-in"><img src="/mascot/gold.png" alt=""></span></span><span class="gch" data-name="orange" style="--l:0.1923%;--t:57.7236%;--w:21.5385%;--h:41.8699%;--z:8;--d:1.15s;--dur:2.9s;--hop:-6px;--r0:-8deg;--r1:-3deg"><span class="gch-in"><img src="/mascot/orange.png" alt=""></span></span></div></div><small data-i="kick">Grok Bot, 뮤즈, DOTS, 피클과 함께하는</small><h1 data-i="h1">갓생 사는 갓생봇의 플레이그라운드</h1><p data-i="sub">템플릿을 가져가거나, 문장을 복사해 바로 시켜 보세요.</p>
 <div class="sbar" id="sbar"><label class="search"><lucian-search tone="line" size="16" state="idle" animate="hover"></lucian-search><input id="q" type="search" autocomplete="off" oninput="pg=1;render();qdrop()" onkeydown="if(event.key==='Enter'&&!event.isComposing){event.preventDefault();qgo()}"></label><select class="sel" id="srt" onchange="pg=1;render()"><option value="0" data-i="o0">추천순</option><option value="1" data-i="o1">최신순</option></select></div><div id="qr" class="qr"></div></section><div data-jb2="1" class="jbar" id="jbar"><div class="w"><nav class="jump" id="jump"><div class="jg"><span class="gs-li-wrap" aria-hidden="true"><lucian-sparkle tone="line" size="14" animate="hover"></lucian-sparkle></span><em data-i="g1">추천받기</em><a class="p" href="#s-today" data-i="j1">오늘의 봇</a><a href="#s-test" data-i="j2">갓생 테스트</a><a href="#s-mbti" data-i="j3">MBTI 추천</a></div><div class="jg"><em data-i="g2">인기</em><a href="#s-rank" data-i="j4">이번 주 순위</a><a href="#r-pop" data-i="j6">인기 봇</a></div><div class="jg"><span class="gs-li-wrap" aria-hidden="true"><lucian-search tone="line" size="14" state="idle" animate="hover"></lucian-search></span><em data-i="g3">찾기</em><a href="#s-area" data-i="j7">챙기고 싶은 일</a></div></nav></div></div>
-<section class="w gbn" id="s-guide"><a class="gbn-in" href="/guide/" target="_blank" rel="noopener" onclick="if(window.gtag)gtag('event','guide_banner_click')"><div class="gbn-t"><small>Grok Bot 유저 가이드</small><b>Grok Bot에 대한 모든 것, 한 곳에서 배워요</b><p>처음 쓰는 분을 위한 한국어 유저 가이드, 실전 꿀팁, 유스케이스, 템플릿 모음이에요.</p></div><span class="gbn-b">가이드 보러 가기 →</span></a></section>
-<section class="w upd v7 v7c gs-slot gs-slot-aplus" id="s-upd"><div class="gs-slot-panel"><div class="gx-head"><h2 class="gx-h"><span class="gs-slot-hico" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2.6l1.05 3.2 3.35-.05-2.65 2.05.96 3.22L12 9.3 8.29 11.02l.96-3.22L6.6 5.75l3.35.05L12 2.6z"/><path d="M18.2 13.2l.7 2.12 2.22-.03-1.76 1.36.64 2.14-1.8-1.14-1.8 1.14.64-2.14-1.76-1.36 2.22.03.7-2.12z"/></svg></span><span data-gs-ko="에이전트에게 시켜 보기" data-gs-en="Ask your agent">에이전트에게 시켜 보기</span></h2><a class="gx-all" href="/prompts/grok-bot-direct.html"><span data-gs-ko="문장 110개 모두 보기" data-gs-en="See all 110 sentences">문장 110개 모두 보기</span> →</a></div><div class="v7c-grid"><a class="v7-tile v6-c-picks" href="/prompts/grok-bot-direct.html#cat-picks"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 3 15.09 8.26 21 9.27 17 13.97 17.91 20.02 12 17.27 6.09 20.02 7 13.97 3 9.27 8.91 8.26"/></svg></i><span data-gs-ko="추천" data-gs-en="Recommended">추천</span></a><a class="v7-tile v6-c-benefit" href="/prompts/grok-bot-direct.html#p-81"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6.5" rx="7" ry="2.7"/><path d="M5 6.5v3.7c0 1.5 3.13 2.7 7 2.7s7-1.2 7-2.7V6.5"/><path d="M5 10.2v3.6c0 1.5 3.13 2.7 7 2.7s7-1.2 7-2.7v-3.6"/><path d="M5 13.8v3.2c0 1.5 3.13 2.7 7 2.7s7-1.2 7-2.7v-3.2"/></svg></i><span data-gs-ko="혜택" data-gs-en="Benefits">혜택</span></a><a class="v7-tile v6-c-shop" href="/prompts/grok-bot-direct.html#p-86"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></i><span data-gs-ko="쇼핑" data-gs-en="Shopping">쇼핑</span></a><a class="v7-tile v6-c-travel" href="/prompts/grok-bot-direct.html#p-91"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.8 19.2 16 11l3.5-3.5a2.1 2.1 0 0 0-3-3L13 8 4.8 6.2c-.5-.1-.9.3-.8.8L6 13l-2.2 2.2c-.4.4-.1 1 .5 1.1l3.3.5 5.2-5.2 1.7 7.8c.1.5.7.6 1 .2z"/></svg></i><span data-gs-ko="여행" data-gs-en="Travel">여행</span></a><a class="v7-tile v6-c-people" href="/prompts/grok-bot-direct.html#p-96"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></i><span data-gs-ko="사람" data-gs-en="People">사람</span></a><a class="v7-tile v6-c-home" href="/prompts/grok-bot-direct.html#p-107"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11 12 4.5 20 11v8.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 19.5z"/><path d="M10 21v-6h4v6"/></svg></i><span data-gs-ko="집과 생활" data-gs-en="Home and living">집과 생활</span></a><a class="v7-tile v6-c-mail" href="/prompts/grok-bot-direct.html#p-17"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m3.5 8 8.5 6 8.5-6"/></svg></i><span data-gs-ko="답할 메일 초안" data-gs-en="Reply drafts">답할 메일 초안</span></a><a class="v7-tile v6-c-files" href="/prompts/grok-bot-direct.html#p-01"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18V6.5a2 2 0 0 1 2-2h3.17a2 2 0 0 1 1.42.59L11 6.5h8a2 2 0 0 1 2 2V18a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M3 10.5h18"/></svg></i><span data-gs-ko="다운로드 폴더 정리" data-gs-en="Download folder cleanup">다운로드 폴더 정리</span></a><a class="v7-tile v6-c-browse" href="/prompts/grok-bot-direct.html#p-09"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg></i><span data-gs-ko="출처 있는 제품 비교" data-gs-en="Sourced product compare">출처 있는 제품 비교</span></a><a class="v7-tile v6-c-social" href="/prompts/grok-bot-direct.html#p-33"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 8.5H9l7.5-4v15L9 15.5H4.5A1.5 1.5 0 0 1 3 14v-4a1.5 1.5 0 0 1 1.5-1.5z"/><path d="M19 9.5a3.25 3.25 0 0 1 0 5"/></svg></i><span data-gs-ko="소셜 글 초안" data-gs-en="Social post drafts">소셜 글 초안</span></a></div></div></section>
+<section class="w gbn gs-gbn-b1" id="s-guide"><a class="gbn-in" href="/guide/" target="_blank" rel="noopener" onclick="if(window.gtag)gtag('event','guide_banner_click')"><div class="gbn-t"><small>Grok Bot 유저 가이드</small><b>Grok Bot에 대한 모든 것, 한 곳에서 배워요</b><p>처음 쓰는 분을 위한 한국어 유저 가이드, 실전 꿀팁, 유스케이스, 템플릿 모음이에요.</p></div><span class="gbn-b">가이드 보러 가기 →</span></a></section>
+<section class="w upd v7 v7c gs-slot gs-slot-aplus gs-slot-1row" id="s-upd"><div class="gs-slot-panel"><div class="gx-head"><h2 class="gx-h"><span class="gs-slot-hico" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2.6l1.05 3.2 3.35-.05-2.65 2.05.96 3.22L12 9.3 8.29 11.02l.96-3.22L6.6 5.75l3.35.05L12 2.6z"/><path d="M18.2 13.2l.7 2.12 2.22-.03-1.76 1.36.64 2.14-1.8-1.14-1.8 1.14.64-2.14-1.76-1.36 2.22.03.7-2.12z"/></svg></span><span data-gs-ko="에이전트에게 시켜 보기" data-gs-en="Ask your agent">에이전트에게 시켜 보기</span></h2><a class="gx-all" href="/prompts/grok-bot-direct.html"><span data-gs-ko="문장 110개 모두 보기" data-gs-en="See all 110 sentences">문장 110개 모두 보기</span> →</a></div><div class="v7c-grid"><a class="v7-tile v6-c-picks" href="/prompts/grok-bot-direct.html#cat-picks"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 3 15.09 8.26 21 9.27 17 13.97 17.91 20.02 12 17.27 6.09 20.02 7 13.97 3 9.27 8.91 8.26"/></svg></i><span data-gs-ko="추천" data-gs-en="Recommended">추천</span></a><a class="v7-tile v6-c-benefit" href="/prompts/grok-bot-direct.html#p-81"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6.5" rx="7" ry="2.7"/><path d="M5 6.5v3.7c0 1.5 3.13 2.7 7 2.7s7-1.2 7-2.7V6.5"/><path d="M5 10.2v3.6c0 1.5 3.13 2.7 7 2.7s7-1.2 7-2.7v-3.6"/><path d="M5 13.8v3.2c0 1.5 3.13 2.7 7 2.7s7-1.2 7-2.7v-3.2"/></svg></i><span data-gs-ko="혜택" data-gs-en="Benefits">혜택</span></a><a class="v7-tile v6-c-shop" href="/prompts/grok-bot-direct.html#p-86"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></i><span data-gs-ko="쇼핑" data-gs-en="Shopping">쇼핑</span></a><a class="v7-tile v6-c-travel" href="/prompts/grok-bot-direct.html#p-91"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.8 19.2 16 11l3.5-3.5a2.1 2.1 0 0 0-3-3L13 8 4.8 6.2c-.5-.1-.9.3-.8.8L6 13l-2.2 2.2c-.4.4-.1 1 .5 1.1l3.3.5 5.2-5.2 1.7 7.8c.1.5.7.6 1 .2z"/></svg></i><span data-gs-ko="여행" data-gs-en="Travel">여행</span></a><a class="v7-tile v6-c-people" href="/prompts/grok-bot-direct.html#p-96"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></i><span data-gs-ko="사람" data-gs-en="People">사람</span></a><a class="v7-tile v6-c-home" href="/prompts/grok-bot-direct.html#p-107"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11 12 4.5 20 11v8.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 19.5z"/><path d="M10 21v-6h4v6"/></svg></i><span data-gs-ko="집과 생활" data-gs-en="Home and living">집과 생활</span></a><a class="v7-tile v6-c-mail" href="/prompts/grok-bot-direct.html#p-17"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m3.5 8 8.5 6 8.5-6"/></svg></i><span data-gs-ko="답할 메일 초안" data-gs-en="Reply drafts">답할 메일 초안</span></a><a class="v7-tile v6-c-files" href="/prompts/grok-bot-direct.html#p-01"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18V6.5a2 2 0 0 1 2-2h3.17a2 2 0 0 1 1.42.59L11 6.5h8a2 2 0 0 1 2 2V18a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M3 10.5h18"/></svg></i><span data-gs-ko="다운로드 폴더 정리" data-gs-en="Download folder cleanup">다운로드 폴더 정리</span></a><a class="v7-tile v6-c-browse" href="/prompts/grok-bot-direct.html#p-09"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg></i><span data-gs-ko="출처 있는 제품 비교" data-gs-en="Sourced product compare">출처 있는 제품 비교</span></a><a class="v7-tile v6-c-social" href="/prompts/grok-bot-direct.html#p-33"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 8.5H9l7.5-4v15L9 15.5H4.5A1.5 1.5 0 0 1 3 14v-4a1.5 1.5 0 0 1 1.5-1.5z"/><path d="M19 9.5a3.25 3.25 0 0 1 0 5"/></svg></i><span data-gs-ko="소셜 글 초안" data-gs-en="Social post drafts">소셜 글 초안</span></a></div></div></section>
 
 <div class="w" id="s-hero2"><div class="hst"><div><b id="stT">0</b><span>모아 둔 Grok Bot 템플릿</span></div><div><b id="stN">0</b><span>최근 7일 새로 들어온 봇</span></div></div>
 <p class="difh">갓생봇에서는 이렇게 챙겨 드려요</p><div class="dif"><div><i>🇰🇷</i><b>한국어 설명</b><small>봇마다 쉬운 한국어로 풀어 드려요</small></div><div><i>✅</i><b>한국에서 되는지 확인</b><small>국내에서 쓸 수 있는지 살펴봐요</small></div><div><i>📋</i><b>바로 쓰는 프롬프트</b><small>빈칸만 채우면 바로 써요</small></div><div><i>🏠</i><b>한국형 봇</b><small>우리 생활에 맞는 봇도 만들어요</small></div></div>
@@ -2044,6 +2189,20 @@ import '/vendor/lucian-icons/heart.js';
       window.setL=function(){var r=orig.apply(this,arguments);paintNav();return r;};
     }
   }catch(e){}
+})();
+</script>
+<script id="gs-slot1row-js">
+(function(){
+  var ban=document.querySelector('#s-guide .gbn-in');
+  var panel=document.querySelector('#s-upd.gs-slot-1row .gs-slot-panel');
+  if(!ban||!panel) return;
+  var sync=function(){
+    var h=ban.getBoundingClientRect().height;
+    if(h>0) panel.style.height=h+'px';
+  };
+  sync();
+  window.addEventListener('resize', sync);
+  if(window.ResizeObserver) new ResizeObserver(sync).observe(ban);
 })();
 </script>
 </body></html>
