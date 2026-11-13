@@ -94,9 +94,6 @@ html[data-theme=dark] .tr-rels a,html[data-theme=dark] .share-hero,html[data-the
   #gs-gnav .gs-navico{display:none!important}
 }
 </style>
-
-
-
 <style id="gs-v8-prompts-css">/* live chrome hides bare header on subpages; keep the prompts hero visible */
 body:not(.gs-home) .v6-hero{display:block!important}
 :root{
@@ -308,7 +305,11 @@ html[data-theme=dark] .gbn-b{background:#eceef2;color:#16285e}
 @media(prefers-reduced-motion:reduce){
   .v6-toast{transition:none}
 }
-</style><meta name="keywords" content="Grok Bot, 뮤즈, DOTS, 피클, 에이전트, 프롬프트">
+
+/* PC 1280: subtitle on one line. Text unchanged; mobile wraps naturally. */
+@media(min-width:761px){.v6-intro{max-width:none}}
+</style>
+<meta name="keywords" content="Grok Bot, 뮤즈, DOTS, 피클, 에이전트, 프롬프트">
 <style id="gs-v8-nav-css">
 #gs-v8-burger{display:none;flex:none;width:40px;height:40px;margin-left:auto;padding:0;border:1px solid var(--ln,#e5e7eb);border-radius:10px;background:transparent;cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:5px;z-index:3}
 #gs-v8-burger span{display:block;width:16px;height:1.5px;background:var(--ink,#0f172a);border-radius:1px}
@@ -444,9 +445,6 @@ import '/vendor/lucian-icons/heart.js';
   else decorate();
 })();
 </script>
-
-
-
 <script id="gs-v8-prompts-js">
 (function(){
   var toast;

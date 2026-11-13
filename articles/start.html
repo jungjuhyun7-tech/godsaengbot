@@ -58,7 +58,40 @@ html[data-theme=dark] .tl li,html[data-theme=dark] .cg a{background:var(--card);
   #gs-gnav .gs-navico{display:none!important}
 }
 </style>
-
+<style id="gs-v8-nav-css">
+#gs-v8-burger{display:none;flex:none;width:40px;height:40px;margin-left:auto;padding:0;border:1px solid var(--ln,#e5e7eb);border-radius:10px;background:transparent;cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:5px;z-index:3}
+#gs-v8-burger span{display:block;width:16px;height:1.5px;background:var(--ink,#0f172a);border-radius:1px}
+#gs-v8-mask{display:none}
+@media(max-width:760px){
+  #gs-gnav{display:flex;align-items:center;position:relative}
+  #gs-v8-burger{display:inline-flex}
+  #gs-gnav.is-open #gs-v8-burger span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+  #gs-gnav.is-open #gs-v8-burger span:nth-child(2){opacity:0}
+  #gs-gnav.is-open #gs-v8-burger span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+  #gs-gnav .gnav-in{overflow:visible !important;-webkit-mask-image:none !important;mask-image:none !important}
+  #gs-gnav .gnav-in > a:not(.gnav-logo){display:none}
+  #gs-gnav.is-open .gnav-in{
+    display:flex;flex-direction:column;align-items:stretch;flex-wrap:nowrap;gap:2px;
+    position:absolute;left:0;right:0;top:100%;z-index:4;
+    padding:8px 12px 16px;background:var(--card,#fff);
+    border-bottom:1px solid var(--ln,#e5e7eb);
+    box-shadow:0 12px 24px rgba(15,23,42,.08);
+    max-height:calc(100vh - 56px);overflow-x:hidden;overflow-y:auto;
+  }
+  #gs-gnav.is-open .gnav-in > a:not(.gnav-logo){
+    display:inline-flex;width:100%;border-radius:12px;padding:12px 14px;font-size:15px
+  }
+  #gs-v8-mask{display:none;position:fixed;inset:56px 0 0 0;background:rgba(15,23,42,.28);z-index:2}
+  #gs-gnav.is-open #gs-v8-mask{display:block}
+  html[data-theme=dark] #gs-gnav.is-open .gnav-in{background:var(--card,#1c2026)}
+}
+@media(min-width:761px){
+  #gs-v8-burger, #gs-v8-mask{display:none !important}
+}
+@media(prefers-reduced-motion:reduce){
+  #gs-v8-burger span{transition:none}
+}
+</style>
 <style id="cp-box">
 .cp-box{margin:28px 0 8px;padding:16px 18px 18px;border:1px solid var(--ln,#ededed);border-radius:14px;background:var(--card,#fff)}
 .cp-h{margin:0 0 14px;font-size:17px;font-weight:800;letter-spacing:-.02em;color:var(--ink,#0a0a0a)}
@@ -99,43 +132,7 @@ html[data-theme=dark] .cp-btn:hover{background:#2a64d8}
   .md .cp-ph{width:80px;height:80px;min-height:80px}
   .md .cp-btn{min-height:44px;padding:10px 14px;font-size:13px}
 }
-</style>
-
-<style id="gs-v8-nav-css">
-#gs-v8-burger{display:none;flex:none;width:40px;height:40px;margin-left:auto;padding:0;border:1px solid var(--ln,#e5e7eb);border-radius:10px;background:transparent;cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:5px;z-index:3}
-#gs-v8-burger span{display:block;width:16px;height:1.5px;background:var(--ink,#0f172a);border-radius:1px}
-#gs-v8-mask{display:none}
-@media(max-width:760px){
-  #gs-gnav{display:flex;align-items:center;position:relative}
-  #gs-v8-burger{display:inline-flex}
-  #gs-gnav.is-open #gs-v8-burger span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
-  #gs-gnav.is-open #gs-v8-burger span:nth-child(2){opacity:0}
-  #gs-gnav.is-open #gs-v8-burger span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
-  #gs-gnav .gnav-in{overflow:visible !important;-webkit-mask-image:none !important;mask-image:none !important}
-  #gs-gnav .gnav-in > a:not(.gnav-logo){display:none}
-  #gs-gnav.is-open .gnav-in{
-    display:flex;flex-direction:column;align-items:stretch;flex-wrap:nowrap;gap:2px;
-    position:absolute;left:0;right:0;top:100%;z-index:4;
-    padding:8px 12px 16px;background:var(--card,#fff);
-    border-bottom:1px solid var(--ln,#e5e7eb);
-    box-shadow:0 12px 24px rgba(15,23,42,.08);
-    max-height:calc(100vh - 56px);overflow-x:hidden;overflow-y:auto;
-  }
-  #gs-gnav.is-open .gnav-in > a:not(.gnav-logo){
-    display:inline-flex;width:100%;border-radius:12px;padding:12px 14px;font-size:15px
-  }
-  #gs-v8-mask{display:none;position:fixed;inset:56px 0 0 0;background:rgba(15,23,42,.28);z-index:2}
-  #gs-gnav.is-open #gs-v8-mask{display:block}
-  html[data-theme=dark] #gs-gnav.is-open .gnav-in{background:var(--card,#1c2026)}
-}
-@media(min-width:761px){
-  #gs-v8-burger, #gs-v8-mask{display:none !important}
-}
-@media(prefers-reduced-motion:reduce){
-  #gs-v8-burger span{transition:none}
-}
-</style>
-</head><body>
+</style></head><body>
 <header><div class="w"><a class="logo" href="/">갓생봇</a><nav class="snav"><a href="/templates/">템플릿</a><a href="/articles/">아티클</a><a href="/glossary.html">용어</a><a href="/test.html">테스트</a><a href="/pick.html">뽑기</a><a href="/saju.html">사주</a></nav></div></header><nav data-nav2="1" class="gnav" id="gs-gnav" aria-label="갓생봇 메뉴"><div class="gnav-in"><a class="gnav-logo" href="/" aria-label="갓생봇 홈"><img class="gnav-ico" src="/icon-192.png" alt="" width="20" height="20"><i>갓</i><span>갓생봇</span></a><a href="/#s-all" data-gs-ko="전체소식" data-gs-en="All updates">전체소식</a><a href="/templates/" data-gs-ko="템플릿" data-gs-en="Templates">템플릿</a><a href="/prompts/grok-bot-direct.html" data-gs-ko="에이전트 프롬프트" data-gs-en="Agent prompts">에이전트 프롬프트</a><a class="on" href="/articles/" data-gs-ko="아티클" data-gs-en="Articles">아티클</a><a href="/weekly/" data-gs-ko="이번주" data-gs-en="This week">이번주</a><a href="/test.html" data-gs-ko="갓생테스트" data-gs-en="Godsaeng test">갓생테스트</a><a href="/pick.html" data-gs-ko="가챠뽑기" data-gs-en="Gacha pick">가챠뽑기</a><a href="/saju.html" data-gs-ko="사주" data-gs-en="Saju">사주</a><a href="/glossary.html" data-gs-ko="용어" data-gs-en="Glossary">용어</a><a href="/guide/" data-gs-ko="그록가이드" data-gs-en="Grok guide">그록가이드</a><a href="/support/" data-gs-ko="응원하기" data-gs-en="Support us">응원하기</a></div></nav><main class="w"><p class="crumb"><a href="/">홈</a> &gt; <a href="/articles/">아티클</a></p><article class="ab"><span class="art-tag">시작</span><h1>Grok Bot 처음 시작하기</h1><div class="gtags"><a class="gtag" data-tag="start" href="/articles/tag/start.html">#시작하기</a><a class="gtag" data-tag="routine" href="/articles/tag/routine.html">#루틴</a></div><small class="art-d">2026. 10. 30</small><p>Grok Bot은 대화만 하는 챗봇이 아니라 자기 컴퓨터와 기억, 일정표를 가진 AI 동료예요. 처음 설치하면 설정 과정에서 첫 봇이 자동으로 만들어져요.</p>
 <h4>처음 10분에 해 볼 것</h4>
 <ol><li><b>말로 먼저 시켜 보기.</b> "내일 일정 정리해 줘"처럼 평소 말투로 부탁해 보세요. 잘 되면 그때 매일 하도록 루틴으로 바꾸면 돼요.</li>
@@ -243,9 +240,6 @@ import '/vendor/lucian-icons/heart.js';
   else decorate();
 })();
 </script>
-
-
-
 <script id="gs-v8-nav-js">
 (function(){
   var nav=document.getElementById('gs-gnav');

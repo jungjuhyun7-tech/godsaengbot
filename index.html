@@ -708,51 +708,6 @@ label.search lucian-search{width:16px;height:16px;margin-right:2px;color:var(--i
 }
 </style>
 <style id="gs-use">.ubags{display:inline-flex;flex-wrap:wrap;gap:4px;margin:6px 0 2px}.ub{font-style:normal;font-size:11px;font-weight:700;padding:2px 7px;border-radius:6px;white-space:nowrap}.ub.a{background:#eef2ff;color:#3730a3}.ub.r{background:#f5f3ff;color:#6d28d9}.ub.w{background:#fff7ed;color:#c2410c}</style>
-
-<style id="cp-box">
-.cp-box{margin:28px 0 8px;padding:16px 18px 18px;border:1px solid var(--ln,#ededed);border-radius:14px;background:var(--card,#fff)}
-.cp-h{margin:0 0 14px;font-size:17px;font-weight:800;letter-spacing:-.02em;color:var(--ink,#0a0a0a)}
-.cp-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.cp-card{border:1px solid var(--ln,#ededed);border-radius:12px;background:var(--soft,#f7f8fa);overflow:hidden;display:flex;flex-direction:column;min-width:0}
-.cp-ph{height:200px;padding:12px;box-sizing:border-box;background:#f3f4f6;overflow:hidden;display:flex;align-items:center;justify-content:center}
-.cp-ph img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block}
-.cp-info{padding:12px 14px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
-.cp-n{font-size:14px;font-weight:700;color:var(--ink,#0a0a0a);line-height:1.4}
-.cp-note{margin:0;font-size:13px;color:var(--mu,#526176);line-height:1.5}
-.cp-btn{display:inline-flex;align-items:center;justify-content:center;margin-top:auto;background:var(--a,#2563eb);color:#fff!important;text-decoration:none;border-radius:10px;padding:8px 12px;font-size:13px;font-weight:700;align-self:flex-start}
-.cp-btn:hover{background:#1d4ed8}
-.cp-disc{margin:0 0 24px;font-size:12px;color:var(--mu,#526176);line-height:1.55}
-html[data-theme=dark] .cp-box{background:var(--card);border-color:var(--ln2)}
-html[data-theme=dark] .cp-card{background:var(--soft);border-color:var(--ln2)}
-html[data-theme=dark] .cp-ph{background:#2a2f36}
-html[data-theme=dark] .cp-h,html[data-theme=dark] .cp-n{color:var(--ink)}
-html[data-theme=dark] .cp-btn:hover{background:#2a64d8}
-.dim{z-index:2000}
-.md .cp-box{margin:16px 0 6px;padding:12px}
-.md .cp-h{font-size:15px;margin-bottom:10px}
-.md .cp-grid{grid-template-columns:1fr;gap:8px}
-.md .cp-card{flex-direction:row;align-items:center}
-.md .cp-ph{width:88px;height:88px;min-height:88px;flex:none;margin:8px 0 8px 8px;border-radius:10px;padding:6px;box-sizing:border-box;display:flex;align-items:center;justify-content:center}
-.md .cp-info{padding:10px 12px;justify-content:center}
-.md .cp-n{font-size:13px}
-.md .cp-note{font-size:12px}
-.md .cp-btn{padding:6px 10px;font-size:12px;margin-top:4px}
-.md .cp-disc{margin:0 0 2px}
-@media(max-width:560px){
-  .cp-grid{grid-template-columns:1fr;gap:10px}
-  .cp-box{margin:16px 0 8px;padding:12px}
-  .cp-h{margin-bottom:10px}
-  .cp-ph{height:200px}
-  .cp-info{padding:10px 12px 12px}
-  .cp-btn{min-height:44px;padding:10px 14px}
-  .md .cp-card{flex-direction:row;align-items:center}
-  .md .cp-ph{width:80px;height:80px;min-height:80px}
-  .md .cp-btn{min-height:44px;padding:10px 14px;font-size:13px}
-}
-</style>
-
-
-
 <style id="gs-v8-eyebrow-css">
 #s-hero > small, #s-hero [data-i="kick"]{
   color:#111 !important;
@@ -867,7 +822,8 @@ html[data-theme=dark] #s-hero [data-i="kick"]{color:var(--ink,#eceef2) !importan
   #s-upd.v7 .v7-tile i{width:30px;height:30px}
   #s-upd.v7 .v7-tile span{font-size:11px}
 }
-</style><style id="gs-v8-nav-css">
+</style>
+<style id="gs-v8-nav-css">
 #gs-v8-burger{display:none;flex:none;width:40px;height:40px;margin-left:auto;padding:0;border:1px solid var(--ln,#e5e7eb);border-radius:10px;background:transparent;cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:5px;z-index:3}
 #gs-v8-burger span{display:block;width:16px;height:1.5px;background:var(--ink,#0f172a);border-radius:1px}
 #gs-v8-mask{display:none}
@@ -901,7 +857,47 @@ html[data-theme=dark] #s-hero [data-i="kick"]{color:var(--ink,#eceef2) !importan
   #gs-v8-burger span{transition:none}
 }
 </style>
-</head><body class="gs-home">
+<style id="cp-box">
+.cp-box{margin:28px 0 8px;padding:16px 18px 18px;border:1px solid var(--ln,#ededed);border-radius:14px;background:var(--card,#fff)}
+.cp-h{margin:0 0 14px;font-size:17px;font-weight:800;letter-spacing:-.02em;color:var(--ink,#0a0a0a)}
+.cp-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cp-card{border:1px solid var(--ln,#ededed);border-radius:12px;background:var(--soft,#f7f8fa);overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.cp-ph{height:200px;padding:12px;box-sizing:border-box;background:#f3f4f6;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.cp-ph img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block}
+.cp-info{padding:12px 14px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.cp-n{font-size:14px;font-weight:700;color:var(--ink,#0a0a0a);line-height:1.4}
+.cp-note{margin:0;font-size:13px;color:var(--mu,#526176);line-height:1.5}
+.cp-btn{display:inline-flex;align-items:center;justify-content:center;margin-top:auto;background:var(--a,#2563eb);color:#fff!important;text-decoration:none;border-radius:10px;padding:8px 12px;font-size:13px;font-weight:700;align-self:flex-start}
+.cp-btn:hover{background:#1d4ed8}
+.cp-disc{margin:0 0 24px;font-size:12px;color:var(--mu,#526176);line-height:1.55}
+html[data-theme=dark] .cp-box{background:var(--card);border-color:var(--ln2)}
+html[data-theme=dark] .cp-card{background:var(--soft);border-color:var(--ln2)}
+html[data-theme=dark] .cp-ph{background:#2a2f36}
+html[data-theme=dark] .cp-h,html[data-theme=dark] .cp-n{color:var(--ink)}
+html[data-theme=dark] .cp-btn:hover{background:#2a64d8}
+.dim{z-index:2000}
+.md .cp-box{margin:16px 0 6px;padding:12px}
+.md .cp-h{font-size:15px;margin-bottom:10px}
+.md .cp-grid{grid-template-columns:1fr;gap:8px}
+.md .cp-card{flex-direction:row;align-items:center}
+.md .cp-ph{width:88px;height:88px;min-height:88px;flex:none;margin:8px 0 8px 8px;border-radius:10px;padding:6px;box-sizing:border-box;display:flex;align-items:center;justify-content:center}
+.md .cp-info{padding:10px 12px;justify-content:center}
+.md .cp-n{font-size:13px}
+.md .cp-note{font-size:12px}
+.md .cp-btn{padding:6px 10px;font-size:12px;margin-top:4px}
+.md .cp-disc{margin:0 0 2px}
+@media(max-width:560px){
+  .cp-grid{grid-template-columns:1fr;gap:10px}
+  .cp-box{margin:16px 0 8px;padding:12px}
+  .cp-h{margin-bottom:10px}
+  .cp-ph{height:200px}
+  .cp-info{padding:10px 12px 12px}
+  .cp-btn{min-height:44px;padding:10px 14px}
+  .md .cp-card{flex-direction:row;align-items:center}
+  .md .cp-ph{width:80px;height:80px;min-height:80px}
+  .md .cp-btn{min-height:44px;padding:10px 14px;font-size:13px}
+}
+</style></head><body class="gs-home">
 <header><div class="w top"><a class="logo" href="#"><img class="gb" id="gb" src="/icon-192.png" alt="Grok Bot" width="28" height="28"><b class="gx">×</b><i>갓</i><span>갓생봇</span></a><a class="earth" href="https://www.spacex.com/mission/" target="_blank" rel="noopener" title="SpaceX Mission">Made on Earth by Grok Bot</a><nav><a class="hu" href="#howto" onclick="howto();return false" data-i="nhow">사용법</a><a href="#" class="subn" onclick="sbOpen();return false">템플릿 등록</a><a class="hm" href="#req" data-i="nreq">봇 요청</a><a class="hm" href="/guide/" target="_blank" data-i="nguide">Grok 가이드</a><button class="lang" onclick="setL(L==='ko'?'en':'ko')" id="lb">EN</button></nav></div></header><nav data-nav2="1" data-home="1" class="gnav" id="gs-gnav" aria-label="갓생봇 메뉴"><div class="gnav-in"><a class="gnav-logo" href="/" aria-label="갓생봇 홈"><img class="gnav-ico" src="/icon-192.png" alt="" width="20" height="20"><i>갓</i><span>갓생봇</span></a><a class="on" href="/#s-all" data-gs-ko="전체소식" data-gs-en="All updates">전체소식</a><a href="/templates/" data-gs-ko="템플릿" data-gs-en="Templates">템플릿</a><a href="/prompts/grok-bot-direct.html" data-gs-ko="에이전트 프롬프트" data-gs-en="Agent prompts">에이전트 프롬프트</a><a href="/articles/" data-gs-ko="아티클" data-gs-en="Articles">아티클</a><a href="/weekly/" data-gs-ko="이번주" data-gs-en="This week">이번주</a><a href="/test.html" data-gs-ko="갓생테스트" data-gs-en="Godsaeng test">갓생테스트</a><a href="/pick.html" data-gs-ko="가챠뽑기" data-gs-en="Gacha pick">가챠뽑기</a><a href="/saju.html" data-gs-ko="사주" data-gs-en="Saju">사주</a><a href="/glossary.html" data-gs-ko="용어" data-gs-en="Glossary">용어</a><a href="/guide/" data-gs-ko="그록가이드" data-gs-en="Grok guide">그록가이드</a><a href="/support/" data-gs-ko="응원하기" data-gs-en="Support us">응원하기</a></div></nav>
 <section class="w hero" id="s-hero"><div class="gwrap" id="gicon"><div class="gicon g-mascot" role="img" aria-label="Grok Bot"><span class="gch" data-name="purple" style="--l:49.2308%;--t:0.0000%;--w:21.1538%;--h:43.9024%;--z:0;--d:0s;--dur:2.7s;--hop:-5px;--r0:-10deg;--r1:-6deg"><span class="gch-in"><img src="/mascot/purple.png" alt=""></span></span><span class="gch" data-name="black" style="--l:11.5385%;--t:20.7317%;--w:20.9615%;--h:44.3089%;--z:1;--d:.22s;--dur:2.4s;--hop:-6px;--r0:0deg;--r1:3deg"><span class="gch-in"><img src="/mascot/black.png" alt=""></span></span><span class="gch" data-name="teal" style="--l:33.4615%;--t:22.7642%;--w:19.8077%;--h:43.9024%;--z:2;--d:.4s;--dur:2.2s;--hop:-4px;--r0:2deg;--r1:-2deg"><span class="gch-in"><img src="/mascot/teal.png" alt=""></span></span><span class="gch" data-name="blue" style="--l:63.2692%;--t:28.8618%;--w:21.3462%;--h:45.5285%;--z:3;--d:.55s;--dur:2.8s;--hop:-5px;--r0:8deg;--r1:12deg"><span class="gch-in"><img src="/mascot/blue.png" alt=""></span></span><span class="gch" data-name="gray" style="--l:68.4615%;--t:71.9512%;--w:10.7692%;--h:26.0163%;--z:4;--d:.1s;--dur:2.1s;--hop:-7px;--r0:8deg;--r1:14deg"><span class="gch-in"><img src="/mascot/gray.png" alt=""></span></span><span class="gch" data-name="pink" style="--l:45.1923%;--t:49.1870%;--w:23.6538%;--h:49.5935%;--z:5;--d:.7s;--dur:2.5s;--hop:-6px;--r0:0deg;--r1:-3deg"><span class="gch-in"><img src="/mascot/pink.png" alt=""></span></span><span class="gch" data-name="brown" style="--l:79.4231%;--t:54.8780%;--w:20.5769%;--h:43.9024%;--z:6;--d:.85s;--dur:2.6s;--hop:-4px;--r0:6deg;--r1:2deg"><span class="gch-in"><img src="/mascot/brown.png" alt=""></span></span><span class="gch" data-name="gold" style="--l:21.5385%;--t:57.7236%;--w:23.2692%;--h:41.0569%;--z:7;--d:1s;--dur:2.3s;--hop:-5px;--r0:-2deg;--r1:2deg"><span class="gch-in"><img src="/mascot/gold.png" alt=""></span></span><span class="gch" data-name="orange" style="--l:0.1923%;--t:57.7236%;--w:21.5385%;--h:41.8699%;--z:8;--d:1.15s;--dur:2.9s;--hop:-6px;--r0:-8deg;--r1:-3deg"><span class="gch-in"><img src="/mascot/orange.png" alt=""></span></span></div></div><small data-i="kick">Grok Bot, 뮤즈, DOTS, 피클과 함께하는</small><h1 data-i="h1">갓생 사는 갓생봇의 플레이그라운드</h1><p data-i="sub" hidden>템플릿을 가져가거나, 문장을 복사해 바로 시켜 보세요.</p>
 <div class="sbar" id="sbar"><label class="search"><lucian-search tone="line" size="16" state="idle" animate="hover"></lucian-search><input id="q" type="search" autocomplete="off" oninput="pg=1;render();qdrop()" onkeydown="if(event.key==='Enter'&&!event.isComposing){event.preventDefault();qgo()}"></label><select class="sel" id="srt" onchange="pg=1;render()"><option value="0" data-i="o0">추천순</option><option value="1" data-i="o1">최신순</option></select></div><div id="qr" class="qr"></div></section><div data-jb2="1" class="jbar" id="jbar"><div class="w"><nav class="jump" id="jump"><div class="jg"><span class="gs-li-wrap" aria-hidden="true"><lucian-sparkle tone="line" size="14" animate="hover"></lucian-sparkle></span><em data-i="g1">추천받기</em><a class="p" href="#s-today" data-i="j1">오늘의 봇</a><a href="#s-test" data-i="j2">갓생 테스트</a><a href="#s-mbti" data-i="j3">MBTI 추천</a></div><div class="jg"><em data-i="g2">인기</em><a href="#s-rank" data-i="j4">이번 주 순위</a><a href="#r-pop" data-i="j6">인기 봇</a></div><div class="jg"><span class="gs-li-wrap" aria-hidden="true"><lucian-search tone="line" size="14" state="idle" animate="hover"></lucian-search></span><em data-i="g3">찾기</em><a href="#s-area" data-i="j7">챙기고 싶은 일</a></div></nav></div></div>
@@ -1889,9 +1885,6 @@ import '/vendor/lucian-icons/heart.js';
   else decorate();
 })();
 </script>
-
-
-
 <script id="gs-v8-nav-js">
 (function(){
   var nav=document.getElementById('gs-gnav');
