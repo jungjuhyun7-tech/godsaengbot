@@ -267,7 +267,47 @@ nav.top .brand .bicon{flex:none;display:block}
   #gs-v8-burger span{transition:none}
 }
 </style>
-</head><body>
+<style id="cp-box">
+.cp-box{margin:28px 0 8px;padding:16px 18px 18px;border:1px solid var(--ln,#ededed);border-radius:14px;background:var(--card,#fff)}
+.cp-h{margin:0 0 14px;font-size:17px;font-weight:800;letter-spacing:-.02em;color:var(--ink,#0a0a0a)}
+.cp-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cp-card{border:1px solid var(--ln,#ededed);border-radius:12px;background:var(--soft,#f7f8fa);overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.cp-ph{height:200px;padding:12px;box-sizing:border-box;background:#f3f4f6;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.cp-ph img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block}
+.cp-info{padding:12px 14px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.cp-n{font-size:14px;font-weight:700;color:var(--ink,#0a0a0a);line-height:1.4}
+.cp-note{margin:0;font-size:13px;color:var(--mu,#526176);line-height:1.5}
+.cp-btn{display:inline-flex;align-items:center;justify-content:center;margin-top:auto;background:var(--a,#2563eb);color:#fff!important;text-decoration:none;border-radius:10px;padding:8px 12px;font-size:13px;font-weight:700;align-self:flex-start}
+.cp-btn:hover{background:#1d4ed8}
+.cp-disc{margin:0 0 24px;font-size:12px;color:var(--mu,#526176);line-height:1.55}
+html[data-theme=dark] .cp-box{background:var(--card);border-color:var(--ln2)}
+html[data-theme=dark] .cp-card{background:var(--soft);border-color:var(--ln2)}
+html[data-theme=dark] .cp-ph{background:#2a2f36}
+html[data-theme=dark] .cp-h,html[data-theme=dark] .cp-n{color:var(--ink)}
+html[data-theme=dark] .cp-btn:hover{background:#2a64d8}
+.dim{z-index:2000}
+.md .cp-box{margin:16px 0 6px;padding:12px}
+.md .cp-h{font-size:15px;margin-bottom:10px}
+.md .cp-grid{grid-template-columns:1fr;gap:8px}
+.md .cp-card{flex-direction:row;align-items:center}
+.md .cp-ph{width:88px;height:88px;min-height:88px;flex:none;margin:8px 0 8px 8px;border-radius:10px;padding:6px;box-sizing:border-box;display:flex;align-items:center;justify-content:center}
+.md .cp-info{padding:10px 12px;justify-content:center}
+.md .cp-n{font-size:13px}
+.md .cp-note{font-size:12px}
+.md .cp-btn{padding:6px 10px;font-size:12px;margin-top:4px}
+.md .cp-disc{margin:0 0 2px}
+@media(max-width:560px){
+  .cp-grid{grid-template-columns:1fr;gap:10px}
+  .cp-box{margin:16px 0 8px;padding:12px}
+  .cp-h{margin-bottom:10px}
+  .cp-ph{height:200px}
+  .cp-info{padding:10px 12px 12px}
+  .cp-btn{min-height:44px;padding:10px 14px}
+  .md .cp-card{flex-direction:row;align-items:center}
+  .md .cp-ph{width:80px;height:80px;min-height:80px}
+  .md .cp-btn{min-height:44px;padding:10px 14px;font-size:13px}
+}
+</style></head><body>
 <a class="skip" href="#main">본문으로 건너뛰기</a>
 <nav class="top" aria-label="섹션 이동"><div class="wrap"><a class="brand" href="#main"><img class="bicon" src="/icon-192.png" alt="" width="22" height="22">grokbot guide</a><div class="links" id="navlinks"><a href="#howto"><span class="nico" style="background:#E0603F" aria-hidden="true"><svg viewBox="0 0 100 100"><g stroke="#fff" stroke-width="9" stroke-linecap="round"><line x1="38" y1="34" x2="42" y2="58"/><line x1="58" y1="32" x2="62" y2="56"/></g></svg></span><span class="ntx"><span class="nlb">사용법</span><span class="nds">처음 시작하는 순서</span></span></a><a href="#guide"><span class="nico" style="background:#3E6FA8" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5M9 7h6"/></svg></span><span class="ntx"><span class="nlb">유저 가이드</span><span class="nds">기능별 자세한 설명</span></span></a><a href="#tips"><span class="nico" style="background:#D99A1E" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg></span><span class="ntx"><span class="nlb">꿀팁</span><span class="nds">바로 쓰는 요령</span></span></a><a href="#updates"><span class="nico" style="background:#C0533A" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16V11a6 6 0 0 1 12 0v5l2 2H4z"/><path d="M10 21h4"/></svg></span><span class="ntx"><span class="nlb">업데이트</span><span class="nds">새로 바뀐 것</span></span></a><a href="#usecases"><span class="nico" style="background:#3F8F5A" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg></span><span class="ntx"><span class="nlb">유스케이스</span><span class="nds">이렇게 써 보세요</span></span></a><a href="#templates"><span class="nico" style="background:#7A5BC7" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M17.5 14v7M14 17.5h7"/></svg></span><span class="ntx"><span class="nlb">템플릿</span><span class="nds">복사해서 쓰는 프롬프트</span></span></a><a href="#skills"><span class="nico" style="background:#D0558A" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c4 2 6 6 5 11l-3 3h-4l-3-3c-1-5 1-9 5-11z"/><circle cx="12" cy="10" r="2"/><path d="M9 17l-2 4M15 17l2 4"/></svg></span><span class="ntx"><span class="nlb">스킬</span><span class="nds">봇에 능력 더하기</span></span></a><a href="#plans"><span class="nico" style="background:#2E9A9A" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg></span><span class="ntx"><span class="nlb">구독</span><span class="nds">플랜 비교</span></span></a><a href="#refs"><span class="nico" style="background:#5B6B7F" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span><span class="ntx"><span class="nlb">레퍼런스</span><span class="nds">공식 문서와 출처</span></span></a></div><div class="prog" aria-live="polite"><span>학습</span><div class="bar"><i id="pbar"></i></div><span id="ppct" data-noi18n>0%</span><button class="btn" id="reset" type="button" style="padding:4px 10px">초기화</button></div><div class="lang" role="group" aria-label="Language" data-noi18n><button type="button" data-lang="ko" lang="ko">한국어</button><i aria-hidden="true">|</i><button type="button" data-lang="en" lang="en">English</button></div><button class="burger" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navlinks">☰</button></div></nav>
 <aside class="toc" id="toc" aria-label="목차"><p class="tth">목차</p><nav aria-label="목차"><a href="#howto"><i style="background:#E0603F" aria-hidden="true"></i><span>사용법</span></a><a href="#guide"><i style="background:#3E6FA8" aria-hidden="true"></i><span>유저 가이드</span></a><a href="#tips"><i style="background:#D99A1E" aria-hidden="true"></i><span>꿀팁</span></a><a href="#updates"><i style="background:#C0533A" aria-hidden="true"></i><span>업데이트</span></a><a href="#usecases"><i style="background:#3F8F5A" aria-hidden="true"></i><span>유스케이스</span></a><a href="#templates"><i style="background:#7A5BC7" aria-hidden="true"></i><span>템플릿</span></a><a href="#skills"><i style="background:#D0558A" aria-hidden="true"></i><span>스킬</span></a><a href="#plans"><i style="background:#2E9A9A" aria-hidden="true"></i><span>구독</span></a><a href="#refs"><i style="background:#5B6B7F" aria-hidden="true"></i><span>레퍼런스</span></a></nav><nav class="tsub" aria-label="버전 기록"><a href="#versions"><i style="background:#B9AEA9" aria-hidden="true"></i><span>버전 기록</span></a></nav><div class="tprog" aria-live="polite"><span>학습 진행</span><div class="tb"><i id="tpbar"></i></div><div class="tr"><span id="tppct" data-noi18n>0%</span><button type="button" id="tocReset">초기화</button></div><p class="tver" data-noi18n>v1.9 2026-10-27</p></div></aside>
@@ -450,6 +490,7 @@ nav.top .brand .bicon{flex:none;display:block}
 <p class="src">관계 설명 출처: spacex.com/updates/merger-xai, x.ai/news/xai-joins-spacex. 인물 소개 출처: pstack README, 본인 LinkedIn 프로필 (2026-10-21 확인).</p>
 </div></section>
 
+<!--hubcp--><aside class="cp-box" aria-label="봇과 함께 쓰면 좋은 물건"><h2 class="cp-h">봇과 함께 쓰면 좋은 물건</h2><div class="cp-grid"><div class="cp-card"><a class="cp-ph" href="https://link.coupang.com/a/iyw9JtLuKq" target="_blank" rel="sponsored noopener"><img src="https://thumbnail3.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/2024/3124ec32b164c8e2100fb7f273a7c9f37e68e1f162ead7b26659df9a04dd.jpg" alt="2027 온어데이 위클리 다이어리" width="212" height="212" loading="lazy" decoding="async"></a><div class="cp-info"><strong class="cp-n">2027 온어데이 위클리 다이어리</strong><p class="cp-note">한 주 계획을 한눈에 적어 두기 좋아요.</p><a class="cp-btn" href="https://link.coupang.com/a/iyw9JtLuKq" target="_blank" rel="sponsored noopener">쿠팡에서 보기</a></div></div><div class="cp-card"><a class="cp-ph" href="https://link.coupang.com/a/iyxaLo0g9c" target="_blank" rel="sponsored noopener"><img src="https://thumbnail9.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/6850755517283728-85c67df6-2eb0-46d3-8c72-742392d7b449.png" alt="홈플래닛 접이식 노트북 거치대" width="212" height="212" loading="lazy" decoding="async"></a><div class="cp-info"><strong class="cp-n">홈플래닛 접이식 노트북 거치대</strong><p class="cp-note">화면을 눈높이에 맞춰 쓰기 좋아요.</p><a class="cp-btn" href="https://link.coupang.com/a/iyxaLo0g9c" target="_blank" rel="sponsored noopener">쿠팡에서 보기</a></div></div></div></aside><p class="cp-disc">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p><!--/hubcp-->
 </main>
 <footer><div class="wrap"><p class="fmark">grokbot guide</p>
 <p>가격과 기능은 2026-10-21에 확인한 내용이라 바뀔 수 있어요. 체크리스트 진행 상황은 브라우저 localStorage에만 저장되고 서버로 보내지 않아요.</p>
