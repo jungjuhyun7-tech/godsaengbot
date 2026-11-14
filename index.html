@@ -1864,6 +1864,96 @@ html[data-s13d] #gs-s13b #s-gacha .g-ground{display:none!important}
 #gs-s13b .s19-week-news li, .s13d-nl .s19-week-news li{margin:0 0 8px}
 #gs-s13b .s19-week-news .meta, .s13d-nl .s19-week-news .meta{display:block;font-size:12.5px;color:#64748b;font-weight:500;margin-top:2px}
 
+/* S19b: slim stat strip on the grass, slim guide, hide leftover S13 guide box */
+html[data-s19] #gs-s13b .h-stats,
+#gs-s13b .h-stats{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  grid-template-columns:none !important;
+  gap:8px 22px !important;
+  align-items:baseline !important;
+  padding:4px 16px 0 !important;
+  background:transparent !important;
+}
+html[data-s19] #gs-s13b .h-stat,
+html[data-s19] #gs-s13b .h-stat.c1,
+html[data-s19] #gs-s13b .h-stat.c2,
+html[data-s19] #gs-s13b .h-stat.c3,
+#gs-s13b .h-stat,
+#gs-s13b .h-stat.c1,
+#gs-s13b .h-stat.c2,
+#gs-s13b .h-stat.c3{
+  display:inline-flex !important;
+  flex-direction:row !important;
+  align-items:baseline !important;
+  justify-content:flex-start !important;
+  gap:6px !important;
+  padding:0 !important;
+  background:transparent !important;
+  border:0 !important;
+  box-shadow:none !important;
+  border-radius:0 !important;
+  min-height:0 !important;
+  width:auto !important;
+}
+html[data-s19] #gs-s13b .h-stat b,
+#gs-s13b .h-stat b{font-size:22px !important;letter-spacing:-.03em !important;line-height:1 !important}
+html[data-s19] #gs-s13b .h-stat span,
+#gs-s13b .h-stat span{font-size:14px !important;font-weight:700 !important;color:#16301a !important;line-height:1.2 !important}
+html[data-s19] #gs-s13b .ground,
+#gs-s13b .ground{padding:40px 0 18px !important}
+@media(min-width:900px){
+  html[data-s19] #gs-s13b .ground,
+  #gs-s13b .ground{padding-top:52px !important;padding-bottom:20px !important}
+}
+@media(max-width:699px){
+  html[data-s19] #gs-s13b .ground,
+  #gs-s13b .ground{padding:26px 0 8px !important}
+}
+#gs-s13b .hero-copy .guide-slim{margin:12px 0 0;font-size:15px;font-weight:700}
+#gs-s13b .hero-copy .guide-slim a{color:var(--a,#2563eb);text-decoration:underline;background:none;border:0;padding:0;box-shadow:none;font-weight:700}
+#gs-s13b .hero-copy .guide-slim a:hover{text-decoration:underline}
+#gs-s13b #s19-hutchip{display:inline-flex;align-items:center;min-height:32px;padding:0 12px;border-radius:999px;background:#eef2ff;color:#3730a3;font-size:13px;font-weight:800;white-space:nowrap;text-decoration:none}
+#gs-s13b .feed .btn.ghost{background:#fff;color:var(--ink,#0f172a);border:1px solid var(--ln,#e5e7eb)}
+html[data-s19] #s13-guide,
+#gs-s13b #s13-guide{display:none !important}
+@media(min-width:1024px){
+  #gs-s13b .hd-in{height:56px !important}
+}
+#gs-s13b .sec{padding-top:56px}
+#gs-s13b #s-tpl.sec{padding-top:32px}
+@media(max-width:699px){
+  #gs-s13b .sec{padding-top:40px}
+  #gs-s13b #s-tpl.sec{padding-top:8px}
+  #gs-s13b .hero-copy .guide-slim{margin-top:8px}
+}
+#gs-s13b .div-grass{position:relative;height:10px;margin:40px 0 -8px;background:var(--grass,#d9f7c8)}
+#gs-s13b .div-grass::before{content:"";position:absolute;left:0;right:0;top:0;height:6px;background:repeating-linear-gradient(90deg,var(--grass2,#b8e8a0) 0 10px,transparent 10px 20px);pointer-events:none}
+@media(max-width:699px){#gs-s13b .div-grass{margin:28px 0 -8px}}
+
+#gs-s13b #tgrid.grid, #gs-s13b .grid#tgrid, #gs-s13b #tgrid{
+  display:grid !important;
+  grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+  gap:12px !important;
+}
+@media(max-width:1023px){
+  html[data-s19] #gs-s13b #tgrid.grid,
+  html[data-s19] #gs-s13b #tgrid,
+  #gs-s13b #tgrid.grid, #gs-s13b #tgrid{grid-template-columns:repeat(2,minmax(0,1fr)) !important;}
+}
+@media(max-width:699px){
+  html[data-s19] #gs-s13b #tgrid.grid,
+  html[data-s19] #gs-s13b #tgrid,
+  #gs-s13b #tgrid.grid, #gs-s13b #tgrid{grid-template-columns:1fr !important;}
+  html[data-s19] #gs-s13b .h-stats,
+  #gs-s13b .h-stats{gap:8px 10px !important;flex-wrap:nowrap !important;}
+  html[data-s19] #gs-s13b .h-stat b, #gs-s13b .h-stat b{font-size:18px !important;}
+  html[data-s19] #gs-s13b .h-stat span, #gs-s13b .h-stat span{font-size:12.5px !important;white-space:nowrap;}
+  html[data-s19] #gs-s13b #wgrid, #gs-s13b #wgrid, #gs-s13b .grid.g3{display:grid !important;grid-template-columns:1fr !important;}
+}
+#gs-s13b .bot{padding:12px !important;}
+#gs-s13b #asks .pcard, #gs-s13b .asks .pcard, #gs-s13b #asks > *{padding:16px !important;}
+
 </style>
 </head><body class="gs-home">
 <!--gs-s13b-start--><div id="gs-s13b">
@@ -1910,18 +2000,20 @@ html[data-s13d] #gs-s13b #s-gacha .g-ground{display:none!important}
     <span class="cloud c1" aria-hidden="true"></span><span class="cloud c2" aria-hidden="true"></span><span class="cloud c3" aria-hidden="true"></span>
     <div class="wrap hero-in">
       <div class="hero-copy">
-        <small data-i="kick">Grok Bot, 뮤즈, DOTS, 피클과 함께하는</small>
+        <small data-i="kick">갓생봇 플레이그라운드</small>
         <h1 data-i="h1">갓생 사는 갓생봇의 플레이그라운드</h1>
-        <p data-i="sub">템플릿을 가져가거나, 문장을 복사해 바로 시켜 보세요.</p>
+        <p data-i="sub">템플릿 1,437개와 문장 110개를 가져가거나, 복사해 바로 시켜 보세요.</p>
         <form class="search" id="sform" role="search">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
           <input id="s13-q" type="search" autocomplete="off" placeholder="데려갈 봇이나 하고 싶은 일" aria-label="템플릿 검색">
           <button type="submit">찾기</button>
         </form>
+        <p class="guide-slim"><a href="/guide/">처음 쓰는 분이면 한국어 가이드를 보세요</a></p>
         <div class="feed">
           <span class="lb">배부름</span>
           <span class="hearts" id="hearts" role="img" aria-label="배부름 0/5"></span>
-          <button class="btn sm pink" id="fbtn" type="button">밥 주기</button>
+          <button class="btn sm ghost" id="fbtn" type="button">밥 주기</button>
+          <a class="tag" id="s19-hutchip" href="#s-my">내 봇장 0마리, 출석 1일차</a>
         </div>
         <p id="fmsg" aria-live="polite"></p>
       </div>
@@ -1932,7 +2024,7 @@ html[data-s13d] #gs-s13b #s-gacha .g-ground{display:none!important}
     <div class="ground">
       <div class="wrap h-stats">
         <a class="h-stat c1" href="#s-tpl"><b>1,437</b><span>템플릿<em class="nick">봇 분양소</em></span></a>
-        <a class="h-stat c2" href="#s-ask"><b>110</b><span>프롬프트<em class="nick">훈련소</em></span></a>
+        <a class="h-stat c2" href="#s-ask"><b>110</b><span>문장<em class="nick">훈련소</em></span></a>
         <a class="h-stat c3" href="#s-week"><b>79</b><span>이번 주 새 템플릿<em class="nick">새로 들어온 아이들</em></span></a>
       </div>
     </div>
@@ -1940,29 +2032,60 @@ html[data-s13d] #gs-s13b #s-gacha .g-ground{display:none!important}
 
   <div class="wrap">
 
-  <section class="sec" id="s-friend" hidden>
-    <div class="tile friend">
-      <div class="th">
-        <div><h3>친구 봇 구경하기</h3><p id="fr-sub">친구가 자랑한 성향 카드와 봇이에요. 마음에 들면 나도 데려갈 수 있어요.</p></div>
-        <button class="btn sm ghost" id="fr-close" type="button">닫기</button>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <section class="sec" id="s-tpl">
+    <div class="sh">
+      <div><h2>템플릿 <span class="nick">봇 분양소</span></h2><p>1,437개 가운데 몇 개만 먼저 꺼내 봤어요. 마음에 들면 데려가 내 식으로 고쳐 쓰세요.</p></div>
+      <a class="more" href="#s-all">더 보기</a> <a class="more" href="/templates/">템플릿 페이지로 가기</a>
+    </div>
+    <div class="chips cchips" id="cchips" role="group" aria-label="분야"></div>
+    <div class="grid" id="tgrid"><article class="bot"><span class="av" style="background:#eef0f4"><img src="/mascot/gray.png" alt="" loading="lazy"></span><div><em>투자</em><h3>월가 애널리스트</h3><p>티커나 회사 이름을 주면 월가 리서치 애널리스트처럼 출처와 기준일을 붙인 종목 분석 보고서를 한국어로 써 줘요. 미국, 한국 주식 모두 돼요.</p><button type="button" class="btn sm pink take" data-n="월가 애널리스트">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/X61dpoQtp-luhck7p9H20" target="_blank" rel="noopener">봇 열기</a></div></article><article class="bot"><span class="av" style="background:#ede9fe"><img src="/mascot/purple.png" alt="" loading="lazy"></span><div><em>업무</em><h3>데이터 정리 분석가 Data Bot</h3><p>지저분한 스프레드시트와 CSV를 깔끔하게 정리하고 숫자를 분석해서, 차트와 요약, 정기 보고서로 만들어 줘요.</p><button type="button" class="btn sm pink take" data-n="데이터 정리 분석가 Data Bot">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/nVRvNYs-SyYnWx184H8oO" target="_blank" rel="noopener">봇 열기</a></div></article><article class="bot"><span class="av" style="background:#e5e7eb"><img src="/mascot/black.png" alt="" loading="lazy"></span><div><em>업무</em><h3>루틴 한도 절약사 루티나이저</h3><p>다른 봇들이 매일 처음부터 다시 하는 일을 찾아 백그라운드 Python 스크립트로 바꿔 줘요. 바뀐 게 있을 때만 AI를 깨워서 한도를 아껴요.</p><button type="button" class="btn sm pink take" data-n="루틴 한도 절약사 루티나이저">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/QIxjmlkTZr7SJbS599gWe" target="_blank" rel="noopener">봇 열기</a></div></article><article class="bot"><span class="av" style="background:#fce7f3"><img src="/mascot/pink.png" alt="" loading="lazy"></span><div><em>자동화</em><h3>조달 도우미 Procurement</h3><p>프로젝트 범위를 묻고 괜찮은 업체를 찾아 메일과 팔로업을 보내요. 받은 견적을 점수로 비교해서 가장 좋은 곳을 골라 줘요.</p><button type="button" class="btn sm pink take" data-n="조달 도우미 Procurement">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/HQ3A_w-8v-5mR3k9UvEYe" target="_blank" rel="noopener">봇 열기</a></div></article><article class="bot"><span class="av" style="background:#ffedd5"><img src="/mascot/orange.png" alt="" loading="lazy"></span><div><em>투자</em><h3>상품권 잔액 지킴이 Gift Card Sweeper</h3><p>잊고 있던 상품권, 적립금, 여행 크레딧을 한 목록으로 모아요. 사라지기 전에 언제 어디서 쓸지 계획도 짜 줘요.</p><button type="button" class="btn sm pink take" data-n="상품권 잔액 지킴이 Gift Card Sweeper">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/LdPRToZ8D6kp4e5Rk-JnL" target="_blank" rel="noopener">봇 열기</a></div></article><article class="bot"><span class="av" style="background:#ccfbf1"><img src="/mascot/teal.png" alt="" loading="lazy"></span><div><em>업무</em><h3>장기 기억 연결 supermemory</h3><p>외부 메모리 서비스 supermemory를 Grok Bot에 연결해서 봇이 오래 기억하게 해 줘요. 대화가 길어져도 중요한 내용을 잊지 않아요.</p><button type="button" class="btn sm pink take" data-n="장기 기억 연결 supermemory">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/-cehEo51Z8l6yt6-jJ0te" target="_blank" rel="noopener">봇 열기</a></div></article><article class="bot"><span class="av" style="background:#ede9fe"><img src="/mascot/purple.png" alt="" loading="lazy"></span><div><em>놀이</em><h3>재치 만점 X 비서 Sassy Bot</h3><p>X에 올릴 재미있는 글과 센스 있는 답글을 써 줘요. 멘션을 확인하고 이상한 계정은 걸러 줘요.</p><button type="button" class="btn sm pink take" data-n="재치 만점 X 비서 Sassy Bot">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/CZGWiB4CX5UM9v8Zu-MDT" target="_blank" rel="noopener">봇 열기</a></div></article><article class="bot"><span class="av" style="background:#f3e3d3"><img src="/mascot/brown.png" alt="" loading="lazy"></span><div><em>육아</em><h3>가계도 탐정 GenealogyBot</h3><p>조상과 가족 기록을 찾아 가계도를 정리해 줘요. 단서를 모아 다음에 무엇을 찾아볼지도 알려 줘요.</p><button type="button" class="btn sm pink take" data-n="가계도 탐정 GenealogyBot">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/j6tQoM_OsdYKrG6mfttN_" target="_blank" rel="noopener">봇 열기</a></div></article><article class="bot"><span class="av" style="background:#eef0f4"><img src="/mascot/gray.png" alt="" loading="lazy"></span><div><em>놀이</em><h3>숏폼 제작 도우미 Shorty</h3><p>주제만 주면 짧은 영상용 대본과 구성을 만들어 줘요. 숏폼 콘텐츠를 꾸준히 만들 때 좋아요.</p><button type="button" class="btn sm pink take" data-n="숏폼 제작 도우미 Shorty">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/32fHIBw9Yz-s_o35KycGX" target="_blank" rel="noopener">봇 열기</a></div></article><article class="bot"><span class="av" style="background:#eef0f4"><img src="/mascot/gray.png" alt="" loading="lazy"></span><div><em>업무</em><h3>루틴 점검관 Routine Auditor</h3><p>한 달에 한 번 내 루틴을 모두 살펴서 유지, 주기 늦추기, 이벤트로 바꾸기, 끄기 중 하나로 평가해 줘요. 할 일 없이 도는 루틴을 줄여 한도를 아껴요.</p><button type="button" class="btn sm pink take" data-n="루틴 점검관 Routine Auditor">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/3y5FglJHBwwg_nR7TxFaI" target="_blank" rel="noopener">봇 열기</a></div></article><article class="bot"><span class="av" style="background:#eef0f4"><img src="/mascot/gray.png" alt="" loading="lazy"></span><div><em>놀이</em><h3>X 글 분석가 Post Analyzer</h3><p>공개 지표를 보고 내 X 글 중 어떤 게 왜 잘됐는지 분석해 줘요. 다음 글에 써먹을 점도 정리해 줘요.</p><button type="button" class="btn sm pink take" data-n="X 글 분석가 Post Analyzer">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/ffBuRJCFNCtj-gFzSzgVa" target="_blank" rel="noopener">봇 열기</a></div></article><article class="bot"><span class="av" style="background:#f3e3d3"><img src="/mascot/brown.png" alt="" loading="lazy"></span><div><em>놀이</em><h3>내 말투 글쓰기 Voice Editor</h3><p>내 말투를 익혀서 그대로 글 초안을 써 줘요. 초안만 만들고 직접 올리지는 않아요.</p><button type="button" class="btn sm pink take" data-n="내 말투 글쓰기 Voice Editor">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/ZMEcetFhiK8nzHdsKCeq5" target="_blank" rel="noopener">봇 열기</a></div></article></div>
+    <p class="hint" id="tempty" hidden>맞는 봇이 없어요. 다른 분야를 보거나 검색어를 바꿔 보세요.</p>
+  </section>
+
+  <section class="sec" id="s-week">
+    <div class="tile week">
+      <div class="week-top">
+        <div><span class="tag">이번 주</span><h2 style="font-size:22px;letter-spacing:-.03em;margin-top:8px">이번 주 새 템플릿 <span class="nick">새로 들어온 아이들</span></h2><p style="margin-top:6px;font-size:14px;font-weight:650;color:#3b4660">2026-11-08부터 2026-11-14까지</p></div>
+        <div><b>79</b><span>새로 담은 템플릿</span></div>
       </div>
-      <div id="fr-card"></div>
-      <div class="fr-bots" id="fr-bots"></div>
-      <div class="row fr-cta">
-        <button class="btn pink" id="fr-all" type="button">이 봇들 모두 데려가기</button>
-      </div>
+      <div class="grid g3" id="wgrid"></div>
+        <p class="all-link"><a href="/weekly/">이번 주 새 템플릿 모두 보기</a></p>
     </div>
   </section>
 
-  <section class="sec" id="s13-guide">
-    <div class="tile guide">
-      <div>
-        <span class="tag">가이드</span>
-        <h2>처음 쓰는 분을 위한 한국어 가이드 <span class="nick">입양 안내서</span></h2>
-      </div>
-      <a class="btn" href="/guide/">가이드 보러 가기</a>
-    </div>
-  </section>
+  <div class="div-grass" aria-hidden="true"></div>
 
   <section class="sec" id="s-ask">
     <div class="sh">
@@ -2018,27 +2141,6 @@ html[data-s13d] #gs-s13b #s-gacha .g-ground{display:none!important}
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="sec" id="s-tpl">
-    <div class="sh">
-      <div><h2>템플릿 <span class="nick">봇 분양소</span></h2><p>1,437개 가운데 몇 개만 먼저 꺼내 봤어요. 마음에 들면 데려가 내 식으로 고쳐 쓰세요.</p></div>
-      <a class="more" href="#s-all">더 보기</a> <a class="more" href="/templates/">템플릿 페이지로 가기</a>
-    </div>
-    <div class="chips cchips" id="cchips" role="group" aria-label="분야"></div>
-    <div class="grid" id="tgrid"><article class="bot"><span class="av" style="background:#eef0f4"><img src="/mascot/gray.png" alt="" loading="lazy"></span><div><em>투자</em><h3>월가 애널리스트</h3><p>티커나 회사 이름을 주면 월가 리서치 애널리스트처럼 출처와 기준일을 붙인 종목 분석 보고서를 한국어로 써 줘요. 미국, 한국 주식 모두 돼요.</p><button type="button" class="btn sm pink take" data-n="월가 애널리스트">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/X61dpoQtp-luhck7p9H20" target="_blank" rel="noopener">봇 열기</a></div></article><article class="bot"><span class="av" style="background:#ede9fe"><img src="/mascot/purple.png" alt="" loading="lazy"></span><div><em>업무</em><h3>데이터 정리 분석가 Data Bot</h3><p>지저분한 스프레드시트와 CSV를 깔끔하게 정리하고 숫자를 분석해서, 차트와 요약, 정기 보고서로 만들어 줘요.</p><button type="button" class="btn sm pink take" data-n="데이터 정리 분석가 Data Bot">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/nVRvNYs-SyYnWx184H8oO" target="_blank" rel="noopener">봇 열기</a></div></article><article class="bot"><span class="av" style="background:#e5e7eb"><img src="/mascot/black.png" alt="" loading="lazy"></span><div><em>업무</em><h3>루틴 한도 절약사 루티나이저</h3><p>다른 봇들이 매일 처음부터 다시 하는 일을 찾아 백그라운드 Python 스크립트로 바꿔 줘요. 바뀐 게 있을 때만 AI를 깨워서 한도를 아껴요.</p><button type="button" class="btn sm pink take" data-n="루틴 한도 절약사 루티나이저">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/QIxjmlkTZr7SJbS599gWe" target="_blank" rel="noopener">봇 열기</a></div></article><article class="bot"><span class="av" style="background:#fce7f3"><img src="/mascot/pink.png" alt="" loading="lazy"></span><div><em>자동화</em><h3>조달 도우미 Procurement</h3><p>프로젝트 범위를 묻고 괜찮은 업체를 찾아 메일과 팔로업을 보내요. 받은 견적을 점수로 비교해서 가장 좋은 곳을 골라 줘요.</p><button type="button" class="btn sm pink take" data-n="조달 도우미 Procurement">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/HQ3A_w-8v-5mR3k9UvEYe" target="_blank" rel="noopener">봇 열기</a></div></article><article class="bot"><span class="av" style="background:#ffedd5"><img src="/mascot/orange.png" alt="" loading="lazy"></span><div><em>투자</em><h3>상품권 잔액 지킴이 Gift Card Sweeper</h3><p>잊고 있던 상품권, 적립금, 여행 크레딧을 한 목록으로 모아요. 사라지기 전에 언제 어디서 쓸지 계획도 짜 줘요.</p><button type="button" class="btn sm pink take" data-n="상품권 잔액 지킴이 Gift Card Sweeper">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/LdPRToZ8D6kp4e5Rk-JnL" target="_blank" rel="noopener">봇 열기</a></div></article><article class="bot"><span class="av" style="background:#ccfbf1"><img src="/mascot/teal.png" alt="" loading="lazy"></span><div><em>업무</em><h3>장기 기억 연결 supermemory</h3><p>외부 메모리 서비스 supermemory를 Grok Bot에 연결해서 봇이 오래 기억하게 해 줘요. 대화가 길어져도 중요한 내용을 잊지 않아요.</p><button type="button" class="btn sm pink take" data-n="장기 기억 연결 supermemory">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/-cehEo51Z8l6yt6-jJ0te" target="_blank" rel="noopener">봇 열기</a></div></article></div>
-    <p class="hint" id="tempty" hidden>맞는 봇이 없어요. 다른 분야를 보거나 검색어를 바꿔 보세요.</p>
-  </section>
-
-  <section class="sec" id="s-week">
-    <div class="tile week">
-      <div class="week-top">
-        <div><span class="tag">이번 주</span><h2 style="font-size:22px;letter-spacing:-.03em;margin-top:8px">이번 주 새 템플릿 <span class="nick">새로 들어온 아이들</span></h2><p style="margin-top:6px;font-size:14px;font-weight:650;color:#3b4660">2026-11-08부터 2026-11-14까지</p></div>
-        <div><b>79</b><span>새로 담은 템플릿</span></div>
-      </div>
-      <div class="grid g3" id="wgrid"></div>
-        <p class="all-link"><a href="/weekly/">이번 주 새 템플릿 모두 보기</a></p>
     </div>
   </section>
 
@@ -2106,6 +2208,20 @@ html[data-s13d] #gs-s13b #s-gacha .g-ground{display:none!important}
         </div>
       </div>
 
+  </section>
+
+  <section class="sec" id="s-friend" hidden>
+    <div class="tile friend">
+      <div class="th">
+        <div><h3>친구 봇 구경하기</h3><p id="fr-sub">친구가 자랑한 성향 카드와 봇이에요. 마음에 들면 나도 데려갈 수 있어요.</p></div>
+        <button class="btn sm ghost" id="fr-close" type="button">닫기</button>
+      </div>
+      <div id="fr-card"></div>
+      <div class="fr-bots" id="fr-bots"></div>
+      <div class="row fr-cta">
+        <button class="btn pink" id="fr-all" type="button">이 봇들 모두 데려가기</button>
+      </div>
+    </div>
   </section>
 
   </div>
@@ -3159,7 +3275,7 @@ $('#s13-mres').innerHTML='<p class="rt"><b>'+ma.join('')+'</b> '+(isEn()?'bots t
 var CC=['전체'].concat(CATS),cc='전체';
 function draw(){var q=($('#s13-q').value||'').trim().toLowerCase();
 var l=BOTS.filter(function(b){return(cc==='전체'||b.c===cc)&&(!q||(b.n+' '+b.d+' '+b.c).toLowerCase().indexOf(q)>-1)});
-if(cc==='전체'&&!q)l=l.slice(0,6);else l=l.slice(0,6);
+if(cc==='전체'&&!q)l=l.slice(0,12);else l=l.slice(0,12);
 $('#tgrid').innerHTML=l.map(function(b){return card(b,true)}).join('');$('#tempty').hidden=l.length>0}
 $('#cchips').innerHTML=CC.map(function(c){return '<button type="button" class="chip" aria-pressed="'+(c===cc)+'">'+c+'</button>'}).join('');
 $('#cchips').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;cc=b.textContent;$$('button',this).forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});draw()});
