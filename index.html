@@ -1754,10 +1754,54 @@ html[data-theme=dark] .cp-btn:hover{background:#2a64d8}
   #gs-s13b .nav{display:none!important}
   #gs-s13b .mbtn{display:grid}
 }
-/* Bring back the machine hidden by S13d compact CSS */
-html[data-s13d] #s-gacha .g-stage,
-#gs-s13b #s-gacha .g-stage{display:flex!important;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap}
-#gs-s13b #s-gacha .cloud{display:none!important}
+/* Beat S13d html[data-s13d] #gs-s13b #s-gacha .g-stage{display:none!important} */
+html[data-s13d] #gs-s13b #s-gacha .g-stage,
+#gs-s13b #s-gacha .g-stage{
+  display:flex!important;
+  align-items:center;
+  justify-content:flex-start;
+  gap:10px;
+  flex-wrap:nowrap;
+  min-height:0!important;
+  margin-bottom:0!important;
+  padding:0!important;
+  position:relative;
+  z-index:2;
+}
+#gs-s13b #s-gacha .cloud,
+html[data-s13d] #gs-s13b #s-gacha .cloud,
+html[data-s13d] #gs-s13b #s-gacha .g-ground{display:none!important}
+#gs-s13b #s-gacha .machine{
+  position:relative;
+  flex:none;
+  cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+}
+#gs-s13b #s-gacha .machine .knob{transform-origin:50% 50%}
+#gs-s13b #s-gacha .machine.go .knob{animation:s19-turn .6s ease}
+@keyframes s19-turn{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+#gs-s13b .cap-drop{
+  position:absolute;left:78%;top:72%;width:16px;height:22px;margin:0;
+  border-radius:8px 8px 10px 10px;
+  background:linear-gradient(180deg,#ffd6e7,#ef476f);
+  border:2px solid #1e3a5f;
+  display:none;pointer-events:none;z-index:3;
+}
+#gs-s13b .machine.go .cap-drop{
+  display:block;
+  animation:s19-cap-drop .6s ease forwards;
+}
+@keyframes s19-cap-drop{
+  0%{opacity:1;transform:translate(-50%,0) rotate(0deg) scale(1)}
+  70%{opacity:1;transform:translate(-50%,42px) rotate(180deg) scale(1)}
+  100%{opacity:0;transform:translate(-50%,58px) rotate(240deg) scale(.9)}
+}
+@media(prefers-reduced-motion:reduce){
+  #gs-s13b #s-gacha .machine.go .knob,
+  #gs-s13b #s-gacha .machine.go .dome,
+  #gs-s13b .machine.go .cap-drop{animation:none!important}
+  #gs-s13b .machine.go .cap-drop{display:none}
+}
 #gs-s13b .play-grid{display:grid;gap:14px;align-items:start}
 @media(min-width:900px){
   #gs-s13b .play-grid{grid-template-columns:1fr 1fr}
@@ -1934,7 +1978,7 @@ html[data-s13d] #s-gacha .g-stage,
       <div class="tile gacha" id="s-gacha">
         <div class="g-row">
           <div class="g-stage" id="gstage">
-            <div class="machine" id="machine" aria-hidden="true"><div class="dome"></div><div class="mbody"><span class="knob"></span><span class="slot"></span></div></div>
+            <div class="machine" id="machine" role="button" tabindex="0" aria-label="캡슐 뽑기"><div class="dome"></div><div class="mbody"><span class="knob"></span><span class="slot"></span></div><span class="cap-drop" aria-hidden="true"></span></div>
             <div class="baby" id="baby"><img id="babyimg" src="/mascot/gray.png" alt=""></div>
           </div>
           <div>
@@ -3081,7 +3125,8 @@ gr.innerHTML='<em>'+b.c+'</em><h4>'+b.n+'</h4><p>'+b.d+'</p><div class="row"><bu
 drawF();if(pop&&!rm){baby.classList.remove('pop','eat');void baby.offsetWidth;baby.classList.add('pop')}}
 gr.addEventListener('click',function(e){
 if(e.target.closest('#gbtn,#s13-gbtn')){var i;do{i=Math.floor(Math.random()*BOTS.length)}while(i===gi);gi=i;clearTimeout(gt);
-if(rm){showBaby(false);return}mc.classList.remove('go');void mc.offsetWidth;mc.classList.add('go');gt=setTimeout(function(){showBaby(true)},520)}
+if(rm){showBaby(false);
+return}mc.classList.remove('go');void mc.offsetWidth;mc.classList.add('go');gt=setTimeout(function(){showBaby(true)},520)}
 else if(e.target.closest('.feedbtn')){if(feed()&&!rm){baby.classList.remove('pop','eat');void baby.offsetWidth;baby.classList.add('eat');heart(gst,baby)}}});
 baby.addEventListener('animationend',function(e){if(e.animationName==='s13-eat'||e.animationName==='eat'||e.animationName==='s13-pop'||e.animationName==='pop')baby.classList.remove('eat','pop')});
 showBaby(false);
@@ -3489,6 +3534,20 @@ applyS13bLang();
 if(typeof setL==='function'&&!setL.__s13b){var _setL=setL;setL=function(l){_setL(l);applyS13bLang();if(typeof renderAll==='function')try{renderAll()}catch(e){}};setL.__s13b=true}
 })();
 
+</script>
+<script id="gs-s19-js">
+(function(){
+  if (window.__s19PullBound) return;
+  window.__s19PullBound = true;
+  document.addEventListener('click', function(e){
+    var t=e.target;
+    if(!t || !t.closest) return;
+    if(!t.closest('#machine') || !t.closest('#gs-s13b')) return;
+    e.preventDefault();
+    var btn=document.querySelector('#gs-s13b #s13-gbtn, #gs-s13b #gbtn');
+    if(btn) btn.click();
+  }, true);
+})();
 </script>
 <script id="gs-s13d-js">
 (function(){
