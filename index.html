@@ -1997,6 +1997,90 @@ html[data-s20] #gs-s13b #s-tpl .title-peek{
 @media(max-width:699px){
   html[data-s20] #gs-s13b #s-tpl .title-peek{width:24px;height:24px}
 }
+/* S20 mobile: beat #gs-s13b .sh flex (flex:1 1 240px + column + flex-end + space-between) and S13d carousel width:min(78%,280px) */
+html[data-s20][data-s13d] #gs-s13b #s-tpl #tgrid.grid > *,
+html[data-s20][data-s19] #gs-s13b #s-tpl #tgrid > *,
+html[data-s20] #gs-s13b #s-tpl #tgrid > *{
+  flex:none !important;
+  width:auto !important;
+  max-width:none !important;
+  min-width:0 !important;
+  box-sizing:border-box !important;
+}
+@media(max-width:699px){
+  html[data-s20] #gs-s13b #s-tpl .sh,
+  html[data-s20][data-s19] #gs-s13b #s-tpl .sh,
+  html[data-s20][data-s13d] #gs-s13b #s-tpl .sh{
+    display:grid !important;
+    grid-template-columns:1fr 1fr !important;
+    align-items:stretch !important;
+    justify-content:start !important;
+    justify-items:stretch !important;
+    gap:10px !important;
+    width:100% !important;
+    margin:0 0 14px !important;
+  }
+  html[data-s20] #gs-s13b #s-tpl .sh > div,
+  html[data-s20][data-s19] #gs-s13b #s-tpl .sh > div,
+  html[data-s20][data-s13d] #gs-s13b #s-tpl .sh > div{
+    grid-column:1 / -1 !important;
+    flex:none !important;
+    width:auto !important;
+    max-width:100% !important;
+    min-width:0 !important;
+    min-height:0 !important;
+  }
+  html[data-s20] #gs-s13b #s-tpl .sh .more,
+  html[data-s20][data-s19] #gs-s13b #s-tpl .sh a.more,
+  html[data-s20][data-s13d] #gs-s13b #s-tpl .sh .more{
+    flex:none !important;
+    width:100% !important;
+    max-width:none !important;
+    justify-content:center !important;
+    text-align:center !important;
+    box-sizing:border-box !important;
+  }
+  html[data-s20] #gs-s13b #s-tpl .cchips,
+  html[data-s20][data-s19] #gs-s13b #s-tpl .cchips,
+  html[data-s20][data-s13d] #gs-s13b #s-tpl .cchips{
+    display:flex !important;
+    flex-wrap:nowrap !important;
+    overflow-x:auto !important;
+    overflow-y:hidden !important;
+    -webkit-overflow-scrolling:touch;
+    width:100% !important;
+    margin:0 0 14px !important;
+    padding:0 0 4px !important;
+    scrollbar-width:none;
+  }
+  html[data-s20] #gs-s13b #s-tpl .cchips::-webkit-scrollbar{display:none}
+  html[data-s20] #gs-s13b #s-tpl .cchips .chip{
+    flex:0 0 auto !important;
+    white-space:nowrap !important;
+  }
+  html[data-s20] #gs-s13b #s-tpl #tgrid.grid,
+  html[data-s20] #gs-s13b #s-tpl #tgrid,
+  html[data-s20][data-s19] #gs-s13b #tgrid.grid,
+  html[data-s20][data-s19] #gs-s13b #tgrid,
+  html[data-s20][data-s13d] #gs-s13b #s-tpl #tgrid.grid,
+  html[data-s20][data-s13d] #gs-s13b #s-tpl .grid#tgrid{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    width:100% !important;
+    max-width:none !important;
+    overflow:visible !important;
+  }
+  html[data-s20] #gs-s13b #s-tpl #tgrid > *,
+  html[data-s20][data-s19] #gs-s13b #s-tpl #tgrid > *,
+  html[data-s20][data-s13d] #gs-s13b #s-tpl #tgrid.grid > *,
+  html[data-s20][data-s13d] #gs-s13b #s-tpl #tgrid > *{
+    flex:none !important;
+    width:auto !important;
+    max-width:none !important;
+    min-width:0 !important;
+    box-sizing:border-box !important;
+  }
+}
 html[data-s20] #gs-s13b .bot .tag-by,
 html[data-s20] .bot .tag-by{
   display:inline-block !important;
@@ -2228,7 +2312,6 @@ html[data-s20] #req .tool:hover{background:#f8fafc}
 }
 
 </style>
-
 </head><body class="gs-home">
 <!--gs-s13b-start--><div id="gs-s13b">
 <div class="hd" role="banner">
