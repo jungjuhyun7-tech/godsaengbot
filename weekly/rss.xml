@@ -3,8 +3,43 @@
 <channel>
   <title>갓생봇 이번 주 새 봇</title>
   <link>https://xn--739an53af0c.com/weekly/</link>
-  <description>2026-11-08부터 2026-11-14까지 갓생봇에 새로 담은 봇 79개와 같은 기간 공식 새 소식을 모았어요.</description>
+  <description>2026-11-09부터 2026-11-15까지 갓생봇에 새로 담은 봇 78개와 같은 기간 공식 새 소식을 모았어요.</description>
   <language>ko</language>
+    <item>
+      <title>통화 후속 알리미 Call Follow-Up Nudge</title>
+      <link>https://xn--739an53af0c.com/#bot-Z22sOH2A4RxbBBy7uIUHa</link>
+      <guid isPermaLink="false">bot-Z22sOH2A4RxbBBy7uIUHa</guid>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0900</pubDate>
+      <description>영업이나 상담 통화 뒤 약속과 날짜를 기록하고, 답장이 없으면 후속 문안 초안을 쓰며 두 번 무응답이면 종료할지 물어봐요.</description>
+    </item>
+    <item>
+      <title>선물 스카우트 Gift Scout</title>
+      <link>https://xn--739an53af0c.com/#bot-W4gNjXXfAN_S75Y-cakHM</link>
+      <guid isPermaLink="false">bot-W4gNjXXfAN_S75Y-cakHM</guid>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0900</pubDate>
+      <description>소중한 사람에게 줄 선물 아이디어를 매주 모아 주고, 취향과 예산을 기억해 생일과 기념일 전에 알려 줘요. 내가 허락하기 전에는 사지 않아요.</description>
+    </item>
+    <item>
+      <title>북마크 지식 정리 Bookmark Knowledge</title>
+      <link>https://xn--739an53af0c.com/#bot-_6_MDLviuuikab8TrVAeN</link>
+      <guid isPermaLink="false">bot-_6_MDLviuuikab8TrVAeN</guid>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0900</pubDate>
+      <description>X 북마크와 인스타그램에 저장한 글을 URL과 짧은 설명이 있는 주제별 목록으로 정리하고, 매주 애플 메모도 자동으로 갱신해 줘요.</description>
+    </item>
+    <item>
+      <title>봇 메일 비서 Agent Mail</title>
+      <link>https://xn--739an53af0c.com/#bot-j9Cm3GKLDCptPwwxZWbbD</link>
+      <guid isPermaLink="false">bot-j9Cm3GKLDCptPwwxZWbbD</guid>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0900</pubDate>
+      <description>내 봇에 메일 주소를 만들어 주고, 보낸 메일에서 내 말투를 배운 뒤 잡다한 메일은 걸러 내고 중요한 메일만 알려 줘요.</description>
+    </item>
+    <item>
+      <title>고객 지원 홀리 Holly Helpdesk</title>
+      <link>https://xn--739an53af0c.com/#bot-sIoeE87fILU5CzptPF29K</link>
+      <guid isPermaLink="false">bot-sIoeE87fILU5CzptPF29K</guid>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0900</pubDate>
+      <description>고객 문의와 사용법 안내, 청구 조회를 대신 응대하고, 환불이나 분쟁은 내가 허락한 뒤에만 처리해 줘요.</description>
+    </item>
     <item>
       <title>첫 시작 봇 Efficient setup</title>
       <link>https://xn--739an53af0c.com/#bot-Ph8iZzMwoAa-CrEg9pJO9</link>
@@ -249,41 +284,6 @@
       <guid isPermaLink="false">bot-BgYVSyDd-q9w3GnF2Opfn</guid>
       <pubDate>Thu, 12 Nov 2026 12:00:00 +0900</pubDate>
       <description>지갑 고르기, 백업, 소액으로 먼저 받아 보기까지 한 단계씩 안내해 줘요. 시드 구문이나 키는 절대 묻지 않아요. 투자 조언은 하지 않아요.</description>
-    </item>
-    <item>
-      <title>비트코인 공부봇</title>
-      <link>https://xn--739an53af0c.com/#bot-ARSWHiJwzVBk1GD7wJub8</link>
-      <guid isPermaLink="false">bot-ARSWHiJwzVBk1GD7wJub8</guid>
-      <pubDate>Thu, 12 Nov 2026 12:00:00 +0900</pubDate>
-      <description>비트코인을 산 사람이 작동 원리를 배우도록 도와주는 무료 학습봇이에요.</description>
-    </item>
-    <item>
-      <title>봇 보안 점검봇 Sentinel</title>
-      <link>https://xn--739an53af0c.com/#bot-cym0KqdWV_3AguYOphSBv</link>
-      <guid isPermaLink="false">bot-cym0KqdWV_3AguYOphSBv</guid>
-      <pubDate>Thu, 12 Nov 2026 12:00:00 +0900</pubDate>
-      <description>내 봇과 연결 앱이 어디까지 접근할 수 있는지 읽기만 해서 점검해 줘요. 노출된 키를 찾고 보내기 전 초안을 살펴보며, 아무것도 바꾸지 않아요.</description>
-    </item>
-    <item>
-      <title>보유 종목 뉴스봇</title>
-      <link>https://xn--739an53af0c.com/#bot-77b0h9PaDKOkq89jccutR</link>
-      <guid isPermaLink="false">bot-77b0h9PaDKOkq89jccutR</guid>
-      <pubDate>Thu, 12 Nov 2026 12:00:00 +0900</pubDate>
-      <description>내가 가진 주식 뉴스를 읽고 과장 없이 핵심만 정리해 매일 짧게 전해 줘요.</description>
-    </item>
-    <item>
-      <title>밈코인 시황봇</title>
-      <link>https://xn--739an53af0c.com/#bot-KtMjZLEGpkN0K6XuLH2UJ</link>
-      <guid isPermaLink="false">bot-KtMjZLEGpkN0K6XuLH2UJ</guid>
-      <pubDate>Thu, 12 Nov 2026 12:00:00 +0900</pubDate>
-      <description>크립토 트위터에서 하루 동안 무슨 일이 있었는지 업데이트해 줘요.</description>
-    </item>
-    <item>
-      <title>멀티체인 지갑봇</title>
-      <link>https://xn--739an53af0c.com/#bot-6sjh794hYwRG6AJi7IHhh</link>
-      <guid isPermaLink="false">bot-6sjh794hYwRG6AJi7IHhh</guid>
-      <pubDate>Thu, 12 Nov 2026 12:00:00 +0900</pubDate>
-      <description>비트코인부터 솔라나까지 최대 10개 체인에서 지갑을 만들고 관리해 줘요.</description>
     </item>
 </channel>
 </rss>
