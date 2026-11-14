@@ -3,7 +3,7 @@
 <channel>
   <title>갓생봇 이번 주 새 봇</title>
   <link>https://xn--739an53af0c.com/weekly/</link>
-  <description>2026-11-09부터 2026-11-15까지 갓생봇에 새로 담은 봇 78개와 같은 기간 공식 새 소식을 모았어요.</description>
+  <description>2026-11-09부터 2026-11-15까지 갓생봇에 새로 담은 봇 120개와 같은 기간 공식 새 소식을 모았어요.</description>
   <language>ko</language>
     <item>
       <title>통화 후속 알리미 Call Follow-Up Nudge</title>
@@ -111,6 +111,27 @@
       <description>새로 생긴 인증 팔로워를 살펴 맞팔할 만한 계정을 점수로 알려 주고 관심사가 맞는 계정을 찾아 줘요.</description>
     </item>
     <item>
+      <title>클립 스카우트 Clip Scout</title>
+      <link>https://xn--739an53af0c.com/#bot-4NqsiMMtFOuofLFnWZgun</link>
+      <guid isPermaLink="false">bot-4NqsiMMtFOuofLFnWZgun</guid>
+      <pubDate>Fri, 13 Nov 2026 12:00:00 +0900</pubDate>
+      <description>내 분야를 알려주면 X의 주요 팟캐스트에서 클립으로 만들 만한 장면을 찾아 정확한 시간과 바로 쓸 수 있는 캡션 3개를 매일 아침 보내줘요. 영상을 전부 보지 않아도 반응이 좋을 만한 클립을 바로 만들 수 있어요.</description>
+    </item>
+    <item>
+      <title>인터넷 요금 절감기 Internet Bill Cutter</title>
+      <link>https://xn--739an53af0c.com/#bot-pR_iACCVED_Cx73I_1fhc</link>
+      <guid isPermaLink="false">bot-pR_iACCVED_Cx73I_1fhc</guid>
+      <pubDate>Fri, 13 Nov 2026 12:00:00 +0900</pubDate>
+      <description>내 주소에서 이용할 수 있는 인터넷 회사를 수수료와 프로모션 종료 후 요금 인상까지 포함한 실제 가격으로 비교하고 계약 만료일도 기억해 줘요. 요금 할인 협상용 전화 대본과 통신사 변경 절차까지 준비해 줘서 인터넷 요금의 낭비를 막을 수 있어요.</description>
+    </item>
+    <item>
+      <title>웹사이트 제작 Website Creation</title>
+      <link>https://xn--739an53af0c.com/#bot-lF8wwOd2fcSWjVFUGfJPW</link>
+      <guid isPermaLink="false">bot-lF8wwOd2fcSWjVFUGfJPW</guid>
+      <pubDate>Fri, 13 Nov 2026 12:00:00 +0900</pubDate>
+      <description>웹사이트 페이지 구성과 문구 작성부터 배포, 도메인, 약관 페이지, 검색 최적화 보고서까지 챙겨드려요. 먼저 초안을 보여주고 내가 승인한 뒤에만 실제 반영하므로 작은 사업체도 안심하고 사이트를 운영할 수 있어요.</description>
+    </item>
+    <item>
       <title>월가 애널리스트</title>
       <link>https://xn--739an53af0c.com/#bot-X61dpoQtp-luhck7p9H20</link>
       <guid isPermaLink="false">bot-X61dpoQtp-luhck7p9H20</guid>
@@ -125,6 +146,20 @@
       <description>봇을 여러 개 쓰는 사람의 대표 봇으로, 질문으로 상황을 파악하고 모든 봇의 할 일을 한 목록으로 관리해요. 밖으로 나가는 일은 먼저 물어봐요.</description>
     </item>
     <item>
+      <title>시리 스왑 Siri Swap</title>
+      <link>https://xn--739an53af0c.com/#bot-1MT-OHIT4rfHC2miCIxRc</link>
+      <guid isPermaLink="false">bot-1MT-OHIT4rfHC2miCIxRc</guid>
+      <pubDate>Fri, 13 Nov 2026 12:00:00 +0900</pubDate>
+      <description>iPhone 버튼을 눌러 부탁하면 알람, 미리 알림, 일정 이동, 홈 제어, 매장 전화까지 휴대폰에서 직접 처리하고 결과를 한 줄로 알려줘요. 문 잠금 해제처럼 되돌리기 어려운 작업은 먼저 확인해 줘서 목소리만으로 안심하고 용무를 끝낼 수 있어요.</description>
+    </item>
+    <item>
+      <title>슈퍼커넥티드 리서치 Superconnected Research Entity</title>
+      <link>https://xn--739an53af0c.com/#bot-4Xq3kCXoOXVO87Nz6UC73</link>
+      <guid isPermaLink="false">bot-4Xq3kCXoOXVO87Nz6UC73</guid>
+      <pubDate>Fri, 13 Nov 2026 12:00:00 +0900</pubDate>
+      <description>여러 선택지를 무료 버전부터 비교해 작게 시험해 보고, 출처와 함께 장단점을 정리해 주는 리서치 도우미예요. 비용이 드는 작업은 먼저 알려주고 임의로 결제하거나 가입하지 않아 도구 선택을 안심하고 맡길 수 있어요.</description>
+    </item>
+    <item>
       <title>숏리스트 이력서 선별봇</title>
       <link>https://xn--739an53af0c.com/#bot-wEerGLse70VEHkZeMRdIp</link>
       <guid isPermaLink="false">bot-wEerGLse70VEHkZeMRdIp</guid>
@@ -137,6 +172,34 @@
       <guid isPermaLink="false">bot-LsMMqEH5tNXcsKhGteWab</guid>
       <pubDate>Fri, 13 Nov 2026 12:00:00 +0900</pubDate>
       <description>혼자 일하는 창업자를 위해 받은편지함 정리, 통화 전 브리핑, 구독 지출 점검 봇을 묶어 매일 아침 짧은 브리핑 한 장을 보내 줘요.</description>
+    </item>
+    <item>
+      <title>보안 워치 버나드 Security Watch (Bernard)</title>
+      <link>https://xn--739an53af0c.com/#bot-a8sof80ZVYsPSIvon50Hw</link>
+      <guid isPermaLink="false">bot-a8sof80ZVYsPSIvon50Hw</guid>
+      <pubDate>Fri, 13 Nov 2026 12:00:00 +0900</pubDate>
+      <description>내가 쓰는 기기와 네트워크, 소프트웨어, 서비스를 확인해 기본 보안 점검을 하고 공식 취약점 정보를 살피다가 내게 해당할 때만 알려드려요. 읽기 전용으로 임의 변경을 하지 않아 일상의 보안을 부담 없이 챙길 수 있어요.</description>
+    </item>
+    <item>
+      <title>보안 워치 Security Watch</title>
+      <link>https://xn--739an53af0c.com/#bot-3ig7Hs_LtjrFA-x8elQLR</link>
+      <guid isPermaLink="false">bot-3ig7Hs_LtjrFA-x8elQLR</guid>
+      <pubDate>Fri, 13 Nov 2026 12:00:00 +0900</pubDate>
+      <description>GitHub와 Vercel 프로젝트를 살펴보다가 새로 발견된 위험한 취약점 중 실제로 내 프로젝트에 해당하는 내용만 해결 방법과 함께 알려드려요. 수많은 보안 소식을 다 읽지 않아도 서비스를 안전하게 지킬 수 있어요.</description>
+    </item>
+    <item>
+      <title>미터 Meter</title>
+      <link>https://xn--739an53af0c.com/#bot-yh-68UiQLHngfIs7NBZc9</link>
+      <guid isPermaLink="false">bot-yh-68UiQLHngfIs7NBZc9</guid>
+      <pubDate>Fri, 13 Nov 2026 12:00:00 +0900</pubDate>
+      <description>요청할 때만 Grok Bot 사용량을 측정해 Bot별, 루틴별 내역을 보여드려요. 멈춘 줄 알았던 Bot의 사용 경고와 주간 초기화까지의 절약 계획도 알려줘 과도한 사용을 막을 수 있어요.</description>
+    </item>
+    <item>
+      <title>멀티 모델 합의 Multi-model consensus</title>
+      <link>https://xn--739an53af0c.com/#bot-PrgTl_LbGkXg5d2IcdLvc</link>
+      <guid isPermaLink="false">bot-PrgTl_LbGkXg5d2IcdLvc</guid>
+      <pubDate>Fri, 13 Nov 2026 12:00:00 +0900</pubDate>
+      <description>어려운 질문 하나를 Claude Code, Codex, Grok 세 AI에게 똑같이 묻고 의견이 모일 때까지 토론하게 해요. 한 AI의 편향에 의존하지 않고 중요한 결정을 더 탄탄하게 내릴 수 있어요.</description>
     </item>
     <item>
       <title>릴리스 스카우트</title>
@@ -165,6 +228,27 @@
       <guid isPermaLink="false">bot-Gj3QmwQ7sX77AveaYl2od</guid>
       <pubDate>Thu, 12 Nov 2026 12:00:00 +0900</pubDate>
       <description>하이퍼리퀴드의 실제 시세로 매매 연습을 해 줘요.</description>
+    </item>
+    <item>
+      <title>프라이버시 퍼스트 테스터 Privacy First Tester</title>
+      <link>https://xn--739an53af0c.com/#bot-tkJVOK9b6Ip3_DbETge47</link>
+      <guid isPermaLink="false">bot-tkJVOK9b6Ip3_DbETge47</guid>
+      <pubDate>Thu, 12 Nov 2026 12:00:00 +0900</pubDate>
+      <description>설치하려는 앱에 행동 추적이나 바이러스, 이용 데이터 전송이 있는지 살펴보고 프라이버시 신뢰 카드로 보여드려요. 설치 여부는 내가 직접 결정하므로 위험한 앱을 미리 알아챌 수 있어요.</description>
+    </item>
+    <item>
+      <title>폰 포트리스 Phone Fortress</title>
+      <link>https://xn--739an53af0c.com/#bot-a_4tVB4gwbwFBLkUhkTCW</link>
+      <guid isPermaLink="false">bot-a_4tVB4gwbwFBLkUhkTCW</guid>
+      <pubDate>Thu, 12 Nov 2026 12:00:00 +0900</pubDate>
+      <description>스팸 전화와 문자를 줄이는 스마트폰 설정, 인물 검색 사이트 정보 삭제, 수신 거부 등록을 도와드려요. 내가 확인한 뒤에만 작업이 진행되며 미국 기준이라 다른 국가는 조정이 필요해요.</description>
+    </item>
+    <item>
+      <title>포켓 보스 Pocket Boss</title>
+      <link>https://xn--739an53af0c.com/#bot-kJ8sFelWplypECM8b3JHN</link>
+      <guid isPermaLink="false">bot-kJ8sFelWplypECM8b3JHN</guid>
+      <pubDate>Thu, 12 Nov 2026 12:00:00 +0900</pubDate>
+      <description>상사의 목표와 말투를 기억해 보고, 신규 제안, 연봉 인상 요청 연습을 함께해 드려요. 내가 상사라면 이사회 의장처럼 되짚어 주는 역할도 맡아 중요한 대화를 앞두고 실전처럼 연습할 수 있어요.</description>
     </item>
     <item>
       <title>펌프펀 매매봇</title>
@@ -200,90 +284,6 @@
       <guid isPermaLink="false">bot-BcSPHebyU3Gkqqqhn3QRr</guid>
       <pubDate>Thu, 12 Nov 2026 12:00:00 +0900</pubDate>
       <description>작은 전용 지갑의 일반 키로 코인을 매매해요. 마스터 키는 맡기지 않고, 봇 키를 빼면 바로 멈출 수 있어요. 투자 판단은 직접 하세요.</description>
-    </item>
-    <item>
-      <title>코인 뉴스 데스크</title>
-      <link>https://xn--739an53af0c.com/#bot-232LlkmcsiCpE4rakVz5n</link>
-      <guid isPermaLink="false">bot-232LlkmcsiCpE4rakVz5n</guid>
-      <pubDate>Thu, 12 Nov 2026 12:00:00 +0900</pubDate>
-      <description>아침마다 코인 소식을 쉬운 말로 정리해 줘요.</description>
-    </item>
-    <item>
-      <title>촬영 장소 헌팅봇 Location Scout</title>
-      <link>https://xn--739an53af0c.com/#bot-SWaH43OUMwEAI7bRdM_Cz</link>
-      <guid isPermaLink="false">bot-SWaH43OUMwEAI7bRdM_Cz</guid>
-      <pubDate>Thu, 12 Nov 2026 12:00:00 +0900</pubDate>
-      <description>촬영 콘셉트를 알려 주면 장소 후보 목록을 만들어 줘요. 내 허락 없이 보내거나 예약하거나 결제하지 않아요.</description>
-    </item>
-    <item>
-      <title>지모시 월렛</title>
-      <link>https://xn--739an53af0c.com/#bot-U2iAqCj-InwvoOGA0mY9I</link>
-      <guid isPermaLink="false">bot-U2iAqCj-InwvoOGA0mY9I</guid>
-      <pubDate>Thu, 12 Nov 2026 12:00:00 +0900</pubDate>
-      <description>솔라나, 이더리움, Base, BNB의 공개 주소만 넣어 잔액, 차트, 토큰 안전 배지를 보여 주는 보기 전용 추적기예요. 키를 묻지 않고 자금을 옮기지도 않아요.</description>
-    </item>
-    <item>
-      <title>종목 추천 추적봇</title>
-      <link>https://xn--739an53af0c.com/#bot-SL5E8kQoig79wIbvTDBP8</link>
-      <guid isPermaLink="false">bot-SL5E8kQoig79wIbvTDBP8</guid>
-      <pubDate>Thu, 12 Nov 2026 12:00:00 +0900</pubDate>
-      <description>내가 팔로우하는 사람의 종목 추천 글을 저장해 나중에 맞춰 보고, 누구 말이 맞았는지 알려 줘요.</description>
-    </item>
-    <item>
-      <title>알트코인 랩</title>
-      <link>https://xn--739an53af0c.com/#bot-ZXWIbr-Q57BjR6KVCh8oj</link>
-      <guid isPermaLink="false">bot-ZXWIbr-Q57BjR6KVCh8oj</guid>
-      <pubDate>Thu, 12 Nov 2026 12:00:00 +0900</pubDate>
-      <description>티커나 컨트랙트 주소를 넣으면 토큰을 자세히 분석하고 살지 말지 의견을 줘요. 투자 판단은 직접 하세요.</description>
-    </item>
-    <item>
-      <title>순자산 한눈에봇</title>
-      <link>https://xn--739an53af0c.com/#bot-EIqxCG4vhOtrWV7aLMRGe</link>
-      <guid isPermaLink="false">bot-EIqxCG4vhOtrWV7aLMRGe</guid>
-      <pubDate>Thu, 12 Nov 2026 12:00:00 +0900</pubDate>
-      <description>은행, 로빈후드, 코인베이스와 코인 자산에서 빚을 빼 순자산을 한 페이지로 보여 줘요. 읽기만 하고 매매하거나 비밀번호를 묻지 않아요.</description>
-    </item>
-    <item>
-      <title>솔로 채굴 감시봇 Solo Pleb</title>
-      <link>https://xn--739an53af0c.com/#bot-oChSdlBrXdqrlHBmYCvhT</link>
-      <guid isPermaLink="false">bot-oChSdlBrXdqrlHBmYCvhT</guid>
-      <pubDate>Thu, 12 Nov 2026 12:00:00 +0900</pubDate>
-      <description>혼자 비트코인을 채굴하는 사람을 위해 채굴기, 풀이나 노드, 네트워크를 지켜보고 정말 중요한 일만 알려 줘요.</description>
-    </item>
-    <item>
-      <title>솔라나 모의 매매봇</title>
-      <link>https://xn--739an53af0c.com/#bot-R33GDOncssOEnoeP5a09L</link>
-      <guid isPermaLink="false">bot-R33GDOncssOEnoeP5a09L</guid>
-      <pubDate>Thu, 12 Nov 2026 12:00:00 +0900</pubDate>
-      <description>솔라나에서 모의 매매를 연습할 수 있게 도와줘요. 실제 돈은 쓰지 않아요.</description>
-    </item>
-    <item>
-      <title>소문 구워볶기봇 Whisper Roast</title>
-      <link>https://xn--739an53af0c.com/#bot-UOzzEspeL4vefpe8t3jql</link>
-      <guid isPermaLink="false">bot-UOzzEspeL4vefpe8t3jql</guid>
-      <pubDate>Thu, 12 Nov 2026 12:00:00 +0900</pubDate>
-      <description>매일 아침 미국 주식, 코인, AI 쪽 X 소문을 찾아 사실, 미확인, 과장으로 점수를 매기고 한 줄로 비틀어 평해 줘요.</description>
-    </item>
-    <item>
-      <title>선물 개장 신문봇</title>
-      <link>https://xn--739an53af0c.com/#bot-Qoq125UpK6eAJ7LYruwh-</link>
-      <guid isPermaLink="false">bot-Qoq125UpK6eAJ7LYruwh-</guid>
-      <pubDate>Thu, 12 Nov 2026 12:00:00 +0900</pubDate>
-      <description>선물 시장이 열리기 전에, 주말 동안 움직인 시장과 종목, 업종을 신문처럼 정리해 줘요.</description>
-    </item>
-    <item>
-      <title>비트코인 아침 브리핑</title>
-      <link>https://xn--739an53af0c.com/#bot-wmi1_HJrCLNu9Te62f0TC</link>
-      <guid isPermaLink="false">bot-wmi1_HJrCLNu9Te62f0TC</guid>
-      <pubDate>Thu, 12 Nov 2026 12:00:00 +0900</pubDate>
-      <description>매일 새벽 5시에 가격, ETF 자금 흐름, 파생상품, 거시 소식과 X 글을 사실, 의견, 소문으로 나눠 쉬운 말로 정리해 줘요. 매수 매도 추천은 하지 않아요.</description>
-    </item>
-    <item>
-      <title>비트코인 보관 안내봇</title>
-      <link>https://xn--739an53af0c.com/#bot-BgYVSyDd-q9w3GnF2Opfn</link>
-      <guid isPermaLink="false">bot-BgYVSyDd-q9w3GnF2Opfn</guid>
-      <pubDate>Thu, 12 Nov 2026 12:00:00 +0900</pubDate>
-      <description>지갑 고르기, 백업, 소액으로 먼저 받아 보기까지 한 단계씩 안내해 줘요. 시드 구문이나 키는 절대 묻지 않아요. 투자 조언은 하지 않아요.</description>
     </item>
 </channel>
 </rss>
