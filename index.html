@@ -1096,7 +1096,47 @@ html[data-theme=dark] #s-guide.gs-gbn-b1 .gbn-b{
   color:#fff;
 }
 </style>
-<style id="gs-s13b-css">
+<style id="cp-box">
+.cp-box{margin:28px 0 8px;padding:16px 18px 18px;border:1px solid var(--ln,#ededed);border-radius:14px;background:var(--card,#fff)}
+.cp-h{margin:0 0 14px;font-size:17px;font-weight:800;letter-spacing:-.02em;color:var(--ink,#0a0a0a)}
+.cp-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cp-card{border:1px solid var(--ln,#ededed);border-radius:12px;background:var(--soft,#f7f8fa);overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.cp-ph{height:200px;padding:12px;box-sizing:border-box;background:#f3f4f6;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.cp-ph img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block}
+.cp-info{padding:12px 14px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.cp-n{font-size:14px;font-weight:700;color:var(--ink,#0a0a0a);line-height:1.4}
+.cp-note{margin:0;font-size:13px;color:var(--mu,#526176);line-height:1.5}
+.cp-btn{display:inline-flex;align-items:center;justify-content:center;margin-top:auto;background:var(--a,#2563eb);color:#fff!important;text-decoration:none;border-radius:10px;padding:8px 12px;font-size:13px;font-weight:700;align-self:flex-start}
+.cp-btn:hover{background:#1d4ed8}
+.cp-disc{margin:0 0 24px;font-size:12px;color:var(--mu,#526176);line-height:1.55}
+html[data-theme=dark] .cp-box{background:var(--card);border-color:var(--ln2)}
+html[data-theme=dark] .cp-card{background:var(--soft);border-color:var(--ln2)}
+html[data-theme=dark] .cp-ph{background:#2a2f36}
+html[data-theme=dark] .cp-h,html[data-theme=dark] .cp-n{color:var(--ink)}
+html[data-theme=dark] .cp-btn:hover{background:#2a64d8}
+.dim{z-index:2000}
+.md .cp-box{margin:16px 0 6px;padding:12px}
+.md .cp-h{font-size:15px;margin-bottom:10px}
+.md .cp-grid{grid-template-columns:1fr;gap:8px}
+.md .cp-card{flex-direction:row;align-items:center}
+.md .cp-ph{width:88px;height:88px;min-height:88px;flex:none;margin:8px 0 8px 8px;border-radius:10px;padding:6px;box-sizing:border-box;display:flex;align-items:center;justify-content:center}
+.md .cp-info{padding:10px 12px;justify-content:center}
+.md .cp-n{font-size:13px}
+.md .cp-note{font-size:12px}
+.md .cp-btn{padding:6px 10px;font-size:12px;margin-top:4px}
+.md .cp-disc{margin:0 0 2px}
+@media(max-width:560px){
+  .cp-grid{grid-template-columns:1fr;gap:10px}
+  .cp-box{margin:16px 0 8px;padding:12px}
+  .cp-h{margin-bottom:10px}
+  .cp-ph{height:200px}
+  .cp-info{padding:10px 12px 12px}
+  .cp-btn{min-height:44px;padding:10px 14px}
+  .md .cp-card{flex-direction:row;align-items:center}
+  .md .cp-ph{width:80px;height:80px;min-height:80px}
+  .md .cp-btn{min-height:44px;padding:10px 14px;font-size:13px}
+}
+</style><style id="gs-s13b-css">
 #gs-s13b{--bg:#f5f7fc;--card:#fff;--ink:#0f172a;--mu:#5b6478;--ln:#e6e9f2;--a:#2563eb;--sky:#e3f1ff;--lav:#eeeafe;--cream:#fff8ea;--mint:#e4f7ef;--r:24px;--sh:0 1px 2px rgba(15,23,42,.04),0 8px 24px rgba(15,23,42,.05);--play-sky:#bfe8ff;--play-sky2:#e6f7ff;--grass:#86dc5f;--grass2:#5fc23e;--pink:#ff8eb8;--red:#ef476f;--lime:#a3e635}#gs-s13b *{box-sizing:border-box}#gs-s13b{scroll-behavior:smooth;-webkit-text-size-adjust:100%}#gs-s13b{margin:0;background:var(--bg);color:var(--ink);font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;font-size:16px;line-height:1.55;word-break:keep-all;overflow-wrap:anywhere;overflow-x:clip}#gs-s13b a{color:inherit;text-decoration:none}#gs-s13b button,#gs-s13b input{font:inherit;color:inherit}#gs-s13b button{cursor:pointer}#gs-s13b h1,#gs-s13b h2,#gs-s13b h3,#gs-s13b h4,#gs-s13b h5,#gs-s13b p{margin:0}#gs-s13b :focus-visible{outline:2px solid var(--a);outline-offset:2px}#gs-s13b .wrap{max-width:1180px;margin:0 auto;padding:0 16px;min-width:0}#gs-s13b section,#gs-s13b .tile[id]{scroll-margin-top:80px}
 
 /* header: single layer */
@@ -1216,47 +1256,7 @@ body.gs-home #jump{display:none!important}
 @media(max-width:1023px){#gs-s13b .earth{display:none}}
 
 </style>
-<style id="cp-box">
-.cp-box{margin:28px 0 8px;padding:16px 18px 18px;border:1px solid var(--ln,#ededed);border-radius:14px;background:var(--card,#fff)}
-.cp-h{margin:0 0 14px;font-size:17px;font-weight:800;letter-spacing:-.02em;color:var(--ink,#0a0a0a)}
-.cp-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.cp-card{border:1px solid var(--ln,#ededed);border-radius:12px;background:var(--soft,#f7f8fa);overflow:hidden;display:flex;flex-direction:column;min-width:0}
-.cp-ph{height:200px;padding:12px;box-sizing:border-box;background:#f3f4f6;overflow:hidden;display:flex;align-items:center;justify-content:center}
-.cp-ph img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block}
-.cp-info{padding:12px 14px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
-.cp-n{font-size:14px;font-weight:700;color:var(--ink,#0a0a0a);line-height:1.4}
-.cp-note{margin:0;font-size:13px;color:var(--mu,#526176);line-height:1.5}
-.cp-btn{display:inline-flex;align-items:center;justify-content:center;margin-top:auto;background:var(--a,#2563eb);color:#fff!important;text-decoration:none;border-radius:10px;padding:8px 12px;font-size:13px;font-weight:700;align-self:flex-start}
-.cp-btn:hover{background:#1d4ed8}
-.cp-disc{margin:0 0 24px;font-size:12px;color:var(--mu,#526176);line-height:1.55}
-html[data-theme=dark] .cp-box{background:var(--card);border-color:var(--ln2)}
-html[data-theme=dark] .cp-card{background:var(--soft);border-color:var(--ln2)}
-html[data-theme=dark] .cp-ph{background:#2a2f36}
-html[data-theme=dark] .cp-h,html[data-theme=dark] .cp-n{color:var(--ink)}
-html[data-theme=dark] .cp-btn:hover{background:#2a64d8}
-.dim{z-index:2000}
-.md .cp-box{margin:16px 0 6px;padding:12px}
-.md .cp-h{font-size:15px;margin-bottom:10px}
-.md .cp-grid{grid-template-columns:1fr;gap:8px}
-.md .cp-card{flex-direction:row;align-items:center}
-.md .cp-ph{width:88px;height:88px;min-height:88px;flex:none;margin:8px 0 8px 8px;border-radius:10px;padding:6px;box-sizing:border-box;display:flex;align-items:center;justify-content:center}
-.md .cp-info{padding:10px 12px;justify-content:center}
-.md .cp-n{font-size:13px}
-.md .cp-note{font-size:12px}
-.md .cp-btn{padding:6px 10px;font-size:12px;margin-top:4px}
-.md .cp-disc{margin:0 0 2px}
-@media(max-width:560px){
-  .cp-grid{grid-template-columns:1fr;gap:10px}
-  .cp-box{margin:16px 0 8px;padding:12px}
-  .cp-h{margin-bottom:10px}
-  .cp-ph{height:200px}
-  .cp-info{padding:10px 12px 12px}
-  .cp-btn{min-height:44px;padding:10px 14px}
-  .md .cp-card{flex-direction:row;align-items:center}
-  .md .cp-ph{width:80px;height:80px;min-height:80px}
-  .md .cp-btn{min-height:44px;padding:10px 14px;font-size:13px}
-}
-</style></head><body class="gs-home">
+</head><body class="gs-home">
 <header><div class="w top"><a class="logo" href="/"><img class="gb" id="gb" src="/icon-192.png" alt="Grok Bot" width="28" height="28"><b class="gx">×</b><i>갓</i><span>갓생봇</span></a><a class="earth" href="https://www.spacex.com/mission/" target="_blank" rel="noopener" title="SpaceX Mission">Made on Earth by Grok Bot</a><nav><a class="hu" href="#howto" onclick="howto();return false" data-i="nhow">사용법</a><a href="#" class="subn" onclick="sbOpen();return false">템플릿 등록</a><a class="hm" href="#req" data-i="nreq">봇 요청</a><a class="hm" href="/guide/" target="_blank" data-i="nguide">Grok 가이드</a><button class="lang" onclick="setL(L==='ko'?'en':'ko')" id="lb-legacy">EN</button></nav></div></header><nav data-nav2="1" data-home="1" class="gnav" id="gs-gnav" aria-label="갓생봇 메뉴"><div class="gnav-in"><a class="gnav-logo" href="/" aria-label="갓생봇 홈"><img class="gnav-ico" src="/icon-192.png" alt="" width="20" height="20"><i>갓</i><span>갓생봇</span></a><a class="on" href="/#s-all" data-gs-ko="전체소식" data-gs-en="All updates">전체소식</a><a href="/templates/" data-gs-ko="템플릿" data-gs-en="Templates">템플릿</a><a href="/prompts/grok-bot-direct.html" data-gs-ko="에이전트 프롬프트" data-gs-en="Agent prompts">에이전트 프롬프트</a><a href="/articles/" data-gs-ko="아티클" data-gs-en="Articles">아티클</a><a href="/weekly/" data-gs-ko="이번주" data-gs-en="This week">이번주</a><a href="/test.html" data-gs-ko="갓생테스트" data-gs-en="Godsaeng test">갓생테스트</a><a href="/pick.html" data-gs-ko="가챠뽑기" data-gs-en="Gacha pick">가챠뽑기</a><a href="/saju.html" data-gs-ko="사주" data-gs-en="Saju">사주</a><a href="/glossary.html" data-gs-ko="용어" data-gs-en="Glossary">용어</a><a href="/guide/" data-gs-ko="그록가이드" data-gs-en="Grok guide">그록가이드</a><a href="/support/" data-gs-ko="응원하기" data-gs-en="Support us">응원하기</a></div></nav>
 <!--gs-s13b-start--><div id="gs-s13b">
 <div class="hd" role="banner">
@@ -2605,7 +2605,7 @@ if(/취미|놀이|SNS|게임|팔로워/.test(s))return '놀이';
 if(/생산성|자동화|일정/.test(s))return '자동화';
 if(/보고|영업|취업|커리어|비즈니스|메일|회의/.test(s)||b.g==='일')return '업무';
 return '생활'}
-function fromLive(b){return {n:b.n,c:mapCat(b),m:mascotOf(b.n),d:b.s||'',link:b.link||'',en:b.en||'',raw:b}}
+function liveName(b){return (b._ko&&b._ko[0])||b.n}function liveDesc(b){return (b._ko&&b._ko[1])||b.s||''}function fromLive(b){var n=liveName(b);return {n:n,c:mapCat(b),m:mascotOf(n),d:liveDesc(b),link:b.link||'',en:b.en||'',raw:b}}
 var LIVE=(typeof B!=='undefined'&&Array.isArray(B))?B:[];
 var BOTS=LIVE.map(fromLive);
 var BY={};BOTS.forEach(function(b){BY[b.n]=b});
