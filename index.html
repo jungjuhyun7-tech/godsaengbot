@@ -1096,6 +1096,126 @@ html[data-theme=dark] #s-guide.gs-gbn-b1 .gbn-b{
   color:#fff;
 }
 </style>
+<style id="gs-s13b-css">
+#gs-s13b{--bg:#f5f7fc;--card:#fff;--ink:#0f172a;--mu:#5b6478;--ln:#e6e9f2;--a:#2563eb;--sky:#e3f1ff;--lav:#eeeafe;--cream:#fff8ea;--mint:#e4f7ef;--r:24px;--sh:0 1px 2px rgba(15,23,42,.04),0 8px 24px rgba(15,23,42,.05);--play-sky:#bfe8ff;--play-sky2:#e6f7ff;--grass:#86dc5f;--grass2:#5fc23e;--pink:#ff8eb8;--red:#ef476f;--lime:#a3e635}#gs-s13b *{box-sizing:border-box}#gs-s13b{scroll-behavior:smooth;-webkit-text-size-adjust:100%}#gs-s13b{margin:0;background:var(--bg);color:var(--ink);font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;font-size:16px;line-height:1.55;word-break:keep-all;overflow-wrap:anywhere;overflow-x:clip}#gs-s13b a{color:inherit;text-decoration:none}#gs-s13b button,#gs-s13b input{font:inherit;color:inherit}#gs-s13b button{cursor:pointer}#gs-s13b h1,#gs-s13b h2,#gs-s13b h3,#gs-s13b h4,#gs-s13b h5,#gs-s13b p{margin:0}#gs-s13b :focus-visible{outline:2px solid var(--a);outline-offset:2px}#gs-s13b .wrap{max-width:1180px;margin:0 auto;padding:0 16px;min-width:0}#gs-s13b section,#gs-s13b .tile[id]{scroll-margin-top:80px}
+
+/* header: single layer */
+.hd{position:sticky;top:0;z-index:50;background:rgba(245,247,252,.86);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid var(--ln)}#gs-s13b .hd-in{max-width:1180px;margin:0 auto;padding:0 16px;height:64px;display:flex;align-items:center;gap:14px}#gs-s13b .logo{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:17px;letter-spacing:-.02em;flex:none}#gs-s13b .logo img{width:30px;height:30px;border-radius:9px;display:block}#gs-s13b .logo .mk{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:7px;background:var(--ink);color:#fff;font-size:12px;font-weight:800}#gs-s13b .nav{display:none;margin-left:auto;align-items:center;gap:1px;min-width:0}#gs-s13b .nav a{padding:8px 10px;border-radius:999px;font-size:14px;font-weight:600;color:#334155;white-space:nowrap;transition:background .2s,color .2s}#gs-s13b .nav a:hover{background:#fff;color:var(--ink)}#gs-s13b .nav a.cta{background:var(--ink);color:#fff;margin-left:6px;padding:8px 14px}#gs-s13b .cnt{display:inline-grid;place-items:center;min-width:19px;height:19px;padding:0 5px;margin-left:5px;border-radius:999px;background:var(--pink);color:#fff;font-size:11px;font-weight:800;vertical-align:1px}#gs-s13b .mbtn{margin-left:auto;width:44px;height:44px;border:1px solid var(--ln);background:#fff;border-radius:14px;display:grid;place-items:center;padding:0;flex:none}#gs-s13b .mbtn i{display:block;width:18px;height:2px;background:var(--ink);border-radius:2px;box-shadow:0 6px 0 var(--ink),0 -6px 0 var(--ink);transition:transform .2s,box-shadow .2s}#gs-s13b .mbtn[aria-expanded=true] i{box-shadow:none;transform:rotate(45deg)}#gs-s13b .mbtn[aria-expanded=true] i::after{content:"";display:block;width:18px;height:2px;background:var(--ink);border-radius:2px;transform:rotate(90deg)}#gs-s13b .mpanel{position:fixed;inset:64px 0 0 0;z-index:49;background:rgba(15,23,42,.28);padding:10px 12px}#gs-s13b .mpanel[hidden]{display:none}#gs-s13b .mpanel nav{background:#fff;border-radius:22px;padding:10px;display:grid;grid-template-columns:1fr 1fr;gap:6px;box-shadow:0 20px 50px rgba(15,23,42,.18);max-height:calc(100vh - 84px);overflow:auto;animation:s13-drop .22s ease}#gs-s13b .mpanel a{display:flex;align-items:center;min-height:48px;padding:0 14px;border-radius:14px;background:#f5f7fc;font-weight:650;font-size:15px;min-width:0}#gs-s13b .mpanel a:active{background:var(--sky)}@keyframes s13-drop{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}@media(min-width:1024px){.nav{display:flex}.mbtn,.mpanel{display:none!important}}
+
+/* bento base */
+.bento{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:14px}#gs-s13b .bento>*{grid-column:span 12;min-width:0}#gs-s13b .tile{background:var(--card);border:1px solid var(--ln);border-radius:var(--r);padding:20px;box-shadow:var(--sh)}#gs-s13b .sec{padding:28px 0 0}#gs-s13b .sh{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px;margin:0 2px 14px}#gs-s13b .sh>div{min-width:0;flex:1 1 240px}#gs-s13b .sh h2{font-size:22px;letter-spacing:-.03em;line-height:1.25}#gs-s13b .sh p{color:var(--mu);font-size:14px;margin-top:4px}#gs-s13b .more{flex:none;font-size:14px;font-weight:700;color:var(--a);padding:8px 12px;border-radius:999px;background:#fff;border:1px solid var(--ln);white-space:nowrap}#gs-s13b .tag{display:inline-block;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;background:#fff;color:#1e40af}#gs-s13b .btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:46px;padding:0 20px;border-radius:999px;border:0;background:var(--a);color:#fff;font-weight:700;font-size:15px;transition:transform .2s,box-shadow .2s}#gs-s13b .btn:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(37,99,235,.28)}#gs-s13b .btn.dark{background:var(--ink)}#gs-s13b .btn.ghost{background:#fff;color:var(--ink);border:1px solid var(--ln)}#gs-s13b .btn.sm{min-height:36px;padding:0 12px;font-size:13.5px}#gs-s13b .btn.pink{background:var(--pink);color:#fff}#gs-s13b .btn.pink:hover{box-shadow:0 8px 18px rgba(239,71,111,.28)}#gs-s13b .btn[disabled]{background:#e5e7ef;color:#94a3b8;box-shadow:none;transform:none;cursor:default;border-color:transparent}#gs-s13b .row{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+
+/* ===== playground mood: hero only ===== */
+.hero{position:relative;background:linear-gradient(180deg,var(--play-sky) 0%,var(--play-sky2) 72%,#d9f7c8 100%);overflow:hidden;margin-bottom:8px}#gs-s13b .cloud{position:absolute;width:112px;height:48px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 6' shape-rendering='crispEdges'%3E%3Cpath fill='%23fff' d='M4 0h4v1h2v1h2v1h2v3H0V3h2V1h2z'/%3E%3C/svg%3E") no-repeat center/contain;animation:s13-drift 30s ease-in-out infinite alternate;pointer-events:none;z-index:0}#gs-s13b .hero .cloud.c1{left:auto;right:6%;top:14px}#gs-s13b .hero .cloud.c2{right:18%;top:78px;width:84px;height:36px;animation-duration:38s;animation-direction:alternate-reverse}#gs-s13b .hero .cloud.c3{display:none}@media(max-width:899px){.hero .cloud{display:none}}@media(min-width:900px){
+  .hero .cloud.c1{left:48%;right:auto;top:18px}
+  .hero .cloud.c2{right:3%;top:64px}
+  .hero .cloud.c3{display:block;left:62%;right:auto;top:28px;width:70px;height:30px;opacity:.85;animation-duration:44s}
+}@keyframes s13-drift{from{transform:translateX(-18px)}to{transform:translateX(24px)}}#gs-s13b .hero-in{position:relative;z-index:2;display:grid;gap:18px;padding:22px 0 0}#gs-s13b .hero-copy{min-width:0}#gs-s13b .hero-copy small{display:block;font-size:15px;font-weight:700;color:#111;letter-spacing:-.01em;line-height:1.4}#gs-s13b .hero-copy h1{font-size:clamp(30px,5.2vw,54px);line-height:1.14;letter-spacing:-.045em;font-weight:800;margin:10px 0 12px}#gs-s13b .hero-copy>p{color:#3d4a63;font-size:16px;max-width:34em}#gs-s13b .search{margin-top:20px;display:flex;align-items:center;gap:8px;background:#fff;border:1px solid rgba(15,23,42,.08);border-radius:999px;padding:6px 6px 6px 16px;box-shadow:var(--sh);max-width:520px;min-width:0}#gs-s13b .search svg{flex:none;color:var(--mu)}#gs-s13b .search input{flex:1;min-width:0;border:0;outline:0;background:none;height:40px;font-size:15px}#gs-s13b .search button{flex:none;min-height:40px;padding:0 16px;border:0;border-radius:999px;background:var(--ink);color:#fff;font-weight:700;font-size:14px}#gs-s13b .feed{margin-top:16px;display:inline-flex;flex-wrap:wrap;align-items:center;gap:10px;background:#fff;border:1px solid rgba(15,23,42,.08);border-radius:999px;padding:6px 6px 6px 14px;box-shadow:var(--sh);max-width:100%}#gs-s13b .feed .lb{font-size:13.5px;font-weight:800;color:#334155}#gs-s13b .hearts{display:inline-flex;gap:3px}#gs-s13b .hearts svg{display:block;fill:#eadff3}#gs-s13b .hearts svg.on{fill:var(--red)}#gs-s13b #fmsg{margin-top:8px;font-size:13.5px;font-weight:700;color:#3d4a63;min-height:21px}#gs-s13b .stage{position:relative;width:min(100%,560px);margin:0 auto -28px;padding:0 12px;z-index:3;overflow:visible}#gs-s13b .gwrap{width:100%;display:grid;place-items:center}#gs-s13b .gicon{width:100%}#gs-s13b .hp{position:absolute;z-index:30;width:28px;height:24px;margin:-10px 0 0 -14px;pointer-events:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 7 6' shape-rendering='crispEdges'%3E%3Cpath fill='%23ef476f' d='M1 0h2v1h1V0h2v1h1v2H6v1H5v1H4v1H3V5H2V4H1V3H0V1h1z'/%3E%3C/svg%3E") no-repeat center/contain;animation:s13-hp .9s ease-out forwards}@keyframes s13-hp{from{opacity:1;transform:translateY(0) scale(.6)}to{opacity:0;transform:translateY(-54px) scale(1.2)}}#gs-s13b .ground{position:relative;z-index:1;background:var(--grass);padding:44px 0 22px}#gs-s13b .ground::before,#gs-s13b .g-ground::before{content:"";position:absolute;left:0;right:0;top:0;height:10px;background:repeating-linear-gradient(90deg,var(--grass2) 0 10px,transparent 10px 20px);pointer-events:none}#gs-s13b .h-stats{position:relative;z-index:2;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}#gs-s13b .h-stat{display:flex;flex-direction:column;justify-content:space-between;gap:8px;padding:16px 14px;background:#fff;border:1px solid rgba(15,23,42,.06);border-radius:20px;box-shadow:var(--sh);min-width:0}#gs-s13b .h-stat b{font-size:clamp(22px,4.6vw,34px);letter-spacing:-.04em;line-height:1}#gs-s13b .h-stat span{font-size:12.5px;color:var(--mu);font-weight:600;line-height:1.35}#gs-s13b .h-stat.c1{background:var(--cream)}#gs-s13b .h-stat.c2{background:#fff}#gs-s13b .h-stat.c3{background:var(--lav)}@media(max-width:520px){.h-stat{padding:12px 8px}.h-stats{gap:8px}}@media(min-width:900px){
+  .hero-in{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);align-items:end;gap:28px;padding-top:36px}
+  .stage{width:min(100%,560px);margin:0 0 -40px auto}
+  .ground{padding-top:56px;padding-bottom:26px}
+  .h-stat{padding:18px 20px}
+}
+
+/* guide: B1 soft banner */
+.guide{background:linear-gradient(120deg,#dbeafe 0%,#e0e7ff 55%,#ede9fe 100%);color:#172554;border:0;display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:22px}#gs-s13b .guide h2{font-size:20px;letter-spacing:-.02em;margin-top:8px}#gs-s13b .guide .btn{background:#2563eb}@media(min-width:700px){.guide{flex-direction:row;align-items:center;justify-content:space-between;padding:26px 30px}}
+
+/* training ground (prompts) */
+.asks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}#gs-s13b .ask{position:relative;text-align:left;background:var(--tb,#fff);border:1px solid transparent;border-radius:22px;padding:16px 16px 44px;min-height:132px;display:block;transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s;min-width:0}#gs-s13b .ask:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(15,23,42,.08)}#gs-s13b .ask b{display:inline-block;font-size:12.5px;font-weight:800;color:var(--t,#334155);background:rgba(255,255,255,.75);padding:3px 9px;border-radius:999px}#gs-s13b .ask .p{display:block;margin-top:10px;font-size:15px;font-weight:650;line-height:1.45;letter-spacing:-.01em;color:var(--ink)}#gs-s13b .ask i{position:absolute;left:16px;bottom:14px;font-style:normal;font-size:12.5px;font-weight:700;color:var(--t,#334155)}#gs-s13b .ask.w2{grid-column:span 2}#gs-s13b .ask.w2 .p{font-size:17px}@media(min-width:900px){.asks{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.ask{padding:20px 20px 48px;min-height:150px}.ask i{left:20px}.ask.w2 .p{font-size:20px}}#gs-s13b .k1{--t:#a16207;--tb:#fef9c3}#gs-s13b .k2{--t:#047857;--tb:#d1fae5}#gs-s13b .k3{--t:#be185d;--tb:#fce7f3}#gs-s13b .k4{--t:#0369a1;--tb:#e0f2fe}#gs-s13b .k5{--t:#5b21b6;--tb:#ede9fe}#gs-s13b .k6{--t:#9a3412;--tb:#ffedd5}#gs-s13b .k7{--t:#0f766e;--tb:#ccfbf1}#gs-s13b .k8{--t:#15803d;--tb:#dcfce7}#gs-s13b .k9{--t:#1d4ed8;--tb:#dbeafe}#gs-s13b .k10{--t:#6d28d9;--tb:#f3e8ff}
+
+/* play bento; gacha tile gets playground mood */
+.play h3,.th h3{font-size:19px;letter-spacing:-.02em}#gs-s13b .play .ds{color:var(--mu);font-size:14px;margin:4px 0 14px}#gs-s13b .gacha{position:relative;padding:0;overflow:hidden;display:flex;flex-direction:column;border:0;background:linear-gradient(180deg,var(--play-sky) 0%,var(--play-sky2) 70%,#d9f7c8 100%)}#gs-s13b .gacha .cloud{top:18px;right:8%;width:84px;height:36px}#gs-s13b .gacha .cloud.c2{top:64px;right:38%;width:60px;height:26px;opacity:.85;animation-duration:40s;animation-direction:alternate-reverse}#gs-s13b .g-top{position:relative;z-index:1;padding:20px 20px 0}#gs-s13b .g-top .ds{color:#3d4a63;margin-bottom:0;max-width:22em}#gs-s13b .g-stage{position:relative;z-index:2;flex:1;display:flex;align-items:flex-end;justify-content:center;gap:14px;padding:18px 16px 0;min-height:200px;margin-bottom:-16px}#gs-s13b .machine{width:124px;flex:none}#gs-s13b .dome{height:88px;border:2px solid #1e3a5f;border-bottom:0;border-radius:70px 70px 0 0;background:radial-gradient(circle at 30% 76%,#ff9ec4 0 14px,transparent 15px),radial-gradient(circle at 63% 80%,#ffd84d 0 14px,transparent 15px),radial-gradient(circle at 47% 50%,#9be8cf 0 14px,transparent 15px),radial-gradient(circle at 75% 52%,#cdbcff 0 12px,transparent 13px),radial-gradient(circle at 22% 46%,#a9dcff 0 11px,transparent 12px),#f2fbff;box-shadow:inset 0 -8px 0 rgba(30,58,95,.06)}#gs-s13b .mbody{position:relative;height:64px;border:2px solid #1e3a5f;border-radius:0 0 16px 16px;background:#ef476f;box-shadow:0 6px 14px rgba(239,71,111,.22)}#gs-s13b .knob{position:absolute;left:14px;top:14px;width:32px;height:32px;border-radius:50%;background:#fff;border:2px solid #1e3a5f}#gs-s13b .knob::after{content:"";position:absolute;left:50%;top:4px;bottom:4px;width:5px;margin-left:-2.5px;background:#1e3a5f;border-radius:3px}#gs-s13b .slot{position:absolute;right:12px;top:18px;width:44px;height:26px;border-radius:8px;background:#1e3a5f}#gs-s13b .machine.go .knob{animation:s13-turn .6s ease}#gs-s13b .machine.go .dome{animation:s13-shake .6s ease}@keyframes s13-turn{to{transform:rotate(360deg)}}@keyframes s13-shake{0%,100%{transform:none}25%{transform:translateX(-3px) rotate(-1.5deg)}50%{transform:translateX(3px) rotate(1.5deg)}75%{transform:translateX(-2px)}}#gs-s13b .baby{position:relative;flex:none;width:min(46%,168px);display:grid;place-items:end center;transform-origin:50% 95%;animation:s13-babyidle 2.4s cubic-bezier(.2,.8,.2,1) infinite alternate}#gs-s13b .baby img{width:100%;height:auto;display:block;filter:drop-shadow(0 6px 0 rgba(30,58,95,.12))}#gs-s13b .baby.pop{animation:s13-pop .45s cubic-bezier(.34,1.45,.64,1),s13-babyidle 2.4s cubic-bezier(.2,.8,.2,1) .45s infinite alternate}#gs-s13b .baby.eat{animation:s13-eat .55s cubic-bezier(.34,1.45,.64,1)}@keyframes s13-babyidle{from{transform:translateY(0) rotate(-2deg)}to{transform:translateY(-7px) rotate(2deg)}}@keyframes s13-eat{0%{transform:none}22%{transform:translateY(3px) scale(1.1,.82)}55%{transform:translateY(-18px) scale(.96,1.1)}100%{transform:none}}@keyframes s13-pop{from{opacity:0;transform:scale(.6) rotate(-8deg)}to{opacity:1;transform:none}}#gs-s13b .g-ground{position:relative;z-index:1;background:var(--grass);padding:30px 14px 14px}#gs-s13b .g-card{background:#fff;border-radius:20px;padding:14px;box-shadow:var(--sh);min-width:0}#gs-s13b .g-card em,#gs-s13b .bot em{font-style:normal;font-size:11.5px;font-weight:800;color:#3730a3;background:#eef2ff;padding:2px 8px;border-radius:999px}#gs-s13b .g-card h4{font-size:17px;letter-spacing:-.02em;margin:6px 0 2px}#gs-s13b .g-card p{font-size:13.5px;color:var(--mu);line-height:1.45}#gs-s13b .g-card .row{margin-top:10px}#gs-s13b .g-card .hearts{margin-left:2px}#gs-s13b .hint{color:var(--mu);font-size:14px;background:#f5f7fc;border-radius:16px;padding:14px;text-align:center}#gs-s13b .chips{display:flex;flex-wrap:wrap;gap:8px}#gs-s13b .chip{min-height:40px;padding:0 15px;border-radius:999px;border:1px solid var(--ln);background:#fff;font-weight:650;font-size:14px;transition:background .2s,color .2s,border-color .2s}#gs-s13b .chip:hover{border-color:#c7d2fe}#gs-s13b .chip[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:#fff}#gs-s13b .res{display:grid;gap:10px;margin-top:14px}#gs-s13b .mqs{display:grid;gap:10px}#gs-s13b .mq{background:#f5f7fc;border-radius:18px;padding:14px;min-width:0}#gs-s13b .mq p{font-weight:700;font-size:14.5px;margin-bottom:8px}#gs-s13b .mq div{display:grid;grid-template-columns:1fr 1fr;gap:6px}#gs-s13b .mq button{min-height:42px;border-radius:12px;border:1px solid var(--ln);background:#fff;font-size:13.5px;font-weight:650;padding:4px 6px;min-width:0}#gs-s13b .mq button[aria-pressed=true]{background:var(--a);border-color:var(--a);color:#fff}#gs-s13b .rt{font-size:14.5px;margin-bottom:8px}#gs-s13b .rt b{color:var(--a)}@media(min-width:900px){
+  .gacha{grid-column:span 5;grid-row:span 2}.test,.mbti{grid-column:span 7}
+  .mqs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .res.r3{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .res.r3 .bot{flex-direction:column}
+  .tile{padding:26px}.gacha{padding:0}
+  .g-top{padding:26px 26px 0}.g-ground{padding:32px 18px 18px}
+}
+
+/* bot cards */
+.bot{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--ln);border-radius:20px;padding:14px;transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s;min-width:0}#gs-s13b .bot:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(15,23,42,.07)}#gs-s13b .bot>div{min-width:0}#gs-s13b .av{flex:none;width:48px;height:48px;border-radius:16px;background:var(--sky);display:grid;place-items:center;position:relative}#gs-s13b .av img{width:36px;height:36px;object-fit:contain;display:block}#gs-s13b .bot h3{font-size:15.5px;letter-spacing:-.02em;margin:5px 0 2px}#gs-s13b .bot p{font-size:13.5px;color:var(--mu);line-height:1.45}#gs-s13b .bot .btn{margin-top:8px}#gs-s13b .grid{display:grid;gap:12px}@media(min-width:620px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(min-width:980px){.grid{grid-template-columns:repeat(4,minmax(0,1fr))}.grid.g3{grid-template-columns:repeat(3,minmax(0,1fr))}}#gs-s13b .cchips{margin-bottom:14px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding:2px 16px;margin-left:-16px;margin-right:-16px}#gs-s13b .cchips::-webkit-scrollbar{display:none}#gs-s13b .cchips .chip{flex:none}
+
+/* newcomers (weekly) */
+.week{background:linear-gradient(140deg,var(--lav),var(--sky));border:0}#gs-s13b .week-top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:10px;margin-bottom:16px}#gs-s13b .week-top b{font-size:44px;line-height:1;letter-spacing:-.04em}#gs-s13b .week-top span{display:block;font-size:14px;font-weight:650;color:#3b4660}
+
+/* ===== my zone ===== */
+.th{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:8px 12px;margin-bottom:14px}#gs-s13b .th>div{min-width:0;flex:1 1 180px}#gs-s13b .th p{color:var(--mu);font-size:14px;margin-top:3px}#gs-s13b .ex{display:none;align-items:center;flex:none;font-size:11.5px;font-weight:800;color:#8a5a00;background:#fff3c4;border:1px dashed #e0b020;padding:3px 9px;border-radius:999px;white-space:nowrap}#gs-s13b.is-sample .ex{display:inline-flex}#gs-s13b .sbar{display:flex;flex-wrap:wrap;align-items:center;gap:10px 12px;background:#fff7d6;border:1.5px dashed #e0b020;border-radius:18px;padding:12px 14px;margin-bottom:14px}#gs-s13b .sbar .sb-tag{flex:none;font-size:12.5px;font-weight:800;background:#f5b921;color:#3b2a00;padding:4px 11px;border-radius:999px}#gs-s13b .sbar p{flex:1 1 220px;min-width:0;font-size:13.5px;color:#5b4a12;font-weight:600}#gs-s13b .sbar.mine{background:#eef6ff;border-color:#b9d4f5}#gs-s13b .sbar.mine .sb-tag{background:var(--a);color:#fff}#gs-s13b .sbar.mine p{color:#334155}@media(min-width:980px){.hut{grid-column:span 7}.stamp{grid-column:span 5}.circle{grid-column:span 5}.type{grid-column:span 7}}#gs-s13b .hut-list{display:grid;gap:8px;max-height:620px;overflow:auto;padding:2px}#gs-s13b .hb{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;background:#f5f7fc;border-radius:16px;padding:10px;min-width:0}#gs-s13b .hb .av{width:44px;height:44px;border-radius:14px}#gs-s13b .hb .av img{width:34px;height:34px}#gs-s13b .md{position:absolute;right:-6px;top:-6px;width:21px;height:21px;border-radius:50%;font-size:11px;font-weight:800;display:grid;place-items:center;border:2px solid #fff;color:#3b2a00}#gs-s13b .md.m1{background:linear-gradient(135deg,#fff3b0,#f5b921 60%,#b87a05)}#gs-s13b .md.m2{background:linear-gradient(135deg,#f8fafc,#aab4c4 60%,#6b7688)}#gs-s13b .md.m3{background:linear-gradient(135deg,#ffd9b8,#e8894a 60%,#a8501c)}#gs-s13b .hb-t{flex:1 1 120px;min-width:0}#gs-s13b .hb-t b{display:block;font-size:14.5px;letter-spacing:-.01em}#gs-s13b .hb-t span{font-size:12.5px;color:var(--mu)}#gs-s13b .hb-a{display:flex;gap:6px;flex:none;margin-left:auto}#gs-s13b .hx{min-height:36px;padding:0 11px;border-radius:999px;border:1px solid var(--ln);background:#fff;font-size:12.5px;font-weight:650;color:var(--mu)}#gs-s13b .hx:hover{color:var(--red);border-color:#fecdd3}#gs-s13b .st-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}#gs-s13b .st{aspect-ratio:1;border-radius:14px;border:1.5px dashed #cfd6e4;background:#f8fafc;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;font-size:10.5px;font-weight:700;color:#94a3b8;min-width:0;line-height:1.2;white-space:nowrap}#gs-s13b .st svg{width:42%;height:auto;display:block}#gs-s13b .st.on{border:1.5px solid #ffb3cf;background:#fff0f6;color:#be185d}#gs-s13b .st.on:nth-child(3n) svg{transform:rotate(-10deg)}#gs-s13b .st.on:nth-child(3n+1) svg{transform:rotate(8deg)}#gs-s13b .st.ms{border-color:#e0b020;background:#fffbea;color:#a16207}#gs-s13b .st.ms.on{border-style:solid;background:linear-gradient(135deg,#fff3b0,#f5c64a);border-color:#d39b10;color:#6b4a00}#gs-s13b .st.today{box-shadow:0 0 0 3px rgba(37,99,235,.28)}#gs-s13b .mls{display:grid;gap:8px;margin-top:14px}#gs-s13b .ml-r{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;background:#f5f7fc;border-radius:16px;padding:10px 12px;min-width:0}#gs-s13b .ml-r .mt{flex:1 1 130px;min-width:0}#gs-s13b .ml-r b{font-size:14px}#gs-s13b .ml-r small{font-size:12px;color:var(--mu);margin-left:6px;font-weight:700}#gs-s13b .bar{height:6px;border-radius:99px;background:#e2e8f0;overflow:hidden;margin-top:6px}#gs-s13b .bar i{display:block;height:100%;background:#84cc16;border-radius:99px}#gs-s13b .ok-pill{font-size:12.5px;font-weight:800;color:#3f6212;background:#ecfccb;padding:5px 11px;border-radius:999px}#gs-s13b .lk{background:none;border:0;padding:6px 4px;font-size:12.5px;font-weight:700;color:var(--a);text-decoration:underline;text-underline-offset:3px}
+
+/* badge wall: one dark accent tile */
+.badges{background:#0f172a;border-color:#0f172a;color:#e2e8f0}#gs-s13b .badges .th p{color:#94a3b8}#gs-s13b .badges .tot{flex:none;font-size:13px;font-weight:800;color:var(--lime);background:rgba(163,230,53,.12);padding:5px 12px;border-radius:999px}#gs-s13b .bd-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}@media(min-width:520px){.bd-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(min-width:760px){.bd-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}@media(min-width:1040px){.bd-grid{grid-template-columns:repeat(7,minmax(0,1fr))}}#gs-s13b .bd{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;gap:3px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:16px 8px 12px;min-width:0}#gs-s13b .bd svg{width:78px;height:78px;display:block;margin-bottom:6px}#gs-s13b .bd.on svg{filter:drop-shadow(0 6px 14px rgba(0,0,0,.45))}#gs-s13b .bd.on{background:linear-gradient(180deg,rgba(255,255,255,.09),rgba(255,255,255,.03))}#gs-s13b .bd b{font-size:13.5px;letter-spacing:-.01em;color:#f8fafc}#gs-s13b .bd:not(.on) b{color:#94a3b8}#gs-s13b .bd small{font-size:11.5px;color:#8492a8;line-height:1.35}#gs-s13b .bd .pg{width:100%;max-width:110px;height:6px;border-radius:99px;background:rgba(255,255,255,.12);overflow:hidden;margin-top:6px}#gs-s13b .bd .pg i{display:block;height:100%;background:var(--lime);border-radius:99px;min-width:3px}#gs-s13b .bd .ct{font-size:12px;font-weight:800;color:var(--lime);font-variant-numeric:tabular-nums}#gs-s13b .bd .got{font-size:11.5px;font-weight:800;color:#1a2e05;background:var(--lime);padding:2px 9px;border-radius:999px;margin-top:5px}#gs-s13b .bd .ltd{position:absolute;left:8px;top:8px;font-size:10.5px;font-weight:800;color:#0f172a;background:#fde047;padding:2px 7px;border-radius:999px}#gs-s13b .bd .mini{margin-top:6px;min-height:30px;padding:0 11px;border-radius:999px;border:1px solid rgba(163,230,53,.55);background:transparent;color:var(--lime);font-size:12px;font-weight:800}#gs-s13b .bd .mini:hover{background:rgba(163,230,53,.12)}
+
+/* circle and type */
+.namebox{display:flex;align-items:center;gap:8px;margin-bottom:12px;min-width:0}#gs-s13b .namebox label{flex:none;font-size:13px;font-weight:700;color:var(--mu)}#gs-s13b .inp{flex:1;width:100%;min-width:0;height:44px;border:1px solid var(--ln);border-radius:14px;padding:0 14px;background:#fff;font-size:16px}#gs-s13b .cv{display:block;width:100%;height:auto;border-radius:20px;border:1px solid var(--ln);background:#eef4ff}#gs-s13b .circle .row,#gs-s13b .type .row.acts{margin-top:12px}#gs-s13b .btn.xb{background:#0f172a}#gs-s13b .ty-card{background:linear-gradient(140deg,var(--cream),var(--lav));border-radius:20px;padding:16px;display:grid;gap:14px;min-width:0}#gs-s13b .ty-hd{display:flex;gap:12px;align-items:center;min-width:0}#gs-s13b .ty-hd>div{min-width:0}#gs-s13b .ty-hd .av{width:72px;height:72px;border-radius:22px;background:#fff}#gs-s13b .ty-hd .av img{width:56px;height:56px}#gs-s13b .ty-hd small{font-size:12.5px;font-weight:800;color:#6d28d9}#gs-s13b .ty-hd h4{font-size:24px;letter-spacing:-.03em;line-height:1.2}#gs-s13b .ty-hd p{font-size:13.5px;color:#3d4a63;margin-top:4px}#gs-s13b .ty-mid{display:grid;gap:12px;align-items:center}@media(min-width:620px){.ty-mid{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}}#gs-s13b .radar{width:100%;max-width:330px;height:auto;margin:0 auto;display:block}#gs-s13b .tb{display:grid;gap:9px}#gs-s13b .tb-r{font-size:13px;font-weight:700;display:flex;justify-content:space-between;gap:8px}#gs-s13b .tb-r span{color:var(--mu);font-variant-numeric:tabular-nums}#gs-s13b .tb .bar{background:rgba(15,23,42,.08);margin-top:4px}#gs-s13b .tb .bar i{background:var(--a)}#gs-s13b .rec{display:grid;gap:14px;margin-top:14px}@media(min-width:700px){.rec{grid-template-columns:repeat(2,minmax(0,1fr))}}#gs-s13b .rec>div{min-width:0;display:grid;gap:8px;align-content:start}#gs-s13b .rec h5,#gs-s13b .cpb h5{font-size:13.5px;color:#334155}#gs-s13b .rp{display:block;width:100%;text-align:left;background:#f5f7fc;border:1px solid var(--ln);border-radius:14px;padding:10px 12px;font-size:13.5px;font-weight:600;line-height:1.45;min-width:0}#gs-s13b .rp:hover{border-color:#c7d2fe}#gs-s13b .rp i{display:block;font-style:normal;font-size:11.5px;font-weight:800;color:var(--a);margin-top:4px}#gs-s13b .cpb{margin-top:14px;border:1px dashed #cbd5e1;border-radius:18px;padding:14px;background:#fbfcff}#gs-s13b .cpb h5{margin-bottom:8px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}#gs-s13b .cpb h5 span{font-size:11px;font-weight:800;color:#64748b;background:#eef2f7;padding:2px 8px;border-radius:999px}#gs-s13b .cp-items{display:grid;gap:8px}@media(min-width:520px){.cp-items{grid-template-columns:repeat(2,minmax(0,1fr))}}#gs-s13b .cp-i{display:flex;gap:10px;align-items:center;background:#fff;border:1px solid var(--ln);border-radius:14px;padding:8px;min-width:0;font-size:13px;font-weight:650}#gs-s13b .cp-i i{flex:none;width:44px;height:44px;border-radius:10px;background:repeating-linear-gradient(45deg,#eef2f7 0 6px,#e2e8f0 6px 12px)}#gs-s13b .cp-i span{min-width:0}#gs-s13b .cp-i small{display:block;font-size:11.5px;color:var(--a);font-weight:700}#gs-s13b .cp-d{font-size:11.5px;color:#64748b;margin-top:8px;line-height:1.5}
+
+
+
+/* plain name + pet nickname */
+.nick{display:inline-block;font-style:normal;font-weight:700;font-size:11.5px;color:#5b6478;letter-spacing:-.01em;margin-left:6px;vertical-align:middle;background:#eef1f7;border-radius:999px;padding:2px 8px;line-height:1.3;white-space:nowrap}#gs-s13b h2 .nick,#gs-s13b h3 .nick{font-size:12px;font-weight:700}#gs-s13b .nav a{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;padding:5px 8px;line-height:1.15;border-radius:12px;white-space:nowrap}#gs-s13b .nav a .nick{margin:0;padding:0;background:transparent;font-size:10px;font-weight:650;color:#7b8494;white-space:nowrap}#gs-s13b .nav a:hover .nick{color:#5b6478}#gs-s13b .nav a.cta{flex-direction:row;align-items:center;margin-left:6px;padding:8px 14px;border-radius:999px}#gs-s13b .mpanel a{flex-direction:column;align-items:flex-start;justify-content:center;gap:1px;padding:8px 14px;min-height:52px}#gs-s13b .mpanel a .nick{margin:0;padding:0;background:transparent;font-size:11px;font-weight:650;color:#7b8494}#gs-s13b .h-stat{position:relative}#gs-s13b .h-stat .nick{display:block;margin:3px 0 0;padding:0;background:transparent;font-size:11px;font-weight:650;color:#7b8494;line-height:1.3;white-space:normal}
+
+/* pixel sprites in hut + fly */
+.pix{width:48px;height:48px;display:block;overflow:visible}#gs-s13b .pix svg{width:100%;height:100%;display:block;shape-rendering:crispEdges}#gs-s13b .hb{display:grid;grid-template-columns:52px minmax(0,1fr);gap:6px 10px;align-items:start}#gs-s13b .hb .av{width:48px;height:48px;border-radius:14px;background:#fff;grid-row:1/3;position:relative;overflow:visible;box-shadow:inset 0 0 0 1px rgba(15,23,42,.06)}#gs-s13b .hb-t{min-width:0}#gs-s13b .hb-t .stg{display:inline-block;font-size:11px;font-weight:800;color:#6d28d9;background:#f3e8ff;padding:1px 7px;border-radius:999px;margin-left:4px;vertical-align:1px}#gs-s13b .hb-t .stg.teen{color:#1e40af;background:#dbeafe}#gs-s13b .hb-t .stg.adult{color:#9a3412;background:#ffedd5}#gs-s13b .hb-p{grid-column:1/-1;background:#fff;border:1px solid var(--ln);border-radius:14px;padding:8px 10px;min-width:0}#gs-s13b .hb-p .pk{display:block;font-size:11px;font-weight:800;color:#334155;margin-bottom:4px}#gs-s13b .hb-p .prow{display:flex;gap:8px;align-items:flex-start;min-width:0}#gs-s13b .hb-p .prow p{flex:1;min-width:0;font-size:13px;font-weight:600;line-height:1.4;margin:0}#gs-s13b .hb-a{grid-column:2;display:flex;flex-wrap:wrap;gap:6px}#gs-s13b .miss-bub{display:inline-block;margin-left:4px;background:#fff7ed;color:#9a3412;border:1px solid #fdba74;border-radius:999px;font-size:11px;font-weight:800;padding:1px 8px;white-space:nowrap;vertical-align:1px}.pix-fly{position:fixed;z-index:120;width:56px;height:56px;margin:0;pointer-events:none;left:0;top:0;will-change:transform;filter:drop-shadow(0 6px 8px rgba(15,23,42,.18))}.pix-fly .pix{width:56px;height:56px}
+
+/* friend peek */
+.friend{background:linear-gradient(140deg,#fff8ea,#eeeafe);border:1px solid #e8e0ff}#gs-s13b .friend .th p{color:#3d4a63}#gs-s13b .fr-bots{display:grid;gap:10px;margin-top:12px}@media(min-width:700px){.fr-bots{grid-template-columns:repeat(2,minmax(0,1fr))}}#gs-s13b .fr-cta{margin-top:14px}
+
+/* my record: compact tab bento, one open pane */
+.my-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:0 0 12px}@media(min-width:700px){.my-tabs{grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}}#gs-s13b .my-tab{display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;gap:2px;text-align:left;background:#fff;border:1px solid var(--ln);border-radius:18px;padding:12px 10px 11px;box-shadow:var(--sh);min-width:0;min-height:78px;transition:transform .2s,box-shadow .2s,background .2s,border-color .2s,color .2s}#gs-s13b .my-tab .k{font-size:12px;font-weight:800;color:var(--mu);letter-spacing:-.01em}#gs-s13b .my-tab .v{font-size:clamp(15px,3.6vw,18px);font-weight:800;letter-spacing:-.03em;line-height:1.2;color:var(--ink);max-width:100%}#gs-s13b .my-tab .s{font-size:11.5px;color:var(--mu);font-weight:600;line-height:1.3}#gs-s13b .my-tab:hover{transform:translateY(-1px)}#gs-s13b .my-tab[aria-selected=true]{border-color:var(--ink);background:var(--ink);color:#fff;box-shadow:0 8px 18px rgba(15,23,42,.16);transform:none}#gs-s13b .my-tab[aria-selected=true] .k,#gs-s13b .my-tab[aria-selected=true] .s{color:rgba(255,255,255,.72)}#gs-s13b .my-tab[aria-selected=true] .v{color:#fff}#gs-s13b .my-pane[hidden]{display:none!important}#gs-s13b .my-pane{min-width:0}#gs-s13b .circle .cv{max-width:440px;width:100%;margin:0 auto;display:block}#gs-s13b .hut-list{max-height:400px;padding-top:6px;overflow:auto}@media(max-width:699px){
+  .my-tabs{grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}
+  .my-tab:nth-child(-n+3){grid-column:span 2}
+  .my-tab:nth-child(n+4){grid-column:span 3}
+}@media(max-width:519px){
+  .my-tab{padding:10px 8px 9px;min-height:72px;border-radius:16px}
+  .sbar{align-items:flex-start}
+  .sbar .btn{margin-left:auto}
+}
+
+/* certificate modal */
+.modal{position:fixed;inset:0;z-index:90;background:rgba(15,23,42,.55);display:grid;place-items:center;padding:14px;overflow:auto}#gs-s13b .modal[hidden]{display:none}#gs-s13b .modal-in{width:min(100%,640px);background:#fff;border-radius:24px;padding:18px;display:grid;gap:12px;min-width:0;box-shadow:0 30px 80px rgba(15,23,42,.35)}#gs-s13b .modal-hd{display:flex;align-items:center;justify-content:space-between;gap:10px}#gs-s13b .modal-hd h3{font-size:19px;letter-spacing:-.02em}#gs-s13b .mx{flex:none;width:40px;height:40px;border-radius:50%;border:1px solid var(--ln);background:#fff;font-size:20px;line-height:1}#gs-s13b .modal label{font-size:13px;font-weight:700;color:var(--mu);display:grid;gap:6px}#gs-s13b .modal canvas{display:block;width:100%;height:auto;border-radius:12px;border:1px solid var(--ln)}
+
+/* footer */
+.ft{margin-top:44px;border-top:1px solid var(--ln);background:#fff}#gs-s13b .ft-in{max-width:1180px;margin:0 auto;padding:28px 16px 36px;display:grid;gap:14px;font-size:13.5px;color:var(--mu)}#gs-s13b .ft nav{display:flex;flex-wrap:wrap;gap:6px 16px}#gs-s13b .ft nav a{font-weight:700;color:var(--ink);padding:6px 0}#gs-s13b .ft a.ml{color:var(--a);font-weight:600}#gs-s13b .toast{position:fixed;left:50%;bottom:22px;z-index:95;transform:translate(-50%,20px);background:var(--ink);color:#fff;font-size:14px;font-weight:600;padding:11px 18px;border-radius:999px;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;width:max-content;max-width:calc(100vw - 32px);text-align:center;box-shadow:0 10px 30px rgba(15,23,42,.3)}#gs-s13b .toast.on{opacity:1;transform:translate(-50%,0)}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}.mpanel nav,.cloud,.machine.go .knob,.machine.go .dome,.hp,.baby,.baby.pop,.baby.eat{animation:none!important}}
+
+
+body.gs-home > header,
+body.gs-home #gs-gnav,
+body.gs-home #s-hero,
+body.gs-home #s-guide,
+body.gs-home #s-upd,
+body.gs-home #s-hero2,
+body.gs-home #s-today,
+body.gs-home #s-start,
+body.gs-home #s-test,
+body.gs-home #s-mbti,
+body.gs-home #s-saju,
+body.gs-home #articles,
+body.gs-home #s-rank,
+body.gs-home #rows,
+body.gs-home #s-area,
+body.gs-home .jbar,
+body.gs-home #jbar,
+body.gs-home #jump{display:none!important}
+#gs-s13b-livesearch{padding:8px 0 20px}
+#gs-s13b{overflow-x:clip;width:100%;min-width:0}
+#gs-s13b .hd,#gs-s13b .hd-in,#gs-s13b .nav,#gs-s13b .wrap,#gs-s13b .sec{max-width:100%;min-width:0}
+#gs-s13b .nav{flex-wrap:wrap}
+.pix-fly{position:fixed;left:0;top:0;z-index:4000;pointer-events:none;width:56px;height:56px;will-change:transform}
+#gs-s13b .cp-items{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:480px){#gs-s13b .cp-items{grid-template-columns:1fr}}
+#gs-s13b .cp-i{display:flex;flex-direction:column;gap:8px;border:1px solid var(--ln,#ededed);border-radius:12px;background:#f7f8fa;overflow:hidden;text-decoration:none;color:inherit;min-width:0}
+#gs-s13b .cp-i img{width:100%;height:160px;object-fit:contain;background:#fff;padding:10px;display:block}
+#gs-s13b .cp-i span{display:block;padding:0 12px 12px;font-size:14px;font-weight:700;line-height:1.4}
+#gs-s13b .cp-i small{display:block;margin-top:4px;font-size:12px;font-weight:600;color:#2563eb}
+#gs-s13b .cp-d{margin:10px 0 0;font-size:12px;color:#526176;line-height:1.5}
+#gs-s13b .ex{display:none!important}
+#gs-s13b .sbar.mine{background:#f7f8fa;border:1px solid #e5e7eb}
+#gs-s13b .earth{font-size:11px;font-weight:700;color:#526176;white-space:nowrap;margin-left:6px}
+#gs-s13b .lang{border:1px solid #e5e7eb;background:#fff;border-radius:8px;padding:4px 8px;font-size:12px;cursor:pointer}
+#gs-s13b .all-link{display:flex;flex-wrap:wrap;gap:10px 16px;margin:14px 0 0;font-size:14px;font-weight:700}
+#gs-s13b .all-link a{color:#2563eb;text-decoration:underline}
+@media(max-width:1023px){#gs-s13b .earth{display:none}}
+
+</style>
 <style id="cp-box">
 .cp-box{margin:28px 0 8px;padding:16px 18px 18px;border:1px solid var(--ln,#ededed);border-radius:14px;background:var(--card,#fff)}
 .cp-h{margin:0 0 14px;font-size:17px;font-weight:800;letter-spacing:-.02em;color:var(--ink,#0a0a0a)}
@@ -1137,9 +1257,252 @@ html[data-theme=dark] .cp-btn:hover{background:#2a64d8}
   .md .cp-btn{min-height:44px;padding:10px 14px;font-size:13px}
 }
 </style></head><body class="gs-home">
-<header><div class="w top"><a class="logo" href="/"><img class="gb" id="gb" src="/icon-192.png" alt="Grok Bot" width="28" height="28"><b class="gx">×</b><i>갓</i><span>갓생봇</span></a><a class="earth" href="https://www.spacex.com/mission/" target="_blank" rel="noopener" title="SpaceX Mission">Made on Earth by Grok Bot</a><nav><a class="hu" href="#howto" onclick="howto();return false" data-i="nhow">사용법</a><a href="#" class="subn" onclick="sbOpen();return false">템플릿 등록</a><a class="hm" href="#req" data-i="nreq">봇 요청</a><a class="hm" href="/guide/" target="_blank" data-i="nguide">Grok 가이드</a><button class="lang" onclick="setL(L==='ko'?'en':'ko')" id="lb">EN</button></nav></div></header><nav data-nav2="1" data-home="1" class="gnav" id="gs-gnav" aria-label="갓생봇 메뉴"><div class="gnav-in"><a class="gnav-logo" href="/" aria-label="갓생봇 홈"><img class="gnav-ico" src="/icon-192.png" alt="" width="20" height="20"><i>갓</i><span>갓생봇</span></a><a class="on" href="/#s-all" data-gs-ko="전체소식" data-gs-en="All updates">전체소식</a><a href="/templates/" data-gs-ko="템플릿" data-gs-en="Templates">템플릿</a><a href="/prompts/grok-bot-direct.html" data-gs-ko="에이전트 프롬프트" data-gs-en="Agent prompts">에이전트 프롬프트</a><a href="/articles/" data-gs-ko="아티클" data-gs-en="Articles">아티클</a><a href="/weekly/" data-gs-ko="이번주" data-gs-en="This week">이번주</a><a href="/test.html" data-gs-ko="갓생테스트" data-gs-en="Godsaeng test">갓생테스트</a><a href="/pick.html" data-gs-ko="가챠뽑기" data-gs-en="Gacha pick">가챠뽑기</a><a href="/saju.html" data-gs-ko="사주" data-gs-en="Saju">사주</a><a href="/glossary.html" data-gs-ko="용어" data-gs-en="Glossary">용어</a><a href="/guide/" data-gs-ko="그록가이드" data-gs-en="Grok guide">그록가이드</a><a href="/support/" data-gs-ko="응원하기" data-gs-en="Support us">응원하기</a></div></nav>
+<header><div class="w top"><a class="logo" href="/"><img class="gb" id="gb" src="/icon-192.png" alt="Grok Bot" width="28" height="28"><b class="gx">×</b><i>갓</i><span>갓생봇</span></a><a class="earth" href="https://www.spacex.com/mission/" target="_blank" rel="noopener" title="SpaceX Mission">Made on Earth by Grok Bot</a><nav><a class="hu" href="#howto" onclick="howto();return false" data-i="nhow">사용법</a><a href="#" class="subn" onclick="sbOpen();return false">템플릿 등록</a><a class="hm" href="#req" data-i="nreq">봇 요청</a><a class="hm" href="/guide/" target="_blank" data-i="nguide">Grok 가이드</a><button class="lang" onclick="setL(L==='ko'?'en':'ko')" id="lb-legacy">EN</button></nav></div></header><nav data-nav2="1" data-home="1" class="gnav" id="gs-gnav" aria-label="갓생봇 메뉴"><div class="gnav-in"><a class="gnav-logo" href="/" aria-label="갓생봇 홈"><img class="gnav-ico" src="/icon-192.png" alt="" width="20" height="20"><i>갓</i><span>갓생봇</span></a><a class="on" href="/#s-all" data-gs-ko="전체소식" data-gs-en="All updates">전체소식</a><a href="/templates/" data-gs-ko="템플릿" data-gs-en="Templates">템플릿</a><a href="/prompts/grok-bot-direct.html" data-gs-ko="에이전트 프롬프트" data-gs-en="Agent prompts">에이전트 프롬프트</a><a href="/articles/" data-gs-ko="아티클" data-gs-en="Articles">아티클</a><a href="/weekly/" data-gs-ko="이번주" data-gs-en="This week">이번주</a><a href="/test.html" data-gs-ko="갓생테스트" data-gs-en="Godsaeng test">갓생테스트</a><a href="/pick.html" data-gs-ko="가챠뽑기" data-gs-en="Gacha pick">가챠뽑기</a><a href="/saju.html" data-gs-ko="사주" data-gs-en="Saju">사주</a><a href="/glossary.html" data-gs-ko="용어" data-gs-en="Glossary">용어</a><a href="/guide/" data-gs-ko="그록가이드" data-gs-en="Grok guide">그록가이드</a><a href="/support/" data-gs-ko="응원하기" data-gs-en="Support us">응원하기</a></div></nav>
+<!--gs-s13b-start--><div id="gs-s13b">
+<div class="hd" role="banner">
+  <div class="hd-in">
+    <a class="logo" href="/" aria-label="갓생봇 홈"><img src="/icon-192.png" alt="" width="30" height="30"><span class="mk" aria-hidden="true">갓</span><span>갓생봇</span></a>
+    <a class="earth" href="https://www.spacex.com/mission/" target="_blank" rel="noopener" title="SpaceX Mission">Made on Earth by Grok Bot</a>
+    <nav class="nav" aria-label="주 메뉴">
+      <a href="#s-tpl" data-gs-ko="템플릿" data-gs-en="Templates">템플릿<em class="nick" data-gs-ko="봇 분양소" data-gs-en="Bot shelter">봇 분양소</em></a>
+      <a href="#s-ask" data-gs-ko="프롬프트" data-gs-en="Prompts">프롬프트<em class="nick" data-gs-ko="훈련소" data-gs-en="Training yard">훈련소</em></a>
+      <a href="/guide/" data-gs-ko="가이드" data-gs-en="Guide">가이드<em class="nick" data-gs-ko="입양 안내서" data-gs-en="Adoption guide">입양 안내서</em></a>
+      <a href="#s13-test" data-gs-ko="테스트와 궁합" data-gs-en="Tests and match">테스트와 궁합<em class="nick" data-gs-ko="궁합 보기" data-gs-en="See a match">궁합 보기</em></a>
+      <a href="#s-gacha" data-gs-ko="가챠" data-gs-en="Gacha">가챠<em class="nick" data-gs-ko="오늘의 아기봇" data-gs-en="Today's baby bot">오늘의 아기봇</em></a>
+      <a href="#s-week" data-gs-ko="새 템플릿" data-gs-en="New templates">새 템플릿<em class="nick" data-gs-ko="새로 들어온 아이들" data-gs-en="New arrivals">새로 들어온 아이들</em></a>
+      <a href="#s-my" data-gs-ko="나의 기록" data-gs-en="My record">나의 기록</a>
+      <a class="cta" href="/support/" data-gs-ko="응원하기" data-gs-en="Support us">응원하기</a>
+      <button class="lang" type="button" onclick="setL(L==='ko'?'en':'ko')" id="lb">EN</button>
+    </nav>
+    <button type="button" class="mbtn" id="mbtn" aria-expanded="false" aria-controls="mpanel" aria-label="메뉴 열기"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mpanel" id="mpanel" hidden>
+    <div class="mbody">
+      <a href="#s-tpl">템플릿<em class="nick">봇 분양소</em></a>
+      <a href="#s-ask">프롬프트<em class="nick">훈련소</em></a>
+      <a href="/guide/">가이드<em class="nick">입양 안내서</em></a>
+      <a href="#s13-test">테스트와 궁합<em class="nick">궁합 보기</em></a>
+      <a href="#s-gacha">가챠<em class="nick">오늘의 아기봇</em></a>
+      <a href="#s-week">새 템플릿<em class="nick">새로 들어온 아이들</em></a>
+      <a href="/articles/" data-gs-ko="아티클" data-gs-en="Articles">아티클</a>
+      <a href="/saju.html" data-gs-ko="사주" data-gs-en="Saju">사주</a>
+      <a href="/glossary.html" data-gs-ko="용어" data-gs-en="Glossary">용어</a>
+      <a href="#howto" onclick="if(typeof howto==='function'){howto();return false}">사용법</a>
+      <a href="#" class="subn" onclick="if(typeof sbOpen==='function'){sbOpen();return false}">템플릿 등록</a>
+      <a href="#req">봇 요청</a>
+      <a href="#s-my">나의 기록</a>
+      <a href="/support/">응원하기</a>
+    </div>
+  </div>
+</div>
+<main>
+<section class="hero" id="s13-hero">
+    <span class="cloud c1" aria-hidden="true"></span><span class="cloud c2" aria-hidden="true"></span><span class="cloud c3" aria-hidden="true"></span>
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <small data-i="kick">Grok Bot, 뮤즈, DOTS, 피클과 함께하는</small>
+        <h1 data-i="h1">갓생 사는 갓생봇의 플레이그라운드</h1>
+        <p data-i="sub">템플릿을 가져가거나, 문장을 복사해 바로 시켜 보세요.</p>
+        <form class="search" id="sform" role="search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="s13-q" type="search" autocomplete="off" placeholder="데려갈 봇이나 하고 싶은 일" aria-label="템플릿 검색">
+          <button type="submit">찾기</button>
+        </form>
+        <div class="feed">
+          <span class="lb">배부름</span>
+          <span class="hearts" id="hearts" role="img" aria-label="배부름 0/5"></span>
+          <button class="btn sm pink" id="fbtn" type="button">밥 주기</button>
+        </div>
+        <p id="fmsg" aria-live="polite"></p>
+      </div>
+      <div class="stage" id="stage">
+        <div class="gwrap" id="s13-gicon"><div class="gicon g-mascot" role="img" aria-label="갓생봇 마스코트 친구들"><span class="gch" data-name="purple" style="--l:49.2308%;--t:0.0000%;--w:21.1538%;--h:43.9024%;--z:0;--d:0s;--dur:2.7s;--hop:-5px;--r0:-10deg;--r1:-6deg"><span class="gch-in"><img src="/mascot/purple.png" alt=""></span></span><span class="gch" data-name="black" style="--l:11.5385%;--t:20.7317%;--w:20.9615%;--h:44.3089%;--z:1;--d:.22s;--dur:2.4s;--hop:-6px;--r0:0deg;--r1:3deg"><span class="gch-in"><img src="/mascot/black.png" alt=""></span></span><span class="gch" data-name="teal" style="--l:33.4615%;--t:22.7642%;--w:19.8077%;--h:43.9024%;--z:2;--d:.4s;--dur:2.2s;--hop:-4px;--r0:2deg;--r1:-2deg"><span class="gch-in"><img src="/mascot/teal.png" alt=""></span></span><span class="gch" data-name="blue" style="--l:63.2692%;--t:28.8618%;--w:21.3462%;--h:45.5285%;--z:3;--d:.55s;--dur:2.8s;--hop:-5px;--r0:8deg;--r1:12deg"><span class="gch-in"><img src="/mascot/blue.png" alt=""></span></span><span class="gch" data-name="gray" style="--l:68.4615%;--t:71.9512%;--w:10.7692%;--h:26.0163%;--z:4;--d:.1s;--dur:2.1s;--hop:-7px;--r0:8deg;--r1:14deg"><span class="gch-in"><img src="/mascot/gray.png" alt=""></span></span><span class="gch" data-name="pink" style="--l:45.1923%;--t:49.1870%;--w:23.6538%;--h:49.5935%;--z:5;--d:.7s;--dur:2.5s;--hop:-6px;--r0:0deg;--r1:-3deg"><span class="gch-in"><img src="/mascot/pink.png" alt=""></span></span><span class="gch" data-name="brown" style="--l:79.4231%;--t:54.8780%;--w:20.5769%;--h:43.9024%;--z:6;--d:.85s;--dur:2.6s;--hop:-4px;--r0:6deg;--r1:2deg"><span class="gch-in"><img src="/mascot/brown.png" alt=""></span></span><span class="gch" data-name="gold" style="--l:21.5385%;--t:57.7236%;--w:23.2692%;--h:41.0569%;--z:7;--d:1s;--dur:2.3s;--hop:-5px;--r0:-2deg;--r1:2deg"><span class="gch-in"><img src="/mascot/gold.png" alt=""></span></span><span class="gch" data-name="orange" style="--l:0.1923%;--t:57.7236%;--w:21.5385%;--h:41.8699%;--z:8;--d:1.15s;--dur:2.9s;--hop:-6px;--r0:-8deg;--r1:-3deg"><span class="gch-in"><img src="/mascot/orange.png" alt=""></span></span></div></div>
+      </div>
+    </div>
+    <div class="ground">
+      <div class="wrap h-stats">
+        <a class="h-stat c1" href="#s-tpl"><b>1,437</b><span>템플릿<em class="nick">봇 분양소</em></span></a>
+        <a class="h-stat c2" href="#s-ask"><b>110</b><span>프롬프트<em class="nick">훈련소</em></span></a>
+        <a class="h-stat c3" href="#s-week"><b>79</b><span>이번 주 새 템플릿<em class="nick">새로 들어온 아이들</em></span></a>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+
+  <section class="sec" id="s-friend" hidden>
+    <div class="tile friend">
+      <div class="th">
+        <div><h3>친구 봇 구경하기</h3><p id="fr-sub">친구가 자랑한 성향 카드와 봇이에요. 마음에 들면 나도 데려갈 수 있어요.</p></div>
+        <button class="btn sm ghost" id="fr-close" type="button">닫기</button>
+      </div>
+      <div id="fr-card"></div>
+      <div class="fr-bots" id="fr-bots"></div>
+      <div class="row fr-cta">
+        <button class="btn pink" id="fr-all" type="button">이 봇들 모두 데려가기</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="s13-guide">
+    <div class="tile guide">
+      <div>
+        <span class="tag">가이드</span>
+        <h2>처음 쓰는 분을 위한 한국어 가이드 <span class="nick">입양 안내서</span></h2>
+      </div>
+      <a class="btn" href="/guide/">가이드 보러 가기</a>
+    </div>
+  </section>
+
+  <section class="sec" id="s-ask">
+    <div class="sh">
+      <div><h2>프롬프트 <span class="nick">훈련소</span></h2><p>타일을 누르면 문장이 복사돼요. 쓰는 에이전트에 붙여 넣으면 끝.</p></div>
+      <a class="more" href="/prompts/grok-bot-direct.html">문장 110개 모두 보기</a>
+    </div>
+    <div class="asks" id="asks"></div>
+  </section>
+
+  <section class="sec">
+    <div class="sh"><div><h2>가챠와 테스트 <span class="nick">오늘의 아기봇, 궁합 보기</span></h2><p>뭘 데려갈지 모르겠다면 캡슐을 뽑거나 테스트를 해 보세요.</p></div></div>
+    <div class="bento play">
+      <div class="tile gacha" id="s-gacha">
+        <span class="cloud" aria-hidden="true"></span><span class="cloud c2" aria-hidden="true"></span>
+        <div class="g-top">
+          <span class="tag">캡슐 뽑고 데려가기</span>
+          <h3 style="margin-top:8px">오늘의 추천 봇 뽑기 <span class="nick">오늘의 아기봇</span></h3>
+          <p class="ds">손잡이를 돌리면 아기봇 하나가 굴러 나와요. 마음에 들면 봇장으로 데려가세요.</p>
+        </div>
+        <div class="g-stage" id="gstage">
+          <div class="machine" id="machine" aria-hidden="true"><div class="dome"></div><div class="mbody"><span class="knob"></span><span class="slot"></span></div></div>
+          <div class="baby" id="baby"><img id="babyimg" src="/mascot/pink.png" alt=""></div>
+        </div>
+        <div class="g-ground">
+          <div class="g-card" id="gres" aria-live="polite"></div>
+        </div>
+      </div>
+      <div class="tile test" id="s13-test">
+        <p class="all-link"><a href="/test.html">테스트 페이지로 가기</a><a href="/pick.html">가챠 페이지로 가기</a></p>
+         <h3>테스트와 궁합: 관심사 <span class="nick">궁합 보기</span></h3>
+        <p class="ds">관심사 세 가지를 고르면 궁합이 맞는 봇 3마리를 보여 드려요.</p>
+        <div class="chips" id="tchips"></div>
+        <div class="res r3" id="s13-tres" aria-live="polite"><p class="hint">세 가지를 골라 주세요.</p></div>
+      </div>
+      <div class="tile mbti" id="s13-mbti">
+        <h3>테스트와 궁합: MBTI <span class="nick">궁합 보기</span></h3>
+        <p class="ds">네 문항에 답하면 유형과 궁합이 맞는 봇을 골라 드려요.</p>
+        <div class="mqs" id="mq"></div>
+        <div class="res" id="s13-mres" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="s-tpl">
+    <div class="sh">
+      <div><h2>템플릿 <span class="nick">봇 분양소</span></h2><p>1,428개 가운데 몇 개만 먼저 꺼내 봤어요. 마음에 들면 데려가 내 식으로 고쳐 쓰세요.</p></div>
+      <a class="more" href="#s-all">템플릿 전체 보기</a> <a class="more" href="/templates/">템플릿 페이지로 가기</a>
+    </div>
+    <div class="chips cchips" id="cchips" role="group" aria-label="분야"></div>
+    <div class="grid" id="tgrid"></div>
+    <p class="hint" id="tempty" hidden>맞는 봇이 없어요. 다른 분야를 보거나 검색어를 바꿔 보세요.</p>
+  </section>
+
+  <section class="sec" id="s-week">
+    <div class="tile week">
+      <div class="week-top">
+        <div><span class="tag">이번 주</span><h2 style="font-size:22px;letter-spacing:-.03em;margin-top:8px">이번 주 새 템플릿 <span class="nick">새로 들어온 아이들</span></h2><p style="margin-top:6px;font-size:14px;font-weight:650;color:#3b4660">2026-11-08부터 2026-11-14까지</p></div>
+        <div><b>79</b><span>새로 담은 템플릿</span></div>
+      </div>
+      <div class="grid g3" id="wgrid"></div>
+        <p class="all-link"><a href="/weekly/">이번 주 새 템플릿 모두 보기</a></p>
+    </div>
+  </section>
+
+  <section class="sec" id="s-my">
+    <div class="sh">
+      <div><h2>나의 갓생 기록</h2><p>로그인 없이 이 브라우저에만 저장돼요. 카드를 누르면 봇장, 도장, 배지, 서클, 성향이 펼쳐져요.</p></div>
+    </div>
+    <div class="sbar" id="s13-sbar"></div>
+    <div class="my-tabs" id="my-tabs" role="tablist" aria-label="나의 갓생 기록">
+      <button class="my-tab" type="button" role="tab" id="tab-hut" data-tab="hut" aria-controls="s-hut" aria-selected="true"><span class="k">내 봇장</span><span class="v" data-hutcnt>0</span><span class="s">데려온 아이들</span></button>
+      <button class="my-tab" type="button" role="tab" id="tab-stamp" data-tab="stamp" aria-controls="s-stamp" aria-selected="false" tabindex="-1"><span class="k">출석 도장</span><span class="v" id="tab-st-v">0일차</span><span class="s" id="tab-st-s">방문할 때마다 찍혀요</span></button>
+      <button class="my-tab" type="button" role="tab" id="tab-badge" data-tab="badge" aria-controls="s-badge" aria-selected="false" tabindex="-1"><span class="k">배지 벽</span><span class="v" id="tab-bd-v">0 / 0</span><span class="s">잠긴 배지는 선으로만</span></button>
+      <button class="my-tab" type="button" role="tab" id="tab-circle" data-tab="circle" aria-controls="s-circle" aria-selected="false" tabindex="-1"><span class="k">나의 봇 서클</span><span class="v" id="tab-cir-v">0마리</span><span class="s">이미지로 자랑하기</span></button>
+      <button class="my-tab" type="button" role="tab" id="tab-type" data-tab="type" aria-controls="s-type" aria-selected="false" tabindex="-1"><span class="k">성향 카드</span><span class="v" id="tab-ty-v">유형 대기</span><span class="s">훈련과 분양으로 정해져요</span></button>
+    </div>
+
+      <div class="tile hut my-pane" id="s-hut" data-tab="hut" role="tabpanel" aria-labelledby="tab-hut">
+        <div class="th">
+          <div><h3>내 봇장 <span class="cnt" data-hutcnt>0</span></h3><p>데려가기를 누른 봇이 모여요. 많이 놀아 준 순서로 줄을 서요.</p></div>
+          <span class="ex">예시 데이터</span>
+        </div>
+        <div class="hut-list" id="hutlist"></div>
+      </div>
+
+      <div class="tile stamp my-pane" id="s-stamp" data-tab="stamp" role="tabpanel" aria-labelledby="tab-stamp" hidden>
+        <div class="th">
+          <div><h3>출석 도장</h3><p id="st-sub">방문한 날마다 도장 하나.</p></div>
+          <span class="ex">예시 데이터</span>
+        </div>
+        <div class="st-grid" id="stgrid" role="list" aria-label="출석 도장 30칸"></div>
+        <div class="mls" id="mls"></div>
+      </div>
+
+      <div class="tile badges my-pane" id="s-badge" data-tab="badge" role="tabpanel" aria-labelledby="tab-badge" hidden>
+        <div class="th">
+          <div><h3>배지 벽</h3><p>잠긴 배지는 선으로만 보여요. 조건을 채우면 색이 입혀져요.</p></div>
+          <span class="ex">예시 데이터</span>
+          <span class="tot" id="bdtot">0 / 0</span>
+        </div>
+        <div class="bd-grid" id="bdgrid"></div>
+      </div>
+
+      <div class="tile circle my-pane" id="s-circle" data-tab="circle" role="tabpanel" aria-labelledby="tab-circle" hidden>
+        <div class="th">
+          <div><h3>나의 봇 서클</h3><p>많이 놀아 준 봇일수록 안쪽 원에 서요. 상위 3마리는 메달을 받아요.</p></div>
+          <span class="ex">예시 데이터</span>
+        </div>
+        <div class="namebox"><label for="cname">가운데 이름</label><input class="inp" id="cname" type="text" maxlength="10" autocomplete="off" placeholder="이름 또는 이니셜"></div>
+        <canvas class="cv" id="ccanvas" width="1080" height="1260" role="img" aria-label="나의 봇 서클 이미지"></canvas>
+        <div class="row">
+          <button class="btn" id="csave" type="button">이미지 저장</button>
+          <button class="btn xb" id="cshare" type="button">X에 자랑하기</button>
+        </div>
+      </div>
+
+      <div class="tile type my-pane" id="s-type" data-tab="type" role="tabpanel" aria-labelledby="tab-type" hidden>
+        <div class="th">
+          <div><h3>성향 카드</h3><p>훈련하고 데려온 분야를 모아 나의 갓생 유형을 알려 드려요.</p></div>
+          <span class="ex">예시 데이터</span>
+        </div>
+        <div id="tybox"></div>
+        <div class="row acts">
+          <button class="btn" id="tsave" type="button">이미지 저장</button>
+          <button class="btn xb" id="tshare" type="button">X에 자랑하기</button>
+        </div>
+      </div>
+
+  </section>
+
+  </div>
+
+</main>
+<div class="modal" id="cmodal" hidden role="dialog" aria-modal="true" aria-labelledby="cm-t">
+  <div class="modal-in">
+    <div class="modal-hd"><h3 id="cm-t">수료증</h3><button class="mx" id="cm-x" type="button" aria-label="닫기">×</button></div>
+    <label for="cm-name">증서에 넣을 이름<input class="inp" id="cm-name" type="text" maxlength="12" autocomplete="off" placeholder="이름 또는 별명"></label>
+    <canvas id="cm-cv" width="1200" height="850" role="img" aria-label="증서 미리 보기"></canvas>
+    <div class="row">
+      <button class="btn" id="cm-save" type="button">이미지로 저장</button>
+      <button class="btn ghost" id="cm-close" type="button">닫기</button>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+
+</div><!--gs-s13b-end-->
 <section class="w hero" id="s-hero"><div class="gwrap" id="gicon"><div class="gicon g-mascot" role="img" aria-label="Grok Bot"><span class="gch" data-name="purple" style="--l:49.2308%;--t:0.0000%;--w:21.1538%;--h:43.9024%;--z:0;--d:0s;--dur:2.7s;--hop:-5px;--r0:-10deg;--r1:-6deg"><span class="gch-in"><img src="/mascot/purple.png" alt=""></span></span><span class="gch" data-name="black" style="--l:11.5385%;--t:20.7317%;--w:20.9615%;--h:44.3089%;--z:1;--d:.22s;--dur:2.4s;--hop:-6px;--r0:0deg;--r1:3deg"><span class="gch-in"><img src="/mascot/black.png" alt=""></span></span><span class="gch" data-name="teal" style="--l:33.4615%;--t:22.7642%;--w:19.8077%;--h:43.9024%;--z:2;--d:.4s;--dur:2.2s;--hop:-4px;--r0:2deg;--r1:-2deg"><span class="gch-in"><img src="/mascot/teal.png" alt=""></span></span><span class="gch" data-name="blue" style="--l:63.2692%;--t:28.8618%;--w:21.3462%;--h:45.5285%;--z:3;--d:.55s;--dur:2.8s;--hop:-5px;--r0:8deg;--r1:12deg"><span class="gch-in"><img src="/mascot/blue.png" alt=""></span></span><span class="gch" data-name="gray" style="--l:68.4615%;--t:71.9512%;--w:10.7692%;--h:26.0163%;--z:4;--d:.1s;--dur:2.1s;--hop:-7px;--r0:8deg;--r1:14deg"><span class="gch-in"><img src="/mascot/gray.png" alt=""></span></span><span class="gch" data-name="pink" style="--l:45.1923%;--t:49.1870%;--w:23.6538%;--h:49.5935%;--z:5;--d:.7s;--dur:2.5s;--hop:-6px;--r0:0deg;--r1:-3deg"><span class="gch-in"><img src="/mascot/pink.png" alt=""></span></span><span class="gch" data-name="brown" style="--l:79.4231%;--t:54.8780%;--w:20.5769%;--h:43.9024%;--z:6;--d:.85s;--dur:2.6s;--hop:-4px;--r0:6deg;--r1:2deg"><span class="gch-in"><img src="/mascot/brown.png" alt=""></span></span><span class="gch" data-name="gold" style="--l:21.5385%;--t:57.7236%;--w:23.2692%;--h:41.0569%;--z:7;--d:1s;--dur:2.3s;--hop:-5px;--r0:-2deg;--r1:2deg"><span class="gch-in"><img src="/mascot/gold.png" alt=""></span></span><span class="gch" data-name="orange" style="--l:0.1923%;--t:57.7236%;--w:21.5385%;--h:41.8699%;--z:8;--d:1.15s;--dur:2.9s;--hop:-6px;--r0:-8deg;--r1:-3deg"><span class="gch-in"><img src="/mascot/orange.png" alt=""></span></span></div></div><small data-i="kick">Grok Bot, 뮤즈, DOTS, 피클과 함께하는</small><h1 data-i="h1">갓생 사는 갓생봇의 플레이그라운드</h1><p data-i="sub">템플릿을 가져가거나, 문장을 복사해 바로 시켜 보세요.</p>
-<div class="sbar" id="sbar"><label class="search"><lucian-search tone="line" size="16" state="idle" animate="hover"></lucian-search><input id="q" type="search" autocomplete="off" oninput="pg=1;render();qdrop()" onkeydown="if(event.key==='Enter'&&!event.isComposing){event.preventDefault();qgo()}"></label><select class="sel" id="srt" onchange="pg=1;render()"><option value="0" data-i="o0">추천순</option><option value="1" data-i="o1">최신순</option></select></div><div id="qr" class="qr"></div></section><div data-jb2="1" class="jbar" id="jbar"><div class="w"><nav class="jump" id="jump"><div class="jg"><span class="gs-li-wrap" aria-hidden="true"><lucian-sparkle tone="line" size="14" animate="hover"></lucian-sparkle></span><em data-i="g1">추천받기</em><a class="p" href="#s-today" data-i="j1">오늘의 봇</a><a href="#s-test" data-i="j2">갓생 테스트</a><a href="#s-mbti" data-i="j3">MBTI 추천</a></div><div class="jg"><em data-i="g2">인기</em><a href="#s-rank" data-i="j4">이번 주 순위</a><a href="#r-pop" data-i="j6">인기 봇</a></div><div class="jg"><span class="gs-li-wrap" aria-hidden="true"><lucian-search tone="line" size="14" state="idle" animate="hover"></lucian-search></span><em data-i="g3">찾기</em><a href="#s-area" data-i="j7">챙기고 싶은 일</a></div></nav></div></div>
+<div id="qr" class="qr"></div></section><div data-jb2="1" class="jbar" id="jbar"><div class="w"><nav class="jump" id="jump"><div class="jg"><span class="gs-li-wrap" aria-hidden="true"><lucian-sparkle tone="line" size="14" animate="hover"></lucian-sparkle></span><em data-i="g1">추천받기</em><a class="p" href="#s-today" data-i="j1">오늘의 봇</a><a href="#s-test" data-i="j2">갓생 테스트</a><a href="#s-mbti" data-i="j3">MBTI 추천</a></div><div class="jg"><em data-i="g2">인기</em><a href="#s-rank" data-i="j4">이번 주 순위</a><a href="#r-pop" data-i="j6">인기 봇</a></div><div class="jg"><span class="gs-li-wrap" aria-hidden="true"><lucian-search tone="line" size="14" state="idle" animate="hover"></lucian-search></span><em data-i="g3">찾기</em><a href="#s-area" data-i="j7">챙기고 싶은 일</a></div></nav></div></div>
 <section class="w gbn gs-gbn-b1" id="s-guide"><a class="gbn-in" href="/guide/" target="_blank" rel="noopener" onclick="if(window.gtag)gtag('event','guide_banner_click')"><div class="gbn-t"><small>Grok Bot 유저 가이드</small><b>Grok Bot에 대한 모든 것, 한 곳에서 배워요</b><p>처음 쓰는 분을 위한 한국어 유저 가이드, 실전 꿀팁, 유스케이스, 템플릿 모음이에요.</p></div><span class="gbn-b">가이드 보러 가기 →</span></a></section>
 <section class="w upd v7 v7c gs-slot gs-slot-aplus gs-slot-1row" id="s-upd"><div class="gs-slot-panel"><div class="gx-head"><h2 class="gx-h"><span class="gs-slot-hico" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2.6l1.05 3.2 3.35-.05-2.65 2.05.96 3.22L12 9.3 8.29 11.02l.96-3.22L6.6 5.75l3.35.05L12 2.6z"/><path d="M18.2 13.2l.7 2.12 2.22-.03-1.76 1.36.64 2.14-1.8-1.14-1.8 1.14.64-2.14-1.76-1.36 2.22.03.7-2.12z"/></svg></span><span data-gs-ko="에이전트에게 시켜 보기" data-gs-en="Ask your agent">에이전트에게 시켜 보기</span></h2><a class="gx-all" href="/prompts/grok-bot-direct.html"><span data-gs-ko="문장 110개 모두 보기" data-gs-en="See all 110 sentences">문장 110개 모두 보기</span> →</a></div><div class="v7c-grid"><a class="v7-tile v6-c-picks" href="/prompts/grok-bot-direct.html#cat-picks"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 3 15.09 8.26 21 9.27 17 13.97 17.91 20.02 12 17.27 6.09 20.02 7 13.97 3 9.27 8.91 8.26"/></svg></i><span data-gs-ko="추천" data-gs-en="Recommended">추천</span></a><a class="v7-tile v6-c-benefit" href="/prompts/grok-bot-direct.html#p-81"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6.5" rx="7" ry="2.7"/><path d="M5 6.5v3.7c0 1.5 3.13 2.7 7 2.7s7-1.2 7-2.7V6.5"/><path d="M5 10.2v3.6c0 1.5 3.13 2.7 7 2.7s7-1.2 7-2.7v-3.6"/><path d="M5 13.8v3.2c0 1.5 3.13 2.7 7 2.7s7-1.2 7-2.7v-3.2"/></svg></i><span data-gs-ko="혜택" data-gs-en="Benefits">혜택</span></a><a class="v7-tile v6-c-shop" href="/prompts/grok-bot-direct.html#p-86"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></i><span data-gs-ko="쇼핑" data-gs-en="Shopping">쇼핑</span></a><a class="v7-tile v6-c-travel" href="/prompts/grok-bot-direct.html#p-91"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.8 19.2 16 11l3.5-3.5a2.1 2.1 0 0 0-3-3L13 8 4.8 6.2c-.5-.1-.9.3-.8.8L6 13l-2.2 2.2c-.4.4-.1 1 .5 1.1l3.3.5 5.2-5.2 1.7 7.8c.1.5.7.6 1 .2z"/></svg></i><span data-gs-ko="여행" data-gs-en="Travel">여행</span></a><a class="v7-tile v6-c-people" href="/prompts/grok-bot-direct.html#p-96"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></i><span data-gs-ko="사람" data-gs-en="People">사람</span></a><a class="v7-tile v6-c-home" href="/prompts/grok-bot-direct.html#p-107"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11 12 4.5 20 11v8.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 19.5z"/><path d="M10 21v-6h4v6"/></svg></i><span data-gs-ko="집과 생활" data-gs-en="Home and living">집과 생활</span></a><a class="v7-tile v6-c-mail" href="/prompts/grok-bot-direct.html#p-17"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m3.5 8 8.5 6 8.5-6"/></svg></i><span data-gs-ko="답할 메일 초안" data-gs-en="Reply drafts">답할 메일 초안</span></a><a class="v7-tile v6-c-files" href="/prompts/grok-bot-direct.html#p-01"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18V6.5a2 2 0 0 1 2-2h3.17a2 2 0 0 1 1.42.59L11 6.5h8a2 2 0 0 1 2 2V18a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M3 10.5h18"/></svg></i><span data-gs-ko="다운로드 폴더 정리" data-gs-en="Download folder cleanup">다운로드 폴더 정리</span></a><a class="v7-tile v6-c-browse" href="/prompts/grok-bot-direct.html#p-09"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg></i><span data-gs-ko="출처 있는 제품 비교" data-gs-en="Sourced product compare">출처 있는 제품 비교</span></a><a class="v7-tile v6-c-social" href="/prompts/grok-bot-direct.html#p-33"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 8.5H9l7.5-4v15L9 15.5H4.5A1.5 1.5 0 0 1 3 14v-4a1.5 1.5 0 0 1 1.5-1.5z"/><path d="M19 9.5a3.25 3.25 0 0 1 0 5"/></svg></i><span data-gs-ko="소셜 글 초안" data-gs-en="Social post drafts">소셜 글 초안</span></a></div></div></section>
 
@@ -1425,6 +1788,8 @@ if(location.hash&&!document.getElementById(location.hash.slice(1))&&/^#a-/.test(
 <section class="sec" id="s-rank"><div class="sh"><h2 data-i="rkh">이번 주 순위표</h2><small id="rkb"></small></div><p class="rkn" id="rkn" data-i="rkn">♥ 하트 = X 원글 좋아요 수, 10월 29일 기준</p><ol class="rk" id="rk"></ol></section>
 <div class="sh rowsh"><h2 data-i="rwh">인기 봇 둘러보기</h2><small data-i="rwsub">왼쪽 탭으로 인기 봇, 새로 들어온 봇, 분야별 봇을 골라 보세요</small></div><section class="sec" id="rows"></section></div>
 <section class="w" id="s-area"><div class="sh"><h2 data-i="arh">챙기고 싶은 일</h2><small data-i="ars">일, 생활, 건강처럼 챙기고 싶은 쪽을 고르면 맞는 봇이 아래 목록에 나와요</small></div><div class="areas" id="areas"></div></section>
+
+<div class="w" id="gs-s13b-livesearch"><div class="sbar" id="sbar"><label class="search"><lucian-search tone="line" size="16" state="idle" animate="hover"></lucian-search><input id="q" type="search" autocomplete="off" oninput="pg=1;render();qdrop()" onkeydown="if(event.key==='Enter'&&!event.isComposing){event.preventDefault();qgo()}"></label><select class="sel" id="srt" onchange="pg=1;render()"><option value="0" data-i="o0">추천순</option><option value="1" data-i="o1">최신순</option></select></div></div>
 <div class="w allh" id="s-all"><div class="sh"><h2 data-i="allh">전체 보기</h2><small data-i="alls">1437개 봇이 모두 여기 있어요. 위 챙기고 싶은 일 카드나 아래 버튼으로 좁혀 보세요</small></div><p class="curl" data-i="cur">상품 홍보, 지역 한정, 중복 템플릿은 걸러내고, 한국에서 바로 쓰기 좋은 것만 직접 골라 담았어요.</p></div>
 <div class="w main" id="main"><nav class="tabs" id="tabs"></nav><section><div class="lh"><h2 id="lt"></h2><span id="lc"></span></div><div class="tkw"><h4>하는 일로 찾기</h4><div class="tks" id="tks"></div></div><div class="hsw" id="hsw"></div><div class="list" id="list"></div><div class="pg" id="pg"></div></section></div>
 <div class="w"><section class="sec duo" id="s-news"><div class="box"><h2 data-i="nwh">새 소식</h2><p data-i="nws">x.ai 공식 변경 기록에서 가져온 최근 Grok Bot 업데이트예요.</p><ul class="nl" id="nwl"></ul></div><div class="box" id="s-learn"><h2 data-i="lnh">배우기</h2><p data-i="lns">Grok Bot 워크숍 영상과 Lauren Tan(@poteto), matt palmer(@mattyp)의 X 글을 단계별로 골라 보세요.</p><div class="ltab" id="ltab" role="tablist"></div><div id="lpn"></div><p class="lcr" id="lcr"></p></div></section></div>
@@ -1446,7 +1811,7 @@ if(location.hash&&!document.getElementById(location.hash.slice(1))&&/^#a-/.test(
 </div>
 <p class="w" id="wk" style="text-align:center;font-weight:800;margin-top:28px;margin-bottom:0"></p>
 <footer class="w sf" id="site-foot"><p data-i="foot" style="margin:0 0 12px">갓생봇은 X에 공개된 Grok Bot 공유 링크를 모아 한국어로 설명한 곳이에요. 봇의 저작권은 만든 사람에게 있고, 원문 프롬프트는 공식 링크에서 볼 수 있어요.</p>
-<b class="sfn">갓생봇</b><ul><li>사업자 : 개인 운영 (사업자등록번호 없음)</li><li>문의 이메일 : <a href="mailto:aventus@mail.grokbot.com">aventus@mail.grokbot.com</a></li><li>호스팅 제공자 : GitHub, Inc. (GitHub Pages)</li></ul>
+<b class="sfn">갓생봇</b><ul><li>사업자 : 개인 운영 (사업자등록번호 없음)</li><li>운영 : 갓생봇 운영팀</li><li>문의 이메일 : <a href="mailto:aventus@mail.grokbot.com">aventus@mail.grokbot.com</a></li><li>호스팅 제공자 : GitHub, Inc. (GitHub Pages)</li></ul>
 <div class="sfl"><a href="/support/">응원하기</a><a href="#feedback">의견 보내기</a><a href="/about.html">소개</a><a href="/templates/">템플릿 모음</a><a href="/articles/">아티클</a><a href="/glossary.html">용어 사전</a><a href="/privacy.html">개인정보처리방침</a><a href="/terms.html">이용약관</a></div>
 <div class="sfn2"><b>알아두세요</b><ul><li>개인정보 관련 문의도 같은 이메일로 받아요.</li><li>갓생봇은 비공식 커뮤니티 모음이고, xAI와 관계가 없어요.</li><li>한 사람이 운영해서 답장이 늦을 수 있어요.</li><li>사주는 재미로 보는 오락용이에요.</li></ul></div>
 <p style="margin:0">© 2026 갓생봇</p></footer>
@@ -2216,5 +2581,498 @@ import '/vendor/lucian-icons/heart.js';
   window.addEventListener('resize', sync);
   if(window.ResizeObserver) new ResizeObserver(sync).observe(ban);
 })();
+</script>
+<script id="gs-s13b-js">
+
+(function(){
+var root=document.getElementById('gs-s13b');var $=function(s,r){return(r||root).querySelector(s)},$$=function(s,r){return[].slice.call((r||root).querySelectorAll(s))};
+function isEn(){return (typeof L!=='undefined'&&L==='en')||/(?:\?|&)lang=en(?:&|$)/.test(location.search||'')}
+function applyS13bLang(){var en=isEn();$$('[data-gs-ko]').forEach(function(e){var v=e.getAttribute(en?'data-gs-en':'data-gs-ko');if(v==null)return;if(e.childNodes.length===1&&e.childNodes[0].nodeType===3)e.childNodes[0].nodeValue=v;else if(!e.querySelector('.nick'))e.textContent=v;});}
+var rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var FF='"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif';
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+
+/* ---------- live content ---------- */
+var CATS=['공부','투자','육아','자동화','업무','건강','생활','놀이'];
+var MK=['gray','gold','pink','black','blue','teal','orange','purple','brown'];
+function mascotOf(n){var h=0,s=String(n||'');for(var i=0;i<s.length;i++)h=(h*33+s.charCodeAt(i))>>>0;return MK[h%MK.length]}
+function mapCat(b){var s=(b.c||'')+' '+(b.g||'')+' '+((b.ht||[]).join(' '));
+if(/건강/.test(s))return '건강';
+if(/공부|교육|학습|시험/.test(s))return '공부';
+if(/지출|돈 관리|투자|주식|가계/.test(s))return '투자';
+if(/육아|가족|아이|이유식/.test(s))return '육아';
+if(/취미|놀이|SNS|게임|팔로워/.test(s))return '놀이';
+if(/생산성|자동화|일정/.test(s))return '자동화';
+if(/보고|영업|취업|커리어|비즈니스|메일|회의/.test(s)||b.g==='일')return '업무';
+return '생활'}
+function fromLive(b){return {n:b.n,c:mapCat(b),m:mascotOf(b.n),d:b.s||'',link:b.link||'',en:b.en||'',raw:b}}
+var LIVE=(typeof B!=='undefined'&&Array.isArray(B))?B:[];
+var BOTS=LIVE.map(fromLive);
+var BY={};BOTS.forEach(function(b){BY[b.n]=b});
+var PROMPTS=[{"c": "생활", "t": "내가 쓰는 카드, 쇼핑몰, 항공사, 통신사에 쌓인 포인트와 마일리지 가운데, 앞으로 60일 안에 소멸되는 것만 모아 목록으로 정리해 줘요. 남은 기간과 쓸 수 있는 곳을 함께 적어 주세요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "From the cards, shops, airlines, and phone carriers I use, list only the points and mileage that expire in the next 60 days. Include how long is left and where I can use them. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "소멸 예정 포인트와 마일리지를 모아 드릴게요", "title_en": "I will gather the points and mileage that are about to expire", "id": "p-81"}, {"c": "생활", "t": "내가 오래 쓰는 통신사에서, 장기 고객이나 멤버십으로 받을 수 있는 쿠폰과 할인만 찾아 정리해 줘요. 기간과 사용 조건을 함께 적어 주세요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Find coupons and discounts I can get as a long-term customer or member of my phone carrier. Include the dates and the terms. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "통신사 장기 고객 쿠폰을 찾아 드릴게요", "title_en": "I will find long-customer coupons from my phone carrier", "id": "p-82"}, {"c": "생활", "t": "내가 쓰는 카드의 포인트를 현금이나 계좌로 바꿀 수 있는 방법, 수수료, 한도만 출처를 붙여 정리해 줘요. 투자 조언은 하지 말고, 신청이나 이체는 내가 확인한 뒤에만 진행해 주세요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요. 투자 조언이나 법률 자문, 결제를 대신하지 말고, 사실과 출처만 정리해 주세요. 판단은 내가 할게요.", "te": "Explain how I can cash out or transfer points on the cards I use, including fees and limits, with sources. Do not give investment advice. Do not apply or transfer until I confirm. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "카드 포인트 현금화 방법을 정리해 드릴게요", "title_en": "I will explain how I can cash out my card points", "id": "p-83"}, {"c": "생활", "t": "내가 학생 자격으로 받을 수 있는 소프트웨어, 교통, 쇼핑, 문화 할인을 조건과 기간을 붙여 목록으로 모아 줘요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "List software, transit, shopping, and culture discounts I can use with a student status, including terms and dates. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "쓸 수 있는 학생 할인을 모아 드릴게요", "title_en": "I will gather student discounts I can actually use", "id": "p-84"}, {"c": "생활", "t": "올해 쓸 수 있는 문화이용권과 에너지바우처의 신청 자격, 기간, 사용처를 정리해 줘요. 내가 해당되는지도 체크리스트로 보여 주세요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Explain this year&#x27;s culture vouchers and energy vouchers: who can apply, the dates, and where they can be used. Also give me a short checklist so I can see if I qualify. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "문화와 에너지 바우처 쓰는 법을 알려 드릴게요", "title_en": "I will explain how to use culture and energy vouchers", "id": "p-85"}, {"c": "생활", "t": "앞으로 한 달 안에 있는 큰 세일 일정을 정리해 줘요. 네이버 넓다세일, 쿠팡 와우데이처럼 이름이 알려진 행사와, 그 전에 받아 두면 좋은 쿠폰을 함께 적어 주세요. 살 목록이 있으면 어떤 날에 사는 게 나은지도 계획으로 보여 주세요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "List major sale events in the next month, including well-known ones such as Naver Neolda Sale and Coupang Wow Day, plus coupons worth saving beforehand. If I share a shopping list, also suggest which day is better to buy. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "큰 세일 쿠폰 타이밍을 정리해 드릴게요", "title_en": "I will line up the timing for big-sale coupons", "id": "p-86"}, {"c": "생활", "t": "선물 받을 사람과 예산, 취향을 바탕으로 후보를 몇 가지 골라 표로 보여 줘요. 가격과 고른 이유를 짧게 적어 주세요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Based on who the gift is for, the budget, and their tastes, show me a short table of gift ideas with prices and a one-line reason for each. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "예산에 맞는 선물 후보를 골라 드릴게요", "title_en": "I will pick gift ideas that fit the budget", "id": "p-87"}, {"c": "생활", "t": "이 제품을 해외에서 직접 살 때의 절차를 도와 줘요. 살 수 있는 곳, 예상 관부가세와 배송비, 배송 기간, 주의할 점을 체크리스트로 정리해 주세요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Help me plan buying this product directly from overseas. List where I can buy it, estimated duties and shipping, delivery time, and a checklist of things to watch. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "해외 직구 절차를 도와 드릴게요", "title_en": "I will help you plan an overseas direct purchase", "id": "p-88"}, {"c": "생활", "t": "이 상품을 여러 쇼핑몰에서 살 때 가격을 비교해 줘요. 배송비와 쿠폰이 보이면 함께 적고, 어디서 사는 게 나은지 표로만 보여 주세요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Compare this product&#x27;s price across shops. Include shipping and any visible coupons, and show me a table of where it is better to buy. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "같은 상품의 가격을 비교해 드릴게요", "title_en": "I will compare prices for the same product", "id": "p-89"}, {"c": "생활", "t": "관심 있는 상품의 가격이 내리거나 쿠폰이 뜰 때 알릴 계획을 짜 줘요. 어느 쇼핑몰을 얼마나 자주 보면 되는지 적어 주세요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Draft a plan to watch for a price drop or a coupon on the items I care about. Note which shops to check and how often. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "관심 상품 할인 알림 계획을 짜 드릴게요", "title_en": "I will draft a sale-alert plan for items I am watching", "id": "p-90"}, {"c": "생활", "t": "이미 탑승한 항공편 가운데 마일리지가 안 들어온 것을 찾아, 사후 적립하는 방법과 필요한 자료를 정리해 줘요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Find flights I already took where the mileage did not post, and explain how to claim it afterward, including the documents I need. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "빠뜨린 항공 마일리지를 적립해 드릴게요", "title_en": "I will help credit missed airline mileage after the trip", "id": "p-91"}, {"c": "생활", "t": "이 구간에서 마일리지로 탈 수 있는 보너스 좌석을 날짜별로 찾아 줘요. 필요한 마일리지와 남는 좌석을 표로 보여 주세요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Search award seats I can book with mileage on this route, by date. Show the miles needed and what is still open in a table. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "마일리지 보너스 좌석을 찾아 드릴게요", "title_en": "I will search for mileage award seats", "id": "p-92"}, {"c": "생활", "t": "이 항공편 온라인 체크인 때 고를 좌석 안을 짜 주고, 출발이 지연되거나 게이트가 바뀌면 알려 줄 계획도 함께 적어 줘요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Draft a seat-choice plan for online check-in on this flight, and a plan to alert me if the departure is delayed or the gate changes. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "체크인 좌석 선택과 지연 알림을 챙겨 드릴게요", "title_en": "I will handle seat choice at check-in and delay alerts", "id": "p-93"}, {"c": "생활", "t": "이 항공편 출발 시각을 기준으로, 체크인 마감, 보안 검색, 집이나 회사에서 공항까지 이동 시간을 넣어 집을 나서야 하는 시각을 역산해 줘요. 가정은 분명히 적어 주세요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "From this flight&#x27;s departure time, work backwards with the check-in cutoff, security, and travel time from home or work, and tell me when I should leave. State your assumptions clearly. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "공항 출발 시간을 역산해 드릴게요", "title_en": "I will work backwards to the time I should leave for the airport", "id": "p-94"}, {"c": "생활", "t": "이번 여행의 하루 동선과 준비물 목록 초안을 짜 줘요. 숙소나 교통 예약은 하지 말고, 필요한 예약 목록만 따로 보여 주세요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Draft a day-by-day route and a packing list for this trip. Do not book stays or transport. Just show me a separate list of bookings I still need to make. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "여행 일정과 준비물 초안을 짜 드릴게요", "title_en": "I will draft the trip itinerary and a packing list", "id": "p-95"}, {"c": "건강", "t": "부모님께 안부 전화를 걸 때 쓸 짧은 스크립트를 써 줘요. 건강, 식사, 요즘 일상을 자연스럽게 묻는 순서로 적어 주세요. 전화는 걸지 말고 초안만 보여 주세요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Write a short script I can use when I call a parent to check in. Keep a natural order: health, meals, and recent daily life. Do not place the call. Show me the draft only. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "부모님 안부 전화 스크립트를 써 드릴게요", "title_en": "I will write a check-in call script for my parent", "id": "p-96"}, {"c": "육아", "t": "이 음력 생일을 올해와 내년 양력 날짜로 바꿔 줘요. 요일도 함께 적어 주고, 달력에 넣을 짧은 문구 초안도 써 주세요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Convert this lunar birthday to the solar date for this year and next year, including the day of the week. Also draft a short calendar note I can paste. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "음력 생일을 올해 양력으로 바꿔 드릴게요", "title_en": "I will convert a lunar birthday to this year&#x27;s solar date", "id": "p-97"}, {"c": "육아", "t": "내가 준 인스타그램 데이터 내보내기 파일을 보고, 오랫동안 교류가 없거나 정리해도 될 팔로우 계정을 목록으로 만들어 줘요. 바로 언팔로우하거나 보내거나 바꾸지 말고, 목록 초안을 먼저 보여 주세요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "From the Instagram data export file I give you, list accounts I follow where there has been little interaction, or that I may want to clean up. Do not unfollow, send, or change anything yet. Show me the list first. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "인스타그램 팔로우 정리 목록을 만들어 드릴게요", "title_en": "I will make an Instagram follow-cleanup list from my export file", "id": "p-98"}, {"c": "건강", "t": "가족 행사(생일, 명절, 돌잔치처럼)에 보낼 짧은 메시지 초안을 내 말투로 두세 가지 써 줘요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Draft two or three short messages in my tone for a family event such as a birthday, a holiday, or a first-birthday party. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "가족 행사 메시지 초안을 써 드릴게요", "title_en": "I will draft a message for a family event", "id": "p-99"}, {"c": "육아", "t": "친구나 가족과 모임을 잡을 때, 빈 시간을 묻고 후보 날짜를 제안하는 문장 초안을 써 줘요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Draft a short note I can send to friends or family to ask for open times and suggest a few dates for a gathering. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "모임 일정을 조율할 문장을 써 드릴게요", "title_en": "I will write a note to line up a gathering time", "id": "p-100"}, {"c": "놀이", "t": "이 팝업스토어의 사전 예약이나 웨이팅 오픈 일정을 찾아, 놓치지 않게 알릴 계획을 짜 줘요. 예약은 내가 확인한 뒤에만 진행해 주세요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Find when pre-booking or the waiting list opens for this popup store, and draft a plan so I do not miss it. Book only after I confirm. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "팝업스토어 사전 예약 알림을 챙겨 드릴게요", "title_en": "I will set up an alert for a popup-store pre-booking", "id": "p-101"}, {"c": "놀이", "t": "내가 신청한 공연, 전시, 행사 예매 추첨이나 응모 결과를 확인해 줘요. 당첨이면 다음 절차만 정리해 보여 주고, 예매나 결제는 내가 확인한 뒤에만 진행해 주세요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Check the results of ticket lotteries or raffles I entered for a show, exhibit, or event. If I won, just outline the next steps. Book or pay only after I confirm. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "예매 추첨과 응모 결과를 확인해 드릴게요", "title_en": "I will check ticket-lottery and raffle results", "id": "p-102"}, {"c": "놀이", "t": "이 국립공원 캠핑장의 취소분이 뜨는지 지켜 보고, 자리가 생기면 알려 줄 계획을 짜 줘요. 예약은 내가 확인한 뒤에만 진행해 주세요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Draft a plan to watch this national-park campsite for a cancellation and to alert me if a site opens. Book only after I confirm. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "국립공원 캠핑장 취소분을 지켜 드릴게요", "title_en": "I will watch for cancelled national-park campsite slots", "id": "p-103"}, {"c": "놀이", "t": "이 영화의 가까운 상영 시간과 고르기 좋은 좌석 안을 짜 줘요. 예매와 결제는 내가 확인한 뒤에만 진행해 주세요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Draft nearby showtimes for this movie and a plan for which seats to pick. Book or pay only after I confirm. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "영화 좌석 예매 계획을 짜 드릴게요", "title_en": "I will draft a plan to book movie seats", "id": "p-104"}, {"c": "놀이", "t": "이번 주말에 볼 수 있는 공연과 전시 후보를 시간과 장소, 예매 필요 여부까지 표로 짜 줘요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Make a table of shows and exhibits I could go to this weekend, with times, places, and whether I need a ticket. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "주말 공연과 전시 일정을 짜 드릴게요", "title_en": "I will plan weekend shows and exhibits", "id": "p-105"}, {"c": "생활", "t": "이 장소의 주차 가능 여부, 반려동물 동반 가능 여부, 영업시간과 휴무일을 확인해 짧게 정리해 줘요. 예약이나 전화는 하지 말고 확인한 사실만 보여 주세요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Check this place for parking, whether pets are allowed, opening hours, and closing days, and summarize briefly. Do not book or call. Show me only what you verified. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "장소의 주차와 영업시간을 확인해 드릴게요", "title_en": "I will check parking, pet rules, and hours for a place", "id": "p-106"}, {"c": "생활", "t": "이 조건에 맞는 전세 매물을 찾아 주고, 전세 사기에서 자주 나오는 위험 신호(선순위 권리, 시세 대비 보증금, 집주인 확인처럼)를 매물마다 체크리스트로 붙여 줘요. 법률 자문은 하지 말고, 계약서에 도장을 치거나 돈을 보내거나 전화를 걸지 마세요. 계획과 체크리스트만 먼저 보여 주세요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요. 투자 조언이나 법률 자문, 결제를 대신하지 말고, 사실과 출처만 정리해 주세요. 판단은 내가 할게요.", "te": "Find jeonse listings that match these conditions, and attach a checklist of common fraud risk flags for each one, such as prior rights, deposit versus market price, and landlord verification. Do not give legal advice. Do not sign, send money, or call. Show me the plan and checklist first. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "전세 사기 위험을 보면서 집을 찾아 드릴게요", "title_en": "I will search homes and flag jeonse-fraud risks", "id": "p-107"}, {"c": "생활", "t": "이사 날짜를 기준으로, 전후 할 일을 체크리스트로 짜 줘요. 전입, 공과금, 인터넷, 짐 포장 순서를 넣고, 예약이 필요한 항목은 따로 표시만 해 주세요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "From the moving date, make a checklist of what to do before and after. Include address change, utilities, internet, and packing order, and only mark the items that still need a booking. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "이사 체크리스트를 만들어 드릴게요", "title_en": "I will make a moving checklist for you", "id": "p-108"}, {"c": "공부", "t": "이번 달 관리비 고지서와 단지 공지를 짧게 요약해 줘요. 내야 할 금액, 기한, 중요한 일정만 뽑아 주세요. 이체나 회신은 하지 말고 요약만 보여 주세요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Summarize this month&#x27;s maintenance bill and building notices. Pull out the amount due, the deadline, and any important dates. Do not transfer money or reply. Show me the summary only. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "관리비와 단지 공지를 요약해 드릴게요", "title_en": "I will summarize utility bills and building notices", "id": "p-109"}, {"c": "생활", "t": "이번 휴일에 집 근처에서 문 여는 병원과 약국을 영업시간과 함께 찾아 줘요. 전화하거나 예약하지 말고, 목록만 먼저 보여 주세요. 바로 보내거나 저장하거나 올리거나 결제하거나 예약하거나 전화하거나 바꾸지 말고, 초안이나 계획을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Find clinics and pharmacies near home that are open this holiday, with their hours. Do not call or book. Show me the list first. Do not send, save, post, pay, book, call, or change anything yet. Show me a draft or plan first, and continue only after I confirm.", "title": "휴일에 문 연 병원과 약국을 찾아 드릴게요", "title_en": "I will find clinics and pharmacies open on the holiday", "id": "p-110"}, {"c": "자동화", "t": "작업 폴더에 있는 다운로드 파일을 종류별로 나눠 정리할 계획을 세워 줘요. 지우거나 옮기기 전에 파일 목록을 먼저 보여 주고, 내가 고른 뒤에만 진행해요. 바로 보내거나 저장하거나 올리거나 바꾸지 말고, 초안을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Look at the downloaded files in my working folder and propose a cleanup by type. Show the file list first, and only continue after I pick what to move or delete. Do not send, save, post, or change anything yet. Show me a draft first, and continue only after I confirm.", "title": "다운로드 폴더 정리 목록을 만들어 드릴게요", "title_en": "I will make a download-folder cleanup list for you", "id": "p-01"}, {"c": "자동화", "t": "작업 폴더에서 용량이 큰 파일 20개를 찾아 경로와 크기를 표로 정리해 줘요. 삭제는 내가 고른 뒤에만 해요. 바로 보내거나 저장하거나 올리거나 바꾸지 말고, 초안을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Find the 20 largest files in my working folder and list their paths and sizes in a table. Delete only the ones I approve. Do not send, save, post, or change anything yet. Show me a draft first, and continue only after I confirm.", "title": "큰 파일 20개를 찾아 드릴게요", "title_en": "I will find the 20 largest files for you", "id": "p-02"}, {"c": "자동화", "t": "이 폴더의 영수증 사진과 PDF를 날짜와 상호가 보이게 이름을 짓는 초안을 만들어 줘요. 이름 변경은 내가 확인한 뒤에만 적용해요. 바로 보내거나 저장하거나 올리거나 바꾸지 말고, 초안을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Draft clearer names for receipt photos and PDFs in this folder, including the date and store. Rename them only after I confirm. Do not send, save, post, or change anything yet. Show me a draft first, and continue only after I confirm.", "title": "영수증 파일 이름을 정리해 드릴게요", "title_en": "I will tidy receipt file names for you", "id": "p-03"}, {"c": "자동화", "t": "이 CSV를 읽고 빈 칸과 중복을 표시한 뒤, 정리된 엑셀 파일로 만들어 줘요. 원본은 그대로 두고 새 파일로 저장해요.", "te": "Read this CSV, mark empty cells and duplicates, and save a cleaned Excel file. Leave the original untouched.", "title": "CSV를 엑셀로 정리해 드릴게요", "title_en": "I will tidy a CSV into a spreadsheet for you", "id": "p-04"}, {"c": "공부", "t": "이 프로젝트 폴더에서 최근 일주일 안에 바뀐 파일만 모아, 무엇이 달라졌는지 짧게 요약해 줘요.", "te": "In this project folder, collect files changed in the last week and briefly summarize what changed.", "title": "이번 주 바뀐 파일을 요약해 드릴게요", "title_en": "I will summarize files changed this week for you", "id": "p-05"}, {"c": "자동화", "t": "이 폴더에서 이름이나 크기가 비슷한 중복 파일 후보를 쌍으로 보여 줘요. 지금은 지우지 말고 목록만 만들어요.", "te": "In this folder, show likely duplicate files as pairs by similar name or size. Do not delete anything; just make a list.", "title": "중복 파일 후보를 찾아 드릴게요", "title_en": "I will find likely duplicate files for you", "id": "p-06"}, {"c": "자동화", "t": "이 프로젝트 폴더 구조를 보고 README 초안을 써 줘요. 파일을 덮어쓰지 말고 초안만 보여 줘요.", "te": "Look at this project folder structure and draft a README. Do not overwrite any file; just show the draft.", "title": "폴더 구조로 README 초안을 써 드릴게요", "title_en": "I will draft a README from the folder layout for you", "id": "p-07"}, {"c": "자동화", "t": "이 폴더의 스크린샷을 날짜 순으로 하나의 PDF로 합쳐 줘요. 합치기 전에 순서를 보여 주고, 확인한 뒤에 파일을 만들어요. 바로 보내거나 저장하거나 올리거나 바꾸지 말고, 초안을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Merge the screenshots in this folder into one PDF in date order. Show the order first, and create the file only after I confirm. Do not send, save, post, or change anything yet. Show me a draft first, and continue only after I confirm.", "title": "이미지를 하나의 PDF로 묶어 드릴게요", "title_en": "I will merge images into one PDF for you", "id": "p-08"}, {"c": "자동화", "t": "이 제품의 공식 안내와 최근 한국어 사용기를 찾아, 출처와 날짜를 붙인 비교표를 만들어 줘요. 구매나 결제는 하지 마세요.", "te": "Find the official info and recent Korean reviews for this product, and make a comparison table with sources and dates. Do not buy or pay for anything.", "title": "출처 있는 제품 비교표를 만들어 드릴게요", "title_en": "I will make a sourced product comparison for you", "id": "p-09"}, {"c": "자동화", "t": "이번 주말 서울 경기 날씨만 짧게 정리해 주고, 나들이에 영향 줄 비나 바람만 표시해 줘요. 출처와 예보 시각을 붙여 줘요.", "te": "Summarize this weekend&#x27;s weather for Seoul and Gyeonggi, and flag rain or wind that would affect an outing. Include the source and the forecast time.", "title": "주말 날씨를 짧게 정리해 드릴게요", "title_en": "I will sum up weekend weather for you", "id": "p-10"}, {"c": "공부", "t": "이 주제로 최근 뉴스 다섯 건을 찾아, 한 줄 요약과 출처, 날짜를 붙여 정리해 줘요. 확인되지 않은 소문은 따로 표시해 줘요.", "te": "Find five recent news items on this topic. Give a one-line summary, source, and date for each, and mark anything unverified separately.", "title": "최근 뉴스 다섯 건을 모아 드릴게요", "title_en": "I will gather five recent news items for you", "id": "p-11"}, {"c": "자동화", "t": "이 주소를 브라우저로 열어 본문을 읽고, 핵심만 다섯 줄로 정리해 줘요. 인용한 문장에는 출처를 남겨 줘요.", "te": "Open this URL in the browser, read the main text, and summarize the key points in five lines. Leave a source on any quoted line.", "title": "이 주소의 핵심만 정리해 드릴게요", "title_en": "I will pull out the key points of this page for you", "id": "p-12"}, {"c": "자동화", "t": "이 주제로 열리는 가까운 세미나나 웨비나를 찾아 일정, 장소, 신청 링크를 표로 정리해 줘요. 대신 신청하지는 마세요.", "te": "Find upcoming seminars or webinars on this topic and list the date, place, and signup link. Do not sign up for me.", "title": "세미나 일정을 조사해 드릴게요", "title_en": "I will look up seminar dates for you", "id": "p-13"}, {"c": "자동화", "t": "이 동네에서 가족 식사하기 좋은 곳을 찾아, 영업 시간과 예약 방법, 출처를 붙여 정리해 줘요. 예약은 하지 마세요.", "te": "Find family-friendly places to eat in this neighborhood. Include opening hours, how to book, and sources. Do not make a reservation.", "title": "로컬 장소 정보를 정리해 드릴게요", "title_en": "I will gather checkable info on a local place for you", "id": "p-14"}, {"c": "자동화", "t": "이 구간을 가는 기차, 버스, 비행 선택지를 시간과 대략 비용으로 비교해 줘요. 출처를 붙이고, 예매는 하지 마세요.", "te": "Compare train, bus, and flight options for this route by time and rough cost. Cite sources, and do not book tickets.", "title": "여행 교통 옵션을 정리해 드릴게요", "title_en": "I will compare travel options for you", "id": "p-15"}, {"c": "자동화", "t": "이 공고 페이지를 하루 두 번 확인하고, 본문이 바뀌면 무엇이 달라졌는지만 알려 줘요. 매일 해 줄 수 있거나 예약 기능이 있으면 그 주기로 맞추고, 시작하기 전에 주기를 먼저 보여 줘요.", "te": "Check this notice page twice a day and tell me only what changed. If you can run this every day or have a schedule feature, set it to that cycle, and show me the schedule before it starts.", "title": "공고 페이지 변경을 확인해 드릴게요", "title_en": "I will watch a notice page for changes for you", "id": "p-16"}, {"c": "업무", "t": "이번 주 내 메일함에서 답해야 할 메일과 고지서만 골라, 답장 초안을 써 줘요. 보내기 전에 꼭 보여 줘요. 바로 보내거나 저장하거나 올리거나 바꾸지 말고, 초안을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "From this week&#x27;s mail in my inbox, pick only the messages and bills I should answer, and draft replies. Show me each draft before sending. Do not send, save, post, or change anything yet. Show me a draft first, and continue only after I confirm.", "title": "답할 메일 초안을 써 드릴게요", "title_en": "I will draft replies to the mail you should answer", "id": "p-17"}, {"c": "업무", "t": "내일부터 금요일까지 내 캘린더에서 비어 있는 한 시간 자리를 찾아 미팅 초안을 잡아 줘요. 초대장은 내가 승인한 뒤에만 보내요. 바로 보내거나 저장하거나 올리거나 바꾸지 말고, 초안을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Find a free one-hour slot on my calendar between tomorrow and Friday and draft a meeting. Send the invite only after I approve. Do not send, save, post, or change anything yet. Show me a draft first, and continue only after I confirm.", "title": "빈 시간에 맞춘 미팅 초안을 잡아 드릴게요", "title_en": "I will draft a meeting in an open slot for you", "id": "p-18"}, {"c": "업무", "t": "매일 아침 8시에 내 캘린더의 오늘 일정과 준비물을 한 줄로 알려 줘요. 매일 해 줄 수 있거나 예약 기능이 있으면 그 주기로 맞추고, 시작하기 전에 주기를 보여 줘요.", "te": "Every morning at 8, give me a one-line note with today&#x27;s events on my calendar and what to prepare. If you can run this every day or have a schedule feature, set it to that cycle, and show me the schedule before it starts.", "title": "매일 아침 일정을 한 줄로 알려 드릴게요", "title_en": "I will send today&#x27;s schedule in one line each morning", "id": "p-19"}, {"c": "공부", "t": "최근 메일에서 고지서와 청구서만 골라 금액, 기한, 보낸 곳을 표로 정리해 줘요. 납부는 하지 마세요. 투자 조언이나 법률 자문, 결제를 대신하지 말고, 사실과 출처만 정리해 주세요. 판단은 내가 할게요.", "te": "From recent mail, pick only bills and invoices and list the amount, due date, and sender. Do not make any payment. Do not give investment or legal advice, and do not pay on my behalf. Stick to facts and sources. I will judge for myself.", "title": "고지서 메일만 모아 요약해 드릴게요", "title_en": "I will gather bill emails and sum amounts and due dates", "id": "p-20"}, {"c": "업무", "t": "이 학교 안내문에 맞는 답장 초안을 정중하고 짧게 써 줘요. 지금은 보내지 말고 문장만 보여 줘요.", "te": "Write a short, polite reply draft to this school notice. Do not send it; just show the text.", "title": "학교 안내 답장 초안을 써 드릴게요", "title_en": "I will draft a reply to a school notice for you", "id": "p-21"}, {"c": "업무", "t": "내 캘린더에서 다음 주 일정이 겹치는 시간을 찾아 보여 줘요. 일정을 옮기거나 지우기 전에는 꼭 물어봐요. 바로 보내거나 저장하거나 올리거나 바꾸지 말고, 초안을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Find overlapping events on my calendar for next week. Ask before moving or deleting anything. Do not send, save, post, or change anything yet. Show me a draft first, and continue only after I confirm.", "title": "다음 주 일정 충돌을 찾아 드릴게요", "title_en": "I will find next week&#x27;s calendar conflicts for you", "id": "p-22"}, {"c": "업무", "t": "이 출장 일정으로 내 캘린더에 넣을 일정 초안을 만들어 줘요. 이동 시간과 미팅을 나눠 담고, 저장은 내가 확인한 뒤에만 해요. 바로 보내거나 저장하거나 올리거나 바꾸지 말고, 초안을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Draft events for my calendar from this business trip plan, with travel time and meetings in separate blocks. Save them only after I confirm. Do not send, save, post, or change anything yet. Show me a draft first, and continue only after I confirm.", "title": "출장 일정 초안을 잡아 드릴게요", "title_en": "I will draft a trip itinerary for you", "id": "p-23"}, {"c": "업무", "t": "이 상황에 맞는 짧은 감사 인사 메일 초안을 두 가지 말투로 써 줘요. 보내지는 마세요.", "te": "Write two short thank-you email drafts for this situation, in two tones. Do not send them.", "title": "감사 인사 메일 문장을 다듬어 드릴게요", "title_en": "I will polish a thank-you email for you", "id": "p-24"}, {"c": "자동화", "t": "오늘 결정된 일과 다음 할 일을 내 할 일 목록에 넣을 항목 초안으로 정리해 줘요. 저장은 내가 확인한 뒤에 해요. 바로 보내거나 저장하거나 올리거나 바꾸지 말고, 초안을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Turn today&#x27;s decisions and next tasks into draft items for my task list. Save them only after I confirm. Do not send, save, post, or change anything yet. Show me a draft first, and continue only after I confirm.", "title": "오늘 할 일 목록 초안을 만들어 드릴게요", "title_en": "I will draft today&#x27;s task list for you", "id": "p-25"}, {"c": "자동화", "t": "이 회의록을 내 노트에 넣을 페이지 초안으로 나눠 써 줘요. 결정, 할 일, 보류를 제목으로 구분하고, 저장하거나 공유하기 전에 보여 줘요. 바로 보내거나 저장하거나 올리거나 바꾸지 말고, 초안을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Turn these meeting notes into a page draft for my notes, with headings for decisions, tasks, and items on hold. Show it to me before saving or sharing. Do not send, save, post, or change anything yet. Show me a draft first, and continue only after I confirm.", "title": "회의록을 노트 페이지로 정리해 드릴게요", "title_en": "I will turn meeting notes into a page draft for you", "id": "p-26"}, {"c": "자동화", "t": "이 할 일 보드를 보고, 오래 멈춘 카드와 겹친 일을 정리하는 제안을 써 줘요. 카드를 옮기거나 지우기 전에는 물어봐요. 바로 보내거나 저장하거나 올리거나 바꾸지 말고, 초안을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Look at this task board and propose how to clean up stale or duplicate cards. Ask before moving or deleting anything. Do not send, save, post, or change anything yet. Show me a draft first, and continue only after I confirm.", "title": "할 일 보드 정리 방안을 제안해 드릴게요", "title_en": "I will suggest a cleaner task board for you", "id": "p-27"}, {"c": "자동화", "t": "이번 주 한 일을 이 주간 로그 형식에 맞춰 채워 초안으로 보여 줘요. 지금은 저장하지 마세요.", "te": "Fill this weekly log format with what I did this week and show it as a draft. Do not save it yet.", "title": "주간 로그를 채워 드릴게요", "title_en": "I will fill in a weekly log draft for you", "id": "p-28"}, {"c": "자동화", "t": "이 북마크 목록을 내 노트에 넣을 표 초안으로 정리해 줘요. 제목, 주소, 한 줄 설명을 넣고, 저장은 확인한 뒤에 해요. 바로 보내거나 저장하거나 올리거나 바꾸지 말고, 초안을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Turn this bookmark list into a table draft for my notes, with title, URL, and a one-line note. Save it only after I confirm. Do not send, save, post, or change anything yet. Show me a draft first, and continue only after I confirm.", "title": "북마크를 표로 옮겨 드릴게요", "title_en": "I will turn bookmarks into a table for you", "id": "p-29"}, {"c": "공부", "t": "이 프로젝트 칸반의 지금 상태를 진행, 막힘, 완료로 나눠 짧게 요약해 줘요. 카드는 옮기지 마세요.", "te": "Summarize this project kanban as in progress, blocked, and done. Do not move any cards.", "title": "칸반 상태를 한눈에 보여 드릴게요", "title_en": "I will show the board status at a glance for you", "id": "p-30"}, {"c": "자동화", "t": "이 회의 내용에서 할 일과 담당, 기한만 뽑아 표로 정리해 줘요. 다른 툴에 바로 넣지는 마세요.", "te": "From these meeting notes, extract only the tasks, owners, and due dates into a table. Do not add them to another tool yet.", "title": "회의 액션 아이템만 뽑아 드릴게요", "title_en": "I will pull action items out of the meeting for you", "id": "p-31"}, {"c": "자동화", "t": "이 프로젝트의 목표, 지금 상태, 다음 할 일을 한 쪽 분량으로 써 줘요. 모르는 사실은 추측하지 말고 빈 칸으로 남겨 줘요.", "te": "Write a one-page brief of this project&#x27;s goal, current state, and next steps. Do not guess unknown facts; leave those blank.", "title": "프로젝트 소개 한 쪽을 써 드릴게요", "title_en": "I will write a one-page project intro for you", "id": "p-32"}, {"c": "놀이", "t": "이 주제로 내 말투에 맞는 소셜 글 초안을 세 개 써 줘요. 올리기 전에 꼭 보여 주고, 내가 고른 것만 내 계정에 올려요. 바로 보내거나 저장하거나 올리거나 바꾸지 말고, 초안을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Write three social post drafts on this topic in my tone. Show them to me first, and post only the one I choose to my account. Do not send, save, post, or change anything yet. Show me a draft first, and continue only after I confirm.", "title": "소셜 글 초안 세 개를 써 드릴게요", "title_en": "I will write three social post drafts for you", "id": "p-33"}, {"c": "놀이", "t": "이 주제의 블로그 글 서두를 두 문단으로 써 줘요. 지금은 어디에 발행하지 말고 문장만 보여 줘요.", "te": "Write a two-paragraph opening for a blog post on this topic. Do not publish it anywhere; just show the text.", "title": "블로그 서두 초안을 써 드릴게요", "title_en": "I will draft a blog opening for you", "id": "p-34"}, {"c": "놀이", "t": "이 내용을 다섯 개 안팎의 짧은 스레드 초안으로 나눠 줘요. 각 칸이 혼자 읽혀도 되게 하고, 지금은 올리지 마세요.", "te": "Turn this into a short thread of about five posts, each able to stand on its own. Do not post it yet.", "title": "짧은 스레드 초안을 써 드릴게요", "title_en": "I will draft a short thread for you", "id": "p-35"}, {"c": "놀이", "t": "이 댓글에 예의를 지키면서도 분명하게 답하는 문장을 두 가지로 써 줘요. 지금 올리지는 마세요.", "te": "Write two reply drafts to this comment that stay polite and clear. Do not post them yet.", "title": "정중한 답글 초안을 써 드릴게요", "title_en": "I will draft a polite reply for you", "id": "p-36"}, {"c": "공부", "t": "매일 아침 내가 고른 키워드의 최근 글을 모아 요약해 줘요. 매일 해 줄 수 있거나 예약 기능이 있으면 그 주기로 맞추고, 내가 올리라고 하기 전에는 아무것도 게시하지 마세요. 바로 보내거나 저장하거나 올리거나 바꾸지 말고, 초안을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Every morning, gather recent posts on my chosen keywords and summarize them. If you can run this every day or have a schedule feature, set it to that cycle, and do not post anything until I ask. Do not send, save, post, or change anything yet. Show me a draft first, and continue only after I confirm.", "title": "매일 아침 키워드를 요약해 드릴게요", "title_en": "I will summarize a keyword each morning for you", "id": "p-37"}, {"c": "놀이", "t": "이 긴 글을 세 줄 소개문으로 줄여 줘요. 과장하지 말고, 원문에 있는 사실만 남겨 줘요.", "te": "Reduce this long piece to a three-line introduction. Do not exaggerate, and keep only facts that are in the original.", "title": "긴 글을 짧은 소개로 줄여 드릴게요", "title_en": "I will shrink a long piece into a short intro for you", "id": "p-38"}, {"c": "놀이", "t": "이 변경 사항을 사용자에게 알리는 짧은 공지문 초안을 써 줘요. 지금은 어디에도 올리지 마세요.", "te": "Draft a short notice that explains this change to users. Do not post it anywhere yet.", "title": "공지문 초안을 다듬어 드릴게요", "title_en": "I will polish a notice draft for you", "id": "p-39"}, {"c": "놀이", "t": "이 글을 더 짧고 쉽게 다듬어 줘요. 해시태그를 잔뜩 붙이지 말고, 핵심 문장만 남겨 줘요.", "te": "Tighten this post so it is shorter and easier to read. Do not add a pile of hashtags; keep only the core sentences.", "title": "해시태그 없이 글을 다듬어 드릴게요", "title_en": "I will tidy the writing without hashtags for you", "id": "p-40"}, {"c": "자동화", "t": "매일 밤 11시에 내일 일정과 날씨를 짧게 브리핑해 줘요. 매일 해 줄 수 있거나 예약 기능이 있으면 그 주기로 맞추고, 시작하기 전에 주기와 포함할 항목을 보여 줘요.", "te": "Every night at 11, give me a short briefing of tomorrow&#x27;s schedule and weather. If you can run this every day or have a schedule feature, set it to that cycle, and show the cadence and what it will include before it starts.", "title": "매일 밤 내일 브리핑을 보내 드릴게요", "title_en": "I will send a tonight briefing for tomorrow", "id": "p-41"}, {"c": "자동화", "t": "매주 월요일 아침에 이번 주 목표와 중요한 일정을 짧게 정리해 줘요. 매주 해 줄 수 있거나 예약 기능이 있으면 그 주기로 맞추고, 메일로 보내기 전에는 초안을 보여 줘요. 바로 보내거나 저장하거나 올리거나 바꾸지 말고, 초안을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Every Monday morning, briefly list this week&#x27;s goals and key events. If you can run this every week or have a schedule feature, set it to that cycle, and show the draft before emailing it. Do not send, save, post, or change anything yet. Show me a draft first, and continue only after I confirm.", "title": "매주 월요일 주간 목표를 정리해 드릴게요", "title_en": "I will set weekly goals every Monday for you", "id": "p-42"}, {"c": "자동화", "t": "지금 예약해 두었거나 반복해서 돌리는 작업을 살펴보고, 할 일 없이 도는 것을 줄이거나 주기를 늦추는 제안을 해 줘요. 끄기 전에는 꼭 물어봐요. 바로 보내거나 저장하거나 올리거나 바꾸지 말고, 초안을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Review the tasks I have scheduled or set to repeat, and suggest which ones to slow down or stop if they run with nothing to do. Ask before turning any off. Do not send, save, post, or change anything yet. Show me a draft first, and continue only after I confirm.", "title": "안 쓰는 반복 작업 정리안을 제안해 드릴게요", "title_en": "I will suggest repeats you can drop for you", "id": "p-43"}, {"c": "자동화", "t": "이 키워드가 새로 나오면 하루 한 번 모아 알려 줘요. 중복된 소식은 빼고, 매일 해 줄 수 있거나 예약 기능이 있으면 그 주기로 맞추고, 시작하기 전에 주기를 보여 줘요.", "te": "Once a day, collect new mentions of this keyword and skip duplicates. If you can run this every day or have a schedule feature, set it to that cycle, and show me the schedule before it starts.", "title": "키워드를 하루 한 번 살펴 드릴게요", "title_en": "I will watch a keyword once a day for you", "id": "p-44"}, {"c": "공부", "t": "매주 일요일 저녁에 이번 주 내가 맡긴 일과 결과를 짧게 요약해 줘요. 매주 해 줄 수 있거나 예약 기능이 있으면 그 주기로 맞추고, 시작하기 전에 어떤 항목을 넣을지 보여 줘요.", "te": "Every Sunday evening, briefly recap what I asked you to do this week and how it went. If you can run this every week or have a schedule feature, set it to that cycle, and show me what it will include before it starts.", "title": "주간 맡긴 일을 요약해 드릴게요", "title_en": "I will summarize the work you handed off this week", "id": "p-45"}, {"c": "자동화", "t": "이 일에 맞는 짧은 리마인더 문장을 세 개 써 줘요. 지금은 알림을 만들지 말고 문구만 보여 줘요.", "te": "Write three short reminder lines for this task. Do not create a reminder yet; just show the wording.", "title": "리마인더 문장만 만들어 드릴게요", "title_en": "I will write reminder wording for you", "id": "p-46"}, {"c": "자동화", "t": "평일 아침 7시에 출근 전 준비물 체크리스트를 보내 줘요. 매일 해 줄 수 있거나 예약 기능이 있으면 그 주기로 맞추고, 목록은 내가 고친 뒤에 시작해요. 바로 보내거나 저장하거나 올리거나 바꾸지 말고, 초안을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Every weekday at 7 a.m., send me a before-work checklist. If you can run this every day or have a schedule feature, set it to that cycle, and start only after I edit the list. Do not send, save, post, or change anything yet. Show me a draft first, and continue only after I confirm.", "title": "출근 전 체크리스트를 챙겨 드릴게요", "title_en": "I will run a before-work checklist for you", "id": "p-47"}, {"c": "자동화", "t": "매주 금요일 오후에 이번 주를 돌아보는 질문 다섯 개를 보내 줘요. 매주 해 줄 수 있거나 예약 기능이 있으면 그 주기로 맞추고, 답을 어디에 자동으로 저장하지는 마세요.", "te": "Every Friday afternoon, send me five questions to review the week. If you can run this every week or have a schedule feature, set it to that cycle, and do not automatically save my answers anywhere.", "title": "금요일 주간 회고 질문을 보내 드릴게요", "title_en": "I will send Friday review questions for you", "id": "p-48"}, {"c": "놀이", "t": "이 문장으로 소셜용 4:5 카드 이미지 시안을 만들어 줘요. 글자는 짧고 크게, 여백은 넉넉하게 해 줘요.", "te": "Make a 4:5 social image card draft from this sentence. Keep the text short and large, with plenty of space around it.", "title": "소셜 카드 4:5 시안을 만들어 드릴게요", "title_en": "I will draft a 4:5 social card for you", "id": "p-49"}, {"c": "놀이", "t": "이 스크린샷에서 글자를 읽어 할 일 목록으로 정리해 줘요. 날짜와 사람 이름이 보이면 함께 적어 줘요.", "te": "Read the text in this screenshot and turn it into a task list. Include dates and names when they are visible.", "title": "스크린샷에서 할 일을 뽑아 드릴게요", "title_en": "I will pull tasks out of a screenshot for you", "id": "p-50"}, {"c": "놀이", "t": "이 주제로 카드뉴스 여덟 장 분량의 문안만 써 줘요. 각 장에 제목 한 줄과 본문 두 줄이면 돼요. 지금은 이미지를 만들지 마세요.", "te": "Write copy for an eight-card news series on this topic, with one title line and two body lines per card. Do not make the images yet.", "title": "카드뉴스 문안 여덟 장을 써 드릴게요", "title_en": "I will write copy for eight card-news frames for you", "id": "p-51"}, {"c": "놀이", "t": "이 발표를 여덟 장 안팎의 슬라이드 구성안으로 짜 줘요. 각 장 제목과 들어갈 내용만 적고, 지금은 파일을 만들지 마세요.", "te": "Outline this talk in about eight slides. List each title and what belongs on the slide, and do not create a file yet.", "title": "슬라이드 구성안을 짜 드릴게요", "title_en": "I will outline a slide deck for you", "id": "p-52"}, {"c": "놀이", "t": "이 그래프 이미지를 보고 축, 단위, 눈에 보이는 숫자만 설명해 줘요. 이미지에 없는 추세는 지어내지 마세요.", "te": "Look at this chart image and describe only the axes, units, and numbers that are visible. Do not invent a trend that is not in the image.", "title": "그래프 이미지를 설명해 드릴게요", "title_en": "I will describe a chart image for you", "id": "p-53"}, {"c": "놀이", "t": "이 발표 제목으로 표지 이미지 시안을 만들어 줘요. 제목이 한눈에 들어오게 하고, 장식은 최소한으로 해 줘요.", "te": "Make a title-slide image draft from this presentation title. The title should be easy to read, with very little decoration.", "title": "발표 표지 시안을 만들어 드릴게요", "title_en": "I will draft a presentation cover for you", "id": "p-54"}, {"c": "놀이", "t": "이 표 사진에서 숫자와 항목을 읽어 엑셀 초안으로 옮겨 줘요. 잘 안 보이는 칸은 추측하지 말고 표시만 해 줘요.", "te": "Read the labels and numbers in this photo of a table and draft them in Excel. Do not guess unclear cells; just mark them.", "title": "표 사진에서 엑셀 초안을 만들어 드릴게요", "title_en": "I will turn a photo of a table into a spreadsheet draft", "id": "p-55"}, {"c": "놀이", "t": "이 영상 제목에 맞는 썸네일 문구를 여섯 자 안팎으로 다섯 개 써 줘요. 지금은 이미지를 만들지 마세요.", "te": "Write five thumbnail lines of about six characters that fit this video title. Do not make the image yet.", "title": "썸네일 문장만 써 드릴게요", "title_en": "I will write thumbnail lines for you", "id": "p-56"}, {"c": "투자", "t": "이 종목의 최근 공시와 뉴스만 출처와 날짜를 붙여 정리해 줘요. 매수나 매도 추천은 하지 마세요. 투자 조언이나 법률 자문, 결제를 대신하지 말고, 사실과 출처만 정리해 주세요. 판단은 내가 할게요.", "te": "Collect recent disclosures and news for this stock, with sources and dates. Do not recommend buying or selling. Do not give investment or legal advice, and do not pay on my behalf. Stick to facts and sources. I will judge for myself.", "title": "종목 소식을 정리해 드릴게요", "title_en": "I will collect stock news for you, with no recommendation", "id": "p-57"}, {"c": "투자", "t": "이 계약서에서 해지, 위약금, 자동 연장 조항만 쉬운 말로 풀어 줘요. 법률 자문은 아니라고 분명히 밝혀 줘요. 투자 조언이나 법률 자문, 결제를 대신하지 말고, 사실과 출처만 정리해 주세요. 판단은 내가 할게요.", "te": "Explain only the termination, penalty, and auto-renewal clauses in this contract in plain language. Clearly say this is not legal advice. Do not give investment or legal advice, and do not pay on my behalf. Stick to facts and sources. I will judge for myself.", "title": "계약서 조항을 쉬운 말로 풀어 드릴게요", "title_en": "I will put contract clauses into plain words for you", "id": "p-58"}, {"c": "투자", "t": "최근 메일과 기록에서 구독처럼 보이는 정기 결제를 모아 이름과 대략 금액을 정리해 줘요. 대신 해지하지는 마세요. 바로 보내거나 저장하거나 올리거나 바꾸지 말고, 초안을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요. 투자 조언이나 법률 자문, 결제를 대신하지 말고, 사실과 출처만 정리해 주세요. 판단은 내가 할게요.", "te": "From recent mail and records, list likely subscriptions with their names and rough amounts. Do not cancel anything for me. Do not send, save, post, or change anything yet. Show me a draft first, and continue only after I confirm. Do not give investment or legal advice, and do not pay on my behalf. Stick to facts and sources. I will judge for myself.", "title": "구독 목록을 정리해 드릴게요", "title_en": "I will list your subscriptions for you", "id": "p-59"}, {"c": "투자", "t": "이 견적서에서 빠지거나 과해 보이는 항목을 짚고, 상대에게 물어볼 질문을 써 줘요. 이 견적이 맞다고 단정하지는 마세요. 투자 조언이나 법률 자문, 결제를 대신하지 말고, 사실과 출처만 정리해 주세요. 판단은 내가 할게요.", "te": "Flag items in this quote that look missing or high, and write questions I can ask. Do not declare that the quote is right or wrong. Do not give investment or legal advice, and do not pay on my behalf. Stick to facts and sources. I will judge for myself.", "title": "견적서 확인 질문을 써 드릴게요", "title_en": "I will write questions to check a quote for you", "id": "p-60"}, {"c": "공부", "t": "이 코인에 대한 최근 소식을 사실과 미확인으로 나눠 요약해 줘요. 투자 조언은 하지 마세요. 투자 조언이나 법률 자문, 결제를 대신하지 말고, 사실과 출처만 정리해 주세요. 판단은 내가 할게요.", "te": "Summarize recent news about this coin, separated into facts and unverified claims. Do not give investment advice.", "title": "코인 소식을 요약해 드릴게요", "title_en": "I will summarize coin news for you, with no advice", "id": "p-61"}, {"c": "투자", "t": "이 상황에 맞춰 준비하면 좋은 세금 서류 체크리스트를 만들어 줘요. 대신 신고하거나 제출하지는 마세요. 세무 상담은 아니라고 밝혀 줘요. 투자 조언이나 법률 자문, 결제를 대신하지 말고, 사실과 출처만 정리해 주세요. 판단은 내가 할게요.", "te": "Make a checklist of tax documents that are useful to prepare in this situation. Do not file or submit anything, and say this is not tax advice. Do not give investment or legal advice, and do not pay on my behalf. Stick to facts and sources. I will judge for myself.", "title": "세금 서류 체크리스트를 만들어 드릴게요", "title_en": "I will make a tax-document checklist for you", "id": "p-62"}, {"c": "투자", "t": "이 상품의 판매 페이지 가격을 비교해 줘요. 배송비가 보이면 함께 적고, 결제는 내가 확인한 뒤에만 진행해요. 바로 보내거나 저장하거나 올리거나 바꾸지 말고, 초안을 먼저 보여 준 뒤 내가 확인하면 그다음에 진행해 주세요.", "te": "Compare prices for this product across listing pages. Include shipping when it is shown, and pay only after I confirm. Do not send, save, post, or change anything yet. Show me a draft first, and continue only after I confirm.", "title": "최저가를 비교해 드릴게요", "title_en": "I will compare the lowest prices for you", "id": "p-63"}, {"c": "투자", "t": "이 전세 계약 특약을 쉬운 말로 풀어 주고, 놓치기 쉬운 문장만 표시해 줘요. 법률 자문은 아니라고 밝혀 줘요. 투자 조언이나 법률 자문, 결제를 대신하지 말고, 사실과 출처만 정리해 주세요. 판단은 내가 할게요.", "te": "Explain the special terms in this jeonse lease in plain language, and flag easy-to-miss sentences. State that this is not legal advice. Do not give investment or legal advice, and do not pay on my behalf. Stick to facts and sources. I will judge for myself.", "title": "전세 특약을 쉬운 말로 풀어 드릴게요", "title_en": "I will put jeonse special terms into plain words for you", "id": "p-64"}, {"c": "업무", "t": "이 회의록을 결정된 일, 할 일, 보류로 나눠 다시 정리해 줘요. 없는 내용은 보태지 마세요.", "te": "Rewrite these meeting notes under decisions, tasks, and items on hold. Do not add anything that was not said.", "title": "회의록을 결정과 할 일로 나눠 드릴게요", "title_en": "I will recast minutes as decisions and tasks for you", "id": "p-65"}, {"c": "업무", "t": "이번 주 한 일을 주간 보고서 초안으로 써 줘요. 성과, 문제, 다음 주 계획 순으로 짧게 정리해 줘요.", "te": "Draft a weekly report of what I did this week, in short sections for results, problems, and next week&#x27;s plan.", "title": "주간 보고서 초안을 써 드릴게요", "title_en": "I will draft a weekly report for you", "id": "p-66"}, {"c": "업무", "t": "이 영문 메일 초안을 뜻은 유지한 채 자연스러운 한국어로 다듬어 줘요. 과한 수식어는 빼 줘요.", "te": "Rewrite this English email draft in natural Korean, keeping the meaning. Drop extra flourish.", "title": "영문 메일을 한국어로 다듬어 드릴게요", "title_en": "I will turn an English email into natural Korean for you", "id": "p-67"}, {"c": "업무", "t": "이 긴 자료를 핵심, 근거, 다음에 할 일 세 단으로 줄여 줘요. 페이지나 제목이 있으면 어디에 있는지도 적어 줘요.", "te": "Reduce this long document to three parts: the point, the evidence, and next steps. If pages or headings exist, note where each part came from.", "title": "긴 자료의 요지를 세 단으로 줄여 드릴게요", "title_en": "I will cut a long brief down to three parts for you", "id": "p-68"}, {"c": "업무", "t": "이 제안의 목차를 먼저 보여 주고, 각 장의 짧은 본문 초안을 써 줘요. 없는 숫자나 실적은 지어내지 마세요.", "te": "Show an outline for this proposal first, then draft a short body for each section. Do not invent numbers or results.", "title": "제안서 목차와 초안을 써 드릴게요", "title_en": "I will draft a proposal outline and body for you", "id": "p-69"}, {"c": "업무", "t": "이 이력서 문장을 더 짧고 분명하게 다듬어 줘요. 없는 경력을 보태지 말고, 바꾼 이유를 짧게 적어 줘요.", "te": "Tighten these resume lines so they are shorter and clearer. Do not add experience that is not there, and briefly note why you changed each line.", "title": "이력서 문장을 다듬어 드릴게요", "title_en": "I will tighten resume sentences for you", "id": "p-70"}, {"c": "업무", "t": "이 제품 설명으로 고객 FAQ 열 개를 초안으로 써 줘요. 모르는 정책은 빈 칸으로 남기고, 추측으로 답하지 마세요.", "te": "Draft ten customer FAQ items from this product description. Leave unknown policies blank, and do not answer by guessing.", "title": "고객 FAQ 초안을 만들어 드릴게요", "title_en": "I will draft a customer FAQ for you", "id": "p-71"}, {"c": "업무", "t": "이 변경 로그를 사용자가 읽기 쉬운 공지문으로 바꿔 줘요. 내부 용어는 풀어서 쓰고, 지금은 어디에도 올리지 마세요.", "te": "Turn this changelog into a user-facing notice in plain language. Spell out internal terms, and do not post it anywhere yet.", "title": "변경 로그를 사용자 공지로 바꿔 드릴게요", "title_en": "I will turn a changelog into a user notice for you", "id": "p-72"}, {"c": "생활", "t": "이번 주말 가족 나들이 동선 초안을 짜 줘요. 이동 시간과 식사 자리만 제안하고, 예약은 하지 마세요.", "te": "Draft a family outing route for this weekend. Suggest travel time and a place to eat, but do not make any bookings.", "title": "주말 나들이 동선 초안을 짜 드릴게요", "title_en": "I will draft a weekend outing route for you", "id": "p-73"}, {"c": "생활", "t": "아이 생일 준비 체크리스트를 날짜 순으로 만들어 줘요. 예산 항목은 빈 칸으로 남겨 두고, 대신 주문하지는 마세요.", "te": "Make a dated checklist for a child&#x27;s birthday. Leave budget amounts blank, and do not place any orders.", "title": "아이 생일 준비 목록을 만들어 드릴게요", "title_en": "I will make a birthday-prep checklist for you", "id": "p-74"}, {"c": "생활", "t": "이 집 구조를 기준으로 이사 박스 라벨과 옮기는 순서를 짜 줘요. 지금은 업체에 연락하지 마세요.", "te": "Based on this home layout, plan moving-box labels and the order to move them. Do not contact a mover yet.", "title": "이사 박스 라벨과 순서를 짜 드릴게요", "title_en": "I will plan moving-box labels and order for you", "id": "p-75"}, {"c": "생활", "t": "이번 주 저녁 식단과 장보기 목록 초안을 만들어 줘요. 이미 있는 재료는 빼 달라고 하면 반영하고, 대신 주문하지는 마세요.", "te": "Draft this week&#x27;s dinners and a grocery list. If I tell you what I already have, leave those out, and do not place an order.", "title": "이번 주 식단과 장보기를 짜 드릴게요", "title_en": "I will draft this week&#x27;s meals and grocery list for you", "id": "p-76"}, {"c": "생활", "t": "이 여행 일정과 날씨에 맞춰 패킹 리스트를 만들어 줘요. 필수와 있으면 좋은 것을 나누고, 지금은 아무것도 사지 마세요.", "te": "Make a packing list for this trip based on the itinerary and weather. Split must-haves from nice-to-haves, and do not buy anything yet.", "title": "여행 패킹 리스트를 만들어 드릴게요", "title_en": "I will make a packing list for the trip for you", "id": "p-77"}, {"c": "건강", "t": "가족 모임 시간을 조율하는 메시지를 짧게 써 줘요. 가능한 날짜를 보기 쉽게 적고, 지금은 누구에게도 보내지 마세요.", "te": "Write a short message to coordinate a family gathering. List possible dates clearly, and do not send it to anyone yet.", "title": "모임 시간 조율 메시지를 써 드릴게요", "title_en": "I will write a message to align meeting times for you", "id": "p-78"}, {"c": "생활", "t": "진료 전에 말할 증상, 시작 시점, 복용 중인 약을 메모로 정리해 줘요. 진단하거나 약 이름을 새로 권하지는 마세요.", "te": "Organize a short note of symptoms, when they started, and medicines I already take, for an appointment. Do not diagnose or suggest new medicine.", "title": "진료 전 증상 메모를 정리해 드릴게요", "title_en": "I will tidy a symptom note before the visit for you", "id": "p-79"}, {"c": "생활", "t": "주말 두 시간 안에 할 수 있게 집 안 정리 순서를 짜 줘요. 방마다 20분 안팎으로 나누고, 버릴 물건 목록은 따로 적어 줘요.", "te": "Plan a weekend tidy-up that fits in two hours, with about 20 minutes per room, and a separate list of things to throw away.", "title": "집 안 정리 순서를 짜 드릴게요", "title_en": "I will break home tidying into a small order for you", "id": "p-80"}].map(function(p){return {c:p.c,t:p.t,te:p.te||'',title:p.title||'',id:p.id||''}});
+var WEEKLY=["첫 시작 봇 Efficient setup", "주간 집중 코치 Weekly Focus Coach", "운동 습관 코치 Fitness and Habit Coach", "영상 제작 매니저 Video Champ", "사진 정리 도우미 Photo Cleanup", "사용량 게이지 Usage Meter", "보드게임 나이트 호스트 Game Night Host", "ADHD 할 일 코치 Action Deck", "1인 사업가 비서실장 Chief of Staff", "팔로워 파인더", "월가 애널리스트", "엠파이어 커맨더", "숏리스트 이력서 선별봇", "솔로 파운더 크루", "릴리스 스카우트", "나라 맞춤 셰프봇", "SEO 콘텐츠 갭 파인더", "하이퍼리퀴드 모의 매매봇", "펌프펀 매매봇", "코인 지갑 통계봇", "코인 예산 세금 기록봇", "코인 세금 도우미", "코인 매매봇 7.0", "코인 뉴스 데스크", "촬영 장소 헌팅봇 Location Scout", "지모시 월렛", "종목 추천 추적봇", "알트코인 랩", "순자산 한눈에봇", "솔로 채굴 감시봇 Solo Pleb", "솔라나 모의 매매봇", "소문 구워볶기봇 Whisper Roast", "선물 개장 신문봇", "비트코인 아침 브리핑", "비트코인 보관 안내봇", "비트코인 공부봇", "봇 보안 점검봇 Sentinel", "보유 종목 뉴스봇", "밈코인 시황봇", "멀티체인 지갑봇", "매매 전략 검증봇", "독서 친구봇 BookBot", "급락 분할 매수봇", "UI UX 비평봇 Ives", "BSC 토큰 스캔봇", "테슬라 명령봇 Cabin Commander", "집수리 관리봇 Foreman", "잠재 고객 발굴봇 Lead Finder", "입사 지원 자동 작성봇 Job Applier", "워드프레스 관리봇 Stagehand", "운동 플랜봇 Workout", "영업 훈련봇 The Tough Buyer", "배우 필모그래피봇 Movie Actor Streak", "근처 알림봇 Nearby Reminders", "구독료 점검봇 SaaS Spend Check", "환불 민원 도우미", "프로젝트 시간 기록봇 Precious Time", "트윗 초안 점검봇 Tweet Analyser", "클립 장면 찾는 봇 Clip Scout", "친구 같은 개인 비서 기즈모", "주간 영상 매거진봇", "장보기 도우미 Vivian", "영어 전화 대행 Speak For Me", "쇼츠 화면 맞춤 편집봇", "봇 업그레이드봇 볼탁스", "봇 공유 장부봇 Bot Ledger", "롱폼 영상 감독봇 Video Director", "동네 업체 비교 전화 Call Around", "댓글 스팸 점검봇 Spam Spotter", "다이어그램 봇 Diana Diagrams", "Muse 연결봇", "MV 완성봇 MV Forge", "Grok 4.8 출시 알림봇", "저녁 성찰 결심 추적", "사용량 롤오버 봇", "감사팀장", "Zoom 회의 동석 봇", "X-Man 관심 요약", "MCP 스펙 탑재 봇"];
+var CPBOX={"공부": [{"n": "모트모트 텐미닛 플래너 100days", "note": "오늘 할 공부와 진도를 한눈에 적어 두기 좋아요.", "href": "https://link.coupang.com/a/iyuuNHBvbw", "img": "https://thumbnail9.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/2020/12/16/17/3/ea77b9d1-6846-41b7-b03a-24c4f4932915.jpg"}, {"n": "노르잇 높이조절 독서대", "note": "책을 세워 두고 오래 읽기 좋아요.", "href": "https://link.coupang.com/a/iyxaT5rdPE", "img": "https://t4a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/3a05/a89988919c18fa43b67a47252b3be1832ebaeefc0ed8a4c3877478ff223d.png"}], "투자": [{"n": "만년가계부 캐시북", "note": "수입과 지출을 손글씨로 남겨 두기 좋아요.", "href": "https://link.coupang.com/a/iyxmlwJmIS", "img": "https://t3a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/16e6/c2e19577040bba436e6e8c9e9ce4b7f30f8c292885c6961ae0ab4d3d6ffd.jpg"}, {"n": "흥국산업 금전출납부 200매", "note": "현금 오고 간 것을 장부에 적어 두기 좋아요.", "href": "https://link.coupang.com/a/iyxlX0uDds", "img": "https://thumbnail13.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/3e39/22517801e1b89dbae75fe872fcda5b9ba27b96e8ea93e794d9858bc9eeb2.jpg"}], "육아": [{"n": "일신한일 탄소매트 HI-2025D", "note": "찬 바닥에서도 따뜻하게 앉아 일하기 좋아요.", "href": "https://link.coupang.com/a/iyw85D2b5U", "img": "https://thumbnail14.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/e4cb/13a34c95a517cbbd75e48653a465c630a2a42af27ff1a67d77d7cee4249b.jpg"}, {"n": "홈플래닛 초음파 가습기 4L", "note": "건조한 방에 수분을 채워 두기 좋아요.", "href": "https://link.coupang.com/a/iyw9TTwVFc", "img": "https://thumbnail15.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/323618008542155-4fc1aca1-01d2-410e-a476-9abb9c4030b6.jpg"}], "자동화": [{"n": "2027 온어데이 위클리 다이어리", "note": "한 주 계획을 한눈에 적어 두기 좋아요.", "href": "https://link.coupang.com/a/iyw9JtLuKq", "img": "https://thumbnail3.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/2024/3124ec32b164c8e2100fb7f273a7c9f37e68e1f162ead7b26659df9a04dd.jpg"}, {"n": "홈플래닛 접이식 노트북 거치대", "note": "화면을 눈높이에 맞춰 쓰기 좋아요.", "href": "https://link.coupang.com/a/iyxaLo0g9c", "img": "https://thumbnail9.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/6850755517283728-85c67df6-2eb0-46d3-8c72-742392d7b449.png"}], "업무": [{"n": "이코노미쿠스 거치대 겸용 노트북 파우치", "note": "노트북을 넣고 다니며 임시 거치대로도 쓰기 좋아요.", "href": "https://link.coupang.com/a/iyxnfemQjR", "img": "https://thumbnail11.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/e4f9/d39559d9831d160752c596b4421b4e55dad561b5e8e948ea40db55608bc8.jpg"}, {"n": "데이플랜 360도 회전 노트북 거치대", "note": "화면을 자유롭게 돌려 가며 쓰기 좋아요.", "href": "https://link.coupang.com/a/iyxazGSfme", "img": "https://t3a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/fc17/91e0bed4d81ee9dd2bbd743db4e605231cc162cdf132172a238fec9e3d00.png"}], "건강": [{"n": "코멧 NBR 10mm 요가매트", "note": "리뷰 3만 개가 넘는 인기 매트라 집에서 운동할 때 쓰기 좋아요.", "href": "https://link.coupang.com/a/iyywVTKHng", "img": "https://t5c.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/1347256611565016-c346523f-f6a8-43b3-9810-f690524d1a26.jpg"}, {"n": "손일병 군용 핫팩 180g 50개", "note": "추운 날 주머니에 넣고 다니기 좋아요.", "href": "https://link.coupang.com/a/iyxf9oTW8G", "img": "https://thumbnail14.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/8bd8/2590f1da67a2441abf0e9ecd4a044c28690f81af2345d2517cc7dcacd718.jpg"}], "생활": [{"n": "일신한일 탄소매트 HI-2025D", "note": "찬 바닥에서도 따뜻하게 앉아 일하기 좋아요.", "href": "https://link.coupang.com/a/iyw85D2b5U", "img": "https://thumbnail14.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/e4cb/13a34c95a517cbbd75e48653a465c630a2a42af27ff1a67d77d7cee4249b.jpg"}, {"n": "홈플래닛 초음파 가습기 4L", "note": "건조한 방에 수분을 채워 두기 좋아요.", "href": "https://link.coupang.com/a/iyw9TTwVFc", "img": "https://thumbnail15.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/323618008542155-4fc1aca1-01d2-410e-a476-9abb9c4030b6.jpg"}], "놀이": [{"n": "지브리 토토로 직소퍼즐 1000피스", "note": "여유로운 시간에 조각을 맞춰 보기 좋아요.", "href": "https://link.coupang.com/a/iyxkoivvcy", "img": "https://thumbnail12.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/05b4/4279fc889f0768e3a50cdb976fb8e9a5ff7b12b8c7deb966f7f09f489ee7.png"}, {"n": "디셈버앤코 크리스마스 LED 줄전구", "note": "방에 따뜻한 분위기를 더하기 좋아요.", "href": "https://link.coupang.com/a/iyxlyrOB76", "img": "https://t1a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/ef60/b0fa7c3ffc63c56f80eea53d2c08f46c278b376f99adbde9fbf41f5f4765.jpg"}]};
+var DISC="이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다";
+var TYPES={
+'공부':{t:'공부형 갓생러',m:'blue',d:'배운 건 바로 정리해야 직성이 풀려요. 요약과 복습 봇이 단짝이에요.'},
+'투자':{t:'투자형 전략가',m:'gold',d:'숫자를 보면 눈이 반짝여요. 실적과 지출을 챙기는 봇과 잘 맞아요.'},
+'육아':{t:'육아형 살림꾼',m:'pink',d:'아이 일정과 집안일을 한 손에 쥐고 있어요. 체크리스트 봇이 든든한 조수예요.'},
+'자동화':{t:'자동화 덕후',m:'black',d:'같은 일을 두 번 하면 손해라고 믿어요. 반복되는 일은 봇에게 넘겨요.'},
+'업무':{t:'업무형 일잘러',m:'teal',d:'메일과 회의를 빠르게 정리해요. 초안은 봇이, 결정은 내가 해요.'},
+'건강':{t:'건강형 루틴러',m:'orange',d:'몸이 재산인 걸 알아요. 운동과 수면을 봇과 함께 기록해요.'},
+'생활':{t:'생활형 살림 고수',m:'brown',d:'오늘 저녁과 주말 동선이 늘 준비돼 있어요. 생활 봇이 살림 메이트예요.'},
+'놀이':{t:'놀이형 탐험가',m:'purple',d:'재미있어야 오래 한다고 믿어요. 취미와 놀거리를 봇과 같이 찾아요.'}
+};
+
+var MB={black:'#e5e7eb',blue:'#dbeafe',brown:'#f3e3d3',gold:'#fef3c7',gray:'#eef0f4',orange:'#ffedd5',pink:'#fce7f3',purple:'#ede9fe',teal:'#ccfbf1'};
+var MC={black:'#374151',blue:'#3b82f6',brown:'#a0673a',gold:'#f5b921',gray:'#9ca3af',orange:'#fb923c',pink:'#ff8eb8',purple:'#9b6bff',teal:'#2cc7a4'};
+/* mascots for canvas drawing (same relative files as the page) */
+var IM={},imLeft=0,VEC=false,ready=false;
+Object.keys(MB).forEach(function(m){var i=new Image();imLeft++;i.onload=i.onerror=function(){imLeft--;if(!imLeft&&ready)drawCircle()};i.src='/mascot/'+m+'.png';IM[m]=i});
+
+/* ---------- state (localStorage, no login) ---------- */
+var KEY='gs-live-s13b-state';
+function p2(n){return(n<10?'0':'')+n}
+function ymd(d){return d.getFullYear()+'-'+p2(d.getMonth()+1)+'-'+p2(d.getDate())}
+var NOW=new Date(),TODAY=ymd(NOW),MKEY=TODAY.slice(0,7),MON=NOW.getMonth()+1,MLAST=new Date(NOW.getFullYear(),MON,0).getDate();
+function blank(){return{sample:false,name:'',bots:[],adopted:0,visits:[TODAY],train:0,cats:{},made:false,shared:0,month:{},lastSeen:TODAY,homesickOn:'',sawAdoptAnim:false}}
+function seed(){var s=blank();s.sample=true;s.name='갓생이';s.visits=[];
+for(var i=8;i>=0;i--){var d=new Date(NOW);d.setDate(d.getDate()-i);s.visits.push(ymd(d))}
+[['논문 요약러',12,8],['영어 쉐도잉 파트너',9,4],['메일 답장 비서',7,1],['폴더 정리봇',5,7],['월가 애널리스트',3,3],['운동 루틴 메이트',2,0],['냉장고 셰프',2,0],['가계부 코치',1,2]].forEach(function(x,i){s.bots.push({n:x[0],u:x[1],t:Date.now()-i*864e5,copies:x[2]})});
+var miss=new Date(NOW);miss.setDate(miss.getDate()-4);s.lastSeen=ymd(miss);s.sawAdoptAnim=true;
+s.adopted=8;s.train=23;s.month[MKEY]=11;s.made=true;
+s.cats={'공부':14,'업무':7,'자동화':6,'투자':4,'건강':3,'생활':3,'육아':2,'놀이':1};return s}
+var S=null,mem=false;
+try{S=JSON.parse(localStorage.getItem(KEY)||'null')}catch(e){mem=true}
+if(!S||typeof S!=='object'||!Array.isArray(S.bots)||!Array.isArray(S.visits)){S=blank()}
+S.cats=S.cats||{};S.month=S.month||{};S.bots=S.bots.filter(function(b){return b&&BY[b.n]});
+S.bots.forEach(function(b){if(typeof b.copies!=='number'||b.copies<0)b.copies=0});
+if(S.visits.indexOf(TODAY)<0)S.visits.push(TODAY);
+function daysBetween(a,b){var pa=a.split('-').map(Number),pb=b.split('-').map(Number);return Math.round((Date.UTC(pb[0],pb[1]-1,pb[2])-Date.UTC(pa[0],pa[1]-1,pa[2]))/864e5)}
+if(S.homesickOn===TODAY)S.homesick=true;
+else if(S.lastSeen&&daysBetween(S.lastSeen,TODAY)>=3){S.homesick=true;S.homesickOn=TODAY}
+else S.homesick=false;
+S.lastSeen=TODAY;
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
+save();
+function has(n){return S.bots.some(function(b){return b.n===n})}
+function bump(c){S.cats[c]=(S.cats[c]||0)+1}
+function sorted(){return S.bots.slice().sort(function(a,b){return b.u-a.u||a.t-b.t})}
+
+/* ---------- shared ui helpers ---------- */
+var tt=$('#toast'),tm;
+function toast(s){tt.textContent=s;tt.classList.add('on');clearTimeout(tm);tm=setTimeout(function(){tt.classList.remove('on')},2200)}
+function copy(s,msg){
+function ok(){toast(msg||'복사했어요. 쓰는 에이전트에 붙여 넣으세요.')}
+function fb(){var t=document.createElement('textarea');t.value=s;t.setAttribute('readonly','');t.style.cssText='position:fixed;top:0;left:0;opacity:0';document.body.appendChild(t);t.select();var y=false;try{y=document.execCommand('copy')}catch(e){}t.remove();y?ok():toast('복사하지 못했어요. 문장을 길게 눌러 복사해 주세요.')}
+if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(s).then(ok,fb);else fb()}
+function takeBtn(n){var h=has(n);return '<button type="button" class="btn sm pink take" data-n="'+esc(n)+'"'+(h?' disabled':'')+'>'+(h?(isEn()?'Already in your hut':'봇장에 있어요'):(isEn()?'Take this bot':'데려가기'))+'</button>'}
+function card(b,take){if(!b)return '';var open=b.link?'<a class="btn sm ghost" href="'+esc(b.link)+'" target="_blank" rel="noopener">'+(isEn()?'Open bot':'봇 열기')+'</a>':'';return '<article class="bot"><span class="av" style="background:'+(MB[b.m]||MB.gray)+'"><img src="/mascot/'+b.m+'.png" alt="" loading="lazy"></span><div><em>'+esc(b.c)+'</em><h3>'+esc(isEn()&&b.en?b.en:b.n)+'</h3><p>'+esc(b.d)+'</p>'+(take?takeBtn(b.n):'')+open+'</div></article>'}
+function syncTakes(){$$('.take').forEach(function(b){var h=has(b.dataset.n);b.disabled=h;b.textContent=h?(isEn()?'Already in your hut':'봇장에 있어요'):(isEn()?'Take this bot':'데려가기')})}
+/* make(cv) draws onto a fresh canvas. If the browser blocks export because local image files were drawn
+   (page opened straight from disk), it redraws once with simple vector mascots so saving always works. */
+function savePNG(make,w,h,name){
+function out(cv,msg){cv.toBlob(function(b){if(!b){toast('이미지를 만들지 못했어요.');return}var u=URL.createObjectURL(b),a=document.createElement('a');a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u)},2000);toast(msg)},'image/png')}
+function mk(){var cv=document.createElement('canvas');cv.width=w;cv.height=h;make(cv);return cv}
+try{out(mk(),'이미지를 저장했어요.')}catch(e){VEC=true;try{out(mk(),'이미지를 저장했어요. 서버에 올리면 마스코트 그림 그대로 저장돼요.')}catch(e2){toast('이 환경에서는 저장할 수 없어요.')}VEC=false}}
+function shareX(text){S.shared=(S.shared||0)+1;save();renderAll();window.open('https://x.com/intent/post?text='+encodeURIComponent(text),'_blank','noopener')}
+function who(){return(S.name||'').trim()||'나'}
+
+/* ---------- header menu ---------- */
+var mb=$('#mbtn'),mp=$('#mpanel');
+function setM(o){mb.setAttribute('aria-expanded',o?'true':'false');mb.setAttribute('aria-label',o?'메뉴 닫기':'메뉴 열기');mp.hidden=!o;document.body.style.overflow=o?'hidden':''}
+mb.addEventListener('click',function(){setM(mb.getAttribute('aria-expanded')!=='true')});
+mp.addEventListener('click',function(e){if(e.target===mp||e.target.closest('a'))setM(false)});
+window.matchMedia('(min-width:1024px)').addEventListener('change',function(e){if(e.matches)setM(false)});
+
+/* ---------- hero mascots ---------- */
+var g=$('.g-mascot'),chs=g?$$('.gch',g):[];
+function jump(c){c.classList.remove('is-jump');void c.offsetWidth;c.classList.add('is-jump')}
+if(g){if(!rm)g.classList.add('is-live');
+chs.forEach(function(c){
+c.addEventListener('click',function(){jump(c)});
+c.querySelector('.gch-in').addEventListener('animationend',function(e){if(e.animationName.indexOf('gch-jump')>=0||e.animationName.indexOf('s13-gch-jump')>=0)c.classList.remove('is-jump')})})}
+
+/* ---------- training ground ---------- */
+$('#asks').innerHTML=PROMPTS.slice(0,10).map(function(p,i){var w=(i===0||i===5);return '<button type="button" class="ask'+(w?' w2':'')+' k'+(i+1)+'" data-i="'+i+'"><b>'+p.c+'</b><span class="p">'+esc(isEn()&&p.te?p.te:p.t)+'</span><i>'+(w?(isEn()?'Tap to copy':'눌러서 복사'):(isEn()?'Copy':'복사'))+'</i></button>'}).join('');
+function train(p){S.train++;S.month[MKEY]=(S.month[MKEY]||0)+1;bump(p.c);save();copy(p.t,'복사했어요. 훈련 '+S.train+'회째! 쓰는 에이전트에 붙여 넣으세요.');renderAll()}
+document.addEventListener('click',function(e){var b=e.target.closest('[data-i].ask,[data-i].rp');if(b)train(PROMPTS[+b.dataset.i])});
+
+/* ---------- feed: shared by hero and gacha, up to 5 a day ---------- */
+var FK='gs-s12-feed',fd=0,hs=$('#hearts'),fb=$('#fbtn'),st=$('#stage');
+var HSVG=new Array(6).join('<svg viewBox="0 0 7 6" width="18" height="16" shape-rendering="crispEdges" aria-hidden="true"><path d="M1 0h2v1h1V0h2v1h1v2H6v1H5v1H4v1H3V5H2V4H1V3H0V1h1z"/></svg>');
+try{var sv=JSON.parse(localStorage.getItem(FK)||'null');if(sv&&sv.d===TODAY)fd=Math.max(0,Math.min(5,sv.n|0))}catch(e){}
+hs.innerHTML=HSVG;
+function drawF(){$$('.hearts').forEach(function(h){$$('svg',h).forEach(function(v,i){v.classList.toggle('on',i<fd)});h.setAttribute('aria-label','배부름 '+fd+'/5')});
+$('#fmsg').textContent=fd===0?'배고파요. 밥 좀 주세요!':fd<5?'냠냠! 잘 먹고 있어요. ('+fd+'/5)':'배불러요. 내일 또 놀러 와요!';
+$$('.feedbtn,#fbtn').forEach(function(b){b.disabled=fd>=5;b.textContent=fd>=5?'배불러요':'밥 주기'})}
+function heart(box,el){if(rm)return;var a=el.getBoundingClientRect(),o=box.getBoundingClientRect(),h=document.createElement('span');h.className='hp';h.style.left=(a.left-o.left+a.width/2)+'px';h.style.top=(a.top-o.top)+'px';box.appendChild(h);h.addEventListener('animationend',function(){h.remove()})}
+function feed(){if(fd>=5)return false;fd++;try{localStorage.setItem(FK,JSON.stringify({d:TODAY,n:fd}))}catch(e){}drawF();return true}
+fb.addEventListener('click',function(){if(!feed()||!chs.length)return;var c=chs[Math.floor(Math.random()*chs.length)];if(!rm){jump(c);if(st)heart(st,c)}});
+
+/* ---------- today's baby bot (gacha) ---------- */
+var gr=$('#gres'),mc=$('#machine'),baby=$('#baby'),gst=$('#gstage'),gt,gi=0;
+(function(){var h=0;for(var i=0;i<TODAY.length;i++)h=(h*31+TODAY.charCodeAt(i))%9973;gi=h%BOTS.length})();
+function showBaby(pop){var b=BOTS[gi];$('#babyimg').src='/mascot/'+b.m+'.png';
+gr.innerHTML='<em>'+b.c+'</em><h4>'+b.n+'</h4><p>'+b.d+'</p><div class="row"><button class="btn sm dark" id="s13-gbtn" type="button">캡슐 뽑기</button>'+takeBtn(b.n)+'<button class="btn sm ghost feedbtn" type="button">밥 주기</button><span class="hearts" role="img" aria-label="배부름 0/5">'+HSVG+'</span></div>';
+drawF();if(pop&&!rm){baby.classList.remove('pop','eat');void baby.offsetWidth;baby.classList.add('pop')}}
+gr.addEventListener('click',function(e){
+if(e.target.closest('#gbtn')){var i;do{i=Math.floor(Math.random()*BOTS.length)}while(i===gi);gi=i;clearTimeout(gt);
+if(rm){showBaby(false);return}mc.classList.remove('go');void mc.offsetWidth;mc.classList.add('go');gt=setTimeout(function(){showBaby(true)},520)}
+else if(e.target.closest('.feedbtn')){if(feed()&&!rm){baby.classList.remove('pop','eat');void baby.offsetWidth;baby.classList.add('eat');heart(gst,baby)}}});
+baby.addEventListener('animationend',function(e){if(e.animationName==='s13-eat'||e.animationName==='eat'||e.animationName==='s13-pop'||e.animationName==='pop')baby.classList.remove('eat','pop')});
+showBaby(false);
+
+/* ---------- adopt, play, release ---------- */
+function adopt(n,silent){if(has(n)||!BY[n])return false;S.bots.push({n:n,u:0,t:Date.now(),copies:0});S.adopted=(S.adopted||0)+1;bump(BY[n].c);save();if(!silent)toast(n+' 분양 완료! 내 봇장에서 잘 키워 주세요.');renderAll();return true}
+function startAdopt(n,el){if(has(n)||!BY[n])return;var full=!S.sawAdoptAnim;S.sawAdoptAnim=true;adopt(n);flyAdopt(el,BY[n].m,full)}
+document.addEventListener('click',function(e){var b=e.target.closest('.take');if(b&&!b.disabled)startAdopt(b.dataset.n,b)});
+$('#hutlist').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var n=b.dataset.n,x=S.bots.filter(function(v){return v.n===n})[0];
+if(b.classList.contains('growc')){var p=PROMPTS[+b.dataset.i];if(!p)return;var prev=stageOf(x?x.copies:0).id;if(x)x.copies=(x.copies||0)+1;S.train++;S.month[MKEY]=(S.month[MKEY]||0)+1;bump(p.c);save();var now=stageOf(x?x.copies:0);copy(p.t,now.id!==prev?(n+'가 '+now.n+'이 되었어요! 문장도 복사했어요.'):'복사했어요. '+n+'와 오늘 훈련을 했어요.');renderAll();return}
+if(!x)return;
+if(b.classList.contains('playb')){x.u++;bump(BY[n].c);save();toast(n+'와 놀아 줬어요. 함께한 횟수 '+x.u+'회.');renderAll()}
+else{S.bots=S.bots.filter(function(v){return v.n!==n});save();toast(n+'를 템플릿 목록으로 돌려보냈어요.');renderAll()}});
+
+/* ---------- compatibility: interests and MBTI ---------- */
+var tp=[];
+$('#tchips').innerHTML=CATS.map(function(c,i){return '<button type="button" class="chip" data-i="'+i+'" aria-pressed="false">'+c+'</button>'}).join('');
+$('#tchips').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var i=+b.dataset.i,k=tp.indexOf(i);
+if(k>-1)tp.splice(k,1);else if(tp.length<3)tp.push(i);else{toast('세 가지까지만 고를 수 있어요.');return}
+b.setAttribute('aria-pressed',k===-1?'true':'false');
+$('#s13-tres').innerHTML=tp.length===3?tp.map(function(x){var list=BOTS.filter(function(b){return b.c===CATS[x]});if(!list.length)list=BOTS;var h=0,k=CATS[x]+TODAY;for(var i=0;i<k.length;i++)h=(h*31+k.charCodeAt(i))%9973;return card(list[h%list.length],true)}).join(''):'<p class="hint">'+(3-tp.length)+(isEn()?' more to pick.':'개 더 골라 주세요.')+'</p>'});
+var MQ=[['사람을 만나고 나면','기운이 난다','E','혼자 충전한다','I'],['새 일을 볼 때','지금 사실부터','S','큰 그림부터','N'],['결정할 때는','논리가 먼저','T','마음이 먼저','F'],['계획은','미리 짜 둔다','J','그때그때 정한다','P']],ma=[];
+$('#mq').innerHTML=MQ.map(function(q,i){return '<div class="mq"><p>'+(i+1)+'. '+q[0]+'</p><div><button type="button" data-i="'+i+'" data-v="'+q[2]+'" aria-pressed="false">'+q[1]+'</button><button type="button" data-i="'+i+'" data-v="'+q[4]+'" aria-pressed="false">'+q[3]+'</button></div></div>'}).join('');
+$('#mq').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var i=+b.dataset.i;ma[i]=b.dataset.v;
+$$('button[data-i="'+i+'"]',this).forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+if(ma.filter(Boolean).length===4){var k=(ma[0]==='I'?1:0)+(ma[1]==='N'?2:0)+(ma[2]==='F'?4:0)+(ma[3]==='P'?8:0);
+$('#s13-mres').innerHTML='<p class="rt"><b>'+ma.join('')+'</b> '+(isEn()?'bots that match this type':'유형과 궁합이 맞는 봇')+'</p>'+[0,1,2].map(function(o){return card(BOTS[(k*3+o)%Math.max(1,BOTS.length)],true)}).join('')}});
+
+/* ---------- adoption center (templates) and newcomers ---------- */
+var CC=['전체'].concat(CATS),cc='전체';
+function draw(){var q=($('#s13-q').value||'').trim().toLowerCase();
+var l=BOTS.filter(function(b){return(cc==='전체'||b.c===cc)&&(!q||(b.n+' '+b.d+' '+b.c).toLowerCase().indexOf(q)>-1)});
+if(cc==='전체'&&!q)l=l.slice(0,12);else l=l.slice(0,24);
+$('#tgrid').innerHTML=l.map(function(b){return card(b,true)}).join('');$('#tempty').hidden=l.length>0}
+$('#cchips').innerHTML=CC.map(function(c){return '<button type="button" class="chip" aria-pressed="'+(c===cc)+'">'+c+'</button>'}).join('');
+$('#cchips').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;cc=b.textContent;$$('button',this).forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});draw()});
+$('#s13-q').addEventListener('input',draw);
+$('#sform').addEventListener('submit',function(e){e.preventDefault();draw();$('#s-tpl').scrollIntoView({behavior:rm?'auto':'smooth'})});
+draw();
+$('#wgrid').innerHTML=(WEEKLY.length?WEEKLY:BOTS.filter(function(b){return b.raw&&b.raw.new}).map(function(b){return b.n})).slice(0,6).map(function(n){return BY[n]?card(BY[n],true):''}).join('');
+
+/* ---------- my record tabs ---------- */
+var TABS=['hut','stamp','badge','circle','type'];
+function showTab(id){
+  if(TABS.indexOf(id)<0)id='hut';
+  $$('.my-tab').forEach(function(t){var on=t.dataset.tab===id;t.setAttribute('aria-selected',on?'true':'false');t.tabIndex=on?0:-1});
+  $$('.my-pane').forEach(function(p){p.hidden=p.dataset.tab!==id});
+  if(id==='circle')drawCircle();
+}
+$('#my-tabs').addEventListener('click',function(e){var b=e.target.closest('.my-tab');if(b)showTab(b.dataset.tab)});
+$('#my-tabs').addEventListener('keydown',function(e){
+  if(e.key!=='ArrowRight'&&e.key!=='ArrowLeft'&&e.key!=='Home'&&e.key!=='End')return;
+  var i=TABS.indexOf(($('.my-tab[aria-selected="true"]')||{}).dataset&&$('.my-tab[aria-selected="true"]').dataset.tab||'hut');
+  if(e.key==='Home')i=0;else if(e.key==='End')i=TABS.length-1;else i=(i+(e.key==='ArrowRight'?1:-1)+TABS.length)%TABS.length;
+  showTab(TABS[i]);$('#tab-'+TABS[i]).focus();e.preventDefault()});
+function tabFromHash(){var h=(location.hash||'').replace(/^#s-/,'').replace(/^#/,'');if(TABS.indexOf(h)>=0)showTab(h)}
+window.addEventListener('hashchange',tabFromHash);
+
+/* ---------- record settings ---------- */
+function renderBar(){var b=$('#s13-sbar');if(!b)return;root.classList.remove('is-sample');b.classList.add('mine');
+b.innerHTML='<span class="sb-tag">'+(isEn()?'My record':'내 기록')+'</span><p>'+(isEn()?'Saved only in this browser.':'이 브라우저에만 저장되는 내 기록이에요.')+'</p><button class="btn sm dark" type="button" data-act="reset">'+(isEn()?'Clear my record':'기록 지우기')+'</button>'}
+$('#s13-sbar').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;
+if(b.dataset.act==='reset'){if(!window.confirm(isEn()?'Clear all of your record?':'내 기록을 모두 지울까요?'))return;S=blank();prevEarned=null;save();renderAll();toast(isEn()?'Cleared. Your record starts now.':'기록을 지웠어요. 이제부터 내 기록이 쌓여요.')}});
+
+
+/* ---------- pixel sprites, growth, fly-in ---------- */
+var STG=[{id:'baby',n:'아기봇',min:0},{id:'teen',n:'청소년봇',min:3},{id:'adult',n:'어른봇',min:7}];
+function stageOf(c){c=c||0;var s=STG[0];STG.forEach(function(x){if(c>=x.min)s=x});return s}
+function hexMix(hex,o,p){var n=parseInt(hex.slice(1),16),r=n>>16,g=n>>8&255,b=n&255,R=parseInt(o.slice(1),16),r2=R>>16,g2=R>>8&255,b2=R&255;function k(a,b){return Math.max(0,Math.min(255,Math.round(a+(b-a)*p)))}return '#'+[k(r,r2),k(g,g2),k(b,b2)].map(function(v){return(v+256).toString(16).slice(1)}).join('')}
+/* 16x16 maps. .=empty B=body D=dark W=white P=pupil A=antenna C=cheek */
+var PM={
+baby:['......A.........','......A.........','....BBBB........','...BBBBBB.......','...BWWBWWB......','...BPWBWPB......','...BBBBBB.......','....BBDDB.......','....BBBB........','.....BB.........'],
+teen:['......A.........','......AA........','.....BBBB.......','....BBBBBB......','....BWWBWWB.....','....BPWBWPB.....','....BBBBBB......','.....BBDDB......','....BBBBBB......','....B.BB.B......','....B.BB.B......','.....B..B.......'],
+adult:['......A.........','......AA........','....BBBBBB......','...BBBBBBBB.....','...BWWBBWWB.....','...BPWBBWPB.....','...BBBCBBB......','...BBBddBBB.....','....BBBBBB......','...B.BBBB.B.....','...B.BBBB.B.....','...B..BB..B.....']
+};
+function pixSVG(m,stg,miss){
+  var body=MC[m]||'#9ca3af',bg=MB[m]||'#eef0f4',dark=hexMix(body,'#0f172a',.35),ant=hexMix(body,'#0f172a',.2);
+  var rows=PM[stg]||PM.baby,s=6,pad=2,w=16*s+pad*2,h=16*s+pad*2,out='',y0=16-rows.length;
+  rows.forEach(function(row,yi){var y=y0+yi;for(var x=0;x<row.length;x++){var ch=row[x],fill=null;
+    if(ch==='B')fill=body;else if(ch==='D'||ch==='d')fill=dark;else if(ch==='W')fill='#fff';else if(ch==='P')fill=miss?'#fb923c':'#0f172a';else if(ch==='A')fill=ant;else if(ch==='C')fill=hexMix(body,'#fff',.35);
+    if(fill)out+='<rect x="'+(pad+x*s)+'" y="'+(pad+y*s)+'" width="'+s+'" height="'+s+'" fill="'+fill+'"/>'}})
+  if(miss)out+='<rect x="'+(pad+6*s)+'" y="'+(pad+7*s)+'" width="'+s+'" height="'+s+'" fill="#fb923c"/><rect x="'+(pad+9*s)+'" y="'+(pad+7*s)+'" width="'+s+'" height="'+s+'" fill="#fb923c"/>';
+  return '<svg class="pix" viewBox="0 0 '+w+' '+h+'" width="48" height="48" aria-hidden="true" shape-rendering="crispEdges">'+out+'</svg>';
+}
+function clamp(n,a,b){return Math.max(a,Math.min(b,n))}
+function flyAdopt(el,m,full){
+  return new Promise(function(res){
+    if(rm||!el){res();return}
+    var fly=document.createElement('div');fly.className='pix-fly';fly.setAttribute('aria-hidden','true');
+    fly.innerHTML=pixSVG(m,'baby',false);document.body.appendChild(fly);
+    var a=el.getBoundingClientRect();
+    function dest(){
+      var t=($('#s-hut')&&!$('#s-hut').hidden&&$('#hutlist'))?$('#hutlist'):($('#tab-hut')||$('#s-my')||el);
+      var r=t.getBoundingClientRect();return {x:r.left+Math.min(40,r.width/2),y:r.top+Math.min(28,r.height/2)}
+    }
+    if(full){showTab('hut');var sec=$('#s-my');if(sec)sec.scrollIntoView({behavior:'smooth',block:'start'})}
+    var x0=a.left+a.width/2,y0=a.top;var dur=full?2200:700;var t0=performance.now();
+    function tick(now){
+      var p=Math.min(1,(now-t0)/dur),e=1-Math.pow(1-p,3),d=dest();
+      var x=x0+(d.x-x0)*e,y=y0+(d.y-y0)*e;
+      if(full)y-=Math.sin(p*Math.PI)*Math.min(150,80+Math.abs(d.y-y0)*0.25);
+      var hop=Math.abs(Math.sin(p*Math.PI*(full?6:3)))*(full?16:8);
+      var sz=56;x=clamp(x,sz/2+4,innerWidth-sz/2-4);y=clamp(y-hop,sz/2+4,innerHeight-sz/2-4);
+      fly.style.transform='translate('+Math.round(x-sz/2)+'px,'+Math.round(y-sz/2)+'px)';
+      if(p<1)requestAnimationFrame(tick);else{fly.remove();res()}
+    }
+    fly.style.transform='translate('+Math.round(x0-28)+'px,'+Math.round(y0-28)+'px)';
+    requestAnimationFrame(tick);
+  });
+}
+
+/* ---------- my bot hut ---------- */
+function botPrompt(b){var list=[];PROMPTS.forEach(function(p,i){if(p.c===b.c)list.push({p:p,i:i})});if(!list.length)PROMPTS.forEach(function(p,i){list.push({p:p,i:i})});var h=0,key=TODAY+b.n;for(var i=0;i<key.length;i++)h=(h*31+key.charCodeAt(i))%9973;return list[h%list.length]}
+function renderHut(){var l=sorted();$$('[data-hutcnt]').forEach(function(e){e.textContent=l.length});var cir=$('#tab-cir-v');if(cir)cir.textContent=l.length+'마리';
+$('#hutlist').innerHTML=l.length?l.map(function(x,i){var b=BY[x.n],st=stageOf(x.copies),pr=botPrompt(b),miss=!!S.homesick;
+return '<div class="hb" data-n="'+esc(b.n)+'"><span class="av" style="background:'+MB[b.m]+'">'+(i<3&&x.u>0?'<span class="md m'+(i+1)+'" aria-label="'+(i+1)+'위">'+(i+1)+'</span>':'')+pixSVG(b.m,st.id,miss)+'</span><div class="hb-t"><b>'+b.n+' <span class="stg '+st.id+'">'+st.n+'</span>'+(miss?' <span class="miss-bub">보고 싶었어요</span>':'')+'</b><span>'+b.c+', 함께한 횟수 '+x.u+'회, 프롬프트 '+(x.copies||0)+'회</span></div><div class="hb-a"><button type="button" class="btn sm ghost playb" data-n="'+esc(b.n)+'">놀아 주기</button><button type="button" class="hx" data-n="'+esc(b.n)+'" aria-label="'+esc(b.n)+' 돌려보내기">보내기</button></div><div class="hb-p"><span class="pk">오늘 써 볼 프롬프트</span><div class="prow"><p>'+esc(pr.p.t)+'</p><button type="button" class="btn sm growc" data-n="'+esc(b.n)+'" data-i="'+pr.i+'">복사</button></div></div></div>'}).join('')
+:'<p class="hint">아직 데려온 봇이 없어요. 템플릿이나 가챠에서 데려가기를 눌러 보세요.</p>'}
+
+/* ---------- icons ---------- */
+var IC={
+paw:'<circle cx="6.5" cy="10" r="2"/><circle cx="12" cy="6.5" r="2"/><circle cx="17.5" cy="10" r="2"/><path d="M12 12c-3 0-5 2.4-5 4.5 0 1.5 1.2 2.5 2.6 2.5 1 0 1.6-.5 2.4-.5s1.4.5 2.4.5c1.4 0 2.6-1 2.6-2.5 0-2.100-2-4.500-5-4.500z"/>',
+house:'<path d="M3.500 11.500 12 4l8.500 7.500"/><path d="M6 10v9.500h12V10"/><path d="M10 19.500v-5h4v5"/>',
+check:'<circle cx="12" cy="12" r="9"/><path d="M7.500 12.500l3 3 6-6.500"/>',
+mega:'<path d="M4 10v4h3l7 4V6l-7 4H4z"/><path d="M17.500 9c1.300 1 1.300 5 0 6"/><path d="M7 14.500l1 4.500h2.500"/>',
+cal:'<path d="M5 6.500h14V20H5z"/><path d="M5 11h14M9 4v4M15 4v4"/>',
+ribbon:'<circle cx="12" cy="9" r="5.500"/><path d="M9 13.800 7.500 21l4.500-2.500 4.500 2.500-1.500-7.200"/>',
+star:'<path d="M12 3l2.700 5.600 6.100.800-4.500 4.200 1.100 6-5.400-3-5.400 3 1.100-6-4.500-4.200 6.100-.800z"/>',
+cap:'<path d="M2 9.500l10-5 10 5-10 5z"/><path d="M6 12v4c0 1.500 3 3 6 3s6-1.500 6-3v-4"/><path d="M22 9.500V15"/>'};
+function ico(k,fill){return '<svg viewBox="0 0 24 24" fill="'+(fill?'currentColor':'none')+'" stroke="currentColor" stroke-width="'+(fill?0:1.8)+'" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+IC[k]+'</svg>'}
+
+/* ---------- stamp card and milestones ---------- */
+function renderStamp(){var v=Math.min(30,S.visits.length),h='';
+for(var i=1;i<=30;i++){var ms=i===7?'ribbon':i===15?'star':i===30?'cap':'';
+h+='<div role="listitem" class="st'+(i<=v?' on':'')+(ms?' ms':'')+(i===v?' today':'')+'" aria-label="'+i+'일차'+(i<=v?' 도장 찍음':'')+'">'+(ms?ico(ms):i<=v?ico('paw',1):'')+'<span>'+i+'일차</span></div>'}
+$('#stgrid').innerHTML=h;
+$('#st-sub').textContent='오늘 '+v+'일차 도장 쾅! 방문한 날마다 도장이 하나씩 찍혀요.';
+$('#tab-st-v').textContent=v+'일차';
+$('#tab-st-s').textContent=v>=30?'졸업장을 받을 수 있어요':v>=15?'졸업장까지 '+(30-v)+'일':v>=7?'우수 수료까지 '+(15-v)+'일':'수료증까지 '+(7-v)+'일';
+function r(n,t,sub,act){var w=Math.min(100,Math.round(v/n*100));return '<div class="ml-r"><div class="mt"><b>'+t+'</b><small>'+Math.min(v,n)+'/'+n+'</small><div class="bar"><i style="width:'+w+'%"></i></div></div>'+act+'</div>'}
+$('#mls').innerHTML=
+r(7,'7일 수료증','',v>=7?'<button class="btn sm" type="button" data-cert="7">수료증 받기</button>':'<span class="ok-pill" style="background:#eef2f7;color:#64748b">'+(7-v)+'일 남음</span>')+
+r(15,'15일 우수 수료 배지','',v>=15?'<span class="ok-pill">우수 수료 배지 획득</span>':'<span class="ok-pill" style="background:#eef2f7;color:#64748b">'+(15-v)+'일 남음</span>')+
+r(30,'30일 졸업장','',v>=30?'<button class="btn sm" type="button" data-cert="30">졸업장 받기</button>':'<span class="ok-pill" style="background:#eef2f7;color:#64748b">'+(30-v)+'일 남음</span><button class="lk" type="button" data-cert="30" data-pre="1">미리 보기</button>')}
+$('#mls').addEventListener('click',function(e){var b=e.target.closest('[data-cert]');if(b)openCert(+b.dataset.cert,!!b.dataset.pre)});
+
+/* ---------- badges ---------- */
+var PAL={copper:['#ffe0c2','#e8894a','#9c4a18'],silver:['#ffffff','#aab4c4','#5d6879'],gold:['#fff6c2','#f5b921','#a86c00'],violet:['#f0e4ff','#9b6bff','#4f27b3'],pink:['#ffe0ec','#ff6fa5','#b3225c'],teal:['#d5fff5','#2cc7a4','#0b6f5c'],green:['#e2ffcf','#63cf3a','#267a10'],sky:['#dcf0ff','#3aa0ff','#1257b8'],lime:['#f6ffcc','#b4e61d','#5e8a00']};
+function badges(){var v=S.visits.length,m=S.month[MKEY]||0,a=S.adopted||0,t=S.train||0;return[
+{id:'t1',n:'첫 훈련',s:'훈련 문장 1개 복사',g:'1',ic:'paw',sh:'circle',p:'copper',v:t,x:1},
+{id:'t10',n:'훈련 10회',s:'훈련 문장 10개 복사',g:'10',ic:'paw',sh:'circle',p:'silver',v:t,x:10},
+{id:'t50',n:'훈련 50회',s:'훈련 문장 50개 복사',g:'50',ic:'paw',sh:'circle',p:'gold',v:t,x:50},
+{id:'t100',n:'훈련 100회',s:'훈련 문장 100개 복사',g:'100',ic:'paw',sh:'circle',p:'violet',v:t,x:100},
+{id:'a1',n:'첫 분양',s:'봇 1마리 데려가기',g:'1',ic:'house',sh:'hex',p:'pink',v:a,x:1},
+{id:'a5',n:'분양 5마리',s:'봇 5마리 데려가기',g:'5',ic:'house',sh:'hex',p:'teal',v:a,x:5},
+{id:'a10',n:'분양 10마리',s:'봇 10마리 데려가기',g:'10',ic:'house',sh:'hex',p:'gold',v:a,x:10},
+{id:'made',n:'만들어 봤어요',s:'내 손으로 봇을 만들었다면 체크',g:'DIY',ic:'check',sh:'square',p:'green',v:S.made?1:0,x:1,act:'made'},
+{id:'share',n:'첫 자랑',s:'서클이나 성향 카드를 X에 자랑',g:'X',ic:'mega',sh:'burst',p:'sky',v:Math.min(1,S.shared||0),x:1},
+{id:'month',n:MON+'월 도전: 프롬프트 18개',s:MON+'월 '+MLAST+'일까지, 이번 달 한정',g:MON+'월',ic:'cal',sh:'shield',p:'lime',v:m,x:18,ltd:MON+'월 한정'},
+{id:'v7',n:'7일 수료',s:'7일 출석',g:'7일',ic:'ribbon',sh:'penta',p:'copper',v:v,x:7},
+{id:'v15',n:'우수 수료',s:'15일 출석',g:'15일',ic:'star',sh:'penta',p:'silver',v:v,x:15},
+{id:'v30',n:'졸업',s:'30일 출석',g:'30일',ic:'cap',sh:'penta',p:'gold',v:v,x:30}]}
+function poly(n,r,r2,cy,rot){var p=[],k=r2?n*2:n;for(var i=0;i<k;i++){var a=(rot||-90)*Math.PI/180+i*2*Math.PI/k,q=(r2&&i%2)?r2:r;p.push((50+q*Math.cos(a)).toFixed(1)+','+((cy||50)+q*Math.sin(a)).toFixed(1))}return p.join(' ')}
+function shape(sh,at){
+if(sh==='hex')return '<polygon points="'+poly(6,47)+'" stroke-linejoin="round" '+at+'/>';
+if(sh==='square')return '<rect x="8" y="8" width="84" height="84" rx="24" '+at+'/>';
+if(sh==='burst')return '<polygon points="'+poly(12,47,41)+'" stroke-linejoin="round" '+at+'/>';
+if(sh==='shield')return '<path d="M50 4 L89 17 V50 C89 74 71 89 50 96 C29 89 11 74 11 50 V17 Z" stroke-linejoin="round" '+at+'/>';
+if(sh==='penta')return '<polygon points="'+poly(5,49,0,53)+'" stroke-linejoin="round" '+at+'/>';
+return '<circle cx="50" cy="50" r="45" '+at+'/>'}
+function badgeSVG(b,on,pre){var p=PAL[b.p],id=(pre||'bg')+b.id,fs=b.g.length>2?19:b.g.length>1?23:26,lk='#6b7890';
+return '<svg viewBox="0 0 100 100" aria-hidden="true">'+
+(on?'<defs><linearGradient id="'+id+'" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="'+p[0]+'"/><stop offset=".32" stop-color="'+p[1]+'"/><stop offset=".5" stop-color="'+p[0]+'"/><stop offset=".68" stop-color="'+p[1]+'"/><stop offset="1" stop-color="'+p[2]+'"/></linearGradient></defs>':'')+
+shape(b.sh,on?'fill="url(#'+id+')" stroke="'+p[2]+'" stroke-width="2"':'fill="none" stroke="'+lk+'" stroke-width="2"')+
+'<g transform="translate(50 50) scale(.82) translate(-50 -50)">'+shape(b.sh,on?'fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1.6"':'fill="none" stroke="'+lk+'" stroke-width="1.4" stroke-dasharray="3 4" opacity=".7"')+'</g>'+
+'<g transform="translate(37.500 '+(b.sh==='penta'?25:21)+') scale(1.04)" fill="none" stroke="'+(on?p[2]:lk)+'" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">'+IC[b.ic]+'</g>'+
+'<text x="50" y="'+(b.sh==='penta'?77:75)+'" text-anchor="middle" font-family="system-ui,sans-serif" font-size="'+fs+'" font-weight="800" '+(on?'fill="#fff" stroke="'+p[2]+'" stroke-width="3" paint-order="stroke" stroke-linejoin="round"':'fill="none" stroke="'+lk+'" stroke-width="1"')+'>'+b.g+'</text>'+
+(on?'<ellipse cx="38" cy="24" rx="20" ry="9" fill="#fff" opacity=".28" transform="rotate(-28 38 24)"/>':'')+'</svg>'}
+var prevEarned=null;
+function renderBadges(){var l=badges(),n=0,now={};
+$('#bdgrid').innerHTML=l.map(function(b){var on=b.v>=b.x;if(on){n++;now[b.id]=b.n}
+return '<div class="bd'+(on?' on':'')+'">'+(b.ltd?'<span class="ltd">'+b.ltd+'</span>':'')+badgeSVG(b,on)+'<b>'+b.n+'</b><small>'+b.s+'</small>'+
+(on?'<span class="got">획득</span>':'<span class="pg" role="progressbar" aria-valuemin="0" aria-valuemax="'+b.x+'" aria-valuenow="'+b.v+'" aria-label="'+b.n+' 진행도"><i style="width:'+Math.round(b.v/b.x*100)+'%"></i></span><span class="ct">'+b.v+'/'+b.x+'</span>'+(b.act?'<button class="mini" type="button" data-act="'+b.act+'">만들어 봤어요</button>':''))+'</div>'}).join('');
+$('#bdtot').textContent='획득 '+n+' / '+l.length;
+$('#tab-bd-v').textContent=n+' / '+l.length;
+if(prevEarned){var nw=Object.keys(now).filter(function(k){return!prevEarned[k]});if(nw.length)setTimeout(function(){toast('새 배지 획득: '+now[nw[0]])},2300)}
+prevEarned=now}
+$('#bdgrid').addEventListener('click',function(e){var b=e.target.closest('[data-act="made"]');if(!b)return;S.made=true;save();renderAll()});
+function earned(){return badges().filter(function(b){return b.v>=b.x})}
+
+/* ---------- canvas helpers ---------- */
+function rr(x,a,b,w,h,r){x.beginPath();x.moveTo(a+r,b);x.arcTo(a+w,b,a+w,b+h,r);x.arcTo(a+w,b+h,a,b+h,r);x.arcTo(a,b+h,a,b,r);x.arcTo(a,b,a+w,b,r);x.closePath()}
+function fit(x,m,cx,cy,box){var img=IM[m];
+if(!VEC&&img&&img.naturalWidth){var w=img.naturalWidth,h=img.naturalHeight,k=box/Math.max(w,h);x.drawImage(img,cx-w*k/2,cy-h*k/2,w*k,h*k);return}
+var s=box/100;x.save();x.translate(cx-box/2,cy-box/2);x.scale(s,s);x.lineCap='round';
+x.strokeStyle=MC[m];x.lineWidth=6;x.beginPath();x.moveTo(50,22);x.lineTo(50,8);x.stroke();x.fillStyle=MC[m];x.beginPath();x.arc(50,8,7,0,7);x.fill();
+rr(x,14,20,72,70,26);x.fill();
+x.fillStyle='#fff';x.beginPath();x.arc(36,52,9,0,7);x.arc(64,52,9,0,7);x.fill();
+x.fillStyle='#0f172a';x.beginPath();x.arc(37,53,4.5,0,7);x.arc(65,53,4.5,0,7);x.fill();
+x.strokeStyle='#fff';x.lineWidth=4;x.beginPath();x.arc(50,66,9,.2*Math.PI,.8*Math.PI);x.stroke();x.restore()}
+function metal(x,cx,cy,r,p){var gr=x.createLinearGradient(cx-r,cy-r,cx+r,cy+r);gr.addColorStop(0,p[0]);gr.addColorStop(.32,p[1]);gr.addColorStop(.5,p[0]);gr.addColorStop(.68,p[1]);gr.addColorStop(1,p[2]);return gr}
+function cBadge(x,cx,cy,r,b){x.save();x.shadowColor='rgba(15,23,42,.22)';x.shadowBlur=14;x.shadowOffsetY=5;x.beginPath();x.arc(cx,cy,r,0,7);x.fillStyle=metal(x,cx,cy,r,PAL[b.p]);x.fill();x.restore();
+x.lineWidth=3;x.strokeStyle=PAL[b.p][2];x.beginPath();x.arc(cx,cy,r,0,7);x.stroke();
+x.lineWidth=2;x.strokeStyle='rgba(255,255,255,.75)';x.beginPath();x.arc(cx,cy,r*.8,0,7);x.stroke();
+x.font='800 '+((b.g.length>2||/[가-힣]/.test(b.g))?r*.56:r*.8)+'px '+FF;x.textAlign='center';x.textBaseline='middle';x.lineJoin='round';x.lineWidth=5;x.strokeStyle=PAL[b.p][2];x.strokeText(b.g,cx,cy+2);x.fillStyle='#fff';x.fillText(b.g,cx,cy+2);x.textBaseline='alphabetic'}
+function clip(x,s,w){if(x.measureText(s).width<=w)return s;var a=Array.from(s);while(a.length>1&&x.measureText(a.join('')+'…').width>w)a.pop();return a.join('')+'…'}
+
+/* ---------- my bot circle ---------- */
+var MEDAL=[PAL.gold,PAL.silver,PAL.copper];
+function drawCircle(cv){cv=cv||$('#ccanvas');var x=cv.getContext('2d'),W=1080,H=1260,cx=540,cy=575,l=sorted(),nm=who();
+var bg=x.createLinearGradient(0,0,W,H);bg.addColorStop(0,'#e6f3ff');bg.addColorStop(.55,'#f1ecff');bg.addColorStop(1,'#fff6e6');x.fillStyle=bg;x.fillRect(0,0,W,H);
+x.fillStyle='rgba(255,255,255,.55)';x.beginPath();x.arc(cx,cy,455,0,7);x.fill();
+x.textBaseline='alphabetic';x.textAlign='left';x.fillStyle='#0f172a';x.font='800 48px '+FF;x.fillText('나의 봇 서클',56,96);
+x.font='600 26px '+FF;x.fillStyle='#5b6478';x.fillText(clip(x,nm+'님과 함께 사는 봇 '+l.length+'마리',560),58,138);
+x.textAlign='right';x.font='800 30px '+FF;x.fillStyle='#2563eb';x.fillText('갓생봇.com',W-56,92);
+if(S.sample){x.font='800 20px '+FF;var tw=x.measureText('예시 데이터').width+28;rr(x,W-56-tw,110,tw,36,18);x.fillStyle='#fff3c4';x.fill();x.strokeStyle='#e0b020';x.lineWidth=2;x.setLineDash([6,5]);x.stroke();x.setLineDash([]);x.fillStyle='#8a5a00';x.fillText('예시 데이터',W-70,135)}
+var RR=[170,300,410],CAP=[3,6,10],AR=[66,52,42],FS=[21,19,17],idx=0,shown=Math.min(l.length,19),pos=[];
+x.setLineDash([4,12]);x.lineCap='round';x.lineWidth=3;x.strokeStyle='rgba(37,99,235,.22)';
+for(var r=0;r<3;r++){if(r===0||shown>(r===1?3:9)){x.beginPath();x.arc(cx,cy,RR[r],0,7);x.stroke()}}
+x.setLineDash([]);
+/* most used first: ring 0 holds the top 3, then 6, then 10 */
+for(r=0;r<3&&idx<shown;r++){var k=Math.min(CAP[r],shown-idx),off=-Math.PI/2+(r===1?Math.PI/k:0);
+for(var j=0;j<k;j++,idx++){var a=off+j*2*Math.PI/k;pos.push({x:cx+RR[r]*Math.cos(a),y:cy+RR[r]*Math.sin(a),r:r,i:idx,b:BY[l[idx].n],u:l[idx].u})}}
+pos.forEach(function(p){var ar=AR[p.r];
+x.save();x.shadowColor='rgba(15,23,42,.18)';x.shadowBlur=18;x.shadowOffsetY=6;x.beginPath();x.arc(p.x,p.y,ar,0,7);x.fillStyle='#fff';x.fill();x.restore();
+x.beginPath();x.arc(p.x,p.y,ar-5,0,7);x.fillStyle=MB[p.b.m];x.fill();
+fit(x,p.b.m,p.x,p.y,ar*1.28)});
+pos.forEach(function(p){var ar=AR[p.r],fs=FS[p.r];
+x.font='700 '+fs+'px '+FF;x.textAlign='center';x.textBaseline='alphabetic';var s=clip(x,p.b.n,ar*2+56),w=x.measureText(s).width+22,hh=fs+14;
+rr(x,p.x-w/2,p.y+ar-6,w,hh,hh/2);x.fillStyle='rgba(255,255,255,.94)';x.fill();x.fillStyle='#0f172a';x.fillText(s,p.x,p.y+ar-6+hh-9);
+if(p.i<3&&p.u>0){var mx=p.x+ar*.7,my=p.y-ar*.7,mr=p.r===0?22:18;x.beginPath();x.arc(mx,my,mr+3,0,7);x.fillStyle='#fff';x.fill();x.beginPath();x.arc(mx,my,mr,0,7);x.fillStyle=metal(x,mx,my,mr,MEDAL[p.i]);x.fill();x.lineWidth=2;x.strokeStyle=MEDAL[p.i][2];x.stroke();
+x.font='800 '+(mr+2)+'px '+FF;x.fillStyle='#3b2a00';x.textBaseline='middle';x.fillText(String(p.i+1),mx,my+1);x.textBaseline='alphabetic'}});
+if(!l.length){x.textAlign='center';x.font='600 26px '+FF;x.fillStyle='#5b6478';x.fillText('템플릿에서 봇을 데려오면',cx,cy+190);x.fillText('여기에 동그랗게 모여요.',cx,cy+228)}
+if(l.length>19){x.textAlign='center';x.font='700 22px '+FF;x.fillStyle='#5b6478';x.fillText('외 '+(l.length-19)+'마리',cx,cy+478)}
+/* center */
+x.save();x.shadowColor='rgba(15,23,42,.3)';x.shadowBlur=24;x.shadowOffsetY=8;x.beginPath();x.arc(cx,cy,92,0,7);x.fillStyle='#fff';x.fill();x.restore();
+var cg=x.createLinearGradient(cx-84,cy-84,cx+84,cy+84);cg.addColorStop(0,'#2563eb');cg.addColorStop(1,'#7c3aed');x.beginPath();x.arc(cx,cy,84,0,7);x.fillStyle=cg;x.fill();
+var ini=Array.from(nm)[0].toUpperCase(),multi=Array.from(nm).length>1;x.textAlign='center';x.fillStyle='#fff';x.textBaseline='middle';x.font='800 '+(multi?72:88)+'px '+FF;x.fillText(ini,cx,cy+(multi?-12:4));
+if(multi){x.font='700 22px '+FF;x.fillText(clip(x,nm,140),cx,cy+46)}x.textBaseline='alphabetic';
+/* badges row */
+var eb=earned();x.textAlign='left';x.font='800 24px '+FF;x.fillStyle='#0f172a';x.fillText('획득 배지 '+eb.length+'개',56,1092);
+if(!eb.length){x.font='600 22px '+FF;x.fillStyle='#5b6478';x.fillText('프롬프트를 하나 복사하면 첫 배지가 생겨요.',56,1150)}
+var mx2=8,n=Math.min(eb.length,mx2);for(var i=0;i<n;i++){var bx=56+61+i*121,by=1154;
+if(i===mx2-1&&eb.length>mx2){x.beginPath();x.arc(bx,by,36,0,7);x.fillStyle='#fff';x.fill();x.font='800 26px '+FF;x.textAlign='center';x.fillStyle='#334155';x.fillText('+'+(eb.length-mx2+1),bx,by+9);continue}
+cBadge(x,bx,by,36,eb[i]);x.font='700 17px '+FF;x.textAlign='center';x.fillStyle='#334155';x.fillText(clip(x,eb[i].id==='month'?MON+'월 도전':eb[i].n,116),bx,by+62)}}
+var cn=$('#cname');
+cn.addEventListener('input',function(){S.name=this.value.slice(0,10);save();drawCircle();renderType()});
+$('#csave').addEventListener('click',function(){savePNG(drawCircle,1080,1260,'갓생봇_나의_봇_서클.png')});
+$('#cshare').addEventListener('click',function(){var l=sorted(),eb=earned().length;
+shareX((l.length?'나의 봇 서클 공개! 봇 '+l.length+'마리와 갓생 사는 중. 제일 아끼는 아이는 '+l[0].n+'.':'나의 봇 서클을 만들기 시작했어요.')+(eb?' 배지 '+eb+'개 획득.':'')+' 너도 데려가 봐 → https://갓생봇.com #갓생봇')});
+
+/* ---------- type card ---------- */
+function typeInfo(){var tot=0,arr=CATS.map(function(c){var v=S.cats[c]||0;tot+=v;return{c:c,v:v}}),top=arr.slice().sort(function(a,b){return b.v-a.v});return{tot:tot,arr:arr,top:top,mx:Math.max(1,top[0].v),t:tot?TYPES[top[0].c]:null}}
+function radarPts(arr,mx,cx,cy,R,f){return arr.map(function(o,i){var a=-Math.PI/2+i*2*Math.PI/arr.length,q=R*(f==null?Math.max(.06,o.v/mx):f);return[cx+q*Math.cos(a),cy+q*Math.sin(a),a]})}
+function radarSVG(ti){var cx=160,cy=150,R=92,h='<svg class="radar" viewBox="0 0 320 300" role="img" aria-label="분야별 활동 비율 레이더 차트">';
+[.25,.5,.75,1].forEach(function(f){h+='<polygon points="'+radarPts(ti.arr,1,cx,cy,R,f).map(function(p){return p[0].toFixed(1)+','+p[1].toFixed(1)}).join(' ')+'" fill="'+(f===1?'rgba(255,255,255,.7)':'none')+'" stroke="#cbd5e1" stroke-width="1"/>'});
+radarPts(ti.arr,1,cx,cy,R,1).forEach(function(p){h+='<line x1="'+cx+'" y1="'+cy+'" x2="'+p[0].toFixed(1)+'" y2="'+p[1].toFixed(1)+'" stroke="#cbd5e1" stroke-width="1"/>'});
+var pts=radarPts(ti.arr,ti.mx,cx,cy,R);
+h+='<polygon points="'+pts.map(function(p){return p[0].toFixed(1)+','+p[1].toFixed(1)}).join(' ')+'" fill="rgba(37,99,235,.22)" stroke="#2563eb" stroke-width="2.5" stroke-linejoin="round"/>';
+pts.forEach(function(p){h+='<circle cx="'+p[0].toFixed(1)+'" cy="'+p[1].toFixed(1)+'" r="3.500" fill="#fff" stroke="#2563eb" stroke-width="2"/>'});
+radarPts(ti.arr,1,cx,cy,R+20,1).forEach(function(p,i){var c=Math.cos(p[2]),o=ti.arr[i];h+='<text x="'+p[0].toFixed(1)+'" y="'+(p[1]+4).toFixed(1)+'" text-anchor="'+(c>.3?'start':c<-.3?'end':'middle')+'" font-size="12.500" font-weight="700" fill="'+(o.c===ti.top[0].c&&ti.tot?'#2563eb':'#334155')+'">'+o.c+' '+o.v+'</text>'});
+return h+'</svg>'}
+function recBots(ti){var out=[];ti.top.forEach(function(o){BOTS.forEach(function(b){if(b.c===o.c&&!has(b.n)&&out.length<2)out.push(b)})});return out}
+function recPrompts(ti){var c=ti.tot?ti.top[0].c:'공부',out=[];PROMPTS.forEach(function(p,i){if(p.c===c&&out.length<2)out.push(i)});return out}
+function renderType(){var ti=typeInfo(),T=ti.t||{t:'알에서 깨어나는 중',m:'gray',d:'아직 기록이 없어요. 훈련 문장을 복사하거나 봇을 데려가면 유형이 정해져요.'};
+var top3=ti.top.slice(0,3).filter(function(o){return o.v>0});
+var tyv=$('#tab-ty-v');if(tyv)tyv.textContent=T.t;
+$('#tybox').innerHTML='<div class="ty-card"><div class="ty-hd"><span class="av"><img src="/mascot/'+T.m+'.png" alt=""></span><div><small>'+esc(who())+'님의 갓생 유형</small><h4>'+T.t+'</h4><p>'+T.d+'</p></div></div>'+
+'<div class="ty-mid">'+radarSVG(ti)+'<div class="tb">'+(top3.length?top3.map(function(o,i){var pc=Math.round(o.v/ti.tot*100);return '<div><div class="tb-r"><b>'+(i+1)+'위 '+o.c+'</b><span>'+pc+'%</span></div><div class="bar"><i style="width:'+pc+'%"></i></div></div>'}).join(''):'<p class="hint" style="background:rgba(255,255,255,.6)">기록이 쌓이면 분야 순위가 보여요.</p>')+'</div></div></div>'+
+'<div class="rec"><div><h5>다음에 데려갈 아이</h5>'+(recBots(ti).map(function(b){return card(b,true)}).join('')||'<p class="hint">어울리는 봇을 모두 데려왔어요.</p>')+'</div>'+
+'<div><h5>이어서 할 훈련</h5>'+recPrompts(ti).map(function(i){return '<button type="button" class="rp" data-i="'+i+'">'+PROMPTS[i].t+'<i>눌러서 복사</i></button>'}).join('')+'</div></div>'+
+(function(){var key=null;for(var k in TYPES){if(TYPES[k]===T||(T&&TYPES[k].t===T.t))key=k}var items=CPBOX[key]||CPBOX['생활']||[];return '<div class="cpb"><h5>'+esc(T.t)+'에게 어울리는 물건</h5><div class="cp-items">'+items.map(function(c){return '<a class="cp-i" href="'+esc(c.href)+'" target="_blank" rel="sponsored noopener"><img src="'+esc(c.img)+'" alt="" width="212" height="212" loading="lazy"><span>'+esc(c.n)+'<small>쿠팡에서 보기</small></span></a>'}).join('')+'</div><p class="cp-d">'+DISC+'</p></div>'}())}
+function typeCanvas(cv){var ti=typeInfo(),T=ti.t||{t:'알에서 깨어나는 중',m:'gray',d:''},W=1080,H=1350,x=cv.getContext('2d');
+var bg=x.createLinearGradient(0,0,W,H);bg.addColorStop(0,'#fff3d6');bg.addColorStop(.5,'#eeeafe');bg.addColorStop(1,'#dff0ff');x.fillStyle=bg;x.fillRect(0,0,W,H);
+x.save();x.shadowColor='rgba(15,23,42,.14)';x.shadowBlur=40;x.shadowOffsetY=14;rr(x,54,54,W-108,H-108,56);x.fillStyle='#fff';x.fill();x.restore();
+x.textAlign='left';x.textBaseline='alphabetic';x.font='800 30px '+FF;x.fillStyle='#6d28d9';x.fillText(clip(x,who()+'님의 갓생 유형',600),112,170);
+x.font='800 84px '+FF;x.fillStyle='#0f172a';var tl=T.t;x.font='800 '+(x.measureText(tl).width>640?66:84)+'px '+FF;x.fillText(tl,108,270);
+x.beginPath();x.arc(870,200,104,0,7);x.fillStyle=MB[T.m];x.fill();fit(x,T.m,870,200,150);
+if(S.sample){x.font='800 22px '+FF;x.fillStyle='#8a5a00';x.fillText('예시 데이터',112,318)}
+var cx=540,cy=700,R=250;[.25,.5,.75,1].forEach(function(f){var p=radarPts(ti.arr,1,cx,cy,R,f);x.beginPath();p.forEach(function(q,i){i?x.lineTo(q[0],q[1]):x.moveTo(q[0],q[1])});x.closePath();if(f===1){x.fillStyle='#f8fafc';x.fill()}x.lineWidth=2;x.strokeStyle='#d5dbe7';x.stroke()});
+radarPts(ti.arr,1,cx,cy,R,1).forEach(function(q){x.beginPath();x.moveTo(cx,cy);x.lineTo(q[0],q[1]);x.stroke()});
+var pts=radarPts(ti.arr,ti.mx,cx,cy,R);x.beginPath();pts.forEach(function(q,i){i?x.lineTo(q[0],q[1]):x.moveTo(q[0],q[1])});x.closePath();x.fillStyle='rgba(37,99,235,.22)';x.fill();x.lineWidth=6;x.lineJoin='round';x.strokeStyle='#2563eb';x.stroke();
+pts.forEach(function(q){x.beginPath();x.arc(q[0],q[1],9,0,7);x.fillStyle='#fff';x.fill();x.lineWidth=5;x.stroke()});
+x.font='700 32px '+FF;radarPts(ti.arr,1,cx,cy,R+34,1).forEach(function(q,i){var c=Math.cos(q[2]),o=ti.arr[i];x.textAlign=c>.3?'left':c<-.3?'right':'center';x.fillStyle=(ti.tot&&o.c===ti.top[0].c)?'#2563eb':'#334155';x.fillText(o.c+' '+o.v,q[0],q[1]+12)});
+var top3=ti.top.slice(0,3).filter(function(o){return o.v>0});x.textAlign='center';x.font='700 34px '+FF;x.fillStyle='#0f172a';
+x.fillText(top3.length?top3.map(function(o,i){return(i+1)+'위 '+o.c+' '+Math.round(o.v/ti.tot*100)+'%'}).join('    '):'기록이 쌓이면 분야 순위가 보여요',cx,1110);
+x.font='800 40px '+FF;x.fillStyle='#2563eb';x.fillText('갓생봇.com',cx,1210);x.font='600 24px '+FF;x.fillStyle='#5b6478';x.fillText('봇을 데려가 키우는 플레이그라운드',cx,1252)}
+$('#tsave').addEventListener('click',function(){savePNG(typeCanvas,1080,1350,'갓생봇_성향_카드.png')});
+function friendLink(){var ti=typeInfo(),t=ti.tot?ti.top[0].c:'',bots=sorted().map(function(x){return x.n}).join(','),n=who();return 'https://갓생봇.com/?v=friend&t='+encodeURIComponent(t)+'&b='+encodeURIComponent(bots)+'&n='+encodeURIComponent(n)}
+$('#tshare').addEventListener('click',function(){var ti=typeInfo(),u=friendLink();shareX((ti.t?'나의 갓생 유형은 '+ti.t.t+'! '+ti.top[0].c+' 비중 '+Math.round(ti.top[0].v/ti.tot*100)+'%.':'나의 갓생 유형을 알아보는 중.')+' 너는 무슨 유형이야? 내 봇도 구경해 봐. '+u+' #갓생봇')});
+
+/* ---------- certificate ---------- */
+var cm=$('#cmodal'),cmN=$('#cm-name'),cmT=7,cmP=false,cmLast=null;
+function drawCert(cv){cv=cv||$('#cm-cv');var x=cv.getContext('2d'),W=1200,H=850,grad=cmT===30,v=S.visits.length,nm=(cmN.value||'').trim()||'이름을 적어 주세요';
+x.fillStyle='#fffdf4';x.fillRect(0,0,W,H);
+var gd=x.createLinearGradient(0,0,W,H);gd.addColorStop(0,'#f7d774');gd.addColorStop(.5,'#b8860b');gd.addColorStop(1,'#f7d774');
+x.strokeStyle=gd;x.lineWidth=14;x.strokeRect(27,27,W-54,H-54);x.lineWidth=2;x.strokeRect(50,50,W-100,H-100);
+[[50,50],[W-50,50],[50,H-50],[W-50,H-50]].forEach(function(c){x.beginPath();x.arc(c[0],c[1],13,0,7);x.fillStyle='#fffdf4';x.fill();x.lineWidth=3;x.stroke()});
+x.textAlign='center';x.textBaseline='alphabetic';x.fillStyle='#8a6a12';x.font='700 26px '+FF;x.fillText('갓생봇 훈련소',W/2,128);
+x.fillStyle='#1c1917';x.font='800 92px '+FF;x.fillText(grad?'졸 업 장':'수 료 증',W/2,240);
+x.font='600 24px '+FF;x.fillStyle='#78716c';x.fillText(grad?'30일 전 과정 졸업':(v>=15?'7일 과정 우수 수료':'7일 과정 수료'),W/2,288);
+x.font='800 60px '+FF;x.fillStyle='#0f172a';var ns=clip(x,nm,620);x.fillText(ns,W/2,400);var nw=Math.max(300,x.measureText(ns).width+80);x.fillStyle='#b8860b';x.fillRect(W/2-nw/2,420,nw,3);
+x.font='500 30px '+FF;x.fillStyle='#292524';
+(grad?['위 사람은 갓생봇 훈련소에 30일 동안 출석하여','봇과 함께 갓생 사는 모든 과정을 마쳤으므로','이 졸업장을 드립니다.']:['위 사람은 갓생봇 훈련소에 7일 동안 출석하여','봇과 함께 갓생 사는 법을 성실히 익혔으므로','이 수료증을 드립니다.']).forEach(function(s,i){x.fillText(s,W/2,492+i*48)});
+x.font='700 24px '+FF;x.fillStyle='#57534e';x.fillText('출석 '+v+'일    훈련 '+S.train+'회    분양 '+(S.adopted||0)+'마리',W/2,664);
+x.font='600 26px '+FF;x.fillStyle='#292524';x.fillText(NOW.getFullYear()+'년 '+MON+'월 '+NOW.getDate()+'일',W/2,728);
+x.font='800 34px '+FF;x.fillText('갓생봇 운영팀',W/2,778);
+/* seal */
+x.save();x.translate(W/2+178,752);x.rotate(-.14);x.strokeStyle='#dc2626';x.fillStyle='#dc2626';x.lineWidth=5;x.globalAlpha=.85;rr(x,-42,-42,84,84,14);x.stroke();x.font='800 30px '+FF;x.fillText('갓생',0,-2);x.fillText('운영',0,30);x.restore();
+fit(x,grad?'gold':'blue',170,690,170);fit(x,grad?'purple':'pink',1040,700,150);
+if(grad||v>=15){var b={g:grad?'졸업':'우수',p:'gold'};cBadge(x,1030,170,62,b)}
+if(cmP||S.sample){x.save();x.translate(W/2,H/2);x.rotate(-.35);x.font='800 120px '+FF;x.fillStyle='rgba(15,23,42,.07)';x.fillText(cmP?'미리 보기':'예시 데이터',0,40);x.restore()}}
+function openCert(t,pre){cmT=t;cmP=pre;cmLast=document.activeElement;$('#cm-t').textContent=(t===30?'졸업장':'수료증')+(pre?' 미리 보기':'');cmN.value=S.name||'';$('#cm-save').disabled=pre;$('#cm-save').textContent=pre?'30일을 채우면 저장할 수 있어요':'이미지로 저장';cm.hidden=false;document.body.style.overflow='hidden';drawCert();cmN.focus()}
+function closeCert(){if(cm.hidden)return;cm.hidden=true;document.body.style.overflow='';if(cmLast&&cmLast.focus)cmLast.focus()}
+cmN.addEventListener('input',function(){drawCert()});
+$('#cm-x').addEventListener('click',closeCert);$('#cm-close').addEventListener('click',closeCert);
+cm.addEventListener('click',function(e){if(e.target===cm)closeCert()});
+$('#cm-save').addEventListener('click',function(){if(cmP)return;var n=(cmN.value||'').trim();if(!n){toast('증서에 넣을 이름을 적어 주세요.');cmN.focus();return}if(!S.name){S.name=n.slice(0,10);save();renderAll()}savePNG(drawCert,1200,850,'갓생봇_'+(cmT===30?'졸업장':'수료증')+'.png')});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){setM(false);closeCert()}});
+
+/* ---------- render ---------- */
+function renderAll(){if(document.activeElement!==cn)cn.value=S.name||'';renderBar();renderHut();renderStamp();renderBadges();renderType();syncTakes();drawCircle()}
+
+/* ---------- friend peek from shared URL ---------- */
+function parseFriend(){
+  var q=new URLSearchParams(location.search||'');
+  if((q.get('v')||'')!=='friend')return null;
+  var t=q.get('t')||'', name=(q.get('n')||'').slice(0,10), raw=(q.get('b')||'').split(',');
+  var bots=raw.map(function(s){return s.trim()}).filter(function(n){return BY[n]}).slice(0,12);
+  var typ=TYPES[t]||null;
+  if(!typ&&!bots.length)return null;
+  return {t:t,typ:typ,name:name||'친구',bots:bots}
+}
+function renderFriend(){
+  var fr=parseFriend(),box=$('#s-friend');if(!box)return;
+  if(!fr){box.hidden=true;return}
+  box.hidden=false;
+  var T=fr.typ||{t:'아직 유형이 없어요',m:'gray',d:'친구가 아직 성향을 모으는 중이에요.',cp:[]};
+  $('#fr-sub').textContent=fr.name+'님이 자랑한 성향 카드와 봇이에요. 마음에 들면 나도 데려갈 수 있어요.';
+  $('#fr-card').innerHTML='<div class="ty-card"><div class="ty-hd"><span class="av"><img src="/mascot/'+T.m+'.png" alt=""></span><div><small>'+esc(fr.name)+'님의 갓생 유형</small><h4>'+T.t+'</h4><p>'+T.d+'</p></div></div></div>';
+  $('#fr-bots').innerHTML=fr.bots.length?fr.bots.map(function(n){return card(BY[n],true)}).join(''):'<p class="hint">자랑에 담긴 봇이 없어요.</p>';
+  var left=fr.bots.filter(function(n){return !has(n)});
+  var all=$('#fr-all');all.disabled=!left.length;all.textContent=left.length?'이 봇들 모두 데려가기':'이미 모두 봇장에 있어요';
+}
+$('#fr-close').addEventListener('click',function(){$('#s-friend').hidden=true});
+$('#fr-all').addEventListener('click',function(){var fr=parseFriend();if(!fr)return;var n=0;fr.bots.forEach(function(name){if(adopt(name,true))n++});if(n){toast(n+'마리를 내 봇장으로 데려왔어요.');showTab('hut');$('#s-my').scrollIntoView({behavior:rm?'auto':'smooth'});renderFriend()}else toast('이미 모두 봇장에 있어요.')});
+var _ra=renderAll;
+renderAll=function(){_ra();renderFriend()};
+ready=true;renderAll();tabFromHash();
+if(parseFriend()){$('#s-friend').scrollIntoView({behavior:rm?'auto':'smooth',block:'start'})}
+
+
+applyS13bLang();
+if(typeof setL==='function'&&!setL.__s13b){var _setL=setL;setL=function(l){_setL(l);applyS13bLang();if(typeof renderAll==='function')try{renderAll()}catch(e){}};setL.__s13b=true}
+})();
+
 </script>
 </body></html>
