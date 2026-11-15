@@ -2767,6 +2767,56 @@ html[data-theme=dark] .cp-btn:hover{background:#2a64d8}
 .s24-card h3{margin:0 0 6px;font-size:22px;font-weight:800;line-height:1.3}
 .s24-card p{margin:0 0 14px;font-size:15px;line-height:1.5;color:var(--mu,#64748b)}
 @media (max-width:899.98px){.s24-cards{grid-template-columns:1fr}.s24-card{padding:20px}.s24-card img{width:64px;height:64px}.s24-card h3{font-size:19px}}
+</style><style id="gs-s24g-css">
+/* S24g-v2: Sir 14:42 복사 to the tag row, moderate grass gap, larger 훈련소 and description */
+#gs-s13b #s-week + .div-grass{margin-bottom:0}
+#gs-s13b #s-ask.sec{margin-top:0;padding-top:28px}
+#gs-s13b #s-ask .sh{margin-top:0}
+#gs-s13b #s-ask .sh h2{font-size:28px!important;font-weight:800!important;letter-spacing:-.03em;line-height:1.2}
+#gs-s13b #s-ask .sh h2 .nick{font-size:15px!important;font-weight:700!important;padding:3px 10px;line-height:1.3}
+#gs-s13b #s-ask .sh p{font-size:16px!important;line-height:1.55;margin-top:6px}
+#gs-s13b #asks .ask{
+  display:grid!important;
+  grid-template-columns:1fr auto!important;
+  align-items:start;
+  padding:16px 16px 16px!important;
+  min-height:0!important;
+}
+#gs-s13b #asks .ask b{grid-column:1;grid-row:1;justify-self:start;margin-right:8px}
+#gs-s13b #asks .ask i{
+  grid-column:2;grid-row:1;
+  position:static!important;
+  left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;
+  justify-self:end;align-self:center;
+  margin:0;
+}
+#gs-s13b #asks .ask .p{grid-column:1/-1;grid-row:2;margin-top:10px}
+@media(min-width:900px){
+  html[data-s13d] #gs-s13b #asks.asks,#gs-s13b #asks.asks{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:12px}
+  #gs-s13b #asks .ask{padding:18px 18px 16px!important}
+}
+@media(max-width:899.98px){
+  #gs-s13b #s-ask .sh h2{font-size:26px!important}
+  #gs-s13b #s-ask .sh h2 .nick{font-size:14px!important}
+  #gs-s13b #s-ask .sh p{font-size:15px!important}
+  html[data-s13d] #gs-s13b #asks.asks,#gs-s13b #asks.asks{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    overflow:visible!important;
+    gap:8px!important;
+    padding-bottom:0!important;
+    max-width:100%;
+  }
+  html[data-s13d] #gs-s13b #asks .ask,#gs-s13b #asks .ask{
+    flex:none!important;
+    width:auto!important;
+    min-width:0!important;
+  }
+}
+@media(max-width:699px){
+  #gs-s13b #s-week + .div-grass{margin:16px 0 0!important}
+  #gs-s13b #s-ask.sec{margin-top:0!important;padding-top:24px!important}
+}
 </style></head><body class="gs-home">
 <!--gs-s13b-start--><div id="gs-s13b">
 <div class="hd" role="banner">
@@ -2774,7 +2824,7 @@ html[data-theme=dark] .cp-btn:hover{background:#2a64d8}
     <a class="logo" href="/" aria-label="갓생봇 홈"><img src="/icon-192.png" alt="" width="30" height="30"><span class="mk" aria-hidden="true">갓</span><span>갓생봇</span></a>
     <a class="earth" href="https://www.spacex.com/mission/" target="_blank" rel="noopener" title="SpaceX Mission">Made on Earth by Grok Bot</a>
     <nav class="nav" aria-label="주 메뉴">
-      <a href="#s-tpl" data-gs-ko="템플릿" data-gs-en="Templates">템플릿</a>
+      <a href="/templates/" data-gs-ko="템플릿" data-gs-en="Templates">템플릿</a>
       <a href="#s-ask" data-gs-ko="프롬프트" data-gs-en="Prompts">프롬프트</a>
       <a href="#s-week" data-gs-ko="이번 주" data-gs-en="This week">이번 주</a>
       <a href="#s-gacha" data-gs-ko="가챠" data-gs-en="Gacha">가챠</a> <a href="/saju.html" data-gs-ko="사주" data-gs-en="Saju">사주</a>
@@ -2790,7 +2840,7 @@ html[data-theme=dark] .cp-btn:hover{background:#2a64d8}
   </div>
   <div class="mpanel" id="mpanel" hidden>
     <div class="mbody">
-      <a href="#s-tpl" data-gs-ko="템플릿" data-gs-en="Templates">템플릿</a>
+      <a href="/templates/" data-gs-ko="템플릿" data-gs-en="Templates">템플릿</a>
       <a href="#s-ask" data-gs-ko="프롬프트" data-gs-en="Prompts">프롬프트</a>
       <a href="#s-week" data-gs-ko="이번 주" data-gs-en="This week">이번 주</a>
       <a href="#s-gacha" data-gs-ko="가챠" data-gs-en="Gacha">가챠</a> <a href="/saju.html" data-gs-ko="사주" data-gs-en="Saju">사주</a>
@@ -2814,7 +2864,7 @@ html[data-theme=dark] .cp-btn:hover{background:#2a64d8}
       <a href="#s-ask" data-gs-ko="프롬프트" data-gs-en="Prompts">프롬프트</a>
       <a href="#s-play" data-gs-ko="가챠와 테스트" data-gs-en="Gacha and test">가챠와 테스트</a>
       <a href="#s-my" data-gs-ko="나의 기록" data-gs-en="My record">나의 기록</a>
-      <a href="#s-all" data-gs-ko="전체 템플릿" data-gs-en="All templates">전체 템플릿</a>
+      <a href="/templates/" data-gs-ko="전체 템플릿" data-gs-en="All templates">전체 템플릿</a>
       <a href="#s-news" data-gs-ko="새 소식" data-gs-en="News">새 소식</a>
       <a href="#s-learn" data-gs-ko="배우기" data-gs-en="Learn">배우기</a>
       <a href="#feedback" data-gs-ko="의견" data-gs-en="Feedback">의견</a>
@@ -2875,7 +2925,7 @@ html[data-theme=dark] .cp-btn:hover{background:#2a64d8}
   <section class="sec is-collapsed" id="s-tpl">
     <div class="sh">
       <div><h2>템플릿 <span class="nick">봇 분양소</span><img class="title-peek" src="/mascot/orange.png" alt="" width="28" height="28"></h2><p>1,672개 가운데 몇 개만 먼저 꺼내 봤어요. 마음에 들면 데려가 내 식으로 고쳐 쓰세요.</p></div>
-      <a class="more" href="#s-all">더 보기</a> <a class="more" href="/templates/">템플릿 페이지로 가기</a>
+      <a class="more" href="/templates/">더 보기</a> <a class="more" href="/templates/">템플릿 페이지로 가기</a>
     </div>
     <div class="chips cchips" id="cchips" role="group" aria-label="분야"></div>
     <div class="s21-fold" id="s21-tpl-fold"><div class="grid" id="tgrid"><article class="bot"><span class="av" style="background:#eef0f4"><img src="/mascot/gray.png" alt="" loading="lazy"></span><div><em>투자</em><span class="tag-by">분양</span><h3>월가 애널리스트</h3><p>티커나 회사 이름을 주면 월가 리서치 애널리스트처럼 출처와 기준일을 붙인 종목 분석 보고서를 한국어로 써 줘요. 미국, 한국 주식 모두 돼요.</p><button type="button" class="btn sm pink take" data-n="월가 애널리스트">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/X61dpoQtp-luhck7p9H20" target="_blank" rel="noopener">봇 열기</a></div></article><article class="bot"><span class="av" style="background:#ede9fe"><img src="/mascot/purple.png" alt="" loading="lazy"></span><div><em>업무</em><span class="tag-by">분양</span><h3>데이터 정리 분석가 Data Bot</h3><p>지저분한 스프레드시트와 CSV를 깔끔하게 정리하고 숫자를 분석해서, 차트와 요약, 정기 보고서로 만들어 줘요.</p><button type="button" class="btn sm pink take" data-n="데이터 정리 분석가 Data Bot">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/nVRvNYs-SyYnWx184H8oO" target="_blank" rel="noopener">봇 열기</a></div></article><article class="bot"><span class="av" style="background:#e5e7eb"><img src="/mascot/black.png" alt="" loading="lazy"></span><div><em>업무</em><span class="tag-by">분양</span><h3>루틴 한도 절약사 루티나이저</h3><p>다른 봇들이 매일 처음부터 다시 하는 일을 찾아 백그라운드 Python 스크립트로 바꿔 줘요. 바뀐 게 있을 때만 AI를 깨워서 한도를 아껴요.</p><button type="button" class="btn sm pink take" data-n="루틴 한도 절약사 루티나이저">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/QIxjmlkTZr7SJbS599gWe" target="_blank" rel="noopener">봇 열기</a></div></article><article class="bot"><span class="av" style="background:#fce7f3"><img src="/mascot/pink.png" alt="" loading="lazy"></span><div><em>자동화</em><span class="tag-by">분양</span><h3>조달 도우미 Procurement</h3><p>프로젝트 범위를 묻고 괜찮은 업체를 찾아 메일과 팔로업을 보내요. 받은 견적을 점수로 비교해서 가장 좋은 곳을 골라 줘요.</p><button type="button" class="btn sm pink take" data-n="조달 도우미 Procurement">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/HQ3A_w-8v-5mR3k9UvEYe" target="_blank" rel="noopener">봇 열기</a></div></article><article class="bot"><span class="av" style="background:#ffedd5"><img src="/mascot/orange.png" alt="" loading="lazy"></span><div><em>투자</em><span class="tag-by">분양</span><h3>상품권 잔액 지킴이 Gift Card Sweeper</h3><p>잊고 있던 상품권, 적립금, 여행 크레딧을 한 목록으로 모아요. 사라지기 전에 언제 어디서 쓸지 계획도 짜 줘요.</p><button type="button" class="btn sm pink take" data-n="상품권 잔액 지킴이 Gift Card Sweeper">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/LdPRToZ8D6kp4e5Rk-JnL" target="_blank" rel="noopener">봇 열기</a></div></article><article class="bot"><span class="av" style="background:#ccfbf1"><img src="/mascot/teal.png" alt="" loading="lazy"></span><div><em>업무</em><span class="tag-by">분양</span><h3>장기 기억 연결 supermemory</h3><p>외부 메모리 서비스 supermemory를 Grok Bot에 연결해서 봇이 오래 기억하게 해 줘요. 대화가 길어져도 중요한 내용을 잊지 않아요.</p><button type="button" class="btn sm pink take" data-n="장기 기억 연결 supermemory">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/-cehEo51Z8l6yt6-jJ0te" target="_blank" rel="noopener">봇 열기</a></div></article><article class="bot"><span class="av" style="background:#ede9fe"><img src="/mascot/purple.png" alt="" loading="lazy"></span><div><em>놀이</em><span class="tag-by">분양</span><h3>재치 만점 X 비서 Sassy Bot</h3><p>X에 올릴 재미있는 글과 센스 있는 답글을 써 줘요. 멘션을 확인하고 이상한 계정은 걸러 줘요.</p><button type="button" class="btn sm pink take" data-n="재치 만점 X 비서 Sassy Bot">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/CZGWiB4CX5UM9v8Zu-MDT" target="_blank" rel="noopener">봇 열기</a></div></article><article class="bot"><span class="av" style="background:#f3e3d3"><img src="/mascot/brown.png" alt="" loading="lazy"></span><div><em>육아</em><span class="tag-by">분양</span><h3>가계도 탐정 GenealogyBot</h3><p>조상과 가족 기록을 찾아 가계도를 정리해 줘요. 단서를 모아 다음에 무엇을 찾아볼지도 알려 줘요.</p><button type="button" class="btn sm pink take" data-n="가계도 탐정 GenealogyBot">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/j6tQoM_OsdYKrG6mfttN_" target="_blank" rel="noopener">봇 열기</a></div></article><article class="bot"><span class="av" style="background:#eef0f4"><img src="/mascot/gray.png" alt="" loading="lazy"></span><div><em>놀이</em><span class="tag-by">분양</span><h3>숏폼 제작 도우미 Shorty</h3><p>주제만 주면 짧은 영상용 대본과 구성을 만들어 줘요. 숏폼 콘텐츠를 꾸준히 만들 때 좋아요.</p><button type="button" class="btn sm pink take" data-n="숏폼 제작 도우미 Shorty">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/32fHIBw9Yz-s_o35KycGX" target="_blank" rel="noopener">봇 열기</a></div></article><article class="bot"><span class="av" style="background:#eef0f4"><img src="/mascot/gray.png" alt="" loading="lazy"></span><div><em>업무</em><span class="tag-by">분양</span><h3>루틴 점검관 Routine Auditor</h3><p>한 달에 한 번 내 루틴을 모두 살펴서 유지, 주기 늦추기, 이벤트로 바꾸기, 끄기 중 하나로 평가해 줘요. 할 일 없이 도는 루틴을 줄여 한도를 아껴요.</p><button type="button" class="btn sm pink take" data-n="루틴 점검관 Routine Auditor">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/3y5FglJHBwwg_nR7TxFaI" target="_blank" rel="noopener">봇 열기</a></div></article><article class="bot"><span class="av" style="background:#eef0f4"><img src="/mascot/gray.png" alt="" loading="lazy"></span><div><em>놀이</em><span class="tag-by">분양</span><h3>X 글 분석가 Post Analyzer</h3><p>공개 지표를 보고 내 X 글 중 어떤 게 왜 잘됐는지 분석해 줘요. 다음 글에 써먹을 점도 정리해 줘요.</p><button type="button" class="btn sm pink take" data-n="X 글 분석가 Post Analyzer">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/ffBuRJCFNCtj-gFzSzgVa" target="_blank" rel="noopener">봇 열기</a></div></article><article class="bot"><span class="av" style="background:#f3e3d3"><img src="/mascot/brown.png" alt="" loading="lazy"></span><div><em>놀이</em><span class="tag-by">분양</span><h3>내 말투 글쓰기 Voice Editor</h3><p>내 말투를 익혀서 그대로 글 초안을 써 줘요. 초안만 만들고 직접 올리지는 않아요.</p><button type="button" class="btn sm pink take" data-n="내 말투 글쓰기 Voice Editor">데려가기</button><a class="btn sm ghost" href="https://x.ai/bot/ZMEcetFhiK8nzHdsKCeq5" target="_blank" rel="noopener">봇 열기</a></div></article></div></div>
@@ -2887,7 +2937,7 @@ html[data-theme=dark] .cp-btn:hover{background:#2a64d8}
 
   <section class="sec" id="s-week">
     <div class="tile week">
-      <div class="week-top"><div class="week-head"><span class="tag">이번 주</span><h2>이번 주 새 템플릿</h2><span class="nick">새로 들어온 아이들</span></div><div class="week-count"><b>130</b><span>새로 담은 템플릿</span></div><p class="week-dates">2026-11-09부터 2026-11-15까지</p></div>
+      <div class="week-top"><div class="week-head"><span class="tag">이번 주</span><h2>이번 주 새 템플릿</h2><span class="nick">새로 들어온 아이들</span></div><div class="week-count"><b>130</b><span>새로 담은 템플릿</span></div></div>
       <div class="grid g3" id="wgrid"></div>
         <p class="all-link"><a href="/weekly/">이번 주 새 템플릿 모두 보기</a></p>
     </div>
@@ -3049,23 +3099,6 @@ html[data-theme=dark] .cp-btn:hover{background:#2a64d8}
 </div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-<section class="s13c-all" id="s-all">
-  <div class="s13c-tile">
-    <div>
-      <h2 data-gs-ko="전체 템플릿" data-gs-en="All templates">전체 템플릿</h2>
-      <p class="s13c-lead" data-i="cur">상품 홍보, 지역 한정, 중복 템플릿은 걸러내고, 한국에서 바로 쓰기 좋은 것만 직접 골라 담았어요.</p>
-    </div>
-    <p class="s13c-cta"><a href="/templates/" data-gs-ko="전체 템플릿 1,672개 보기" data-gs-en="See all 1,672 templates">전체 템플릿 1,672개 보기</a></p>
-    <div class="s13c-group s13c-top">
-      <h3 data-gs-ko="주요 분야" data-gs-en="Top fields">주요 분야</h3>
-      <ul class="s13c-cats"><li><a href="/templates/life.html"><b>생활</b><small>346개</small></a></li><li><a href="/templates/grokbot.html"><b>Grok Bot 배우기</b><small>162개</small></a></li><li><a href="/templates/sns.html"><b>SNS, 홍보</b><small>149개</small></a></li><li><a href="/templates/report.html"><b>보고, 조사</b><small>112개</small></a></li><li><a href="/templates/money.html"><b>지출, 돈 관리</b><small>106개</small></a></li><li><a href="/templates/sales.html"><b>영업, 고객</b><small>97개</small></a></li><li><a href="/templates/productivity.html"><b>생산성</b><small>90개</small></a></li><li><a href="/templates/study.html"><b>공부</b><small>52개</small></a></li><li><a href="/templates/schedule.html"><b>일정, 비서</b><small>47개</small></a></li><li><a href="/templates/hobby.html"><b>취미</b><small>43개</small></a></li></ul>
-    </div>
-    <div class="s13c-group"><h3 data-gs-ko="분야별로 보기" data-gs-en="Browse by field">분야별로 보기</h3><ul class="s13c-dir"><li><a href="/templates/report.html">보고, 조사 112개</a></li><li><a href="/templates/mail.html">메일 38개</a></li><li><a href="/templates/schedule.html">일정, 비서 47개</a></li><li><a href="/templates/money.html">지출, 돈 관리 106개</a></li><li><a href="/templates/jobs.html">취업, 이직 35개</a></li><li><a href="/templates/sns.html">SNS, 홍보 149개</a></li><li><a href="/templates/sales.html">영업, 고객 97개</a></li><li><a href="/templates/life.html">생활 346개</a></li><li><a href="/templates/grokbot.html">Grok Bot 배우기 162개</a></li><li><a href="/templates/productivity.html">생산성 90개</a></li><li><a href="/templates/study.html">공부 52개</a></li><li><a href="/templates/hobby.html">취미 43개</a></li><li><a href="/templates/marketing.html">마케팅 32개</a></li><li><a href="/templates/security.html">보안 22개</a></li><li><a href="/templates/shopping.html">쇼핑 21개</a></li><li><a href="/templates/business.html">비즈니스 21개</a></li><li><a href="/templates/design.html">디자인 18개</a></li><li><a href="/templates/health.html">건강 18개</a></li><li><a href="/templates/travel.html">여행 11개</a></li><li><a href="/templates/cooking.html">요리 10개</a></li></ul></div>
-    <div class="s13c-group"><h3 data-gs-ko="하는 일로 보기" data-gs-en="Browse by task">하는 일로 보기</h3><ul class="s13c-dir"><li><a href="/templates/research.html">리서치 436개</a></li><li><a href="/templates/content.html">콘텐츠 301개</a></li><li><a href="/templates/ops.html">운영 684개</a></li><li><a href="/templates/analysis.html">분석 188개</a></li><li><a href="/templates/comms.html">소통 178개</a></li><li><a href="/templates/coding.html">코딩 87개</a></li><li><a href="/templates/monitoring.html">모니터링 213개</a></li><li><a href="/templates/support.html">고객지원 137개</a></li><li><a href="/templates/planning.html">계획 246개</a></li><li><a href="/templates/creative.html">창작 112개</a></li></ul></div>
-    <details class="s13c-group s13d-dir-more"><summary><h3 data-gs-ko="키워드로 보기" data-gs-en="Browse by keyword">키워드로 보기</h3></summary><ul class="s13c-dir"><li><a href="/templates/using-grokbot.html">GrokBot활용 74개</a></li><li><a href="/templates/kw-marketing.html">마케팅 71개</a></li><li><a href="/templates/kw-research.html">리서치 67개</a></li><li><a href="/templates/kw-life.html">생활 64개</a></li><li><a href="/templates/dev.html">개발 57개</a></li><li><a href="/templates/x-twitter.html">X 55개</a></li><li><a href="/templates/video.html">영상 53개</a></li><li><a href="/templates/kw-sales.html">영업 47개</a></li><li><a href="/templates/kw-security.html">보안 44개</a></li><li><a href="/templates/kw-money.html">돈관리 42개</a></li><li><a href="/templates/kw-mail.html">메일 41개</a></li><li><a href="/templates/kw-calendar.html">일정 38개</a></li><li><a href="/templates/parenting.html">육아 37개</a></li><li><a href="/templates/kw-ops.html">운영 32개</a></li><li><a href="/templates/kw-health.html">건강 30개</a></li><li><a href="/templates/organizing.html">정리 29개</a></li><li><a href="/templates/teamwork.html">팀 24개</a></li><li><a href="/templates/kw-design.html">디자인 23개</a></li><li><a href="/templates/family.html">가족 22개</a></li><li><a href="/templates/kw-shopping.html">쇼핑 22개</a></li><li><a href="/templates/hiring.html">채용 22개</a></li><li><a href="/templates/kw-travel.html">여행 19개</a></li><li><a href="/templates/news.html">뉴스 19개</a></li><li><a href="/templates/games.html">게임 19개</a></li><li><a href="/templates/writing.html">글쓰기 18개</a></li><li><a href="/templates/diet.html">식단 18개</a></li><li><a href="/templates/fitness.html">운동 18개</a></li><li><a href="/templates/product.html">기획 16개</a></li><li><a href="/templates/saving.html">절약 15개</a></li><li><a href="/templates/bills.html">요금 15개</a></li><li><a href="/templates/music.html">음악 15개</a></li><li><a href="/templates/sports.html">스포츠 15개</a></li><li><a href="/templates/church.html">교회 15개</a></li><li><a href="/templates/logging.html">기록 14개</a></li><li><a href="/templates/habits.html">습관 13개</a></li><li><a href="/templates/web.html">웹 13개</a></li><li><a href="/templates/golf.html">골프 12개</a></li><li><a href="/templates/kw-cooking.html">요리 11개</a></li><li><a href="/templates/cars.html">자동차 11개</a></li><li><a href="/templates/alerts.html">알림 11개</a></li><li><a href="/templates/literature.html">문학 11개</a></li><li><a href="/templates/routines.html">루틴 10개</a></li><li><a href="/templates/elders.html">어르신 10개</a></li><li><a href="/templates/faith.html">신앙 9개</a></li><li><a href="/templates/kw-creative.html">창작 9개</a></li><li><a href="/templates/kw-sns.html">SNS 9개</a></li><li><a href="/templates/groceries.html">장보기 9개</a></li><li><a href="/templates/ecommerce.html">이커머스 9개</a></li></ul></details>
-    <p class="s13c-note" data-gs-ko="분야 페이지에서 템플릿을 더 자세히 볼 수 있어요." data-gs-en="Open a field page to see the templates in more detail.">분야 페이지에서 템플릿을 더 자세히 볼 수 있어요.</p>
-  </div>
-</section>
 
 </div><!--gs-s13b-end-->
 <!--gs-legacy-stubs--><div class="s13c-off" id="gs-legacy-stubs" aria-hidden="true">
@@ -3160,7 +3193,7 @@ const pill=k=>`<span class="pill" style="background:${(COL[k]||COL["보고"])[0]
 function setL(l){L=l;document.documentElement.lang=l;document.getElementById('lb').textContent=l==='ko'?'EN':'KO';document.title=l==='ko'?"갓생봇 | 갓생 사는 갓생봇의 플레이그라운드":"Godsaengbot | Godsaengbot's playground for living your best life";document.querySelectorAll('[data-i]').forEach(e=>{var v=T(e.dataset.i);if(e.dataset.i==='sub'){var t=String(v||'').replace(/<br\s*\/?>/gi,' ').replace(/<\/?span[^>]*>/gi,' ');var i=t.indexOf('마음에 드는 걸 골라 복사하고');if(i<0)i=t.indexOf('Pick one you like');if(i>0){var a=t.slice(0,i).replace(/\s+$/,'');var j=a.indexOf('프롬프트 ');if(j<0){var k=a.lastIndexOf(' and ');j=k>=0?k+5:-1;}if(j>=0)a=a.slice(0,j)+'<span class="s21-nw">'+a.slice(j)+'</span>';e.innerHTML=a+'<br>'+t.slice(i);}else e.textContent=t;}else e.textContent=v;});render()}
 const OB=b=>b.off?`<a class="ob" href="${b.off}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${T('ob')}</a>`:'';
 const AR=[["일", "Work", "#111111", "<circle cx=\"50\" cy=\"52\" r=\"42\"/>"], ["생활", "Life", "#FF6B00", "<rect x=\"10\" y=\"12\" width=\"80\" height=\"78\" rx=\"26\"/>"], ["건강", "Health", "#00B8A0", "<path d=\"M50 8C66 8 92 72 88 84C85 93 15 93 12 84C8 72 34 8 50 8Z\"/>"], ["여행", "Travel", "#1E88FF", "<path d=\"M28 30a20 20 0 0 1 36-8a18 18 0 0 1 22 22a20 20 0 0 1-6 38H24a20 20 0 0 1-4-40a14 14 0 0 1 8-12Z\"/>"], ["가족", "Family", "#FF2E93", "<rect x=\"14\" y=\"14\" width=\"72\" height=\"72\" rx=\"22\" transform=\"rotate(-12 50 50)\"/>"], ["돈 관리", "Money", "#8A5CF6", "<path d=\"M50 6C62 30 86 44 86 64a36 36 0 0 1-72 0C14 44 38 30 50 6Z\"/>"], ["비즈니스", "Business", "#FF9500", "<ellipse cx=\"50\" cy=\"54\" rx=\"44\" ry=\"36\"/>"], ["교육", "Learning", "#8B5E3C", "<rect x=\"12\" y=\"16\" width=\"76\" height=\"70\" rx=\"34\" transform=\"rotate(10 50 50)\"/>"]];const EY='<g stroke="#fff" stroke-width="8" stroke-linecap="round"><line x1="40" y1="42" x2="42" y2="58"/><line x1="58" y1="42" x2="60" y2="58"/></g>';function drawAreas(){document.getElementById('areas').innerHTML=AR.map(a=>{const n=B.filter(b=>b.g===a[0]).length;return `<button class="lar${cur==='g:'+a[0]?' on':''}${n?'':' z'}" onclick="goArea('${a[0]}')"><svg viewBox="0 0 100 100" aria-hidden="true"><g fill="${a[2]}">${a[3]}</g>${EY}</svg><span><b>${L==='en'?a[1]:a[0]}</b><small>${n?T('cnt')(n):T('soon')}</small></span></button>`}).join('')}
-function goArea(k){cur='g:'+k;pg=1;document.getElementById('q').value='';render();document.getElementById('s-all').scrollIntoView({behavior:'smooth'})}
+function goArea(k){cur='g:'+k;pg=1;document.getElementById('q').value='';render();var _sall=document.getElementById('s-all');if(_sall)_sall.scrollIntoView({behavior:'smooth'})}
 
 const HT=[['마케팅','Marketing'],['영업','Sales'],['생활','Life'],['개발','Dev'],['리서치','Research'],['돈관리','Money'],['메일','Email'],['일정','Calendar'],['운영','Ops'],['기획','Product'],['디자인','Design'],['영상','Video'],['채용','Hiring'],['GrokBot활용','Using Grok Bot']];
 const HS=new Set();const htn=t=>'#'+(L==='en'?(window.HTE&&HTE[t]||(HT.find(x=>x[0]===t)||[t,t])[1]).replace(/ /g,''):t);
@@ -4024,7 +4057,7 @@ c.addEventListener('click',function(){jump(c)});
 c.querySelector('.gch-in').addEventListener('animationend',function(e){if(e.animationName.indexOf('gch-jump')>=0||e.animationName.indexOf('s13-gch-jump')>=0)c.classList.remove('is-jump')})})}
 
 /* ---------- training ground ---------- */
-$('#asks').innerHTML=PROMPTS.slice(0,3).map(function(p,i){return '<button type="button" class="ask k'+(i+1)+'" data-i="'+i+'"><b>'+p.c+'</b><span class="p">'+esc(isEn()&&p.te?p.te:p.t)+'</span><i>'+(isEn()?'Copy':'복사')+'</i></button>'}).join('');
+$('#asks').innerHTML=PROMPTS.slice(0,6).map(function(p,i){return '<button type="button" class="ask k'+(i+1)+'" data-i="'+i+'"><b>'+p.c+'</b><span class="p">'+esc(isEn()&&p.te?p.te:p.t)+'</span><i>'+(isEn()?'Copy':'복사')+'</i></button>'}).join('');
 function train(p){S.train++;S.month[MKEY]=(S.month[MKEY]||0)+1;bump(p.c);save();copy(p.t,'복사했어요. 훈련 '+S.train+'회째! 쓰는 에이전트에 붙여 넣으세요.');renderAll()}
 document.addEventListener('click',function(e){var b=e.target.closest('[data-i].ask,[data-i].rp');if(b)train(PROMPTS[+b.dataset.i])});
 
