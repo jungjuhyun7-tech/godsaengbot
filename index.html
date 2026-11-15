@@ -2742,6 +2742,31 @@ html[data-theme=dark] .cp-btn:hover{background:#2a64d8}
   .md .cp-ph{width:80px;height:80px;min-height:80px}
   .md .cp-btn{min-height:44px;padding:10px 14px;font-size:13px}
 }
+</style><style id="gs-s24-css">
+#s13-hero .s24-guide{display:none}
+@media (min-width:900px){
+#s13-hero .s24-guide{display:block;position:absolute;z-index:3;left:79%;top:52px;transform:translateX(-50%);font-size:16px;font-weight:800;line-height:24px;color:rgb(37,99,235);text-decoration:underline;white-space:nowrap;text-shadow:0 0 6px rgba(255,255,255,.95),0 0 2px rgba(255,255,255,.9)}
+#s13-hero .s24-guide:hover{color:rgb(29,78,216)}
+#s13-hero .guide-slim{display:none}
+}
+#s-gacha #s13-test{display:none}
+/* two-column play grid (live switches to 2 columns at 900px): equal heights for 가챠 and 봇장 */
+@media (min-width:900px){
+#s-play .play-grid{align-items:stretch!important}
+#s-play .play-grid>*{height:auto!important;align-self:stretch!important;box-sizing:border-box!important;margin-top:0!important;margin-bottom:0!important}
+#s-play .play-grid>#s-gacha,#s-play .play-grid>#s-play-hut{grid-row:1!important}
+#s-play #s-gacha{display:flex;flex-direction:column;justify-content:space-evenly}
+}
+.s24-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+.s24-card{display:flex;align-items:center;gap:20px;padding:26px 28px;border-radius:24px;background:#fff;border:1px solid rgb(230,233,242);box-shadow:0 1px 2px rgba(15,23,42,.04),0 8px 24px rgba(15,23,42,.05);text-decoration:none;color:inherit;min-width:0;transition:transform .15s,box-shadow .15s}
+.s24-card:hover{transform:translateY(-2px);box-shadow:0 2px 4px rgba(15,23,42,.05),0 14px 30px rgba(15,23,42,.08)}
+#s24-test{background:linear-gradient(135deg,#eef4ff 0%,#fff 70%)}
+#s24-saju{background:linear-gradient(135deg,#e6faf5 0%,#fff 70%)}
+.s24-card img{width:84px;height:84px;flex:none;object-fit:contain}
+.s24-card>div{min-width:0}
+.s24-card h3{margin:0 0 6px;font-size:22px;font-weight:800;line-height:1.3}
+.s24-card p{margin:0 0 14px;font-size:15px;line-height:1.5;color:var(--mu,#64748b)}
+@media (max-width:899.98px){.s24-cards{grid-template-columns:1fr}.s24-card{padding:20px}.s24-card img{width:64px;height:64px}.s24-card h3{font-size:19px}}
 </style></head><body class="gs-home">
 <!--gs-s13b-start--><div id="gs-s13b">
 <div class="hd" role="banner">
@@ -2798,7 +2823,7 @@ html[data-theme=dark] .cp-btn:hover{background:#2a64d8}
 </div>
 <main>
 <section class="hero" id="s13-hero">
-    <span class="cloud c1" aria-hidden="true"></span><span class="cloud c2" aria-hidden="true"></span><span class="cloud c3" aria-hidden="true"></span>
+    <span class="cloud c1" aria-hidden="true"></span><span class="cloud c2" aria-hidden="true"></span><span class="cloud c3" aria-hidden="true"></span><a class="s24-guide" id="s24-guide" href="/guide/" data-gs-ko="처음 쓰는 분이면 한국어 가이드를 보세요" data-gs-en="New here? Read the Korean guide">처음 쓰는 분이면 한국어 가이드를 보세요</a>
     <div class="wrap hero-in">
       <div class="hero-copy">
         <small data-i="kick">갓생봇 플레이그라운드</small>
@@ -2925,6 +2950,7 @@ html[data-theme=dark] .cp-btn:hover{background:#2a64d8}
         </div>
       </div>
     </div>
+      <div class="s24-cards"><a class="tile s24-card" id="s24-test" href="/test.html"><img src="/mascot/blue.png" alt="" width="84" height="84"><div><h3>봇 성향 테스트</h3><p>세 가지만 고르면 나한테 맞는 봇 3개가 나와요. MBTI로도 골라 볼 수 있어요</p><span class="btn sm">테스트 하기</span></div></a><a class="tile s24-card" id="s24-saju" href="/saju.html"><img src="/mascot/teal.png" alt="" width="84" height="84"><div><h3>사주로 보는 오늘</h3><p>생년월일만 넣으면 오늘 운세와 나랑 맞는 봇이 나와요</p><span class="btn sm">사주 보기</span></div></a></div>
   </section>
 
   <section class="sec" id="s-my">
@@ -4765,4 +4791,12 @@ if(typeof setL==='function'&&!setL.__s13b){var _setL=setL;setL=function(l){_setL
   window.addEventListener('load', function(){ measureStick(); applyTplFold(); });
 })();
 </script>
-</body></html>
+<script id="gs-s24-js">(function(){function place(){var h=document.getElementById('s13-hero'),g=document.getElementById('s24-guide');if(!h||!g)return;
+var a=h.querySelector('.cloud.c3'),b=h.querySelector('.cloud.c2');if(!a||!b||!a.offsetWidth||!b.offsetWidth||getComputedStyle(g).display==='none')return;
+var H=h.getBoundingClientRect();function bx(c){var r=c.getBoundingClientRect(),m=new DOMMatrixReadOnly(getComputedStyle(c).transform);return {l:r.left-m.m41-H.left,r:r.right-m.m41-H.left,t:r.top-H.top,b:r.bottom-H.top}}
+var A=bx(a),B=bx(b),w=g.offsetWidth,gh=g.offsetHeight,cp=h.querySelector('.hero-copy'),cr=cp?cp.getBoundingClientRect().right-H.left:0;
+/* sit in the right cloud's band, ending just left of its drift range and fully below the left cloud */
+var right=B.l-18-10,left=right-w,top=Math.max(A.b+8,(B.t+B.b)/2-gh/2);
+if(left<cr+16){left=Math.max(cr+16,(A.r+24+B.l-18)/2-w/2);top=Math.max(A.b,B.b)+12}
+g.style.left=(left+w/2)+'px';g.style.top=top+'px'}
+addEventListener('load',place);addEventListener('resize',place);document.addEventListener('DOMContentLoaded',place)})();</script></body></html>
