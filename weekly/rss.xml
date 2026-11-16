@@ -3,8 +3,71 @@
 <channel>
   <title>갓생봇 이번 주 새 봇</title>
   <link>https://xn--739an53af0c.com/weekly/</link>
-  <description>2026-11-10부터 2026-11-16까지 갓생봇에 새로 담은 봇 121개와 같은 기간 공식 새 소식을 모았어요.</description>
+  <description>2026-11-10부터 2026-11-16까지 갓생봇에 새로 담은 봇 130개와 같은 기간 공식 새 소식을 모았어요.</description>
   <language>ko</language>
+    <item>
+      <title>웹 랜딩 제작 Dr Web LP</title>
+      <link>https://xn--739an53af0c.com/#bot-xM153pKfXPLWagLi_O1vR</link>
+      <guid isPermaLink="false">bot-xM153pKfXPLWagLi_O1vR</guid>
+      <pubDate>Mon, 16 Nov 2026 12:00:00 +0900</pubDate>
+      <description>참고 이미지를 바탕으로 웹 페이지를 만들고, 레이아웃과 크기가 맞을 때까지 비교하며 수정을 반복해 줘요. 내가 건넨 브랜드와 사진, 문구만 사용하므로 원하는 이미지에 맞는 페이지를 빠르게 만들 수 있어요.</description>
+    </item>
+    <item>
+      <title>에이전트 보안 감사 Security Agent Auditor</title>
+      <link>https://xn--739an53af0c.com/#bot-Sv9osZinIeHd_YR7P90ZY</link>
+      <guid isPermaLink="false">bot-Sv9osZinIeHd_YR7P90ZY</guid>
+      <pubDate>Mon, 16 Nov 2026 12:00:00 +0900</pubDate>
+      <description>내 MCP 서버와 스킬, 에이전트 도구를 점검해 위험한 권한이나 명령 실행을 유도하는 통로, 악성 도구가 없는지 살펴줘요. 내 AI 에이전트를 더 안심하고 사용할 수 있도록 도와줘요.</description>
+    </item>
+    <item>
+      <title>앱 코드 보안 리뷰어 Security AppSec Reviewer</title>
+      <link>https://xn--739an53af0c.com/#bot-TuND5y7B9MJX3GMBPCeJe</link>
+      <guid isPermaLink="false">bot-TuND5y7B9MJX3GMBPCeJe</guid>
+      <pubDate>Mon, 16 Nov 2026 12:00:00 +0900</pubDate>
+      <description>내 소스 코드나 PR 변경 사항을 읽어 잘못된 입력을 거르지 못하는 구멍이나 로그인 관련 허점 같은 보안 버그를 찾아줘요. 배포 전에 위험한 부분을 미리 발견할 수 있어 안심하고 앱을 출시할 수 있어요.</description>
+    </item>
+    <item>
+      <title>브랜드 직설 평가 Roast My Brand</title>
+      <link>https://xn--739an53af0c.com/#bot-UHC8lD8nvsqOGN0KJ8Wud</link>
+      <guid isPermaLink="false">bot-UHC8lD8nvsqOGN0KJ8Wud</guid>
+      <pubDate>Mon, 16 Nov 2026 12:00:00 +0900</pubDate>
+      <description>내 웹사이트나 광고, 로고, 스크린샷을 보내면 유쾌하면서도 솔직한 비평과 10점 만점 점수, 빨간펜 첨삭을 해줘요. 가장 중요한 개선점 3가지도 짚어 주니 무엇부터 고쳐야 할지 바로 알 수 있어요.</description>
+    </item>
+    <item>
+      <title>봇 정리 스눕 Snoop</title>
+      <link>https://xn--739an53af0c.com/#bot-L4a4AB4fu9_TpT25oSc4D</link>
+      <guid isPermaLink="false">bot-L4a4AB4fu9_TpT25oSc4D</guid>
+      <pubDate>Mon, 16 Nov 2026 12:00:00 +0900</pubDate>
+      <description>내 모든 Grok Bot과 대화 내용을 살펴서 내 업무 방식을 공통 절차서로 정리해 줘요. 흩어진 봇을 분야별 담당자 중심의 작은 팀으로 재구성해 봇을 깔끔하게 관리하고 쓰기 쉽게 만들어 줘요.</description>
+    </item>
+    <item>
+      <title>보안 총괄 리드 Security CISO Lead</title>
+      <link>https://xn--739an53af0c.com/#bot-_KzOR2UOzjoAoSNAVCmBd</link>
+      <guid isPermaLink="false">bot-_KzOR2UOzjoAoSNAVCmBd</guid>
+      <pubDate>Mon, 16 Nov 2026 12:00:00 +0900</pubDate>
+      <description>보안 전문 에이전트 팀의 총괄 역할로, 대상과 권한을 먼저 확인한 뒤 점검 범위 설정부터 수정까지 이어지는 흐름을 이끌어요. 겹치는 지적 사항도 하나로 모아 주니 보안 점검을 한 번의 흐름으로 진행할 수 있어요.</description>
+    </item>
+    <item>
+      <title>보안 레드팀 해커 Security Red Team Hacker</title>
+      <link>https://xn--739an53af0c.com/#bot-ukKz32YfmJAPoXP8FD8lc</link>
+      <guid isPermaLink="false">bot-ukKz32YfmJAPoXP8FD8lc</guid>
+      <pubDate>Mon, 16 Nov 2026 12:00:00 +0900</pubDate>
+      <description>운영 환경이 아닌 내 시험용이나 로컬 환경의 앱만을 대상으로 공격자 관점에서 점검해 줘요. 발견된 취약점을 미리 알려주어 실제 공격을 받기 전에 보안을 보완할 수 있어요.</description>
+    </item>
+    <item>
+      <title>모델 알리미 Model Notifier</title>
+      <link>https://xn--739an53af0c.com/#bot-cCBzxPeJyseV7DiLYLW3S</link>
+      <guid isPermaLink="false">bot-cCBzxPeJyseV7DiLYLW3S</guid>
+      <pubDate>Mon, 16 Nov 2026 12:00:00 +0900</pubDate>
+      <description>주요 AI 연구소가 새 모델을 내놓으면 바뀐 점과 이용 가능한 곳, 성능 수치를 바로 알려줘요. 몇 시간 뒤에는 반응도 함께 정리해 주니 내가 새 AI 소식을 일일이 찾아보지 않아도 돼요.</description>
+    </item>
+    <item>
+      <title>고객 전담 팀 봇 Customer Bot</title>
+      <link>https://xn--739an53af0c.com/#bot-XuWFUtbBJNcGBisijI1FZ</link>
+      <guid isPermaLink="false">bot-XuWFUtbBJNcGBisijI1FZ</guid>
+      <pubDate>Mon, 16 Nov 2026 12:00:00 +0900</pubDate>
+      <description>한 고객사를 맡은 팀이 함께 쓰며 영업, 지원, 기술 담당자, 영업 리더의 현황을 맞춰 주는 어시스턴트예요. 평일 아침마다 요약을 내고 각자의 다음 할 일을 초안으로 잡아 주어 팀이 놓치는 일 없이 대응할 수 있어요.</description>
+    </item>
     <item>
       <title>회계 도우미 Steward</title>
       <link>https://xn--739an53af0c.com/#bot-_XFuh52J-TXU1pLEvWxYs</link>
@@ -221,69 +284,6 @@
       <guid isPermaLink="false">bot-1MT-OHIT4rfHC2miCIxRc</guid>
       <pubDate>Fri, 13 Nov 2026 12:00:00 +0900</pubDate>
       <description>iPhone 버튼을 눌러 부탁하면 알람, 미리 알림, 일정 이동, 홈 제어, 매장 전화까지 휴대폰에서 직접 처리하고 결과를 한 줄로 알려줘요. 문 잠금 해제처럼 되돌리기 어려운 작업은 먼저 확인해 줘서 목소리만으로 안심하고 용무를 끝낼 수 있어요.</description>
-    </item>
-    <item>
-      <title>슈퍼커넥티드 리서치 Superconnected Research Entity</title>
-      <link>https://xn--739an53af0c.com/#bot-4Xq3kCXoOXVO87Nz6UC73</link>
-      <guid isPermaLink="false">bot-4Xq3kCXoOXVO87Nz6UC73</guid>
-      <pubDate>Fri, 13 Nov 2026 12:00:00 +0900</pubDate>
-      <description>여러 선택지를 무료 버전부터 비교해 작게 시험해 보고, 출처와 함께 장단점을 정리해 주는 리서치 도우미예요. 비용이 드는 작업은 먼저 알려주고 임의로 결제하거나 가입하지 않아 도구 선택을 안심하고 맡길 수 있어요.</description>
-    </item>
-    <item>
-      <title>숏리스트 이력서 선별봇</title>
-      <link>https://xn--739an53af0c.com/#bot-wEerGLse70VEHkZeMRdIp</link>
-      <guid isPermaLink="false">bot-wEerGLse70VEHkZeMRdIp</guid>
-      <pubDate>Fri, 13 Nov 2026 12:00:00 +0900</pubDate>
-      <description>이력서를 필수 조건에 맞춰 점수를 매기고 이유와 함께 순위를 정해 줘요. 고른 지원자에게 보낼 면접 일정 메일 초안도 써 줘요.</description>
-    </item>
-    <item>
-      <title>솔로 파운더 크루</title>
-      <link>https://xn--739an53af0c.com/#bot-LsMMqEH5tNXcsKhGteWab</link>
-      <guid isPermaLink="false">bot-LsMMqEH5tNXcsKhGteWab</guid>
-      <pubDate>Fri, 13 Nov 2026 12:00:00 +0900</pubDate>
-      <description>혼자 일하는 창업자를 위해 받은편지함 정리, 통화 전 브리핑, 구독 지출 점검 봇을 묶어 매일 아침 짧은 브리핑 한 장을 보내 줘요.</description>
-    </item>
-    <item>
-      <title>보안 워치 버나드 Security Watch (Bernard)</title>
-      <link>https://xn--739an53af0c.com/#bot-a8sof80ZVYsPSIvon50Hw</link>
-      <guid isPermaLink="false">bot-a8sof80ZVYsPSIvon50Hw</guid>
-      <pubDate>Fri, 13 Nov 2026 12:00:00 +0900</pubDate>
-      <description>내가 쓰는 기기와 네트워크, 소프트웨어, 서비스를 확인해 기본 보안 점검을 하고 공식 취약점 정보를 살피다가 내게 해당할 때만 알려드려요. 읽기 전용으로 임의 변경을 하지 않아 일상의 보안을 부담 없이 챙길 수 있어요.</description>
-    </item>
-    <item>
-      <title>보안 워치 Security Watch</title>
-      <link>https://xn--739an53af0c.com/#bot-3ig7Hs_LtjrFA-x8elQLR</link>
-      <guid isPermaLink="false">bot-3ig7Hs_LtjrFA-x8elQLR</guid>
-      <pubDate>Fri, 13 Nov 2026 12:00:00 +0900</pubDate>
-      <description>GitHub와 Vercel 프로젝트를 살펴보다가 새로 발견된 위험한 취약점 중 실제로 내 프로젝트에 해당하는 내용만 해결 방법과 함께 알려드려요. 수많은 보안 소식을 다 읽지 않아도 서비스를 안전하게 지킬 수 있어요.</description>
-    </item>
-    <item>
-      <title>미터 Meter</title>
-      <link>https://xn--739an53af0c.com/#bot-yh-68UiQLHngfIs7NBZc9</link>
-      <guid isPermaLink="false">bot-yh-68UiQLHngfIs7NBZc9</guid>
-      <pubDate>Fri, 13 Nov 2026 12:00:00 +0900</pubDate>
-      <description>요청할 때만 Grok Bot 사용량을 측정해 Bot별, 루틴별 내역을 보여드려요. 멈춘 줄 알았던 Bot의 사용 경고와 주간 초기화까지의 절약 계획도 알려줘 과도한 사용을 막을 수 있어요.</description>
-    </item>
-    <item>
-      <title>멀티 모델 합의 Multi-model consensus</title>
-      <link>https://xn--739an53af0c.com/#bot-PrgTl_LbGkXg5d2IcdLvc</link>
-      <guid isPermaLink="false">bot-PrgTl_LbGkXg5d2IcdLvc</guid>
-      <pubDate>Fri, 13 Nov 2026 12:00:00 +0900</pubDate>
-      <description>어려운 질문 하나를 Claude Code, Codex, Grok 세 AI에게 똑같이 묻고 의견이 모일 때까지 토론하게 해요. 한 AI의 편향에 의존하지 않고 중요한 결정을 더 탄탄하게 내릴 수 있어요.</description>
-    </item>
-    <item>
-      <title>릴리스 스카우트</title>
-      <link>https://xn--739an53af0c.com/#bot-OjcLr9bFJIpO6G5BmitPX</link>
-      <guid isPermaLink="false">bot-OjcLr9bFJIpO6G5BmitPX</guid>
-      <pubDate>Fri, 13 Nov 2026 12:00:00 +0900</pubDate>
-      <description>Grok Bot 변경 내역을 매일 아침 읽고 내가 쓰는 봇에 새로 생긴 기능과 영향이 있는 변경을 알려 줘요.</description>
-    </item>
-    <item>
-      <title>나라 맞춤 셰프봇</title>
-      <link>https://xn--739an53af0c.com/#bot-3U6zxtPa1b8GbWheaIr4J</link>
-      <guid isPermaLink="false">bot-3U6zxtPa1b8GbWheaIr4J</guid>
-      <pubDate>Fri, 13 Nov 2026 12:00:00 +0900</pubDate>
-      <description>사는 나라의 제철 재료와 지역 음식, 명절, 근처 마트에 맞춰 집밥 아이디어를 내 주는 봇이에요. 주간 저녁 식단도 짜 줘요.</description>
     </item>
 </channel>
 </rss>
