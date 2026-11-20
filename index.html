@@ -2868,8 +2868,6 @@ html[data-theme=dark] .cp-btn:hover{background:#2a64d8}
       <a href="#s-week" data-gs-ko="이번 주" data-gs-en="This week">이번 주</a>
       <a href="#s-gacha" data-gs-ko="가챠" data-gs-en="Gacha">가챠</a>
       <a href="#s-my" data-gs-ko="나의 기록" data-gs-en="My record">나의 기록</a>
-      <a href="#s-news" data-gs-ko="새 소식" data-gs-en="News">새 소식</a>
-      <a href="#s-learn" data-gs-ko="배우기" data-gs-en="Learn">배우기</a>
       <a href="#feedback" data-gs-ko="의견" data-gs-en="Feedback">의견</a>
     </div>
   </nav>
@@ -3136,36 +3134,16 @@ html[data-theme=dark] .cp-btn:hover{background:#2a64d8}
 <div id="main"><nav id="tabs"></nav><h2 id="lt"></h2><span id="lc"></span><div id="tks"></div><div id="hsw"></div><div id="list"></div><div id="pg"></div></div>
 </div><!--/gs-legacy-stubs-->
 
-<div class="s13d-nl s20-nl" id="s-news">
-  <div class="s13d-nl-grid s20-nl-grid">
-    <section class="s20-nl-card" aria-labelledby="s20-nwh">
-      <h2 id="s20-nwh" data-i="nwh">새 소식</h2>
-      <ul class="s20-nl-list s19-week-news">
-        <li><a href="/weekly/"><span class="s20-nl-chip">이번 주</span><strong class="s20-nl-title">이번 주 새 템플릿 79개</strong><span class="s20-nl-desc">2026-11-08부터 2026-11-14까지</span></a></li>
-        <li><a href="/articles/october.html"><span class="s20-nl-chip">아티클</span><strong class="s20-nl-title">10월 Grok Bot 주요 업데이트 정리</strong><span class="s20-nl-desc">봇 전용 메일, Vault, 페이지, 휴대폰 앱 연동, 쇼핑 카드까지 한 번에 봐요.</span></a></li>
-      </ul>
-      <ul class="s20-nl-list s13d-list" id="s13d-news"></ul>
-      <p class="s13d-morelink s20-nl-more"><a href="https://x.ai/changelog/bot" target="_blank" rel="noopener">모두 보기</a></p>
-    </section>
-    <section class="s20-nl-card" id="s-learn" aria-labelledby="s20-lnh">
-      <h2 id="s20-lnh" data-i="lnh">배우기</h2>
-      <ul class="s20-nl-list s13d-list" id="s13d-learn">
-        <li><a href="/articles/what.html"><span class="s20-nl-chip">아티클</span><strong class="s20-nl-title">Grok Bot이란? 일을 맡기는 AI 동료</strong><span class="s20-nl-desc">질문에 답만 하는 챗봇과 달리, 내 일을 끝까지 해 주는 Grok Bot을 쉽게 풀었어요.</span></a></li>
-        <li><a href="/articles/howto.html"><span class="s20-nl-chip">아티클</span><strong class="s20-nl-title">Grok Bot 시작하는 법, 첫 봇까지 5단계</strong><span class="s20-nl-desc">요금제 확인부터 첫 봇 만들기, 루틴 저장까지 순서대로 따라 해 보세요.</span></a></li>
-        <li><a href="/articles/pricing.html"><span class="s20-nl-chip">아티클</span><strong class="s20-nl-title">Grok Bot 요금과 사용량 한도</strong><span class="s20-nl-desc">어떤 요금제에 Grok Bot이 들어 있고, 사용량은 어떻게 계산되는지 정리했어요.</span></a></li>
-        <li><a href="/articles/fix.html"><span class="s20-nl-chip">아티클</span><strong class="s20-nl-title">Grok Bot이 안 될 때 해결법</strong><span class="s20-nl-desc">봇이 멈췄을 때, 로그인이 안 될 때, 사용량이 부족할 때 차례로 확인할 것들이에요.</span></a></li>
-        <li><a href="/guide/"><span class="s20-nl-chip">가이드</span><strong class="s20-nl-title">처음 쓰는 분을 위한 가이드</strong><span class="s20-nl-desc">Grok Bot을 처음 쓰는 분을 위한 한국어 안내 페이지예요.</span></a></li>
-      </ul>
-      <p class="s13d-morelink s20-nl-more"><a href="/articles/">모두 보기</a></p>
-    </section>
-  </div>
-  <div class="s13d-off" aria-hidden="true">
-    <ul class="nl" id="nwl"></ul>
-    <div class="ltab" id="ltab" role="tablist"></div>
-    <div id="lpn"></div>
-    <p class="lcr" id="lcr"></p>
-  </div>
+<!--gs-home-trim-stubs-->
+<div class="s13d-off" hidden aria-hidden="true">
+  <ul class="nl" id="nwl"></ul>
+  <div class="ltab" id="ltab" role="tablist"></div>
+  <div id="lpn"></div>
+  <p class="lcr" id="lcr"></p>
+  <ul class="s20-nl-list s13d-list" id="s13d-news"></ul>
+  <ul class="s20-nl-list s13d-list" id="s13d-learn"></ul>
 </div>
+<!--/gs-home-trim-stubs-->
 
 <section class="w fbk" id="feedback"><details class="fbd" id="fbd"><summary class="fbsum">💬 요청이나 개선 의견 보내기</summary><div class="sh"><h2 data-i="fbh">요청과 개선 의견</h2><small data-i="fbs">찾는 봇, 고쳤으면 하는 점, 오류를 알려 주세요. 하나하나 읽어요.</small></div>
 <form name="feedback" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSduAY03SKflK_rYjCMrRhxpLCGlKC7d_jImKHawahrUxG_xDQ/formResponse" target="_blank" id="fbf">
@@ -3390,7 +3368,7 @@ try{var tg=window.testGo;if(typeof tg==='function'){window.testGo=function(){var
 try{var mg=window.mbGo;if(typeof mg==='function'){window.mbGo=function(t){var r=mg.apply(this,arguments);ga('test_complete',{test:'mbti',result:String(t)});return r}}}catch(e){}
 })()</script>
 <script>
-const QS=[['MBTI','#s-mbti','MBTI 추천','MBTI picks'],['테스트','#s-test','갓생 테스트','Godsaeng test'],['test','#s-test','갓생 테스트','Godsaeng test'],['뉴스','#s-news','뉴스','News'],['news','#s-news','뉴스','News'],['배우','#s-learn','배우기','Learn'],['영상','#s-learn','배우기','Learn'],['오늘','#s-today','오늘의 봇','Bot of the day'],['인기','#s-rank','인기','This week']];
+const QS=[['MBTI','#s-mbti','MBTI 추천','MBTI picks'],['테스트','#s-test','갓생 테스트','Godsaeng test'],['test','#s-test','갓생 테스트','Godsaeng test'],['오늘','#s-today','오늘의 봇','Bot of the day'],['인기','#s-rank','인기','This week']];
 function qhits(){const s=document.getElementById('q').value.trim().toLowerCase();if(!s)return null;return B.map(b=>[b,qsc(b,s)]).filter(x=>x[1]).sort((a,b)=>b[1]-a[1]).map(x=>(x[0]._q=x[1],x[0]))}
 function qdrop(){const box=document.getElementById('qr'),q=document.getElementById('q').value.trim(),s=q.toLowerCase(),H=qhits();if(!H){box.className='qr';box.innerHTML='';return}
 const en=L==='en',sec=QS.filter(x=>x[0].toLowerCase().includes(s)||s.includes(x[0].toLowerCase())).filter(x=>document.querySelector(x[1])).filter((x,i,a)=>a.findIndex(y=>y[1]===x[1])===i);

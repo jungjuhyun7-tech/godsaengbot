@@ -1,4 +1,4 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="robots" content="noindex,follow"><style id="theme-css">
+<!doctype html><html lang="ko" class="gs-hu"><head><meta charset="utf-8"><meta name="robots" content="noindex,follow"><style id="theme-css">
 :root{--card:#fff;--soft:#f7f8fa;--ink2:#111;--mu2:#4b5563;--ln2:#e5e7eb;--tint:#eff6ff;color-scheme:light}
 html[data-theme=dark]{color-scheme:dark;--bg:#121417;--card:#1c2026;--soft:#252a31;--al:#252a31;--ink:#eceef2;--ink2:#eceef2;--mu:#b8c0cc;--mu2:#b8c0cc;--ln:#3a414b;--ln2:#454d58;--a:#2a64d8;--tint:#1d2a40;--dk1e3a8a:#a9c4ff;--dk1e40af:#a9c4ff;--dk1d4ed8:#9cbcff;--dk2563eb:#8ab4ff;--dk555:#c2c8d0;--dk666:#b8c0cc;--dk8a6d3b:#e3c48f;--dk5a4a3a:#e6d3bd;--dk8a8580:#bdb7b0;--dknav:rgba(18,20,23,.92);--dksj:#8a5a12;--at:#8ab4ff;}
 html[data-theme=dark] body{background:var(--bg);color:var(--ink)}
@@ -169,7 +169,150 @@ html[data-theme=dark] .cp-btn:hover{background:#2a64d8}
   .md .cp-btn{min-height:44px;padding:10px 14px;font-size:13px}
 }
 </style></head><body>
-<header><div class="w"><a class="logo" href="/">갓생봇</a><nav class="snav"><a class="on" href="/templates/">템플릿</a><a href="/articles/">아티클</a><a href="/glossary.html">용어</a><a href="/test.html">테스트</a><a href="/pick.html">뽑기</a><a href="/saju.html">오늘의 사주</a></nav></div></header><nav data-nav2="1" class="gnav" id="gs-gnav" aria-label="갓생봇 메뉴"><div class="gnav-in"><a class="gnav-logo" href="/" aria-label="갓생봇 홈"><img class="gnav-ico" src="/icon-192.png" alt="" width="20" height="20"><i>갓</i><span>갓생봇</span></a><a href="/#s-all" data-gs-ko="전체소식" data-gs-en="All updates">전체소식</a><a href="/templates/" data-gs-ko="템플릿" data-gs-en="Templates">템플릿</a><a href="/prompts/grok-bot-direct.html" data-gs-ko="에이전트 프롬프트" data-gs-en="Agent prompts">에이전트 프롬프트</a><a href="/articles/" data-gs-ko="아티클" data-gs-en="Articles">아티클</a><a href="/weekly/" data-gs-ko="이번주" data-gs-en="This week">이번주</a><a href="/test.html" data-gs-ko="갓생테스트" data-gs-en="Godsaeng test">갓생테스트</a><a href="/pick.html" data-gs-ko="가챠뽑기" data-gs-en="Gacha pick">가챠뽑기</a><a href="/saju.html" data-gs-ko="오늘의 사주" data-gs-en="Today's Saju">오늘의 사주</a><a href="/glossary.html" data-gs-ko="용어" data-gs-en="Glossary">용어</a><a href="/guide/" data-gs-ko="그록가이드" data-gs-en="Grok guide">그록가이드</a><a href="/support/" data-gs-ko="응원하기" data-gs-en="Support us">응원하기</a></div></nav><main class="w">
+<!--gs-header-unify-start-->
+<style id="gs-header-unify-css">/* 2026-11-20 header unify: same home header on every non-home page. */
+html.gs-hu{
+  --gs-hu-ink:#0f172a;
+  --gs-hu-ln:#e6e9f2;
+  --gs-hu-bg:#f5f7fc;
+  --gs-hu-stick:64px;
+  scroll-padding-top:80px;
+}
+html.gs-hu,html.gs-hu body{background:var(--soft,var(--gs-hu-bg,#f7f8fa))}
+html.gs-hu body{padding-top:var(--gs-hu-stick);margin:0}
+html.gs-hu #gs-gnav,
+html.gs-hu nav.gnav,
+html.gs-hu .thm,
+html.gs-hu #gs-v8-burger,
+html.gs-hu #gs-v8-mask,
+html.gs-hu body > header[hidden],
+html.gs-hu header.hd[hidden],
+html.gs-hu #gs-legacy-mpanel{display:none !important}
+html.gs-hu nav.top{top:var(--gs-hu-stick)}
+html.gs-hu header.hero{display:block !important}
+
+#gs-hu{color:var(--gs-hu-ink);font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif}
+#gs-hu *{box-sizing:border-box}
+#gs-hu a{color:inherit}
+#gs-hu .hd{
+  position:fixed;top:0;left:0;right:0;width:100%;z-index:80;
+  background:rgba(245,247,252,.86);
+  backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);
+  border-bottom:1px solid var(--gs-hu-ln);
+}
+#gs-hu .hd-in{max-width:1180px;margin:0 auto;padding:0 16px;height:64px;display:flex;align-items:center;gap:14px}
+#gs-hu .logo{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:17px;letter-spacing:-.02em;flex:none;text-decoration:none;color:var(--gs-hu-ink)}
+#gs-hu .logo img{width:30px;height:30px;border-radius:9px;display:block}
+#gs-hu .logo .mk{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:7px;background:var(--gs-hu-ink);color:#fff;font-size:12px;font-weight:800}
+#gs-hu .earth{margin-left:6px;font:800 10px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.12em;color:#111;text-transform:uppercase;white-space:nowrap;border:1.5px solid #111;padding:6px 8px;border-radius:2px;text-decoration:none;align-self:center;transition:background .15s,color .15s}
+#gs-hu .earth:hover{background:#111;color:#fff}
+#gs-hu .nav{display:none;margin-left:auto;align-items:center;gap:1px;min-width:0}
+#gs-hu .nav a{padding:8px 10px;border-radius:999px;font-size:14px;font-weight:600;color:#334155;white-space:nowrap;text-decoration:none;transition:background .2s,color .2s}
+#gs-hu .nav a:hover{background:#fff;color:var(--gs-hu-ink)}
+#gs-hu .nav a.is-on,#gs-hu .nav a[aria-current=page]{font-weight:800;color:var(--gs-hu-ink);background:#fff}
+#gs-hu .lang{border:1px solid #e5e7eb;background:#fff;border-radius:8px;padding:4px 8px;font-size:12px;cursor:pointer;margin-left:4px;color:var(--gs-hu-ink)}
+#gs-hu .mbtn{margin-left:auto;width:44px;height:44px;border:1px solid var(--gs-hu-ln);background:#fff;border-radius:14px;display:grid;place-items:center;padding:0;flex:none;cursor:pointer}
+#gs-hu .mbtn i{display:block;width:18px;height:2px;background:var(--gs-hu-ink);border-radius:2px;box-shadow:0 6px 0 var(--gs-hu-ink),0 -6px 0 var(--gs-hu-ink);transition:transform .2s,box-shadow .2s}
+#gs-hu .mbtn[aria-expanded=true] i{box-shadow:none;transform:rotate(45deg)}
+#gs-hu .mbtn[aria-expanded=true] i::after{content:"";display:block;width:18px;height:2px;background:var(--gs-hu-ink);border-radius:2px;transform:rotate(90deg)}
+#gs-hu .mpanel{position:fixed;inset:var(--gs-hu-stick) 0 auto 0;height:calc(100vh - var(--gs-hu-stick));box-sizing:border-box;z-index:79;background:rgba(15,23,42,.28);padding:10px 12px}
+#gs-hu .mpanel[hidden]{display:none}
+#gs-hu .mpanel .mbody{background:#fff;border-radius:22px;padding:10px;display:grid;grid-template-columns:1fr 1fr;gap:6px;box-shadow:0 20px 50px rgba(15,23,42,.18);max-height:calc(100vh - 84px);overflow:auto}
+#gs-hu .mpanel a,#gs-hu .mpanel a:link,#gs-hu .mpanel a:visited{display:flex;align-items:center;min-height:48px;padding:0 14px;border-radius:14px;background:#f5f7fc;font-weight:650;font-size:15px;min-width:0;text-decoration:none;color:var(--gs-hu-ink)}
+#gs-hu .mpanel a.is-on,#gs-hu .mpanel a.is-on:link,#gs-hu .mpanel a.is-on:visited{background:var(--gs-hu-ink);color:#fff}
+#gs-hu .nav a:focus-visible,#gs-hu .mbtn:focus-visible,#gs-hu .lang:focus-visible,#gs-hu .earth:focus-visible{outline:2px solid #2563eb;outline-offset:2px}
+@media(min-width:1024px){
+  #gs-hu .nav{display:flex}
+  #gs-hu .mbtn,#gs-hu .mpanel{display:none !important}
+}
+@media(max-width:1023px){
+  #gs-hu .earth{display:none}
+}
+/* Cheap body-tone typography for a few raw page titles. */
+html.gs-hu .fph h1,
+html.gs-hu main > h1{
+  letter-spacing:-.03em;
+  font-weight:800;
+  color:#0f172a;
+}
+html.gs-hu .fph p{color:#526176}
+@media(prefers-reduced-motion:reduce){
+  #gs-hu .mbtn i{transition:none}
+  #gs-hu .earth{transition:none}
+}
+</style>
+<div id="gs-hu">
+<div class="hd" role="banner">
+  <div class="hd-in">
+    <a class="logo" href="/" aria-label="갓생봇 홈"><img src="/icon-192.png" alt="" width="30" height="30"><span class="mk" aria-hidden="true">갓</span><span>갓생봇</span></a>
+    <a class="earth" href="https://www.spacex.com/mission/" target="_blank" rel="noopener" title="SpaceX Mission">Made on Earth by Grok Bot</a>
+    <nav class="nav" aria-label="주 메뉴">
+      <a href="/templates/" data-gs-ko="템플릿" data-gs-en="Templates">템플릿</a>
+      <a href="/template-guide.html" data-gs-ko="템플릿 고르기" data-gs-en="How to pick">템플릿 고르기</a>
+      <a href="/test.html" class="is-on" aria-current="page" data-gs-ko="테스트" data-gs-en="Test">테스트</a>
+      <a href="/saju.html" data-gs-ko="오늘의 사주" data-gs-en="Today's Saju">오늘의 사주</a>
+      <a href="/#s-ask" data-gs-ko="프롬프트" data-gs-en="Prompts">프롬프트</a>
+      <a href="/guide/" data-gs-ko="가이드" data-gs-en="Guide">가이드</a>
+      <a href="/articles/" data-gs-ko="아티클" data-gs-en="Articles">아티클</a>
+      <button class="lang" type="button" id="lb" onclick="if(typeof setL==='function'){setL((typeof L!=='undefined'&&L==='en')?'ko':'en')}">EN</button>
+    </nav>
+    <button type="button" class="mbtn" id="mbtn" aria-expanded="false" aria-controls="mpanel" aria-label="메뉴 열기"><i></i></button>
+  </div>
+  <div class="mpanel" id="mpanel" hidden>
+    <div class="mbody">
+      <a href="/templates/" data-gs-ko="템플릿" data-gs-en="Templates">템플릿</a>
+      <a href="/template-guide.html" data-gs-ko="템플릿 고르기" data-gs-en="How to pick">템플릿 고르기</a>
+      <a href="/test.html" class="is-on" aria-current="page" data-gs-ko="테스트" data-gs-en="Test">테스트</a>
+      <a href="/saju.html" data-gs-ko="오늘의 사주" data-gs-en="Today's Saju">오늘의 사주</a>
+      <a href="/#s-ask" data-gs-ko="프롬프트" data-gs-en="Prompts">프롬프트</a>
+      <a href="/guide/" data-gs-ko="가이드" data-gs-en="Guide">가이드</a>
+      <a href="/articles/" data-gs-ko="아티클" data-gs-en="Articles">아티클</a>
+      <a href="/#s-week" data-gs-ko="이번 주" data-gs-en="This week">이번 주</a>
+      <a href="/#s-gacha" data-gs-ko="가챠" data-gs-en="Gacha">가챠</a>
+      <a href="/#s-my" data-gs-ko="나의 기록" data-gs-en="My record">나의 기록</a>
+      <a href="/glossary.html" data-gs-ko="용어" data-gs-en="Glossary">용어</a>
+      <a href="/support/" data-gs-ko="응원하기" data-gs-en="Support us">응원하기</a>
+      <a href="/#howto" data-gs-ko="사용법" data-gs-en="How to">사용법</a>
+      <a href="/" class="subn" onclick="if(typeof sbOpen==='function'){sbOpen();return false}" data-gs-ko="템플릿 등록" data-gs-en="Submit a template">템플릿 등록</a>
+      <a href="/#req" data-gs-ko="봇 요청" data-gs-en="Request a bot">봇 요청</a>
+    </div>
+  </div>
+</div>
+</div>
+<script>
+(function(){
+  var mb=document.getElementById('mbtn');
+  var mp=document.getElementById('mpanel');
+  if(!mb||!mp||mb.getAttribute('data-gs-hu-menu')==='1') return;
+  mb.setAttribute('data-gs-hu-menu','1');
+  var locked=false;
+  function setM(o){
+    var was=mb.getAttribute('aria-expanded')==='true';
+    mb.setAttribute('aria-expanded', o?'true':'false');
+    mb.setAttribute('aria-label', o?'메뉴 닫기':'메뉴 열기');
+    mp.hidden=!o;
+    if(o){
+      if(!locked){ document.body.style.overflow='hidden'; locked=true; }
+    } else if(locked){
+      document.body.style.overflow='';
+      locked=false;
+    }
+    if(!o && was) try{mb.focus();}catch(err){}
+  }
+  mb.addEventListener('click', function(){ setM(mb.getAttribute('aria-expanded')!=='true'); });
+  mp.addEventListener('click', function(e){ if(e.target===mp || (e.target.closest && e.target.closest('a'))) setM(false); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape' && mb.getAttribute('aria-expanded')==='true') setM(false); });
+  if(window.matchMedia){
+    var mq=window.matchMedia('(min-width:1024px)');
+    var onQ=function(ev){ if(ev.matches) setM(false); };
+    if(mq.addEventListener) mq.addEventListener('change', onQ);
+    else if(mq.addListener) mq.addListener(onQ);
+  }
+})();
+</script>
+<!--gs-header-unify-end-->
+
+<header aria-hidden="true" hidden><div class="w"><a class="logo" href="/">갓생봇</a><nav class="snav"><a class="on" href="/templates/">템플릿</a><a href="/articles/">아티클</a><a href="/glossary.html">용어</a><a href="/test.html">테스트</a><a href="/pick.html">뽑기</a><a href="/saju.html">오늘의 사주</a></nav></div></header><nav data-nav2="1" class="gnav" id="gs-gnav" aria-label="갓생봇 메뉴" aria-hidden="true" hidden><div class="gnav-in"><a class="gnav-logo" href="/" aria-label="갓생봇 홈"><img class="gnav-ico" src="/icon-192.png" alt="" width="20" height="20"><i>갓</i><span>갓생봇</span></a><a href="/#s-all" data-gs-ko="전체소식" data-gs-en="All updates">전체소식</a><a href="/templates/" data-gs-ko="템플릿" data-gs-en="Templates">템플릿</a><a href="/prompts/grok-bot-direct.html" data-gs-ko="에이전트 프롬프트" data-gs-en="Agent prompts">에이전트 프롬프트</a><a href="/articles/" data-gs-ko="아티클" data-gs-en="Articles">아티클</a><a href="/weekly/" data-gs-ko="이번주" data-gs-en="This week">이번주</a><a href="/test.html" data-gs-ko="갓생테스트" data-gs-en="Godsaeng test">갓생테스트</a><a href="/pick.html" data-gs-ko="가챠뽑기" data-gs-en="Gacha pick">가챠뽑기</a><a href="/saju.html" data-gs-ko="오늘의 사주" data-gs-en="Today's Saju">오늘의 사주</a><a href="/glossary.html" data-gs-ko="용어" data-gs-en="Glossary">용어</a><a href="/guide/" data-gs-ko="그록가이드" data-gs-en="Grok guide">그록가이드</a><a href="/support/" data-gs-ko="응원하기" data-gs-en="Support us">응원하기</a></div></nav><main class="w">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "갓생 테스트 결과, 아침형, SNS 홍보 | 갓생봇", "description": "SNS와 홍보를 도와주는 봇을 골랐어요. 지금 더 챙기고 싶은 쪽은 일예요.", "url": "https://xn--739an53af0c.com/share/test-0-3-0.html", "inLanguage": "ko", "isPartOf": {"@type": "WebSite", "name": "갓생봇", "url": "https://xn--739an53af0c.com/"}}</script>
 
 <p class="crumb"><a href="/">홈</a> &gt; 결과 공유</p>
