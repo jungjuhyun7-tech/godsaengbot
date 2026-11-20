@@ -1217,6 +1217,61 @@ html[data-s21] #gs-s13b{
   padding-top:20px !important;
 }
 </style><!--gs-phase1-end-->
+<!--gs-tpl-stats-align-start-->
+<style id="gs-tpl-stats-align">
+/* Align .ground .wrap.h-stats with the centered 1180px hero wrap
+   so the first .h-stat left edge matches the CTA / hero-copy / h1.
+   Root cause: #gs-s13b .h-stats { max-width:440px; margin:0 } overrode
+   .wrap { max-width:1180px; margin:0 auto }, leaving the 440px row flush-left
+   on wide screens. Inner .h-stat content is centered. */
+#gs-s13b .ground .wrap.h-stats{
+  max-width:1180px !important;
+  width:100% !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  /* .hero-in overrides .wrap padding to 10px 0 0, so zero horizontal padding here too */
+  padding-left:0 !important;
+  padding-right:0 !important;
+  display:flex !important;
+  flex-wrap:wrap !important;
+  justify-content:flex-start !important;
+  align-items:stretch !important;
+  gap:10px !important;
+  box-sizing:border-box !important;
+}
+#gs-s13b .ground .wrap.h-stats > .h-stat,
+#gs-s13b .ground .h-stat{
+  box-sizing:border-box !important;
+  width:199px !important;
+  max-width:calc((100% - 10px) / 2) !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:center !important;
+  text-align:center !important;
+  gap:8px !important;
+}
+#gs-s13b .ground .h-stat b,
+#gs-s13b .ground .h-stat span{
+  display:block !important;
+  width:100% !important;
+  text-align:center !important;
+  margin-left:0 !important;
+  margin-right:0 !important;
+}
+
+@media (max-width: 760px){
+  #gs-s13b .ground .wrap.h-stats{
+    padding-left:16px !important;
+    padding-right:16px !important;
+  }
+  #gs-s13b .ground .wrap.h-stats > .h-stat{
+    flex:1 1 0 !important;
+    width:auto !important;
+  }
+}
+</style>
+<!--gs-tpl-stats-align-end-->
 </head><body class="gs-home">
 <!--gs-tpl-restyle-start-->
 <style id="gs-tpl-restyle-css">/* 2026-11-20 templates restyle v2
