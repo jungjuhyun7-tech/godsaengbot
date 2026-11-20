@@ -8,7 +8,7 @@
     if (text != null && text !== "") n.textContent = String(text);
     return n;
   }
-  function toast(msg) {
+  function toast(msg, ms) {
     var t = $("gs-grotto-toast");
     if (!t) {
       t = el("div", "gs-grotto-toast");
@@ -19,7 +19,7 @@
     t.textContent = msg || "";
     t.classList.add("on");
     if (toast._t) clearTimeout(toast._t);
-    toast._t = setTimeout(function () { t.classList.remove("on"); }, 2200);
+    toast._t = setTimeout(function () { t.classList.remove("on"); }, ms || 2200);
   }
   function showErr(msg) {
     var e = $("gs-grotto-err");
@@ -102,6 +102,7 @@
     img.alt = "오늘의 그롯또, " + card.date + " " + card.pillar;
     $("gs-grotto-actions").hidden = false;
     closeShareMenu({ focus: false });
+    syncShareButton();
     box.setAttribute("tabindex", "-1");
     box.focus({ preventScroll: false });
   }
@@ -117,17 +118,16 @@
     toast("이미지를 저장했어요");
   }
 
-  var SAJU_URL = "https://xn--739an53af0c.com/saju.html";
-  var SHARE_LINK_LINE = "오늘의 그롯또 뽑아봤어요";
-  var SHARE_X_TEXT = "오늘의 그롯또 나왔어요. 내 생일로 뽑아보기";
+/*gs-grotto-share-v2-start*/
+  var SHARE_TEXT = "오늘 내 사주랑 그롯또 숫자 6개 뽑아봤다 🎯\n\n생일 넣으니까 오늘의 운세랑 행운 숫자 6개까지 같이 나오네요.\n여러분 오늘의 사주랑 숫자는 뭐 떴나요? 👇";
+  var SHARE_PAGE_URL = "https://xn--739an53af0c.com/share/grotto.html";
   var shareOpen = false;
 
   function shareMenuEls() {
     return {
       btn: $("gs-grotto-share"),
       menu: $("gs-grotto-share-menu"),
-      back: $("gs-grotto-share-backdrop"),
-      app: $("gs-grotto-share-app")
+      back: $("gs-grotto-share-backdrop")
     };
   }
 
@@ -139,20 +139,29 @@
     });
   }
 
-  function canShareImageFile() {
+  function canShareFiles() {
     try {
       if (!navigator.canShare || !navigator.share || !lastBlob) return false;
       var name = lastCard ? fileName(lastCard) : "오늘의그롯또.png";
       var file = new File([lastBlob], name, { type: "image/png" });
+      if (navigator.canShare({ files: [file], text: SHARE_TEXT })) return true;
       return !!navigator.canShare({ files: [file] });
     } catch (e) {
       return false;
     }
   }
 
-  function syncShareAppItem() {
-    var app = $("gs-grotto-share-app");
-    if (app) app.hidden = !canShareImageFile();
+  function syncShareButton() {
+    var btn = $("gs-grotto-share");
+    if (!btn) return;
+    if (canShareFiles()) {
+      btn.removeAttribute("aria-haspopup");
+      btn.removeAttribute("aria-controls");
+      btn.setAttribute("aria-expanded", "false");
+    } else {
+      btn.setAttribute("aria-haspopup", "menu");
+      btn.setAttribute("aria-controls", "gs-grotto-share-menu");
+    }
   }
 
   function positionShareMenu() {
@@ -171,7 +180,6 @@
   function openShareMenu() {
     var els = shareMenuEls();
     if (!els.btn || !els.menu) return;
-    syncShareAppItem();
     els.menu.hidden = false;
     if (els.back) els.back.hidden = false;
     els.btn.setAttribute("aria-expanded", "true");
@@ -212,45 +220,82 @@
     return ok;
   }
 
-  function copyShareLink() {
-    var text = SHARE_LINK_LINE + "\n" + SAJU_URL;
-    function ok() { closeShareMenu(); toast("복사했어요"); }
-    function fail() { toast("복사하지 못했어요"); }
+  function writeClipboard(text, onOk, onFail) {
     if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(text).then(ok).catch(function () {
-        if (fallbackCopy(text)) ok(); else fail();
+      navigator.clipboard.writeText(text).then(onOk).catch(function () {
+        if (fallbackCopy(text)) onOk(); else onFail();
       });
       return;
     }
-    if (fallbackCopy(text)) ok(); else fail();
+    if (fallbackCopy(text)) onOk(); else onFail();
   }
 
-  function shareOnX() {
-    var u = "https://x.com/intent/post?text=" + encodeURIComponent(SHARE_X_TEXT) +
-      "&url=" + encodeURIComponent(SAJU_URL);
-    closeShareMenu();
-    window.open(u, "_blank", "noopener,noreferrer");
+  function copyShareLink() {
+    var text = SHARE_TEXT + "\n" + SHARE_PAGE_URL;
+    function ok() { closeShareMenu(); toast("복사했어요"); }
+    function fail() { toast("복사하지 못했어요"); }
+    writeClipboard(text, ok, fail);
+  }
+
+  function shareFilePayload() {
+    if (!lastBlob || !lastCard) return null;
+    var file = new File([lastBlob], fileName(lastCard), { type: "image/png" });
+    var withTitle = { files: [file], text: SHARE_TEXT, title: "오늘의 그롯또" };
+    var textOnly = { files: [file], text: SHARE_TEXT };
+    try {
+      if (navigator.canShare && navigator.canShare(withTitle)) return withTitle;
+    } catch (e) {}
+    try {
+      if (navigator.canShare && navigator.canShare(textOnly)) return textOnly;
+    } catch (e2) {}
+    return textOnly;
   }
 
   function shareWithApp() {
     if (!lastBlob || !lastCard) return;
-    var file = new File([lastBlob], fileName(lastCard), { type: "image/png" });
-    var data = { files: [file], title: "오늘의 그롯또" };
-    if (!(navigator.canShare && navigator.canShare(data))) {
-      syncShareAppItem();
+    var data = shareFilePayload();
+    if (!data || !(navigator.share)) {
       toast("이 기기는 앱으로 공유를 지원하지 않아요");
       return;
     }
-    closeShareMenu();
+    if (shareOpen) closeShareMenu({ focus: false });
     navigator.share(data).then(function () { toast("공유했어요"); }).catch(function (err) {
       if (err && err.name === "AbortError") return;
       toast("공유하지 못했어요");
     });
   }
 
+  function onShareButtonClick(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    if (canShareFiles()) {
+      if (shareOpen) closeShareMenu({ focus: false });
+      shareWithApp();
+      return;
+    }
+    toggleShareMenu();
+  }
+
+  function saveImageAndShareHint() {
+    if (!lastBlob || !lastCard) return;
+    saveImage();
+    writeClipboard(SHARE_TEXT, function () {
+      closeShareMenu();
+      toast("이미지를 저장하고 글을 복사했어요. 공유할 곳에 글을 붙여 넣고 이미지를 첨부해 주세요.", 4200);
+    }, function () {
+      closeShareMenu();
+      toast("이미지를 저장했어요. 공유할 곳에 이미지를 첨부해 주세요.", 4200);
+    });
+  }
+
   function onShareKeydown(e) {
     if (!shareOpen) {
-      if ((e.key === "ArrowDown" || e.key === "Enter" || e.key === " ") && e.target && e.target.id === "gs-grotto-share") {
+      if (e.target && e.target.id === "gs-grotto-share") {
+        if (canShareFiles() && (e.key === "Enter" || e.key === " ")) {
+          e.preventDefault();
+          shareWithApp();
+          return;
+        }
         if (e.key === "ArrowDown") { e.preventDefault(); openShareMenu(); }
       }
       return;
@@ -281,6 +326,7 @@
     if (e.target === back) { closeShareMenu(); return; }
     if (wrap && !wrap.contains(e.target)) closeShareMenu({ focus: false });
   }
+/*gs-grotto-share-v2-end*/
 
   function onSubmit(e) {
     e.preventDefault();
@@ -324,19 +370,18 @@
     });
     $("gs-grotto-ly").addEventListener("change", updateLeapHint);
     $("gs-grotto-form").addEventListener("submit", onSubmit);
+/*gs-grotto-share-bind-v2-start*/
     $("gs-grotto-save").addEventListener("click", saveImage);
-    $("gs-grotto-share").addEventListener("click", function (e) {
-      e.preventDefault();
-      e.stopPropagation();
-      toggleShareMenu();
-    });
+    $("gs-grotto-share").addEventListener("click", onShareButtonClick);
     $("gs-grotto-share-link").addEventListener("click", copyShareLink);
-    $("gs-grotto-share-x").addEventListener("click", shareOnX);
-    $("gs-grotto-share-app").addEventListener("click", shareWithApp);
+    var shareSave = $("gs-grotto-share-save");
+    if (shareSave) shareSave.addEventListener("click", saveImageAndShareHint);
     $("gs-grotto-share-backdrop").addEventListener("click", function () { closeShareMenu(); });
     document.addEventListener("keydown", onShareKeydown);
     document.addEventListener("pointerdown", onDocPointer, true);
-    var today = GSGrotto.todayKST();
+    syncShareButton();
+/*gs-grotto-share-bind-v2-end*/
+var today = GSGrotto.todayKST();
     var dateEl = $("gs-grotto-date");
     dateEl.max = today.y + "-" + String(today.m).padStart(2,"0") + "-" + String(today.d).padStart(2,"0");
     dateEl.min = "1900-01-01";
