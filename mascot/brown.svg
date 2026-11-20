@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 107 108" width="856" height="864" fill="none">
-  <g transform="translate(53.498 53.445) scale(0.99325) translate(-53.498 -53.445)"><g fill="#906038"><circle cx="53.56" cy="53.51" r="52.29"/></g>
-  <g fill="#fff">
-    <rect x="35.99" y="38.68" width="35.77" height="15.38" rx="7.69" transform="rotate(59.42 53.88 46.37)"/>
-    <rect x="64.17" y="26.19" width="35.89" height="11.51" rx="5.76" transform="rotate(59.35 82.12 31.95)"/>
-  </g></g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 856 864" width="856" height="864" fill="none">
+  <circle cx="427.5741" cy="426.1415" r="416.1735" fill="#906038"/>
+  <g fill="#ffffff">
+    <rect x="292.9709" y="309.1628" width="278.2447" height="119.049" rx="59.5245" transform="rotate(59.4703 432.0932 368.6873)"/>
+    <rect x="515.8463" y="214.4626" width="278.2527" height="90.7841" rx="45.3921" transform="rotate(239.2645 654.9726 259.8546)"/>
+  </g>
 </svg>
