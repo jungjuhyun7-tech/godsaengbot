@@ -3,8 +3,78 @@
 <channel>
   <title>갓생봇 이번 주 새 봇</title>
   <link>https://xn--739an53af0c.com/weekly/</link>
-  <description>2026-11-14부터 2026-11-20까지 갓생봇에 새로 담은 봇 51개와 같은 기간 공식 새 소식을 모았어요.</description>
+  <description>2026-11-14부터 2026-11-20까지 갓생봇에 새로 담은 봇 61개와 같은 기간 공식 새 소식을 모았어요.</description>
   <language>ko</language>
+    <item>
+      <title>품질 검수 봇 Super Intelligence Bot</title>
+      <link>https://xn--739an53af0c.com/#bot-zVgZS00x5Z8LDDwsAMKl_</link>
+      <guid isPermaLink="false">bot-zVgZS00x5Z8LDDwsAMKl_</guid>
+      <pubDate>Thu, 19 Nov 2026 12:00:00 +0900</pubDate>
+      <description>내 에이전트 팀이 보낸 작업을 확인해 계산, 위험 요소, 규칙을 점검하고 올바른 결과가 나올 때까지 수정을 돌려줍니다. 최종 마무리 전에 실수를 줄일 수 있어 안심하고 작업을 맡길 수 있어요.</description>
+    </item>
+    <item>
+      <title>자연스러운 글쓰기 Unmachined</title>
+      <link>https://xn--739an53af0c.com/#bot-JugVUSPe_wSZg-in69owM</link>
+      <guid isPermaLink="false">bot-JugVUSPe_wSZg-in69owM</guid>
+      <pubDate>Thu, 19 Nov 2026 12:00:00 +0900</pubDate>
+      <description>글을 올리거나 보내기 전에 문장에서 AI 특유의 어투를 걷어내 줍니다. 초안을 붙여 넣기만 해도 사람이 쓴 것처럼 다듬어 주어 자연스러운 글을 바로 전할 수 있어요.</description>
+    </item>
+    <item>
+      <title>위협 헌터 Threat Hunter</title>
+      <link>https://xn--739an53af0c.com/#bot-xz-a6CWE-HtbBB4yO7J0U</link>
+      <guid isPermaLink="false">bot-xz-a6CWE-HtbBB4yO7J0U</guid>
+      <pubDate>Thu, 19 Nov 2026 12:00:00 +0900</pubDate>
+      <description>내 컴퓨터에 무료 모니터링 도구를 설치해 의심스러운 패키지나 비밀번호 탈취 등 AI 에이전트를 노리는 공격을 감시합니다. X에서 최신 공격 수법 정보도 모아 AI를 활용한 개발 보안을 탄탄하게 지켜줘요.</description>
+    </item>
+    <item>
+      <title>비주얼 신시사이저 Methodical Visual Synthesizer</title>
+      <link>https://xn--739an53af0c.com/#bot-E3z2Ks_n4DruuX9e3x7ao</link>
+      <guid isPermaLink="false">bot-E3z2Ks_n4DruuX9e3x7ao</guid>
+      <pubDate>Thu, 19 Nov 2026 12:00:00 +0900</pubDate>
+      <description>브랜드를 구축하고 관리하면서 그에 맞는 이미지, 아바타, SNS용 그림, 영상을 제작해 줍니다. 디자인 전에 목적과 대상을 정리하고 내 확인을 기다린 뒤 작업해 일관된 결과물을 얻을 수 있어요.</description>
+    </item>
+    <item>
+      <title>분실폰 대처 봇 Lost Phone Bot</title>
+      <link>https://xn--739an53af0c.com/#bot-VMx8FKKLWNf1iLaV9zvtj</link>
+      <guid isPermaLink="false">bot-VMx8FKKLWNf1iLaV9zvtj</guid>
+      <pubDate>Thu, 19 Nov 2026 12:00:00 +0900</pubDate>
+      <description>스마트폰을 잃어버리거나 도난당했을 때 위험할 수 있는 계정을 미리 찾아내 정리해 줍니다. 위급할 때 계정을 잠그는 절차도 바로 안내해 주어 당황하지 않고 피해를 줄일 수 있어요.</description>
+    </item>
+    <item>
+      <title>미팅 코파일럿 Meeting Copilot</title>
+      <link>https://xn--739an53af0c.com/#bot-0auU2MtJucHjtcLQdn5yt</link>
+      <guid isPermaLink="false">bot-0auU2MtJucHjtcLQdn5yt</guid>
+      <pubDate>Thu, 19 Nov 2026 12:00:00 +0900</pubDate>
+      <description>Google Meet, Zoom, Teams 회의에 참여해 회의록을 Google Docs나 Notion에 정리해 줍니다. 다음 할 일과 후속 메일 초안까지 만들어 주어 회의 뒷정리가 금방 끝나요.</description>
+    </item>
+    <item>
+      <title>릴리즈 데스크 Release Desk</title>
+      <link>https://xn--739an53af0c.com/#bot-ywPVDeM782GnBOYmsl_h0</link>
+      <guid isPermaLink="false">bot-ywPVDeM782GnBOYmsl_h0</guid>
+      <pubDate>Thu, 19 Nov 2026 12:00:00 +0900</pubDate>
+      <description>iOS와 Mac 앱의 App Store 출시를 담당하며 신청 전 부족한 항목을 알려주고 심사 현황과 TestFlight 정리까지 도와줍니다. 내 승인 없이는 제출하지 않아 안심하고 출시를 진행할 수 있어요.</description>
+    </item>
+    <item>
+      <title>리디자인 봇 Redesign Bot</title>
+      <link>https://xn--739an53af0c.com/#bot-JGP7nBLsdoxCD45PtQRC1</link>
+      <guid isPermaLink="false">bot-JGP7nBLsdoxCD45PtQRC1</guid>
+      <pubDate>Thu, 19 Nov 2026 12:00:00 +0900</pubDate>
+      <description>앱 URL이나 스크린샷을 건네면 사용성을 솔직하게 비평하고 주요 화면을 클릭 가능한 프로토타입으로 다시 만들어 줍니다. 전후 비교와 수정 순서도 함께 나와 개선 방향을 바로 파악할 수 있어요.</description>
+    </item>
+    <item>
+      <title>디지프레임 DigiFrame</title>
+      <link>https://xn--739an53af0c.com/#bot-YJiOQxbmoH-UcpH4hd6Gi</link>
+      <guid isPermaLink="false">bot-YJiOQxbmoH-UcpH4hd6Gi</guid>
+      <pubDate>Thu, 19 Nov 2026 12:00:00 +0900</pubDate>
+      <description>Google Photos나 iCloud 사진으로 날짜가 들어간 제목과 저작권 무료 음악이 포함된 월별 하이라이트 영상을 만들어 줍니다. Aura 같은 디지털 액자에서 바로 재생할 수 있어 추억을 꾸미는 수고를 덜어줘요.</description>
+    </item>
+    <item>
+      <title>동네 행사 캘린더 Local Interest Events Calendar</title>
+      <link>https://xn--739an53af0c.com/#bot-904p3wvmnFsf21lf1bgl7</link>
+      <guid isPermaLink="false">bot-904p3wvmnFsf21lf1bgl7</guid>
+      <pubDate>Thu, 19 Nov 2026 12:00:00 +0900</pubDate>
+      <description>내 취향에 맞는 주변 행사를 모아 30일짜리 다채로운 캘린더로 만들어 줍니다. 가격과 예매 링크도 함께 담겨 있고 매주 새로운 행사만 골라 알려주어 주말 일정 찾기가 한결 편해져요.</description>
+    </item>
     <item>
       <title>피드백 보드 Feedback Board</title>
       <link>https://xn--739an53af0c.com/#bot-JUXsVsVBG-mWEIDKdQrrX</link>
@@ -214,76 +284,6 @@
       <guid isPermaLink="false">bot-RJSudgYj7pjh-0xawMGkf</guid>
       <pubDate>Sun, 15 Nov 2026 12:00:00 +0900</pubDate>
       <description>내가 사는 지역에서 잘 터지고 실제 데이터 사용량에 맞는 가장 저렴한 휴대폰 요금제를 단말기 잔여 할부금과 사라지는 할인까지 계산해 찾아 줘요. 내가 승인하기 전에는 변경하지 않으므로 손해 없이 매달 통신비를 아낄 수 있어요.</description>
-    </item>
-    <item>
-      <title>창작 공모 기회 찾기 Creative Opps Oracle</title>
-      <link>https://xn--739an53af0c.com/#bot-oO-3Pi3np8FJFRJVui2yb</link>
-      <guid isPermaLink="false">bot-oO-3Pi3np8FJFRJVui2yb</guid>
-      <pubDate>Sun, 15 Nov 2026 12:00:00 +0900</pubDate>
-      <description>아트, 게임, 코드, 음악, 글쓰기, 영화 분야의 개인 창작자를 위해 지금 모집 중인 일거리와 공모전을 찾아 줘요. 주의할 점을 표시하고 지원서 초안까지 준비해 주며 최종 결정과 제출은 내가 하므로 기회를 놓치지 않고 안전하게 지원할 수 있어요.</description>
-    </item>
-    <item>
-      <title>창업자 운영체제 Founder OS</title>
-      <link>https://xn--739an53af0c.com/#bot-QcUllqY5WpAPMMWjWkn71</link>
-      <guid isPermaLink="false">bot-QcUllqY5WpAPMMWjWkn71</guid>
-      <pubDate>Sun, 15 Nov 2026 12:00:00 +0900</pubDate>
-      <description>첫 상품 제작부터 안정적인 매출 확보까지 사업 성장을 돕는 파트너로, 매출을 막고 있는 핵심 원인 하나를 찾아 실행 단계를 돌려 줘요. 매주 함께 수치를 점검하므로 흔들리지 않고 내 사업을 키워 나갈 수 있어요.</description>
-    </item>
-    <item>
-      <title>재무 경리 도우미 CFO &amp; Bookkeeper</title>
-      <link>https://xn--739an53af0c.com/#bot-6aAQxCpmaA5kYOTaejPSZ</link>
-      <guid isPermaLink="false">bot-6aAQxCpmaA5kYOTaejPSZ</guid>
-      <pubDate>Sun, 15 Nov 2026 12:00:00 +0900</pubDate>
-      <description>프리랜서와 소규모 회사를 위해 현금, 임대료, 청구 내역을 살피고 이상한 청구 항목을 표시해 매일 밤 짧은 자금 요약을 보내 줘요. 돈을 직접 이체하거나 움직이지 않기 때문에 안심하고 내 자금 흐름을 파악할 수 있어요.</description>
-    </item>
-    <item>
-      <title>안전 알림 요약 Heads Up</title>
-      <link>https://xn--739an53af0c.com/#bot-ZJA0FE47jDtUJbkHH_I1Y</link>
-      <guid isPermaLink="false">bot-ZJA0FE47jDtUJbkHH_I1Y</guid>
-      <pubDate>Sun, 15 Nov 2026 12:00:00 +0900</pubDate>
-      <description>대규모 서비스 장애, 악천후, 지진, 산불처럼 내가 신경 쓰는 지역의 중요한 안전 정보를 차분한 알림 하나로 모아 줘요. 상황의 시작과 끝을 출처와 함께 한 번씩만 알려 주므로 뉴스를 계속 찾아보지 않아도 돼요.</description>
-    </item>
-    <item>
-      <title>선물 스카우트 Gift Scout</title>
-      <link>https://xn--739an53af0c.com/#bot-W4gNjXXfAN_S75Y-cakHM</link>
-      <guid isPermaLink="false">bot-W4gNjXXfAN_S75Y-cakHM</guid>
-      <pubDate>Sun, 15 Nov 2026 12:00:00 +0900</pubDate>
-      <description>소중한 사람에게 줄 선물 아이디어를 매주 모아 주고, 취향과 예산을 기억해 생일과 기념일 전에 알려 줘요. 내가 허락하기 전에는 사지 않아요.</description>
-    </item>
-    <item>
-      <title>사진 폴더 정리기 Photo Shoebox Sorter</title>
-      <link>https://xn--739an53af0c.com/#bot-hczWqDYkGBwuU_FCskfza</link>
-      <guid isPermaLink="false">bot-hczWqDYkGBwuU_FCskfza</guid>
-      <pubDate>Sun, 15 Nov 2026 12:00:00 +0900</pubDate>
-      <description>스마트폰, 클라우드, 오래된 PC에 쌓인 사진을 날짜와 이름이 붙은 이벤트별 폴더로 나누고 중복 사진 표시와 베스트 앨범 추천까지 해 줘요. 미리 보기와 되돌리기 목록을 먼저 보여 주고 사진은 한 장도 지우지 않아 안심하고 정리할 수 있어요.</description>
-    </item>
-    <item>
-      <title>북마크 지식 정리 Bookmark Knowledge</title>
-      <link>https://xn--739an53af0c.com/#bot-_6_MDLviuuikab8TrVAeN</link>
-      <guid isPermaLink="false">bot-_6_MDLviuuikab8TrVAeN</guid>
-      <pubDate>Sun, 15 Nov 2026 12:00:00 +0900</pubDate>
-      <description>X 북마크와 인스타그램에 저장한 글을 URL과 짧은 설명이 있는 주제별 목록으로 정리하고, 매주 애플 메모도 자동으로 갱신해 줘요.</description>
-    </item>
-    <item>
-      <title>봇 메일 비서 Agent Mail</title>
-      <link>https://xn--739an53af0c.com/#bot-j9Cm3GKLDCptPwwxZWbbD</link>
-      <guid isPermaLink="false">bot-j9Cm3GKLDCptPwwxZWbbD</guid>
-      <pubDate>Sun, 15 Nov 2026 12:00:00 +0900</pubDate>
-      <description>내 봇에 메일 주소를 만들어 주고, 보낸 메일에서 내 말투를 배운 뒤 잡다한 메일은 걸러 내고 중요한 메일만 알려 줘요.</description>
-    </item>
-    <item>
-      <title>병목 해결 알고리즘 Elon Musk (Algorithm &amp; constraint)</title>
-      <link>https://xn--739an53af0c.com/#bot-QCwGPAlho0dBvBds_IOWF</link>
-      <guid isPermaLink="false">bot-QCwGPAlho0dBvBds_IOWF</guid>
-      <pubDate>Sun, 15 Nov 2026 12:00:00 +0900</pubDate>
-      <description>매주 회사에서 가장 큰 병목 현상을 하나 찾아 의심하고, 줄이고, 단순화하고, 속도를 높인 뒤 마지막에 자동화하는 순서로 업무를 점검해요. 집중할 일과 덜어낼 일이 분명해져서 내 일이 낭비 없이 진행돼요.</description>
-    </item>
-    <item>
-      <title>고객 지원 홀리 Holly Helpdesk</title>
-      <link>https://xn--739an53af0c.com/#bot-sIoeE87fILU5CzptPF29K</link>
-      <guid isPermaLink="false">bot-sIoeE87fILU5CzptPF29K</guid>
-      <pubDate>Sun, 15 Nov 2026 12:00:00 +0900</pubDate>
-      <description>고객 문의와 사용법 안내, 청구 조회를 대신 응대하고, 환불이나 분쟁은 내가 허락한 뒤에만 처리해 줘요.</description>
     </item>
 </channel>
 </rss>
