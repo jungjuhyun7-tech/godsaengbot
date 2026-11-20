@@ -5168,4 +5168,87 @@ addEventListener('load',place);addEventListener('resize',place);document.addEven
 })();
 </script>
 <!--gs-phase1-en-end-->
+<!-- gs-home-ground-v1:start -->
+<style id="gs-home-ground-v1">
+html[data-s19] body #gs-s13b .ground,
+body #gs-s13b .ground {
+  padding: 41px 0 31px !important;
+}
+
+html[data-s19] body #gs-s13b .h-stats,
+body #gs-s13b .h-stats {
+  padding: 0 16px !important;
+  gap: 10px 28px !important;
+  align-items: baseline !important;
+}
+
+/* Match S19b specificity on .h-stat.c1/.c2/.c3, plus body, so the 8px
+   inner gap actually wins over the old 6px !important. */
+html[data-s19] body #gs-s13b .h-stat,
+html[data-s19] body #gs-s13b .h-stat.c1,
+html[data-s19] body #gs-s13b .h-stat.c2,
+html[data-s19] body #gs-s13b .h-stat.c3,
+body #gs-s13b .h-stat,
+body #gs-s13b .h-stat.c1,
+body #gs-s13b .h-stat.c2,
+body #gs-s13b .h-stat.c3 {
+  gap: 8px !important;
+}
+
+html[data-s19] body #gs-s13b .h-stat b,
+body #gs-s13b .h-stat b {
+  font-size: 28px !important;
+  letter-spacing: -.03em !important;
+  line-height: 1 !important;
+}
+
+html[data-s19] body #gs-s13b .h-stat span,
+body #gs-s13b .h-stat span {
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  color: #16301a !important;
+  line-height: 1.2 !important;
+}
+
+@media (min-width: 900px) {
+  html[data-s19] body #gs-s13b .ground,
+  body #gs-s13b .ground {
+    padding-top: 41px !important;
+    padding-bottom: 31px !important;
+  }
+}
+
+@media (max-width: 699px) {
+  html[data-s19] body #gs-s13b .ground,
+  body #gs-s13b .ground {
+    padding: 26px 0 16px !important;
+  }
+  html[data-s19] body #gs-s13b .h-stats,
+  body #gs-s13b .h-stats {
+    padding: 0 16px !important;
+    gap: 8px 12px !important;
+    flex-wrap: nowrap !important;
+  }
+  html[data-s19] body #gs-s13b .h-stat,
+  html[data-s19] body #gs-s13b .h-stat.c1,
+  html[data-s19] body #gs-s13b .h-stat.c2,
+  html[data-s19] body #gs-s13b .h-stat.c3,
+  body #gs-s13b .h-stat,
+  body #gs-s13b .h-stat.c1,
+  body #gs-s13b .h-stat.c2,
+  body #gs-s13b .h-stat.c3 {
+    gap: 8px !important;
+  }
+  html[data-s19] body #gs-s13b .h-stat b,
+  body #gs-s13b .h-stat b {
+    font-size: 20px !important;
+  }
+  html[data-s19] body #gs-s13b .h-stat span,
+  body #gs-s13b .h-stat span {
+    font-size: 13.5px !important;
+    white-space: nowrap !important;
+  }
+}
+</style>
+<!-- gs-home-ground-v1:end -->
 </body></html>
