@@ -344,8 +344,20 @@
       lines = rawLines.map(segsOf);
     }
     var LH = Math.floor(hs * 1.24), HY = 280, accBox = null;
+    var underlineH = 11, underlineOff = 2, afterAccPad = 0;
+    var accLine = -1, li;
+    for (li = 0; li < lines.length; li++) {
+      if (lines[li].some(function (p) { return p[0] === acc && p[1] === A.deep; })) accLine = li;
+    }
+    // Only 3-line (wrapped) cards change underline/gap. 2-line stays v20k.
+    if (lines.length >= 3 && accLine >= 0 && accLine < lines.length - 1) {
+      underlineH = 6;
+      underlineOff = 1;
+      var needLH = hs + underlineOff + underlineH + 6 + 4;
+      if (LH < needLH) afterAccPad = needLH - LH;
+    }
     lines.forEach(function (ln, k) {
-      var x = L, y = HY + k * LH;
+      var x = L, y = HY + k * LH + (k > accLine && afterAccPad ? afterAccPad : 0);
       ln.forEach(function (pair) {
         var t = pair[0], c = pair[1];
         if (t === acc && c === A.deep) accBox = { x: x, y: y, w: textWidth(ctx, t, hf), hs: hs };
@@ -354,10 +366,10 @@
       });
     });
     if (accBox) {
-      var ay = accBox.y + accBox.hs + 2;
-      rrect(ctx, accBox.x, ay, accBox.x + accBox.w, ay + 11, 5, A.fill, (A.ring[0]===0x1C && A.ring[1]===0x1C && A.ring[2]===0x22) || (A.fill[0]+A.fill[1]+A.fill[2] > 600) ? A.deep : null, 1.5);
+      var ay = accBox.y + accBox.hs + underlineOff;
+      rrect(ctx, accBox.x, ay, accBox.x + accBox.w, ay + underlineH, 5, A.fill, (A.ring[0]===0x1C && A.ring[1]===0x1C && A.ring[2]===0x22) || (A.fill[0]+A.fill[1]+A.fill[2] > 600) ? A.deep : null, 1.5);
     }
-    var headBottom = HY + lines.length * LH;
+    var headBottom = HY + lines.length * LH + afterAccPad;
     var bf = fontPSB(38), BL = 48, PW = 190;
     var pillItems = ["GOOD", "BAD", "MISSION"].map(function (lab) {
       var s = lab === "GOOD" ? card.good : lab === "BAD" ? card.bad : card.mission;
@@ -370,29 +382,44 @@
     }
     var capGap = 22, capBall = 76, D = 96, ballGrid = 18, cellG = Math.min(40, Math.floor((R - L) * 0.60 / 9));
     ctx.font = fontGA(40);
+    ctx.textBaseline = "middle";
     var footM = ctx.measureText("갓생봇.com");
-    var footDesc = ((footM.fontBoundingBoxDescent != null) ? footM.fontBoundingBoxDescent : (footM.actualBoundingBoxDescent || 0)) / S;
-    var gh0 = 5 * cellG, gridPad = 16, pillPad = 16, pillGap = 14, ctaPad = 16, CH0 = 70, footPad = 16, footExt = 17 + footDesc + 2;
+    var footBelow = ((footM.actualBoundingBoxDescent != null) ? footM.actualBoundingBoxDescent : (footM.fontBoundingBoxDescent || 0)) / S;
+    var gh0 = 5 * cellG, gridPad = 16, pillPad = 16, pillGap = 14, ctaPad = 16, CH0 = 70, footPad = 16;
+    var footExt = 17 + footBelow + 2;
+    var FOOT_CLEAR = 30;
     function layoutBottom(cg, cb, bg, gp, pp, pg, cp, fp) {
       return headBottom + cg + cb + D + bg + gh0 + gp + pp + pillBlock(pg) + cp + CH0 + fp + footExt;
     }
-    var deficit = Math.ceil(layoutBottom(capGap, capBall, ballGrid, gridPad, pillPad, pillGap, ctaPad, footPad) - y1);
+    var deficit = 0;
+    if (lines.length >= 3) {
+      deficit = Math.ceil(layoutBottom(capGap, capBall, ballGrid, gridPad, pillPad, pillGap, ctaPad, footPad) - (y1 - FOOT_CLEAR));
+    }
     if (deficit > 0) {
-      function take(cur, min, mul) {
-        mul = mul || 1;
-        var step = Math.min(cur - min, Math.ceil(deficit / mul));
-        if (step < 1) return cur;
-        deficit -= step * mul;
-        return cur - step;
+      var slots = [
+        { min: 58, mul: 1, set: function (v) { capBall = v; }, get: function () { return capBall; } },
+        { min: 8, mul: 3, set: function (v) { pillGap = v; }, get: function () { return pillGap; } },
+        { min: 10, mul: 1, set: function (v) { ballGrid = v; }, get: function () { return ballGrid; } },
+        { min: 10, mul: 1, set: function (v) { gridPad = v; }, get: function () { return gridPad; } },
+        { min: 8, mul: 1, set: function (v) { pillPad = v; }, get: function () { return pillPad; } },
+        { min: 8, mul: 1, set: function (v) { ctaPad = v; }, get: function () { return ctaPad; } },
+        { min: 8, mul: 1, set: function (v) { footPad = v; }, get: function () { return footPad; } },
+        { min: 16, mul: 1, set: function (v) { capGap = v; }, get: function () { return capGap; } }
+      ];
+      var guard = 0;
+      while (deficit > 0 && guard < 200) {
+        var moved = false;
+        slots.forEach(function (s) {
+          if (deficit <= 0) return;
+          var cur = s.get();
+          if (cur <= s.min) return;
+          s.set(cur - 1);
+          deficit -= s.mul;
+          moved = true;
+        });
+        if (!moved) break;
+        guard++;
       }
-      capBall = take(capBall, 58);
-      pillGap = take(pillGap, 8, 3);
-      capGap = take(capGap, 16);
-      ballGrid = take(ballGrid, 10);
-      gridPad = take(gridPad, 10);
-      pillPad = take(pillPad, 8);
-      ctaPad = take(ctaPad, 8);
-      footPad = take(footPad, 8);
     }
     dashed(headBottom + capGap);
 
