@@ -283,25 +283,65 @@
 
     // headline
     var acc = card.accent;
-    var lines = [];
+    var maxw = R - L;
+    var rawLines = [];
     (card.headline_raw || []).forEach(function (raw) {
-      if (!raw) return;
+      if (raw) rawLines.push(raw);
+    });
+    function segsOf(raw) {
       if (acc && raw.indexOf(acc) >= 0) {
         var i = raw.indexOf(acc), segs = [];
         if (i) segs.push([raw.slice(0, i), INK]);
         segs.push([acc, A.deep]);
         if (i + acc.length < raw.length) segs.push([raw.slice(i + acc.length), INK]);
-        lines.push(segs);
-      } else lines.push([[raw, INK]]);
-    });
-    var maxw = R - L, hs = 70, hf;
+        return segs;
+      }
+      return [[raw, INK]];
+    }
+    function wrapKeep(s, font, keep) {
+      var best = wrap(ctx, s, font, maxw);
+      if (!keep || s.indexOf(keep) < 0) return best;
+      if (best.some(function (ln) { return ln.indexOf(keep) >= 0; })) return best;
+      if (textWidth(ctx, keep, font) > maxw) return best;
+      var i = s.indexOf(keep);
+      var before = s.slice(0, i).replace(/ $/, "");
+      var out = before ? wrap(ctx, before, font, maxw) : [];
+      var rest = keep + s.slice(i + keep.length);
+      return out.concat(wrap(ctx, rest, font, maxw));
+    }
+    function wrapRawLines(font, budget) {
+      var out = [], i, parts, restBudget;
+      for (i = 0; i < rawLines.length; i++) {
+        restBudget = budget - out.length - (rawLines.length - i - 1);
+        if (restBudget < 1) restBudget = 1;
+        parts = wrapKeep(rawLines[i], font, acc);
+        if (!parts.length) continue;
+        if (parts.some(function (p) { return textWidth(ctx, p, font) > maxw; })) return null;
+        if (parts.length > restBudget) return null;
+        Array.prototype.push.apply(out, parts);
+      }
+      return out;
+    }
+    var hs = 70, hf, lines, wrapped, tooWide;
     while (true) {
       hf = fontGA(hs);
-      var too = lines.some(function (ln) {
-        return ln.reduce(function (w, p) { return w + textWidth(ctx, p[0], hf); }, 0) > maxw;
-      });
-      if (!too || hs <= 36) break;
+      tooWide = rawLines.some(function (raw) { return textWidth(ctx, raw, hf) > maxw; });
+      if (!tooWide || hs <= 50) break;
       hs -= 1;
+    }
+    if (tooWide) {
+      while (true) {
+        hf = fontGA(hs);
+        wrapped = wrapRawLines(hf, 3);
+        if (wrapped || hs <= 36) break;
+        hs -= 1;
+      }
+      if (!wrapped) wrapped = wrapRawLines(fontGA(36), 3) || rawLines;
+      lines = wrapped.map(segsOf);
+      hs = wrapped === rawLines ? 36 : hs;
+      hf = fontGA(hs);
+    } else {
+      lines = rawLines.map(segsOf);
     }
     var LH = Math.floor(hs * 1.24), HY = 280, accBox = null;
     lines.forEach(function (ln, k) {
@@ -318,15 +358,51 @@
       rrect(ctx, accBox.x, ay, accBox.x + accBox.w, ay + 11, 5, A.fill, (A.ring[0]===0x1C && A.ring[1]===0x1C && A.ring[2]===0x22) || (A.fill[0]+A.fill[1]+A.fill[2] > 600) ? A.deep : null, 1.5);
     }
     var headBottom = HY + lines.length * LH;
-    dashed(headBottom + 22);
+    var bf = fontPSB(38), BL = 48, PW = 190;
+    var pillItems = ["GOOD", "BAD", "MISSION"].map(function (lab) {
+      var s = lab === "GOOD" ? card.good : lab === "BAD" ? card.bad : card.mission;
+      return { lab: lab, ls: wrap(ctx, s, bf, R - L - PW - 28) };
+    });
+    function pillBlock(pg) {
+      var h = 0;
+      pillItems.forEach(function (it) { h += Math.max(it.ls.length * BL, 56) + pg; });
+      return h;
+    }
+    var capGap = 22, capBall = 76, D = 96, ballGrid = 18, cellG = Math.min(40, Math.floor((R - L) * 0.60 / 9));
+    ctx.font = fontGA(40);
+    var footM = ctx.measureText("갓생봇.com");
+    var footDesc = ((footM.fontBoundingBoxDescent != null) ? footM.fontBoundingBoxDescent : (footM.actualBoundingBoxDescent || 0)) / S;
+    var gh0 = 5 * cellG, gridPad = 16, pillPad = 16, pillGap = 14, ctaPad = 16, CH0 = 70, footPad = 16, footExt = 17 + footDesc + 2;
+    function layoutBottom(cg, cb, bg, gp, pp, pg, cp, fp) {
+      return headBottom + cg + cb + D + bg + gh0 + gp + pp + pillBlock(pg) + cp + CH0 + fp + footExt;
+    }
+    var deficit = Math.ceil(layoutBottom(capGap, capBall, ballGrid, gridPad, pillPad, pillGap, ctaPad, footPad) - y1);
+    if (deficit > 0) {
+      function take(cur, min, mul) {
+        mul = mul || 1;
+        var step = Math.min(cur - min, Math.ceil(deficit / mul));
+        if (step < 1) return cur;
+        deficit -= step * mul;
+        return cur - step;
+      }
+      capBall = take(capBall, 58);
+      pillGap = take(pillGap, 8, 3);
+      capGap = take(capGap, 16);
+      ballGrid = take(ballGrid, 10);
+      gridPad = take(gridPad, 10);
+      pillPad = take(pillPad, 8);
+      ctaPad = take(ctaPad, 8);
+      footPad = take(footPad, 8);
+    }
+    dashed(headBottom + capGap);
 
     // caption + balls
-    var capY = headBottom + 22;
+    var capY = headBottom + capGap;
     var cf = fontPSB(36);
     var cap = "재미로 보는 행운 번호예요";
     fillLA(ctx, cap, R - textWidth(ctx, cap, cf), capY + 8, cf, GREY);
-    var by = capY + 76;
-    var D = 96, bp = (R - L - D) / 5;
+    var by = capY + capBall;
+    var bp = (R - L - D) / 5;
     var luckyC = null, k, n, cx, cy;
     for (k = 0; k < card.six.length; k++) {
       n = card.six[k];
@@ -376,8 +452,8 @@
     ctx.restore();
 
     // 1-45 grid
-    var gy = by + D + 18, colsG = 9, rowsG = 5;
-    var cell = Math.min(40, Math.floor((R - L) * 0.60 / colsG));
+    var gy = by + D + ballGrid, colsG = 9, rowsG = 5;
+    var cell = cellG;
     var mk = {};
     card.six.forEach(function (nn) { mk[nn] = 1; });
     for (n = 1; n <= 45; n++) {
@@ -401,26 +477,24 @@
     var chs = 52, chy = ly + 44, chx = ix;
     rrect(ctx, chx, chy, chx+chs, chy+chs, 12, A.fill, A.ring, 3);
     fillLA(ctx, card.colors.join(", "), chx + chs + 16, chy + 8, fontPB(40), INK);
-    dashed(gy + gh + 16);
+    dashed(gy + gh + gridPad);
 
     // pills
-    var bf = fontPSB(38), BL = 48, PW = 190;
-    var y = gy + gh + 16 + 16;
-    ["GOOD","BAD","MISSION"].forEach(function (lab) {
-      var s = lab === "GOOD" ? card.good : lab === "BAD" ? card.bad : card.mission;
-      var ls = wrap(ctx, s, bf, R - L - PW - 28);
+    var y = gy + gh + gridPad + pillPad;
+    pillItems.forEach(function (it) {
+      var lab = it.lab, ls = it.ls;
       var pf = H2(PILLS[lab][0]), pt = H2(PILLS[lab][1]);
       rrect(ctx, L, y+1, L+PW, y+53, 26, pf, null);
       fillMM(ctx, lab, L + PW/2, y+28, fontPB(32), pt);
       ls.forEach(function (ln, ki) { fillLA(ctx, ln, L+PW+28, y + ki*BL, bf, INK); });
-      y += Math.max(ls.length * BL, 56) + 14;
+      y += Math.max(ls.length * BL, 56) + pillGap;
     });
 
     // full-width CTA
-    var cy0 = y + 16, CH = 70;
+    var cy0 = y + ctaPad, CH = CH0;
     rrect(ctx, L, cy0, R, cy0+CH, CH/2, CTA, null);
     fillMM(ctx, "내 생일로 오늘 운세 뽑아보기", (L+R)/2, cy0+CH/2+1, fontPB(38), WHITE);
-    var fy = cy0 + CH + 16;
+    var fy = cy0 + CH + footPad;
     fillMM(ctx, "갓생봇.com", W/2, fy+17, fontGA(40), INK);
 
     ctx.restore(); // end clip
