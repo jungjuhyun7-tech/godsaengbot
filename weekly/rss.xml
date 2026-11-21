@@ -3,8 +3,71 @@
 <channel>
   <title>갓생봇 이번 주 새 봇</title>
   <link>https://xn--739an53af0c.com/weekly/</link>
-  <description>2026-11-15부터 2026-11-21까지 갓생봇에 새로 담은 봇 61개와 같은 기간 공식 새 소식을 모았어요.</description>
+  <description>2026-11-16부터 2026-11-22까지 갓생봇에 새로 담은 봇 55개와 같은 기간 공식 새 소식을 모았어요.</description>
   <language>ko</language>
+    <item>
+      <title>프로젝트 매니저 Agent Waffle</title>
+      <link>https://xn--739an53af0c.com/#bot-AhEGGSSLGtNfI1aL7jTa3</link>
+      <guid isPermaLink="false">bot-AhEGGSSLGtNfI1aL7jTa3</guid>
+      <pubDate>Sun, 22 Nov 2026 12:00:00 +0900</pubDate>
+      <description>작고 범위가 정해진 프로젝트를 위해 주간 계획 대비 진행 점검과 할 일 챙기기, 솔직한 상태 보고 초안, 지연 조기 경고를 도와줘요.</description>
+    </item>
+    <item>
+      <title>채널 계정 보호 Channel Lockdown</title>
+      <link>https://xn--739an53af0c.com/#bot-mf31AjqM_OBsF1hNSmsZU</link>
+      <guid isPermaLink="false">bot-mf31AjqM_OBsF1hNSmsZU</guid>
+      <pubDate>Sun, 22 Nov 2026 12:00:00 +0900</pubDate>
+      <description>크리에이터와 소상공인의 유튜브, 트위치, 틱톡, 디스코드, X, 메타, 쇼핑몰, 이메일 계정이 탈취되지 않도록 지켜 줘요.</description>
+    </item>
+    <item>
+      <title>식단 건강 기록 Arnold</title>
+      <link>https://xn--739an53af0c.com/#bot-TDNjltrrZnLy67Gbb5Djp</link>
+      <guid isPermaLink="false">bot-TDNjltrrZnLy67Gbb5Djp</guid>
+      <pubDate>Sun, 22 Nov 2026 12:00:00 +0900</pubDate>
+      <description>먹고 마신 것을 기록하고 애플워치 활동 데이터를 가져와서, 매일 주간으로 영양 요약을 이메일로 보내 줘요.</description>
+    </item>
+    <item>
+      <title>봇 상태 점검 AgentWatch</title>
+      <link>https://xn--739an53af0c.com/#bot-06tpoFLueyctkd80J__Jg</link>
+      <guid isPermaLink="false">bot-06tpoFLueyctkd80J__Jg</guid>
+      <pubDate>Sun, 22 Nov 2026 12:00:00 +0900</pubDate>
+      <description>혼자 일하는 사람이나 작은 팀이 여러 봇을 운영할 때, 봇 이름과 기대 동작을 등록하고 로그를 붙여 넣으면 상태를 점검해 줘요.</description>
+    </item>
+    <item>
+      <title>봇 보안 감사관 Dwight Blackbelt Auditor</title>
+      <link>https://xn--739an53af0c.com/#bot-d3PkM1aCLiIxhsUtpgX3U</link>
+      <guid isPermaLink="false">bot-d3PkM1aCLiIxhsUtpgX3U</guid>
+      <pubDate>Sun, 22 Nov 2026 12:00:00 +0900</pubDate>
+      <description>내 Grok Bot 팀을 읽기 전용으로 점검해서, 각 봇이 어떤 지시를 받았고 무엇이 제한돼 있는지 보여 줘요.</description>
+    </item>
+    <item>
+      <title>단일 업무 봇 설계사 dr eggbot v2</title>
+      <link>https://xn--739an53af0c.com/#bot-rJW52lmFLtCvy2tSHcIag</link>
+      <guid isPermaLink="false">bot-rJW52lmFLtCvy2tSHcIag</guid>
+      <pubDate>Sun, 22 Nov 2026 12:00:00 +0900</pubDate>
+      <description>맡기고 싶은 일을 가져오면 목표와 과정을 인터뷰해서, 그 일 하나만 하는 짧고 단단한 Grok Bot을 설계하고 만들어 줘요.</description>
+    </item>
+    <item>
+      <title>x402 결제 도우미 x402</title>
+      <link>https://xn--739an53af0c.com/#bot-dQQ7yGvMIvYomKaYjyf9v</link>
+      <guid isPermaLink="false">bot-dQQ7yGvMIvYomKaYjyf9v</guid>
+      <pubDate>Sun, 22 Nov 2026 12:00:00 +0900</pubDate>
+      <description>솔라나와 베이스에서 쓰는 x402 결제 흐름을 설명하고 만드는 일을 도와주는 결제 에이전트예요.</description>
+    </item>
+    <item>
+      <title>X 알고리즘 감시 Algorithm Watcher</title>
+      <link>https://xn--739an53af0c.com/#bot-GdPQ314tCRrlkQW3uJXNS</link>
+      <guid isPermaLink="false">bot-GdPQ314tCRrlkQW3uJXNS</guid>
+      <pubDate>Sun, 22 Nov 2026 12:00:00 +0900</pubDate>
+      <description>X의 공개 알고리즘 코드가 깃허브에서 바뀌었는지 매일 확인해서, 달라진 점과 내 게시물에 주는 영향을 쉬운 말로 알려 줘요.</description>
+    </item>
+    <item>
+      <title>X 수익화 도우미 Grape</title>
+      <link>https://xn--739an53af0c.com/#bot-TNeOR-83bls72CcsofTe9</link>
+      <guid isPermaLink="false">bot-TNeOR-83bls72CcsofTe9</guid>
+      <pubDate>Sun, 22 Nov 2026 12:00:00 +0900</pubDate>
+      <description>X 크리에이터가 조회수를 늘리고 수익을 낼 수 있도록 수익화 방법을 조사하고, 어떤 게시물과 주제와 시간대가 잘 되는지 분석해 줘요.</description>
+    </item>
     <item>
       <title>프롬프트 압축기 Prompt Densifier</title>
       <link>https://xn--739an53af0c.com/#bot-AHWQ8EHovKI1UYW4F3cDi</link>
@@ -221,69 +284,6 @@
       <guid isPermaLink="false">bot-FTCdRKGRlHNqGz4FZpqym</guid>
       <pubDate>Tue, 17 Nov 2026 12:00:00 +0900</pubDate>
       <description>내가 쓰는 서비스가 실제로 장애인지 나만의 문제인지 몇 초 만에 알려줘요. 상황 요약과 공식 장애 안내 링크를 보여주고 복구되면 알려주니 원인 찾느라 시간을 낭비하지 않아요.</description>
-    </item>
-    <item>
-      <title>야간 코드 점검 Nightly Audit Engineer</title>
-      <link>https://xn--739an53af0c.com/#bot-hkGSHcqKjGc5dm3ugNc2U</link>
-      <guid isPermaLink="false">bot-hkGSHcqKjGc5dm3ugNc2U</guid>
-      <pubDate>Tue, 17 Nov 2026 12:00:00 +0900</pubDate>
-      <description>매일 밤 내 코드베이스 전체를 점검해 영역별로 하나씩 정리할 부분을 제안해요. 매일 조금씩 고쳐 나갈 수 있어 코드가 어지러워지지 않고 깔끔하게 유지돼요.</description>
-    </item>
-    <item>
-      <title>앱 혹평 점검 Cringe Bot</title>
-      <link>https://xn--739an53af0c.com/#bot-OayZREvep4QIt3u8PNWdb</link>
-      <guid isPermaLink="false">bot-OayZREvep4QIt3u8PNWdb</guid>
-      <pubDate>Tue, 17 Nov 2026 12:00:00 +0900</pubDate>
-      <description>내 웹 앱을 직접 써보고 어설프거나 망가지거나 헷갈리는 부분을 스크린샷과 함께 최대 5개까지 솔직하게 Slack으로 알려줘요. 공개하기 전에 사용자가 거슬릴 만한 점을 빠르게 고칠 수 있어요.</description>
-    </item>
-    <item>
-      <title>사용량 절감 lean</title>
-      <link>https://xn--739an53af0c.com/#bot-t2-QK6KW4VZI_q7S3SExK</link>
-      <guid isPermaLink="false">bot-t2-QK6KW4VZI_q7S3SExK</guid>
-      <pubDate>Tue, 17 Nov 2026 12:00:00 +0900</pubDate>
-      <description>내 Grok Bot들과 루틴의 사용 방식을 살펴보고 낭비를 찾아 절약량과 잃는 점을 나란히 정리한 축소안을 최대 5개 제안해요. 내가 승인한 항목만 실행해 편리함을 유지하면서 사용량을 줄일 수 있어요.</description>
-    </item>
-    <item>
-      <title>랜딩 카피 비평 Landing Page Copy Critic</title>
-      <link>https://xn--739an53af0c.com/#bot-KGYaeHB_YqKJVCX_Gp0a6</link>
-      <guid isPermaLink="false">bot-KGYaeHB_YqKJVCX_Gp0a6</guid>
-      <pubDate>Tue, 17 Nov 2026 12:00:00 +0900</pubDate>
-      <description>내 서비스 소개 페이지를 처음 방문한 고객의 시선으로 읽고 무슨 서비스인지, 누구를 위한 것인지, 어디를 눌러야 하는지 바로 전해지는지 채점해 줘요. 더 나은 제목과 버튼 문구도 제안해 신청으로 이어지는 페이지를 만들 수 있어요.</description>
-    </item>
-    <item>
-      <title>경쟁사 동향 감시 Competitor Watcher</title>
-      <link>https://xn--739an53af0c.com/#bot-4xVOryPVl_MjfQAK9wjfh</link>
-      <guid isPermaLink="false">bot-4xVOryPVl_MjfQAK9wjfh</guid>
-      <pubDate>Tue, 17 Nov 2026 12:00:00 +0900</pubDate>
-      <description>경쟁사의 사이트, 업데이트 내역, 요금 페이지, X 계정을 매주 살펴보고 실제로 변화가 있을 때만 출처 링크와 핵심 의미를 한 줄로 알려줘요. 매일 직접 확인하지 않아도 중요한 움직임을 놓치지 않아요.</description>
-    </item>
-    <item>
-      <title>웹 랜딩 제작 Dr Web LP</title>
-      <link>https://xn--739an53af0c.com/#bot-xM153pKfXPLWagLi_O1vR</link>
-      <guid isPermaLink="false">bot-xM153pKfXPLWagLi_O1vR</guid>
-      <pubDate>Mon, 16 Nov 2026 12:00:00 +0900</pubDate>
-      <description>참고 이미지를 바탕으로 웹 페이지를 만들고, 레이아웃과 크기가 맞을 때까지 비교하며 수정을 반복해 줘요. 내가 건넨 브랜드와 사진, 문구만 사용하므로 원하는 이미지에 맞는 페이지를 빠르게 만들 수 있어요.</description>
-    </item>
-    <item>
-      <title>에이전트 보안 감사 Security Agent Auditor</title>
-      <link>https://xn--739an53af0c.com/#bot-Sv9osZinIeHd_YR7P90ZY</link>
-      <guid isPermaLink="false">bot-Sv9osZinIeHd_YR7P90ZY</guid>
-      <pubDate>Mon, 16 Nov 2026 12:00:00 +0900</pubDate>
-      <description>내 MCP 서버와 스킬, 에이전트 도구를 점검해 위험한 권한이나 명령 실행을 유도하는 통로, 악성 도구가 없는지 살펴줘요. 내 AI 에이전트를 더 안심하고 사용할 수 있도록 도와줘요.</description>
-    </item>
-    <item>
-      <title>앱 코드 보안 리뷰어 Security AppSec Reviewer</title>
-      <link>https://xn--739an53af0c.com/#bot-TuND5y7B9MJX3GMBPCeJe</link>
-      <guid isPermaLink="false">bot-TuND5y7B9MJX3GMBPCeJe</guid>
-      <pubDate>Mon, 16 Nov 2026 12:00:00 +0900</pubDate>
-      <description>내 소스 코드나 PR 변경 사항을 읽어 잘못된 입력을 거르지 못하는 구멍이나 로그인 관련 허점 같은 보안 버그를 찾아줘요. 배포 전에 위험한 부분을 미리 발견할 수 있어 안심하고 앱을 출시할 수 있어요.</description>
-    </item>
-    <item>
-      <title>브랜드 직설 평가 Roast My Brand</title>
-      <link>https://xn--739an53af0c.com/#bot-UHC8lD8nvsqOGN0KJ8Wud</link>
-      <guid isPermaLink="false">bot-UHC8lD8nvsqOGN0KJ8Wud</guid>
-      <pubDate>Mon, 16 Nov 2026 12:00:00 +0900</pubDate>
-      <description>내 웹사이트나 광고, 로고, 스크린샷을 보내면 유쾌하면서도 솔직한 비평과 10점 만점 점수, 빨간펜 첨삭을 해줘요. 가장 중요한 개선점 3가지도 짚어 주니 무엇부터 고쳐야 할지 바로 알 수 있어요.</description>
     </item>
 </channel>
 </rss>
