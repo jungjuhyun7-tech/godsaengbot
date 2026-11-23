@@ -3,8 +3,57 @@
 <channel>
   <title>갓생봇 이번 주 새 봇</title>
   <link>https://xn--739an53af0c.com/weekly/</link>
-  <description>2026-11-17부터 2026-11-23까지 갓생봇에 새로 담은 봇 56개와 같은 기간 공식 새 소식을 모았어요.</description>
+  <description>2026-11-18부터 2026-11-24까지 갓생봇에 새로 담은 봇 56개와 같은 기간 공식 새 소식을 모았어요.</description>
   <language>ko</language>
+    <item>
+      <title>최저가 탐정 Deal Detective</title>
+      <link>https://xn--739an53af0c.com/#bot-9s8D36VmM5wULQME5e3nG</link>
+      <guid isPermaLink="false">bot-9s8D36VmM5wULQME5e3nG</guid>
+      <pubDate>Tue, 24 Nov 2026 12:00:00 +0900</pubDate>
+      <description>사고 싶은 물건의 가게별 실제 최저 총액을 찾아 줘요. 가격 기록을 보고 할인이 진짜인지도 알려 줘요.</description>
+    </item>
+    <item>
+      <title>용돈 관리와 주식 공부 Money &amp; Stocks</title>
+      <link>https://xn--739an53af0c.com/#bot-ALjahPEPDK2pDzcpwIOfC</link>
+      <guid isPermaLink="false">bot-ALjahPEPDK2pDzcpwIOfC</guid>
+      <pubDate>Tue, 24 Nov 2026 12:00:00 +0900</pubDate>
+      <description>예산 짜기와 저축, 투자 공부를 쉬운 말로 도와줘요. 공개된 최신 자료로 주식과 ETF 조사도 해 줘요.</description>
+    </item>
+    <item>
+      <title>아이 근력운동 코치 Kids Lifting Coach</title>
+      <link>https://xn--739an53af0c.com/#bot-42pcFjka9AoN9reS0SQ49</link>
+      <guid isPermaLink="false">bot-42pcFjka9AoN9reS0SQ49</guid>
+      <pubDate>Tue, 24 Nov 2026 12:00:00 +0900</pubDate>
+      <description>집에서 아이가 근력운동을 시작하도록 도와줘요. 가진 기구에 맞춘 안전한 12주 계획을 짜 줘요.</description>
+    </item>
+    <item>
+      <title>부업 아이디어 탐색 Side Hustle Sniffer</title>
+      <link>https://xn--739an53af0c.com/#bot-kliqGAIIchvmiGGc3r2sv</link>
+      <guid isPermaLink="false">bot-kliqGAIIchvmiGGc3r2sv</guid>
+      <pubDate>Tue, 24 Nov 2026 12:00:00 +0900</pubDate>
+      <description>강의나 과장 없이 점수를 매긴 부업 아이디어를 찾아 줘요. 사람들이 실제로 돈을 내는 근거와 함께 매일 요약해 줘요.</description>
+    </item>
+    <item>
+      <title>구매 신호 탐지 Buying Signal Detector</title>
+      <link>https://xn--739an53af0c.com/#bot-yEP3BhT243oI-ds0Hhm14</link>
+      <guid isPermaLink="false">bot-yEP3BhT243oI-ds0Hhm14</guid>
+      <pubDate>Tue, 24 Nov 2026 12:00:00 +0900</pubDate>
+      <description>채용 공고와 투자 유치, 링크드인 글에서 구매 의사가 보이는 회사를 찾아 줘요. 중복을 뺀 리드 목록을 계속 갱신해 줘요.</description>
+    </item>
+    <item>
+      <title>구독 정리 Subscription Cleaner</title>
+      <link>https://xn--739an53af0c.com/#bot-_czlf_Y8joasIG3jaHabg</link>
+      <guid isPermaLink="false">bot-_czlf_Y8joasIG3jaHabg</guid>
+      <pubDate>Tue, 24 Nov 2026 12:00:00 +0900</pubDate>
+      <description>구글 계정으로 결제되는 구독을 모두 찾아 줘요. 골라 준 것만 취소하도록 도와줘요.</description>
+    </item>
+    <item>
+      <title>SEO와 AEO 담당 SEO &amp; AEO Master Chief</title>
+      <link>https://xn--739an53af0c.com/#bot-xQNxqVgrkufCxFYj0RaSo</link>
+      <guid isPermaLink="false">bot-xQNxqVgrkufCxFYj0RaSo</guid>
+      <pubDate>Tue, 24 Nov 2026 12:00:00 +0900</pubDate>
+      <description>AI 답변에 우리 브랜드가 나오는지 추적하고 인용된 페이지를 찾아 줘요. 개선 브리프와 페이지 수정안도 써 줘요.</description>
+    </item>
     <item>
       <title>코모도어 64 에뮬레이터 C64 Emulator</title>
       <link>https://xn--739an53af0c.com/#bot-umP9kND9C0gIaq8bh97EP</link>
@@ -235,55 +284,6 @@
       <guid isPermaLink="false">bot-E3z2Ks_n4DruuX9e3x7ao</guid>
       <pubDate>Thu, 19 Nov 2026 12:00:00 +0900</pubDate>
       <description>브랜드를 구축하고 관리하면서 그에 맞는 이미지, 아바타, SNS용 그림, 영상을 제작해 줍니다. 디자인 전에 목적과 대상을 정리하고 내 확인을 기다린 뒤 작업해 일관된 결과물을 얻을 수 있어요.</description>
-    </item>
-    <item>
-      <title>분실폰 대처 봇 Lost Phone Bot</title>
-      <link>https://xn--739an53af0c.com/#bot-VMx8FKKLWNf1iLaV9zvtj</link>
-      <guid isPermaLink="false">bot-VMx8FKKLWNf1iLaV9zvtj</guid>
-      <pubDate>Thu, 19 Nov 2026 12:00:00 +0900</pubDate>
-      <description>스마트폰을 잃어버리거나 도난당했을 때 위험할 수 있는 계정을 미리 찾아내 정리해 줍니다. 위급할 때 계정을 잠그는 절차도 바로 안내해 주어 당황하지 않고 피해를 줄일 수 있어요.</description>
-    </item>
-    <item>
-      <title>미팅 코파일럿 Meeting Copilot</title>
-      <link>https://xn--739an53af0c.com/#bot-0auU2MtJucHjtcLQdn5yt</link>
-      <guid isPermaLink="false">bot-0auU2MtJucHjtcLQdn5yt</guid>
-      <pubDate>Thu, 19 Nov 2026 12:00:00 +0900</pubDate>
-      <description>Google Meet, Zoom, Teams 회의에 참여해 회의록을 Google Docs나 Notion에 정리해 줍니다. 다음 할 일과 후속 메일 초안까지 만들어 주어 회의 뒷정리가 금방 끝나요.</description>
-    </item>
-    <item>
-      <title>릴리즈 데스크 Release Desk</title>
-      <link>https://xn--739an53af0c.com/#bot-ywPVDeM782GnBOYmsl_h0</link>
-      <guid isPermaLink="false">bot-ywPVDeM782GnBOYmsl_h0</guid>
-      <pubDate>Thu, 19 Nov 2026 12:00:00 +0900</pubDate>
-      <description>iOS와 Mac 앱의 App Store 출시를 담당하며 신청 전 부족한 항목을 알려주고 심사 현황과 TestFlight 정리까지 도와줍니다. 내 승인 없이는 제출하지 않아 안심하고 출시를 진행할 수 있어요.</description>
-    </item>
-    <item>
-      <title>리디자인 봇 Redesign Bot</title>
-      <link>https://xn--739an53af0c.com/#bot-JGP7nBLsdoxCD45PtQRC1</link>
-      <guid isPermaLink="false">bot-JGP7nBLsdoxCD45PtQRC1</guid>
-      <pubDate>Thu, 19 Nov 2026 12:00:00 +0900</pubDate>
-      <description>앱 URL이나 스크린샷을 건네면 사용성을 솔직하게 비평하고 주요 화면을 클릭 가능한 프로토타입으로 다시 만들어 줍니다. 전후 비교와 수정 순서도 함께 나와 개선 방향을 바로 파악할 수 있어요.</description>
-    </item>
-    <item>
-      <title>디지프레임 DigiFrame</title>
-      <link>https://xn--739an53af0c.com/#bot-YJiOQxbmoH-UcpH4hd6Gi</link>
-      <guid isPermaLink="false">bot-YJiOQxbmoH-UcpH4hd6Gi</guid>
-      <pubDate>Thu, 19 Nov 2026 12:00:00 +0900</pubDate>
-      <description>Google Photos나 iCloud 사진으로 날짜가 들어간 제목과 저작권 무료 음악이 포함된 월별 하이라이트 영상을 만들어 줍니다. Aura 같은 디지털 액자에서 바로 재생할 수 있어 추억을 꾸미는 수고를 덜어줘요.</description>
-    </item>
-    <item>
-      <title>동네 행사 캘린더 Local Interest Events Calendar</title>
-      <link>https://xn--739an53af0c.com/#bot-904p3wvmnFsf21lf1bgl7</link>
-      <guid isPermaLink="false">bot-904p3wvmnFsf21lf1bgl7</guid>
-      <pubDate>Thu, 19 Nov 2026 12:00:00 +0900</pubDate>
-      <description>내 취향에 맞는 주변 행사를 모아 30일짜리 다채로운 캘린더로 만들어 줍니다. 가격과 예매 링크도 함께 담겨 있고 매주 새로운 행사만 골라 알려주어 주말 일정 찾기가 한결 편해져요.</description>
-    </item>
-    <item>
-      <title>피드백 보드 Feedback Board</title>
-      <link>https://xn--739an53af0c.com/#bot-JUXsVsVBG-mWEIDKdQrrX</link>
-      <guid isPermaLink="false">bot-JUXsVsVBG-mWEIDKdQrrX</guid>
-      <pubDate>Wed, 18 Nov 2026 12:00:00 +0900</pubDate>
-      <description>메일이나 X로 들어온 버그 제보와 요청을 GitHub Projects, Linear, Trello, Notion 등의 카드로 정리해 줘요. 내 승인 없이는 등록하지 않으므로 고객의 목소리를 빠짐없이 안전하게 모을 수 있어요.</description>
     </item>
 </channel>
 </rss>
