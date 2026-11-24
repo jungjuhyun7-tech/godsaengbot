@@ -3,8 +3,71 @@
 <channel>
   <title>갓생봇 이번 주 새 봇</title>
   <link>https://xn--739an53af0c.com/weekly/</link>
-  <description>2026-11-18부터 2026-11-24까지 갓생봇에 새로 담은 봇 72개와 같은 기간 공식 새 소식을 모았어요.</description>
+  <description>2026-11-19부터 2026-11-25까지 갓생봇에 새로 담은 봇 71개와 같은 기간 공식 새 소식을 모았어요.</description>
   <language>ko</language>
+    <item>
+      <title>주식 리서치 Stockbroker</title>
+      <link>https://xn--739an53af0c.com/#bot-IeJQOfdKhFvaiGy1-sLaF</link>
+      <guid isPermaLink="false">bot-IeJQOfdKhFvaiGy1-sLaF</guid>
+      <pubDate>Wed, 25 Nov 2026 12:00:00 +0900</pubDate>
+      <description>내가 보는 종목 목록을 살펴보고 근거, 위험, 무효가 되는 지점, 다음 단계를 붙인 매매 아이디어 초안을 써 줘요. 리서치만 하고 직접 주문하지는 않아요.</description>
+    </item>
+    <item>
+      <title>잠재 고객 모니터 Custom Lead Monitor</title>
+      <link>https://xn--739an53af0c.com/#bot-P-xGbdO0GODa5yZZbbgQd</link>
+      <guid isPermaLink="false">bot-P-xGbdO0GODa5yZZbbgQd</guid>
+      <pubDate>Wed, 25 Nov 2026 12:00:00 +0900</pubDate>
+      <description>내가 파는 상품이나 서비스를 먼저 물어본 뒤, 웹에서 그걸 찾고 있는 사람을 골라 맞춤 리드를 매일 보내 줘요.</description>
+    </item>
+    <item>
+      <title>연락처 정리 Contacts Phone</title>
+      <link>https://xn--739an53af0c.com/#bot-VhZ-bPzg3AQVogvzpOgzS</link>
+      <guid isPermaLink="false">bot-VhZ-bPzg3AQVogvzpOgzS</guid>
+      <pubDate>Wed, 25 Nov 2026 12:00:00 +0900</pubDate>
+      <description>휴대폰 연락처를 훑어서 중복, 빠진 번호, 헷갈리는 이름, 엉킨 태그를 찾아 알려 줘요. 고객과 잠재 고객 같은 그룹으로 나눠 정리도 도와줘요.</description>
+    </item>
+    <item>
+      <title>언어 과외 Language Tutor</title>
+      <link>https://xn--739an53af0c.com/#bot-iVpCskcvnAUtDHkYtKXrh</link>
+      <guid isPermaLink="false">bot-iVpCskcvnAUtDHkYtKXrh</guid>
+      <pubDate>Wed, 25 Nov 2026 12:00:00 +0900</pubDate>
+      <description>내 수준을 먼저 파악한 뒤 매일 회화, 문법 쓰기, 복습 세션으로 한 사람만을 위한 과외를 해 줘요. 배우고 싶은 언어와 억양, 일정을 말하면 그에 맞춰 짜 줘요.</description>
+    </item>
+    <item>
+      <title>선물 가격 알림 Gift Deal Alert</title>
+      <link>https://xn--739an53af0c.com/#bot-stqfxN6Sr6wkShisV5g8I</link>
+      <guid isPermaLink="false">bot-stqfxN6Sr6wkShisV5g8I</guid>
+      <pubDate>Wed, 25 Nov 2026 12:00:00 +0900</pubDate>
+      <description>내 위시리스트나 친구의 위시리스트에 담긴 선물을 지켜보다가 가격이 내려가면 알려 줘요. 블랙프라이데이와 연말 선물 준비에 좋아요.</description>
+    </item>
+    <item>
+      <title>봇 총괄 Chief of Staff with Bot HQ</title>
+      <link>https://xn--739an53af0c.com/#bot-YmqplTI55ewhHyAfW9YzP</link>
+      <guid isPermaLink="false">bot-YmqplTI55ewhHyAfW9YzP</guid>
+      <pubDate>Wed, 25 Nov 2026 12:00:00 +0900</pubDate>
+      <description>내 Grok Bot 팀 전체를 총괄하고, 모든 봇의 상태와 할 일을 한눈에 보여 주는 Bot HQ 화면을 PC에 띄워 줘요.</description>
+    </item>
+    <item>
+      <title>반품 기한 알림 Return Clock</title>
+      <link>https://xn--739an53af0c.com/#bot-8O6JF1fRk4dWqqJfaisvr</link>
+      <guid isPermaLink="false">bot-8O6JF1fRk4dWqqJfaisvr</guid>
+      <pubDate>Wed, 25 Nov 2026 12:00:00 +0900</pubDate>
+      <description>영수증 사진이나 아마존 주문 화면을 올리면 반품과 보증 기한을 기록하고 마감 전에 알려 줘요. 매장에 메일을 보내거나 반품을 대신 신청하지는 않아요.</description>
+    </item>
+    <item>
+      <title>글쓰기 외주 Meta Muse</title>
+      <link>https://xn--739an53af0c.com/#bot-gv9aB5HOWEAs9CNtjrqsi</link>
+      <guid isPermaLink="false">bot-gv9aB5HOWEAs9CNtjrqsi</guid>
+      <pubDate>Wed, 25 Nov 2026 12:00:00 +0900</pubDate>
+      <description>긴 글쓰기, 초안, 요약, 받아쓰기, 이미지 작업을 내 Meta 모델 API 키로 Meta의 Muse 모델에 넘겨요. 내 Grok Bot의 사용량을 아끼는 데 도움이 돼요.</description>
+    </item>
+    <item>
+      <title>개인 트레이너 Personal Trainer</title>
+      <link>https://xn--739an53af0c.com/#bot-yVclDBupwrvqhhEnHTcHW</link>
+      <guid isPermaLink="false">bot-yVclDBupwrvqhhEnHTcHW</guid>
+      <pubDate>Wed, 25 Nov 2026 12:00:00 +0900</pubDate>
+      <description>목표와 운동 기구, 일정에 맞춰 운동 계획을 짜 주고 매일 아침 그날의 운동을 보내 줘요. 기록을 남기면 계획을 조정하고 중간중간 챙겨 줘요.</description>
+    </item>
     <item>
       <title>할인 사냥꾼 Deal Hunter</title>
       <link>https://xn--739an53af0c.com/#bot-jnAhcm2OXGRNzDKZG6s62</link>
@@ -221,69 +284,6 @@
       <guid isPermaLink="false">bot-ItooxHD14jyOy6z3ZyU94</guid>
       <pubDate>Mon, 23 Nov 2026 12:00:00 +0900</pubDate>
       <description>매일 내 게시물에 답글을 단 계정을 검사하고, 계정 하나를 직접 보내면 봇인지 낮음 중간 높음 신뢰도와 원문 증거로 알려 줘요.</description>
-    </item>
-    <item>
-      <title>X 무료 크레딧 찾기 X Free Credits Finder</title>
-      <link>https://xn--739an53af0c.com/#bot-8jDicbA-2vUVHoUVb5sfF</link>
-      <guid isPermaLink="false">bot-8jDicbA-2vUVHoUVb5sfF</guid>
-      <pubDate>Mon, 23 Nov 2026 12:00:00 +0900</pubDate>
-      <description>답글이나 팔로우 같은 행동을 하면 AI 도구 크레딧을 주는 X 게시물을 찾고, 사기와 마감된 이벤트는 걸러 줘요.</description>
-    </item>
-    <item>
-      <title>Grok Bot 설치 전 안전 점검 GBotRanked Safety Check</title>
-      <link>https://xn--739an53af0c.com/#bot-92XfuHX18z-EBZabTy1Ma</link>
-      <guid isPermaLink="false">bot-92XfuHX18z-EBZabTy1Ma</guid>
-      <pubDate>Mon, 23 Nov 2026 12:00:00 +0900</pubDate>
-      <description>추가하기 전에 Grok Bot 템플릿 링크를 붙여 넣으면 안전 점수와 판정과 빠진 부분을 쉬운 말로 알려 줘요.</description>
-    </item>
-    <item>
-      <title>GTA VI 미션 도우미 Leonida</title>
-      <link>https://xn--739an53af0c.com/#bot-bd5u-L5jy4qKl3Z3Nd0il</link>
-      <guid isPermaLink="false">bot-bd5u-L5jy4qKl3Z3Nd0il</guid>
-      <pubDate>Mon, 23 Nov 2026 12:00:00 +0900</pubDate>
-      <description>스포일러 없이 GTA VI 미션과 돈 버는 법, 차량, 수집 요소, 온라인 정보를 출처와 함께 빠르게 알려 줘요.</description>
-    </item>
-    <item>
-      <title>프로젝트 매니저 Agent Waffle</title>
-      <link>https://xn--739an53af0c.com/#bot-AhEGGSSLGtNfI1aL7jTa3</link>
-      <guid isPermaLink="false">bot-AhEGGSSLGtNfI1aL7jTa3</guid>
-      <pubDate>Sun, 22 Nov 2026 12:00:00 +0900</pubDate>
-      <description>작고 범위가 정해진 프로젝트를 위해 주간 계획 대비 진행 점검과 할 일 챙기기, 솔직한 상태 보고 초안, 지연 조기 경고를 도와줘요.</description>
-    </item>
-    <item>
-      <title>채널 계정 보호 Channel Lockdown</title>
-      <link>https://xn--739an53af0c.com/#bot-mf31AjqM_OBsF1hNSmsZU</link>
-      <guid isPermaLink="false">bot-mf31AjqM_OBsF1hNSmsZU</guid>
-      <pubDate>Sun, 22 Nov 2026 12:00:00 +0900</pubDate>
-      <description>크리에이터와 소상공인의 유튜브, 트위치, 틱톡, 디스코드, X, 메타, 쇼핑몰, 이메일 계정이 탈취되지 않도록 지켜 줘요.</description>
-    </item>
-    <item>
-      <title>식단 건강 기록 Arnold</title>
-      <link>https://xn--739an53af0c.com/#bot-TDNjltrrZnLy67Gbb5Djp</link>
-      <guid isPermaLink="false">bot-TDNjltrrZnLy67Gbb5Djp</guid>
-      <pubDate>Sun, 22 Nov 2026 12:00:00 +0900</pubDate>
-      <description>먹고 마신 것을 기록하고 애플워치 활동 데이터를 가져와서, 매일 주간으로 영양 요약을 이메일로 보내 줘요.</description>
-    </item>
-    <item>
-      <title>봇 상태 점검 AgentWatch</title>
-      <link>https://xn--739an53af0c.com/#bot-06tpoFLueyctkd80J__Jg</link>
-      <guid isPermaLink="false">bot-06tpoFLueyctkd80J__Jg</guid>
-      <pubDate>Sun, 22 Nov 2026 12:00:00 +0900</pubDate>
-      <description>혼자 일하는 사람이나 작은 팀이 여러 봇을 운영할 때, 봇 이름과 기대 동작을 등록하고 로그를 붙여 넣으면 상태를 점검해 줘요.</description>
-    </item>
-    <item>
-      <title>봇 보안 감사관 Dwight Blackbelt Auditor</title>
-      <link>https://xn--739an53af0c.com/#bot-d3PkM1aCLiIxhsUtpgX3U</link>
-      <guid isPermaLink="false">bot-d3PkM1aCLiIxhsUtpgX3U</guid>
-      <pubDate>Sun, 22 Nov 2026 12:00:00 +0900</pubDate>
-      <description>내 Grok Bot 팀을 읽기 전용으로 점검해서, 각 봇이 어떤 지시를 받았고 무엇이 제한돼 있는지 보여 줘요.</description>
-    </item>
-    <item>
-      <title>단일 업무 봇 설계사 dr eggbot v2</title>
-      <link>https://xn--739an53af0c.com/#bot-rJW52lmFLtCvy2tSHcIag</link>
-      <guid isPermaLink="false">bot-rJW52lmFLtCvy2tSHcIag</guid>
-      <pubDate>Sun, 22 Nov 2026 12:00:00 +0900</pubDate>
-      <description>맡기고 싶은 일을 가져오면 목표와 과정을 인터뷰해서, 그 일 하나만 하는 짧고 단단한 Grok Bot을 설계하고 만들어 줘요.</description>
     </item>
 </channel>
 </rss>
