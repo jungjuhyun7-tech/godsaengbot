@@ -3,8 +3,57 @@
 <channel>
   <title>갓생봇 이번 주 새 봇</title>
   <link>https://xn--739an53af0c.com/weekly/</link>
-  <description>2026-11-19부터 2026-11-25까지 갓생봇에 새로 담은 봇 71개와 같은 기간 공식 새 소식을 모았어요.</description>
+  <description>2026-11-20부터 2026-11-26까지 갓생봇에 새로 담은 봇 68개와 같은 기간 공식 새 소식을 모았어요.</description>
   <language>ko</language>
+    <item>
+      <title>첫 주 크루 First Week Crew</title>
+      <link>https://xn--739an53af0c.com/#bot-JvzKNX4bwA6gtUmlvtcZZ</link>
+      <guid isPermaLink="false">bot-JvzKNX4bwA6gtUmlvtcZZ</guid>
+      <pubDate>Thu, 26 Nov 2026 12:00:00 +0900</pubDate>
+      <description>받은편지함 정리, 통화 브리핑, 사용량 확인, 집과 가족 도우미를 한 번에 하나씩 내가 승인하면 켜 줘요.</description>
+    </item>
+    <item>
+      <title>사토시 나카봇 Satoshi Nakabot</title>
+      <link>https://xn--739an53af0c.com/#bot-3NV-Ru942qrmKg25DDF_K</link>
+      <guid isPermaLink="false">bot-3NV-Ru942qrmKg25DDF_K</guid>
+      <pubDate>Thu, 26 Nov 2026 12:00:00 +0900</pubDate>
+      <description>과장 없이 코인과 돈의 개념을 쉽게 설명해 줘요.</description>
+    </item>
+    <item>
+      <title>레고 조립 PDF 만들기 LEGO Build PDF</title>
+      <link>https://xn--739an53af0c.com/#bot-NMl_ueqJzcGKQ-_M7dbwH</link>
+      <guid isPermaLink="false">bot-NMl_ueqJzcGKQ-_M7dbwH</guid>
+      <pubDate>Thu, 26 Nov 2026 12:00:00 +0900</pubDate>
+      <description>레고 조립 영상 링크를 주면 아이가 따라 하기 쉬운 단계별 인쇄용 PDF로 만들어 줘요.</description>
+    </item>
+    <item>
+      <title>러그풀 체커 Rug Checker</title>
+      <link>https://xn--739an53af0c.com/#bot-hRr7T4JlbTqP8cER1fpma</link>
+      <guid isPermaLink="false">bot-hRr7T4JlbTqP8cER1fpma</guid>
+      <pubDate>Thu, 26 Nov 2026 12:00:00 +0900</pubDate>
+      <description>코인 컨트랙트 주소를 넣으면 5단계로 러그풀 위험을 걸러 내고 여러 네트워크에서 잘나가는 코인을 찾아 줘요.</description>
+    </item>
+    <item>
+      <title>독서 모임 도우미 Book Club Organizer</title>
+      <link>https://xn--739an53af0c.com/#bot-kWffyG_VKOy9TxJumPoo2</link>
+      <guid isPermaLink="false">bot-kWffyG_VKOy9TxJumPoo2</guid>
+      <pubDate>Thu, 26 Nov 2026 12:00:00 +0900</pubDate>
+      <description>다음 책, 날짜, 진행자를 기록하고 참석 확인 안내와 토론 질문 초안을 써 줘요. 메시지는 내가 승인한 뒤에만 보내요.</description>
+    </item>
+    <item>
+      <title>구독자 응원 인사 Subscriber Shout-outs</title>
+      <link>https://xn--739an53af0c.com/#bot-W1Myh_rOu3-wpbQ-1I4po</link>
+      <guid isPermaLink="false">bot-W1Myh_rOu3-wpbQ-1I4po</guid>
+      <pubDate>Thu, 26 Nov 2026 12:00:00 +0900</pubDate>
+      <description>구독자에게 보내는 매일의 응원과 인사 글을 자동으로 만들어 줘요.</description>
+    </item>
+    <item>
+      <title>게임 할인 알리미 Game Deal Finder</title>
+      <link>https://xn--739an53af0c.com/#bot-MflnbEqeY-FLOOmb9-sE-</link>
+      <guid isPermaLink="false">bot-MflnbEqeY-FLOOmb9-sE-</guid>
+      <pubDate>Thu, 26 Nov 2026 12:00:00 +0900</pubDate>
+      <description>스팀, 엑스박스, 플레이스테이션, 스위치, 에픽의 오늘 할인을 찾아 주고 찜한 게임이 목표 가격이 되면 알려 줘요.</description>
+    </item>
     <item>
       <title>주식 리서치 Stockbroker</title>
       <link>https://xn--739an53af0c.com/#bot-IeJQOfdKhFvaiGy1-sLaF</link>
@@ -235,55 +284,6 @@
       <guid isPermaLink="false">bot-RjAgtTKn7s_kKunPwRa1b</guid>
       <pubDate>Mon, 23 Nov 2026 12:00:00 +0900</pubDate>
       <description>내가 공유한 글과 북마크를 저장해 본문까지 읽고 현재 진행 중인 일과 연결해 둬요. 필요한 시점에 다시 떠올려 주어 저장만 해 두고 잊는 일을 줄여 줘요.</description>
-    </item>
-    <item>
-      <title>브랜드 작가 Voice &amp; Product Writer</title>
-      <link>https://xn--739an53af0c.com/#bot-7NuOQUpu22MGSgObrKji7</link>
-      <guid isPermaLink="false">bot-7NuOQUpu22MGSgObrKji7</guid>
-      <pubDate>Mon, 23 Nov 2026 12:00:00 +0900</pubDate>
-      <description>아이디어와 상품 정보, 메모를 바탕으로 내 말투에 맞춘 SNS 글, 상품 설명, 페이지 문구, 고객 안내 메시지를 써 줘요. 취향을 기억하고 내가 확인한 뒤 올리므로 글쓰기 부담이 줄어요.</description>
-    </item>
-    <item>
-      <title>봇 정비사 Senior Repairo</title>
-      <link>https://xn--739an53af0c.com/#bot-3Wod4pPE0JSy1yGWylR_x</link>
-      <guid isPermaLink="false">bot-3Wod4pPE0JSy1yGWylR_x</guid>
-      <pubDate>Mon, 23 Nov 2026 12:00:00 +0900</pubDate>
-      <description>다른 Grok Bot을 점검해 한 번에 한 곳씩 되돌릴 수 있는 방식으로 고쳐 줘요. 수정 이유와 결과를 분명하게 보여 주어 Bot이 망가질 걱정 없이 상태를 정비할 수 있어요.</description>
-    </item>
-    <item>
-      <title>봇 메일함 XMail</title>
-      <link>https://xn--739an53af0c.com/#bot-i5SYazEl3u0eq9YqBM7y-</link>
-      <guid isPermaLink="false">bot-i5SYazEl3u0eq9YqBM7y-</guid>
-      <pubDate>Mon, 23 Nov 2026 12:00:00 +0900</pubDate>
-      <description>Grok Bot의 받은 편지함을 Gmail처럼 보기 편한 화면으로 열어 볼 수 있어요. 내 기기에서만 확인할 수 있고 버튼 한 번으로 Bot에게 메일 분류를 맡길 수 있어요.</description>
-    </item>
-    <item>
-      <title>보험 점검 비서 Insurance Agent</title>
-      <link>https://xn--739an53af0c.com/#bot-ZyfbeSKKsHi6mL8bJjg93</link>
-      <guid isPermaLink="false">bot-ZyfbeSKKsHi6mL8bJjg93</guid>
-      <pubDate>Mon, 23 Nov 2026 12:00:00 +0900</pubDate>
-      <description>보험사가 아닌 내 편에서 집, 자동차, 생명 등 보험 서류를 읽어 보고 부족한 보장을 찾아줘요. 담당자에게 물어볼 질문도 준비해 주어 필요한 순간에 대비할 수 있어요.</description>
-    </item>
-    <item>
-      <title>못 받은 환불 찾기 Refund Hunter</title>
-      <link>https://xn--739an53af0c.com/#bot-7RIpLZecxdmVqwuYa8RyB</link>
-      <guid isPermaLink="false">bot-7RIpLZecxdmVqwuYa8RyB</guid>
-      <pubDate>Mon, 23 Nov 2026 12:00:00 +0900</pubDate>
-      <description>반품 후 환불이 안 들어온 건, 취소했는데 청구된 건, 누락 상품, 가격 조정, 중복 결제처럼 받아야 할 환불을 찾아 줘요.</description>
-    </item>
-    <item>
-      <title>랜딩 페이지 문구 비평가 Landing Page Copy Critic</title>
-      <link>https://xn--739an53af0c.com/#bot-310Ny4COHBcdPGpC0I2P4</link>
-      <guid isPermaLink="false">bot-310Ny4COHBcdPGpC0I2P4</guid>
-      <pubDate>Mon, 23 Nov 2026 12:00:00 +0900</pubDate>
-      <description>랜딩 페이지를 처음 온 구매자처럼 읽고 더 날카로운 제목과 행동 유도 문구 초안을 써 줘요. 사이트는 건드리지 않아요.</description>
-    </item>
-    <item>
-      <title>내 답글 속 봇 계정 걸러내기 AI Reply Filter</title>
-      <link>https://xn--739an53af0c.com/#bot-ItooxHD14jyOy6z3ZyU94</link>
-      <guid isPermaLink="false">bot-ItooxHD14jyOy6z3ZyU94</guid>
-      <pubDate>Mon, 23 Nov 2026 12:00:00 +0900</pubDate>
-      <description>매일 내 게시물에 답글을 단 계정을 검사하고, 계정 하나를 직접 보내면 봇인지 낮음 중간 높음 신뢰도와 원문 증거로 알려 줘요.</description>
     </item>
 </channel>
 </rss>
