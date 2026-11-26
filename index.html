@@ -4067,7 +4067,7 @@ document.addEventListener('keydown', function(e){
     testGo=function(){
       _t.apply(this, arguments);
       if(typeof TA==='undefined'||TA.includes(null)) return;
-      var path='/share/test-'+TA[0]+'-'+TA[1]+'-'+TA[2]+'.html';
+      var path=['','share',['test',TA[0],TA[1],TA[2]].join('-')+'.html'].join('/');
       place(document.getElementById('tres'), bar(path, '내 갓생 테스트 결과', '나에게 맞는 Grok Bot을 골랐어요.'));
     };
   }
@@ -4077,7 +4077,7 @@ document.addEventListener('keydown', function(e){
       _m.apply(this, arguments);
       var typ=t|| (typeof MT!=='undefined'?MT:null);
       if(!typ) return;
-      var path='/share/mbti-'+typ+'.html';
+      var path=['','share',['mbti',typ].join('-')+'.html'].join('/');
       place(document.getElementById('mres'), bar(path, typ+'에게 맞는 봇', 'MBTI로 고른 Grok Bot이에요.'));
     };
   }
