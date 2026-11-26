@@ -3,8 +3,64 @@
 <channel>
   <title>갓생봇 이번 주 새 봇</title>
   <link>https://xn--739an53af0c.com/weekly/</link>
-  <description>2026-11-20부터 2026-11-26까지 갓생봇에 새로 담은 봇 68개와 같은 기간 공식 새 소식을 모았어요.</description>
+  <description>2026-11-21부터 2026-11-27까지 갓생봇에 새로 담은 봇 67개와 같은 기간 공식 새 소식을 모았어요.</description>
   <language>ko</language>
+    <item>
+      <title>컴퓨터 점검 Pitstop</title>
+      <link>https://xn--739an53af0c.com/#bot-I9OqlpORjmS7GNnK8XOBM</link>
+      <guid isPermaLink="false">bot-I9OqlpORjmS7GNnK8XOBM</guid>
+      <pubDate>Fri, 27 Nov 2026 12:00:00 +0900</pubDate>
+      <description>내 컴퓨터를 건드리지 않고 상태를 살펴서 왜 느린지 알려 주고 해결 방법을 안내해 줘요.</description>
+    </item>
+    <item>
+      <title>주간 봇 개선 리뷰어 Weekly Bot Upgrade Reviewer</title>
+      <link>https://xn--739an53af0c.com/#bot-tu_pvfencUC9-8xog2zPx</link>
+      <guid isPermaLink="false">bot-tu_pvfencUC9-8xog2zPx</guid>
+      <pubDate>Fri, 27 Nov 2026 12:00:00 +0900</pubDate>
+      <description>매주 내 봇들을 살펴보고 근거를 들어 지침 개선안을 제안해 줘요.</description>
+    </item>
+    <item>
+      <title>정기결제 누수 찾기 Leak Finder</title>
+      <link>https://xn--739an53af0c.com/#bot-PwEVDQfWlPvm5mDaUzAP_</link>
+      <guid isPermaLink="false">bot-PwEVDQfWlPvm5mDaUzAP_</guid>
+      <pubDate>Fri, 27 Nov 2026 12:00:00 +0900</pubDate>
+      <description>영수증 메일과 카드 내역을 읽어서 정기결제를 모두 정리하고 중복, 가격 인상, 안 쓰는 구독을 짚어 줘요.</description>
+    </item>
+    <item>
+      <title>일정 정보 팩트체크 Data Confirmation</title>
+      <link>https://xn--739an53af0c.com/#bot-paSzu0QjLuZOQ_C6DpKHi</link>
+      <guid isPermaLink="false">bot-paSzu0QjLuZOQ_C6DpKHi</guid>
+      <pubDate>Fri, 27 Nov 2026 12:00:00 +0900</pubDate>
+      <description>날짜, 요일, 시간대, 전화번호, 주소, 금액 같은 약속 정보를 공식 자료로 확인해 줘요.</description>
+    </item>
+    <item>
+      <title>반려견 영양 코치 Grok your Dog</title>
+      <link>https://xn--739an53af0c.com/#bot-MbvEC2G_SwX7FcP9A3JRk</link>
+      <guid isPermaLink="false">bot-MbvEC2G_SwX7FcP9A3JRk</guid>
+      <pubDate>Fri, 27 Nov 2026 12:00:00 +0900</pubDate>
+      <description>우리 강아지에게 맞는 칼로리 식단과 케어 팁을 짜 주고 인쇄용 포스터도 만들어 줘요.</description>
+    </item>
+    <item>
+      <title>그록봇 소식 알리미 News</title>
+      <link>https://xn--739an53af0c.com/#bot-L2-EoWQVsu5dQcZpJRi8w</link>
+      <guid isPermaLink="false">bot-L2-EoWQVsu5dQcZpJRi8w</guid>
+      <pubDate>Fri, 27 Nov 2026 12:00:00 +0900</pubDate>
+      <description>정해 둔 시간에 Grok Bot 새 기능과 가이드, 변경 사항을 확인해서 중요한 것만 알려 줘요.</description>
+    </item>
+    <item>
+      <title>가족 기념일 선물 Gifter</title>
+      <link>https://xn--739an53af0c.com/#bot-3UuM7BlJcBQKNpV1ow2jg</link>
+      <guid isPermaLink="false">bot-3UuM7BlJcBQKNpV1ow2jg</guid>
+      <pubDate>Fri, 27 Nov 2026 12:00:00 +0900</pubDate>
+      <description>가족의 생일과 기념일을 1년 내내 챙기고, 모두가 같이 보는 위시리스트 페이지를 만들어 줘요.</description>
+    </item>
+    <item>
+      <title>X 크리에이터 코치 X Creator Coach</title>
+      <link>https://xn--739an53af0c.com/#bot-DQOOIfaSL1argMYE7Yr6e</link>
+      <guid isPermaLink="false">bot-DQOOIfaSL1argMYE7Yr6e</guid>
+      <pubDate>Fri, 27 Nov 2026 12:00:00 +0900</pubDate>
+      <description>하루 1~3개의 X 원본 글 초안을 내 말투로 써 주고, 주간 성과를 X 공식 크리에이터 프로그램 기준으로 점검해 줘요.</description>
+    </item>
     <item>
       <title>첫 주 크루 First Week Crew</title>
       <link>https://xn--739an53af0c.com/#bot-JvzKNX4bwA6gtUmlvtcZZ</link>
@@ -228,62 +284,6 @@
       <guid isPermaLink="false">bot-umP9kND9C0gIaq8bh97EP</guid>
       <pubDate>Mon, 23 Nov 2026 12:00:00 +0900</pubDate>
       <description>봇의 컴퓨터에서 진짜 코모도어 64 에뮬레이터를 돌려 베이식 게임 26종을 키보드로 즐길 수 있게 해 줘요.</description>
-    </item>
-    <item>
-      <title>차량 비서 Dispatcher</title>
-      <link>https://xn--739an53af0c.com/#bot-ntvBkcw8xpYmKrseja5lb</link>
-      <guid isPermaLink="false">bot-ntvBkcw8xpYmKrseja5lb</guid>
-      <pubDate>Mon, 23 Nov 2026 12:00:00 +0900</pubDate>
-      <description>운전 중에 손을 쓰지 않고 Apple CarPlay나 Tesla 차량 화면에서 내 Grok Bot들과 대화할 수 있어요. 완료된 작업이나 대기 중인 일을 짧게 듣고 차 안에서 간단한 일도 바로 부탁할 수 있어요.</description>
-    </item>
-    <item>
-      <title>장보기 절약가 Grocery Saver</title>
-      <link>https://xn--739an53af0c.com/#bot-nGAMaHjivaYqWLcWxZJ17</link>
-      <guid isPermaLink="false">bot-nGAMaHjivaYqWLcWxZJ17</guid>
-      <pubDate>Mon, 23 Nov 2026 12:00:00 +0900</pubDate>
-      <description>알뜰한 식단과 장보기 목록을 짜고 매장별 가격 비교, 주간 할인, 쿠폰까지 알려줘요. 버리는 식재료를 줄여 매달 식비를 아낄 수 있어요.</description>
-    </item>
-    <item>
-      <title>유료 광고 매니저 Paid ads manager</title>
-      <link>https://xn--739an53af0c.com/#bot-SAfsqPLP0rCuQOywOguxX</link>
-      <guid isPermaLink="false">bot-SAfsqPLP0rCuQOywOguxX</guid>
-      <pubDate>Mon, 23 Nov 2026 12:00:00 +0900</pubDate>
-      <description>광고 소재 제작부터 집행, 매일 점검, 아침 리포트까지 온라인 광고 운영을 전반적으로 진행해요. 중단하고 예산을 늘리는 기준이 명확해 광고비를 낭비하지 않도록 관리해요.</description>
-    </item>
-    <item>
-      <title>연말 선물 도우미 Noelle</title>
-      <link>https://xn--739an53af0c.com/#bot-Q3ja7ucRHbaP8ntAXMdko</link>
-      <guid isPermaLink="false">bot-Q3ja7ucRHbaP8ntAXMdko</guid>
-      <pubDate>Mon, 23 Nov 2026 12:00:00 +0900</pubDate>
-      <description>선물 아이디어와 링크를 찾아 주고, 선물 받을 사람별 구글 시트를 만들어서 주문부터 도착까지 챙겨 줘요.</description>
-    </item>
-    <item>
-      <title>연말 선물 가격 추적 Gift Deal Tracker</title>
-      <link>https://xn--739an53af0c.com/#bot-Im6w3620BfmiCDWpFf3iZ</link>
-      <guid isPermaLink="false">bot-Im6w3620BfmiCDWpFf3iZ</guid>
-      <pubDate>Mon, 23 Nov 2026 12:00:00 +0900</pubDate>
-      <description>연말 선물 목록을 아이디어와 가격과 할인 알림과 주문 마감일이 있는 시트로 정리해 주고, 대신 사지는 않아요.</description>
-    </item>
-    <item>
-      <title>앱 출시 보안 점검 InfoSec</title>
-      <link>https://xn--739an53af0c.com/#bot-Tk2JhMJxCSZcI3d2r1TbR</link>
-      <guid isPermaLink="false">bot-Tk2JhMJxCSZcI3d2r1TbR</guid>
-      <pubDate>Mon, 23 Nov 2026 12:00:00 +0900</pubDate>
-      <description>앱을 만드는 작은 팀을 위해 보안과 규정을 검토하고, 위험한 출시는 근거와 함께 가능 또는 불가 판정으로 막아 줘요.</description>
-    </item>
-    <item>
-      <title>식물 사진 진단 Plant Whisperer</title>
-      <link>https://xn--739an53af0c.com/#bot-X0S9jyVfVqgkfP2ur7Oor</link>
-      <guid isPermaLink="false">bot-X0S9jyVfVqgkfP2ur7Oor</guid>
-      <pubDate>Mon, 23 Nov 2026 12:00:00 +0900</pubDate>
-      <description>식물 사진을 찍어 올리면 이름과 관리 팁, 독성과 잡초 여부, 시든 식물 해결법까지 무료로 알려 줘요.</description>
-    </item>
-    <item>
-      <title>세컨드 브레인 Smug Elephant Second Brain</title>
-      <link>https://xn--739an53af0c.com/#bot-RjAgtTKn7s_kKunPwRa1b</link>
-      <guid isPermaLink="false">bot-RjAgtTKn7s_kKunPwRa1b</guid>
-      <pubDate>Mon, 23 Nov 2026 12:00:00 +0900</pubDate>
-      <description>내가 공유한 글과 북마크를 저장해 본문까지 읽고 현재 진행 중인 일과 연결해 둬요. 필요한 시점에 다시 떠올려 주어 저장만 해 두고 잊는 일을 줄여 줘요.</description>
     </item>
 </channel>
 </rss>
